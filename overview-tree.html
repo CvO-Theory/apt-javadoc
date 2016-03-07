@@ -114,6 +114,7 @@
 <li><a href="uniol/apt/analysis/separation/package-tree.html">uniol.apt.analysis.separation</a>, </li>
 <li><a href="uniol/apt/analysis/sideconditions/package-tree.html">uniol.apt.analysis.sideconditions</a>, </li>
 <li><a href="uniol/apt/analysis/snet/package-tree.html">uniol.apt.analysis.snet</a>, </li>
+<li><a href="uniol/apt/analysis/sum/package-tree.html">uniol.apt.analysis.sum</a>, </li>
 <li><a href="uniol/apt/analysis/synet/package-tree.html">uniol.apt.analysis.synet</a>, </li>
 <li><a href="uniol/apt/analysis/synthesize/package-tree.html">uniol.apt.analysis.synthesize</a>, </li>
 <li><a href="uniol/apt/analysis/synthesize/separation/package-tree.html">uniol.apt.analysis.synthesize.separation</a>, </li>
@@ -318,6 +319,8 @@
 <li type="circle">uniol.apt.analysis.connectivity.<a href="uniol/apt/analysis/connectivity/StrongConnectivityModule.html" title="class in uniol.apt.analysis.connectivity"><span class="typeNameLink">StrongConnectivityModule</span></a> (implements uniol.apt.module.<a href="uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>)</li>
 <li type="circle">uniol.apt.analysis.separation.<a href="uniol/apt/analysis/separation/StrongSeparationLengthModule.html" title="class in uniol.apt.analysis.separation"><span class="typeNameLink">StrongSeparationLengthModule</span></a> (implements uniol.apt.module.<a href="uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>)</li>
 <li type="circle">uniol.apt.analysis.separation.<a href="uniol/apt/analysis/separation/StrongSeparationModule.html" title="class in uniol.apt.analysis.separation"><span class="typeNameLink">StrongSeparationModule</span></a> (implements uniol.apt.module.<a href="uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>)</li>
+<li type="circle">uniol.apt.analysis.sum.<a href="uniol/apt/analysis/sum/SumAsyncModule.html" title="class in uniol.apt.analysis.sum"><span class="typeNameLink">SumAsyncModule</span></a> (implements uniol.apt.module.<a href="uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>)</li>
+<li type="circle">uniol.apt.analysis.sum.<a href="uniol/apt/analysis/sum/SumSyncModule.html" title="class in uniol.apt.analysis.sum"><span class="typeNameLink">SumSyncModule</span></a> (implements uniol.apt.module.<a href="uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>)</li>
 <li type="circle">uniol.apt.analysis.synet.<a href="uniol/apt/analysis/synet/SynthesizeDistributedLTSModule.html" title="class in uniol.apt.analysis.synet"><span class="typeNameLink">SynthesizeDistributedLTSModule</span></a> (implements uniol.apt.module.<a href="uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>)</li>
 <li type="circle">uniol.apt.generator.module.<a href="uniol/apt/generator/module/TNetGeneratorModule.html" title="class in uniol.apt.generator.module"><span class="typeNameLink">TNetGeneratorModule</span></a> (implements uniol.apt.module.<a href="uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>)</li>
 <li type="circle">uniol.apt.analysis.tnet.<a href="uniol/apt/analysis/tnet/TNetModule.html" title="class in uniol.apt.analysis.tnet"><span class="typeNameLink">TNetModule</span></a> (implements uniol.apt.module.<a href="uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>)</li>
@@ -764,6 +767,7 @@
 <li type="circle">uniol.apt.util.<a href="uniol/apt/util/StringComparator.html" title="class in uniol.apt.util"><span class="typeNameLink">StringComparator</span></a> (implements java.util.Comparator&lt;T&gt;, java.io.Serializable)</li>
 <li type="circle">uniol.apt.ui.impl.parameter.<a href="uniol/apt/ui/impl/parameter/StringParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter"><span class="typeNameLink">StringParameterTransformation</span></a> (implements uniol.apt.ui.<a href="uniol/apt/ui/ParameterTransformation.html" title="interface in uniol.apt.ui">ParameterTransformation</a>&lt;T&gt;)</li>
 <li type="circle">uniol.apt.adt.<a href="uniol/apt/adt/StructuralExtensionRemover.html" title="class in uniol.apt.adt"><span class="typeNameLink">StructuralExtensionRemover</span></a>&lt;G,E,N&gt; (implements uniol.apt.adt.<a href="uniol/apt/adt/IGraphListener.html" title="interface in uniol.apt.adt">IGraphListener</a>&lt;G,E,N&gt;)</li>
+<li type="circle">uniol.apt.analysis.sum.<a href="uniol/apt/analysis/sum/Sum.html" title="class in uniol.apt.analysis.sum"><span class="typeNameLink">Sum</span></a></li>
 <li type="circle">uniol.apt.adt.automaton.<a href="uniol/apt/adt/automaton/Symbol.html" title="class in uniol.apt.adt.automaton"><span class="typeNameLink">Symbol</span></a></li>
 <li type="circle">uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/SynetLTSFormatBaseListener.html" title="class in uniol.apt.io.parser.impl"><span class="typeNameLink">SynetLTSFormatBaseListener</span></a> (implements uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/SynetLTSFormatListener.html" title="interface in uniol.apt.io.parser.impl">SynetLTSFormatListener</a>)</li>
 <li type="circle">uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/SynetPNFormatBaseListener.html" title="class in uniol.apt.io.parser.impl"><span class="typeNameLink">SynetPNFormatBaseListener</span></a> (implements uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/SynetPNFormatListener.html" title="interface in uniol.apt.io.parser.impl">SynetPNFormatListener</a>)</li>
@@ -777,6 +781,7 @@
 <ul>
 <li type="circle">java.lang.Exception
 <ul>
+<li type="circle">uniol.apt.analysis.sum.<a href="uniol/apt/analysis/sum/LabelMismatchException.html" title="class in uniol.apt.analysis.sum"><span class="typeNameLink">LabelMismatchException</span></a></li>
 <li type="circle">uniol.apt.module.exception.<a href="uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception"><span class="typeNameLink">ModuleException</span></a>
 <ul>
 <li type="circle">uniol.apt.module.exception.<a href="uniol/apt/module/exception/FalseParameterException.html" title="class in uniol.apt.module.exception"><span class="typeNameLink">FalseParameterException</span></a></li>
