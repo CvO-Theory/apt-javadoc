@@ -271,6 +271,21 @@
 <div class="block">Retrieves a view of all nodes which have an outgoing edge to the node identified by the id.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.util.Set&lt;<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">TransitionSystem.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html#getPresetNodesByLabel-uniol.apt.adt.ts.State-java.lang.String-">getPresetNodesByLabel</a></span>(<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;node,
+                     java.lang.String&nbsp;label)</code>
+<div class="block">Returns the set of states from which the given node can be reached
+ with the given label.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.util.Set&lt;<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">State.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/adt/ts/State.html#getPresetNodesByLabel-java.lang.String-">getPresetNodesByLabel</a></span>(java.lang.String&nbsp;label)</code>
+<div class="block">Returns the set of states from which this node can be reached
+ with the given label.</div>
+</td>
+</tr>
 </tbody>
 </table>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
@@ -325,20 +340,12 @@
 </td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>java.util.Set&lt;<a href="../../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">State.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/adt/ts/State.html#getPostsetEdgesByLabel-uniol.apt.adt.ts.State-java.lang.String-">getPostsetEdgesByLabel</a></span>(<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;node,
-                      java.lang.String&nbsp;label)</code>
-<div class="block">Returns the set of arcs that start in the given node and have the
- given label.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">TransitionSystem.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html#getPostsetNodes-uniol.apt.adt.ts.State-">getPostsetNodes</a></span>(<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;node)</code>
 <div class="block">Retrieves a view of all nodes which have an incoming edge from the given node.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">TransitionSystem.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html#getPostsetNodesByLabel-uniol.apt.adt.ts.State-java.lang.String-">getPostsetNodesByLabel</a></span>(<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;node,
                       java.lang.String&nbsp;label)</code>
@@ -346,10 +353,18 @@
  with the given label.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">TransitionSystem.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html#getPresetEdges-uniol.apt.adt.ts.State-">getPresetEdges</a></span>(<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;node)</code>
 <div class="block">Retrieves a view of all edges targeting the given node.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.util.Set&lt;<a href="../../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">TransitionSystem.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html#getPresetEdgesByLabel-uniol.apt.adt.ts.State-java.lang.String-">getPresetEdgesByLabel</a></span>(<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;node,
+                     java.lang.String&nbsp;label)</code>
+<div class="block">Returns the set of arcs that end in the given node and have the
+ given label.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -359,12 +374,20 @@
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>java.util.Set&lt;<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">TransitionSystem.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html#getPresetNodesByLabel-uniol.apt.adt.ts.State-java.lang.String-">getPresetNodesByLabel</a></span>(<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;node,
+                     java.lang.String&nbsp;label)</code>
+<div class="block">Returns the set of states from which the given node can be reached
+ with the given label.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">TransitionSystem.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html#removeState-uniol.apt.adt.ts.State-">removeState</a></span>(<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;state)</code>
 <div class="block">Removes the given state from the TransitionSystem by searching a node with the same id as the given state.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">TransitionSystem.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html#setInitialState-uniol.apt.adt.ts.State-">setInitialState</a></span>(<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;state)</code>
 <div class="block">Sets the initial state of the TransitionSystem.</div>

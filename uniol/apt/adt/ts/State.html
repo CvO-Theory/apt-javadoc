@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -165,8 +165,7 @@ extends <a href="../../../../uniol/apt/adt/Node.html" title="class in uniol.apt.
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/State.html#getPostsetEdgesByLabel-uniol.apt.adt.ts.State-java.lang.String-">getPostsetEdgesByLabel</a></span>(<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;node,
-                      java.lang.String&nbsp;label)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/State.html#getPostsetEdgesByLabel-java.lang.String-">getPostsetEdgesByLabel</a></span>(java.lang.String&nbsp;label)</code>
 <div class="block">Returns the set of arcs that start in the given node and have the
  given label.</div>
 </td>
@@ -176,6 +175,20 @@ extends <a href="../../../../uniol/apt/adt/Node.html" title="class in uniol.apt.
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/State.html#getPostsetNodesByLabel-java.lang.String-">getPostsetNodesByLabel</a></span>(java.lang.String&nbsp;label)</code>
 <div class="block">Returns the set of states that is reached by arcs from this node with
  the given label.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/State.html#getPresetEdgesByLabel-java.lang.String-">getPresetEdgesByLabel</a></span>(java.lang.String&nbsp;label)</code>
+<div class="block">Returns the set of arcs that end in this node and have the
+ given label.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/State.html#getPresetNodesByLabel-java.lang.String-">getPresetNodesByLabel</a></span>(java.lang.String&nbsp;label)</code>
+<div class="block">Returns the set of states from which this node can be reached
+ with the given label.</div>
 </td>
 </tr>
 </table>
@@ -221,6 +234,42 @@ extends <a href="../../../../uniol/apt/adt/Node.html" title="class in uniol.apt.
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getPresetNodesByLabel-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPresetNodesByLabel</h4>
+<pre>public&nbsp;java.util.Set&lt;<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;&nbsp;getPresetNodesByLabel(java.lang.String&nbsp;label)</pre>
+<div class="block">Returns the set of states from which this node can be reached
+ with the given label.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>label</code> - the label to look for</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a set of nodes that allow to reach this node by the
+         given label</dd>
+</dl>
+</li>
+</ul>
+<a name="getPresetEdgesByLabel-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPresetEdgesByLabel</h4>
+<pre>public&nbsp;java.util.Set&lt;<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&gt;&nbsp;getPresetEdgesByLabel(java.lang.String&nbsp;label)</pre>
+<div class="block">Returns the set of arcs that end in this node and have the
+ given label.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>label</code> - the label of all arcs in the result</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an unmodifiable set of arcs that end at this node and
+         have the given label</dd>
+</dl>
+</li>
+</ul>
 <a name="getPostsetNodesByLabel-java.lang.String-">
 <!--   -->
 </a>
@@ -239,14 +288,13 @@ extends <a href="../../../../uniol/apt/adt/Node.html" title="class in uniol.apt.
 </dl>
 </li>
 </ul>
-<a name="getPostsetEdgesByLabel-uniol.apt.adt.ts.State-java.lang.String-">
+<a name="getPostsetEdgesByLabel-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getPostsetEdgesByLabel</h4>
-<pre>public&nbsp;java.util.Set&lt;<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&gt;&nbsp;getPostsetEdgesByLabel(<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;node,
-                                                 java.lang.String&nbsp;label)</pre>
+<pre>public&nbsp;java.util.Set&lt;<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&gt;&nbsp;getPostsetEdgesByLabel(java.lang.String&nbsp;label)</pre>
 <div class="block">Returns the set of arcs that start in the given node and have the
  given label.</div>
 <dl>
