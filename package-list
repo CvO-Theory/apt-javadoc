@@ -23,6 +23,7 @@ uniol.apt.analysis.deterministic
 uniol.apt.analysis.exception
 uniol.apt.analysis.fc
 uniol.apt.analysis.fcnet
+uniol.apt.analysis.gdiam
 uniol.apt.analysis.homogeneous
 uniol.apt.analysis.invariants
 uniol.apt.analysis.isolated
