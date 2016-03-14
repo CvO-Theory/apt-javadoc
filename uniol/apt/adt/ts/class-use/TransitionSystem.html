@@ -123,50 +123,54 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="#uniol.apt.analysis.labelseparation">uniol.apt.analysis.labelseparation</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="#uniol.apt.analysis.language">uniol.apt.analysis.language</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#uniol.apt.analysis.lts.extension">uniol.apt.analysis.lts.extension</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#uniol.apt.analysis.persistent">uniol.apt.analysis.persistent</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#uniol.apt.analysis.petrify">uniol.apt.analysis.petrify</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#uniol.apt.analysis.product">uniol.apt.analysis.product</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#uniol.apt.analysis.reversible">uniol.apt.analysis.reversible</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#uniol.apt.analysis.synet">uniol.apt.analysis.synet</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#uniol.apt.analysis.synthesize">uniol.apt.analysis.synthesize</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#uniol.apt.analysis.totallyreachable">uniol.apt.analysis.totallyreachable</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#uniol.apt.io.parser.impl">uniol.apt.io.parser.impl</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#uniol.apt.io.renderer.impl">uniol.apt.io.renderer.impl</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#uniol.apt.ui.impl.returns">uniol.apt.ui.impl.returns</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -485,6 +489,77 @@
                 <a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;lts2,
                 boolean&nbsp;checkLabels)</code>
 <div class="block">Constructor for testing if two labelled transition systems are isomorphic.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="uniol.apt.analysis.labelseparation">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a> in <a href="../../../../../uniol/apt/analysis/labelseparation/package-summary.html">uniol.apt.analysis.labelseparation</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../uniol/apt/analysis/labelseparation/package-summary.html">uniol.apt.analysis.labelseparation</a> that return <a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a></code></td>
+<td class="colLast"><span class="typeNameLabel">TransitionSystemFilter.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/labelseparation/TransitionSystemFilter.html#removeArcsByLabel-uniol.apt.adt.ts.TransitionSystem-java.util.Set-">removeArcsByLabel</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
+                 java.util.Set&lt;java.lang.String&gt;&nbsp;labels)</code>
+<div class="block">Creates a copy of the given TS with all arcs removed that have a
+ label contained within the given label set.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a></code></td>
+<td class="colLast"><span class="typeNameLabel">TransitionSystemFilter.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/labelseparation/TransitionSystemFilter.html#retainArcsByLabel-uniol.apt.adt.ts.TransitionSystem-java.util.Set-">retainArcsByLabel</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
+                 java.util.Set&lt;java.lang.String&gt;&nbsp;labels)</code>
+<div class="block">Creates a copy of the given TS that only contains arcs that have a
+ label contained within the given label set.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../uniol/apt/analysis/labelseparation/package-summary.html">uniol.apt.analysis.labelseparation</a> with parameters of type <a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../uniol/apt/analysis/labelseparation/LabelSeparationResult.html" title="class in uniol.apt.analysis.labelseparation">LabelSeparationResult</a></code></td>
+<td class="colLast"><span class="typeNameLabel">LabelSeparation.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/labelseparation/LabelSeparation.html#checkSeparated-uniol.apt.adt.ts.TransitionSystem-java.util.Set-">checkSeparated</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
+              java.util.Set&lt;java.lang.String&gt;&nbsp;tPrime)</code>
+<div class="block">Checks if the LTS is T'-separated.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static boolean</code></td>
+<td class="colLast"><span class="typeNameLabel">LabelSeparation.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/labelseparation/LabelSeparation.html#isSeparated-uniol.apt.adt.ts.TransitionSystem-java.util.Set-">isSeparated</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
+           java.util.Set&lt;java.lang.String&gt;&nbsp;tPrime)</code>
+<div class="block">Shorthand for
+ <code><a href="../../../../../uniol/apt/analysis/labelseparation/LabelSeparation.html#checkSeparated-uniol.apt.adt.ts.TransitionSystem-java.util.Set-"><code>LabelSeparation.checkSeparated(TransitionSystem, Set)</code></a>.isSeparated()</code>
+ .</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a></code></td>
+<td class="colLast"><span class="typeNameLabel">TransitionSystemFilter.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/labelseparation/TransitionSystemFilter.html#removeArcsByLabel-uniol.apt.adt.ts.TransitionSystem-java.util.Set-">removeArcsByLabel</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
+                 java.util.Set&lt;java.lang.String&gt;&nbsp;labels)</code>
+<div class="block">Creates a copy of the given TS with all arcs removed that have a
+ label contained within the given label set.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a></code></td>
+<td class="colLast"><span class="typeNameLabel">TransitionSystemFilter.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/labelseparation/TransitionSystemFilter.html#retainArcsByLabel-uniol.apt.adt.ts.TransitionSystem-java.util.Set-">retainArcsByLabel</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
+                 java.util.Set&lt;java.lang.String&gt;&nbsp;labels)</code>
+<div class="block">Creates a copy of the given TS that only contains arcs that have a
+ label contained within the given label set.</div>
 </td>
 </tr>
 </tbody>

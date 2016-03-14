@@ -28,6 +28,7 @@ uniol.apt.analysis.homogeneous
 uniol.apt.analysis.invariants
 uniol.apt.analysis.isolated
 uniol.apt.analysis.isomorphism
+uniol.apt.analysis.labelseparation
 uniol.apt.analysis.language
 uniol.apt.analysis.live
 uniol.apt.analysis.lts.extension
