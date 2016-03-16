@@ -180,7 +180,7 @@ extends java.util.AbstractCollection&lt;java.util.Collection&lt;E&gt;&gt;</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../uniol/apt/util/PowerSet.html#PowerSet-java.util.List-">PowerSet</a></span>(java.util.List&lt;<a href="../../../uniol/apt/util/PowerSet.html" title="type parameter in PowerSet">E</a>&gt;&nbsp;c)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../uniol/apt/util/PowerSet.html#PowerSet-java.util.Collection-">PowerSet</a></span>(java.util.Collection&lt;<a href="../../../uniol/apt/util/PowerSet.html" title="type parameter in PowerSet">E</a>&gt;&nbsp;c)</code>
 <div class="block">Constructor</div>
 </td>
 </tr>
@@ -205,7 +205,7 @@ extends java.util.AbstractCollection&lt;java.util.Collection&lt;E&gt;&gt;</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>static &lt;E&gt;&nbsp;<a href="../../../uniol/apt/util/PowerSet.html" title="class in uniol.apt.util">PowerSet</a>&lt;E&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/util/PowerSet.html#powerSet-java.util.List-">powerSet</a></span>(java.util.List&lt;E&gt;&nbsp;c)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/util/PowerSet.html#powerSet-java.util.Collection-">powerSet</a></span>(java.util.Collection&lt;E&gt;&nbsp;c)</code>
 <div class="block">Produce the power set of a collection</div>
 </td>
 </tr>
@@ -256,18 +256,20 @@ extends java.util.AbstractCollection&lt;java.util.Collection&lt;E&gt;&gt;</pre>
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="PowerSet-java.util.List-">
+<a name="PowerSet-java.util.Collection-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PowerSet</h4>
-<pre>public&nbsp;PowerSet(java.util.List&lt;<a href="../../../uniol/apt/util/PowerSet.html" title="type parameter in PowerSet">E</a>&gt;&nbsp;c)</pre>
+<pre>public&nbsp;PowerSet(java.util.Collection&lt;<a href="../../../uniol/apt/util/PowerSet.html" title="type parameter in PowerSet">E</a>&gt;&nbsp;c)</pre>
 <div class="block">Constructor</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>c</code> - The collection whose power set should be generated. This collection must have stable iteration
- order so that iterating multiple times over it always produces elements in the same order!</dd>
+ order so that iterating multiple times over it always produces elements in the same order! For lists this is
+ already the case. Other types of collections will be copied into an ArrayList to guarantee stable iteration
+ order.</dd>
 </dl>
 </li>
 </ul>
@@ -311,13 +313,13 @@ extends java.util.AbstractCollection&lt;java.util.Collection&lt;E&gt;&gt;</pre>
 </dl>
 </li>
 </ul>
-<a name="powerSet-java.util.List-">
+<a name="powerSet-java.util.Collection-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>powerSet</h4>
-<pre>public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../uniol/apt/util/PowerSet.html" title="class in uniol.apt.util">PowerSet</a>&lt;E&gt;&nbsp;powerSet(java.util.List&lt;E&gt;&nbsp;c)</pre>
+<pre>public static&nbsp;&lt;E&gt;&nbsp;<a href="../../../uniol/apt/util/PowerSet.html" title="class in uniol.apt.util">PowerSet</a>&lt;E&gt;&nbsp;powerSet(java.util.Collection&lt;E&gt;&nbsp;c)</pre>
 <div class="block">Produce the power set of a collection</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>

@@ -1387,6 +1387,10 @@
 <dd>
 <div class="block">Checks if this petri net contains a place.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/adt/ts/TransitionSystem.html#containsState-java.lang.String-">containsState(String)</a></span> - Method in class uniol.apt.adt.ts.<a href="uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a></dt>
+<dd>
+<div class="block">Returns true if this TS contains a state with the given id.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/adt/pn/PetriNet.html#containsTransition-java.lang.String-">containsTransition(String)</a></span> - Method in class uniol.apt.adt.pn.<a href="uniol/apt/adt/pn/PetriNet.html" title="class in uniol.apt.adt.pn">PetriNet</a></dt>
 <dd>
 <div class="block">Checks if this petri net contains a transition with the given id.</div>
@@ -4085,6 +4089,20 @@
 </a>
 <h2 class="title">F</h2>
 <dl>
+<dt><a href="uniol/apt/analysis/factorization/Factorization.html" title="class in uniol.apt.analysis.factorization"><span class="typeNameLink">Factorization</span></a> - Class in <a href="uniol/apt/analysis/factorization/package-summary.html">uniol.apt.analysis.factorization</a></dt>
+<dd>
+<div class="block">A class to test if a LTS is a product.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/Factorization.html#Factorization-uniol.apt.adt.ts.TransitionSystem-">Factorization(TransitionSystem)</a></span> - Constructor for class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/Factorization.html" title="class in uniol.apt.analysis.factorization">Factorization</a></dt>
+<dd>
+<div class="block">Creates a new Factorization instance that examines the given TS.</div>
+</dd>
+<dt><a href="uniol/apt/analysis/factorization/FactorizationModule.html" title="class in uniol.apt.analysis.factorization"><span class="typeNameLink">FactorizationModule</span></a> - Class in <a href="uniol/apt/analysis/factorization/package-summary.html">uniol.apt.analysis.factorization</a></dt>
+<dd>
+<div class="block">Module that allows to decompose a LTS into asynchronous factors.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/FactorizationModule.html#FactorizationModule--">FactorizationModule()</a></span> - Constructor for class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/FactorizationModule.html" title="class in uniol.apt.analysis.factorization">FactorizationModule</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="uniol/apt/module/exception/FalseParameterException.html" title="class in uniol.apt.module.exception"><span class="typeNameLink">FalseParameterException</span></a> - Exception in <a href="uniol/apt/module/exception/package-summary.html">uniol.apt.module.exception</a></dt>
 <dd>
 <div class="block">Get called if the parameter is not -dead</div>
@@ -4660,6 +4678,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/ExaminePNModule.html#getCategories--">getCategories()</a></span> - Method in class uniol.apt.analysis.<a href="uniol/apt/analysis/ExaminePNModule.html" title="class in uniol.apt.analysis">ExaminePNModule</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/FactorizationModule.html#getCategories--">getCategories()</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/FactorizationModule.html" title="class in uniol.apt.analysis.factorization">FactorizationModule</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/FCModule.html#getCategories--">getCategories()</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/FCModule.html" title="class in uniol.apt.analysis.fc">FCModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fcnet/FCNetModule.html#getCategories--">getCategories()</a></span> - Method in class uniol.apt.analysis.fcnet.<a href="uniol/apt/analysis/fcnet/FCNetModule.html" title="class in uniol.apt.analysis.fcnet">FCNetModule</a></dt>
@@ -4918,6 +4938,14 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/adt/extension/Extensible.html#getExtensions--">getExtensions()</a></span> - Method in class uniol.apt.adt.extension.<a href="uniol/apt/adt/extension/Extensible.html" title="class in uniol.apt.adt.extension">Extensible</a></dt>
 <dd>
 <div class="block">Calculates a list of pairs key-value of all extentions.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/Factorization.html#getFactor1--">getFactor1()</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/Factorization.html" title="class in uniol.apt.analysis.factorization">Factorization</a></dt>
+<dd>
+<div class="block">Returns the first factor, if any.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/Factorization.html#getFactor2--">getFactor2()</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/Factorization.html" title="class in uniol.apt.analysis.factorization">Factorization</a></dt>
+<dd>
+<div class="block">Returns the second factor, if any.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizePN.html#getFailedEventStateSeparationProblems--">getFailedEventStateSeparationProblems()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizePN.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN</a></dt>
 <dd>
@@ -5478,6 +5506,8 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/ExamineLTSModule.html#getName--">getName()</a></span> - Method in class uniol.apt.analysis.<a href="uniol/apt/analysis/ExamineLTSModule.html" title="class in uniol.apt.analysis">ExamineLTSModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/ExaminePNModule.html#getName--">getName()</a></span> - Method in class uniol.apt.analysis.<a href="uniol/apt/analysis/ExaminePNModule.html" title="class in uniol.apt.analysis">ExaminePNModule</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/FactorizationModule.html#getName--">getName()</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/FactorizationModule.html" title="class in uniol.apt.analysis.factorization">FactorizationModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/FCModule.html#getName--">getName()</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/FCModule.html" title="class in uniol.apt.analysis.fc">FCModule</a></dt>
 <dd>&nbsp;</dd>
@@ -6407,6 +6437,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/ExaminePNModule.html#getShortDescription--">getShortDescription()</a></span> - Method in class uniol.apt.analysis.<a href="uniol/apt/analysis/ExaminePNModule.html" title="class in uniol.apt.analysis">ExaminePNModule</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/FactorizationModule.html#getShortDescription--">getShortDescription()</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/FactorizationModule.html" title="class in uniol.apt.analysis.factorization">FactorizationModule</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/FCModule.html#getShortDescription--">getShortDescription()</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/FCModule.html" title="class in uniol.apt.analysis.fc">FCModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fcnet/FCNetModule.html#getShortDescription--">getShortDescription()</a></span> - Method in class uniol.apt.analysis.fcnet.<a href="uniol/apt/analysis/fcnet/FCNetModule.html" title="class in uniol.apt.analysis.fcnet">FCNetModule</a></dt>
@@ -6999,6 +7031,10 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/adt/extension/Extensible.html#hasExtension-java.lang.String-">hasExtension(String)</a></span> - Method in class uniol.apt.adt.extension.<a href="uniol/apt/adt/extension/Extensible.html" title="class in uniol.apt.adt.extension">Extensible</a></dt>
 <dd>
 <div class="block">Returns if this extension contains the given key.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/Factorization.html#hasFactors--">hasFactors()</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/Factorization.html" title="class in uniol.apt.analysis.factorization">Factorization</a></dt>
+<dd>
+<div class="block">Returns true, if factors of the LTS were found.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/adt/automaton/Symbol.html#hashCode--">hashCode()</a></span> - Method in class uniol.apt.adt.automaton.<a href="uniol/apt/adt/automaton/Symbol.html" title="class in uniol.apt.adt.automaton">Symbol</a></dt>
 <dd>&nbsp;</dd>
@@ -9312,11 +9348,11 @@
 <dd>
 <div class="block">Calculate the power set of a collection.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/util/PowerSet.html#PowerSet-java.util.List-">PowerSet(List&lt;E&gt;)</a></span> - Constructor for class uniol.apt.util.<a href="uniol/apt/util/PowerSet.html" title="class in uniol.apt.util">PowerSet</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/util/PowerSet.html#PowerSet-java.util.Collection-">PowerSet(Collection&lt;E&gt;)</a></span> - Constructor for class uniol.apt.util.<a href="uniol/apt/util/PowerSet.html" title="class in uniol.apt.util">PowerSet</a></dt>
 <dd>
 <div class="block">Constructor</div>
 </dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/util/PowerSet.html#powerSet-java.util.List-">powerSet(List&lt;E&gt;)</a></span> - Static method in class uniol.apt.util.<a href="uniol/apt/util/PowerSet.html" title="class in uniol.apt.util">PowerSet</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/util/PowerSet.html#powerSet-java.util.Collection-">powerSet(Collection&lt;E&gt;)</a></span> - Static method in class uniol.apt.util.<a href="uniol/apt/util/PowerSet.html" title="class in uniol.apt.util">PowerSet</a></dt>
 <dd>
 <div class="block">Produce the power set of a collection</div>
 </dd>
@@ -9450,6 +9486,8 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/ExamineLTSModule.html#provide-uniol.apt.module.ModuleOutputSpec-">provide(ModuleOutputSpec)</a></span> - Method in class uniol.apt.analysis.<a href="uniol/apt/analysis/ExamineLTSModule.html" title="class in uniol.apt.analysis">ExamineLTSModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/ExaminePNModule.html#provide-uniol.apt.module.ModuleOutputSpec-">provide(ModuleOutputSpec)</a></span> - Method in class uniol.apt.analysis.<a href="uniol/apt/analysis/ExaminePNModule.html" title="class in uniol.apt.analysis">ExaminePNModule</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/FactorizationModule.html#provide-uniol.apt.module.ModuleOutputSpec-">provide(ModuleOutputSpec)</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/FactorizationModule.html" title="class in uniol.apt.analysis.factorization">FactorizationModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/FCModule.html#provide-uniol.apt.module.ModuleOutputSpec-">provide(ModuleOutputSpec)</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/FCModule.html" title="class in uniol.apt.analysis.fc">FCModule</a></dt>
 <dd>&nbsp;</dd>
@@ -10057,6 +10095,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/ExaminePNModule.html#require-uniol.apt.module.ModuleInputSpec-">require(ModuleInputSpec)</a></span> - Method in class uniol.apt.analysis.<a href="uniol/apt/analysis/ExaminePNModule.html" title="class in uniol.apt.analysis">ExaminePNModule</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/FactorizationModule.html#require-uniol.apt.module.ModuleInputSpec-">require(ModuleInputSpec)</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/FactorizationModule.html" title="class in uniol.apt.analysis.factorization">FactorizationModule</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/FCModule.html#require-uniol.apt.module.ModuleInputSpec-">require(ModuleInputSpec)</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/FCModule.html" title="class in uniol.apt.analysis.fc">FCModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fcnet/FCNetModule.html#require-uniol.apt.module.ModuleInputSpec-">require(ModuleInputSpec)</a></span> - Method in class uniol.apt.analysis.fcnet.<a href="uniol/apt/analysis/fcnet/FCNetModule.html" title="class in uniol.apt.analysis.fcnet">FCNetModule</a></dt>
@@ -10494,6 +10534,8 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/ExamineLTSModule.html#run-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">run(ModuleInput, ModuleOutput)</a></span> - Method in class uniol.apt.analysis.<a href="uniol/apt/analysis/ExamineLTSModule.html" title="class in uniol.apt.analysis">ExamineLTSModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/ExaminePNModule.html#run-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">run(ModuleInput, ModuleOutput)</a></span> - Method in class uniol.apt.analysis.<a href="uniol/apt/analysis/ExaminePNModule.html" title="class in uniol.apt.analysis">ExaminePNModule</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/FactorizationModule.html#run-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">run(ModuleInput, ModuleOutput)</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/FactorizationModule.html" title="class in uniol.apt.analysis.factorization">FactorizationModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/FCModule.html#run-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">run(ModuleInput, ModuleOutput)</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/FCModule.html" title="class in uniol.apt.analysis.fc">FCModule</a></dt>
 <dd>&nbsp;</dd>
@@ -12504,6 +12546,8 @@
 <dt><a href="uniol/apt/analysis/deterministic/package-summary.html">uniol.apt.analysis.deterministic</a> - package uniol.apt.analysis.deterministic</dt>
 <dd>&nbsp;</dd>
 <dt><a href="uniol/apt/analysis/exception/package-summary.html">uniol.apt.analysis.exception</a> - package uniol.apt.analysis.exception</dt>
+<dd>&nbsp;</dd>
+<dt><a href="uniol/apt/analysis/factorization/package-summary.html">uniol.apt.analysis.factorization</a> - package uniol.apt.analysis.factorization</dt>
 <dd>&nbsp;</dd>
 <dt><a href="uniol/apt/analysis/fc/package-summary.html">uniol.apt.analysis.fc</a> - package uniol.apt.analysis.fc</dt>
 <dd>&nbsp;</dd>
