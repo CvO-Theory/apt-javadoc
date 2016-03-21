@@ -105,7 +105,7 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="#uniol.apt.analysis.gdiam">uniol.apt.analysis.gdiam</a></td>
+<td class="colFirst"><a href="#uniol.apt.analysis.factorization">uniol.apt.analysis.factorization</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="altColor">
@@ -113,30 +113,26 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><a href="#uniol.apt.analysis.labelseparation">uniol.apt.analysis.labelseparation</a></td>
-<td class="colLast">&nbsp;</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><a href="#uniol.apt.analysis.lts.extension">uniol.apt.analysis.lts.extension</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#uniol.apt.analysis.persistent">uniol.apt.analysis.persistent</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#uniol.apt.analysis.reversible">uniol.apt.analysis.reversible</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#uniol.apt.analysis.synthesize">uniol.apt.analysis.synthesize</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#uniol.apt.analysis.synthesize.separation">uniol.apt.analysis.synthesize.separation</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#uniol.apt.analysis.totallyreachable">uniol.apt.analysis.totallyreachable</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -466,12 +462,12 @@
 </tbody>
 </table>
 </li>
-<li class="blockList"><a name="uniol.apt.analysis.gdiam">
+<li class="blockList"><a name="uniol.apt.analysis.factorization">
 <!--   -->
 </a>
-<h3>Uses of <a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a> in <a href="../../../../../uniol/apt/analysis/gdiam/package-summary.html">uniol.apt.analysis.gdiam</a></h3>
+<h3>Uses of <a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a> in <a href="../../../../../uniol/apt/analysis/factorization/package-summary.html">uniol.apt.analysis.factorization</a></h3>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../uniol/apt/analysis/gdiam/package-summary.html">uniol.apt.analysis.gdiam</a> that return <a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Methods in <a href="../../../../../uniol/apt/analysis/factorization/package-summary.html">uniol.apt.analysis.factorization</a> that return <a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -479,26 +475,45 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a></code></td>
-<td class="colLast"><span class="typeNameLabel">GeneralDiamondResult.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/gdiam/GeneralDiamondResult.html#getWitnessState--">getWitnessState</a></span>()</code>
+<td class="colLast"><span class="typeNameLabel">GeneralDiamondResult.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/factorization/GeneralDiamondResult.html#getWitnessState--">getWitnessState</a></span>()</code>
 <div class="block">Returns the state that failed the gdiam-check.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a></code></td>
+<td class="colLast"><span class="typeNameLabel">LabelSeparationResult.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/factorization/LabelSeparationResult.html#getWitnessState1--">getWitnessState1</a></span>()</code>
+<div class="block">Returns the first witness state if the LTS is not T'-separated.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a></code></td>
+<td class="colLast"><span class="typeNameLabel">LabelSeparationResult.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/factorization/LabelSeparationResult.html#getWitnessState2--">getWitnessState2</a></span>()</code>
+<div class="block">Returns the second witness state if the LTS is not T'-separated.</div>
 </td>
 </tr>
 </tbody>
 </table>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
-<caption><span>Constructors in <a href="../../../../../uniol/apt/analysis/gdiam/package-summary.html">uniol.apt.analysis.gdiam</a> with parameters of type <a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a></span><span class="tabEnd">&nbsp;</span></caption>
+<caption><span>Constructors in <a href="../../../../../uniol/apt/analysis/factorization/package-summary.html">uniol.apt.analysis.factorization</a> with parameters of type <a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/gdiam/GeneralDiamondResult.html#GeneralDiamondResult-uniol.apt.adt.ts.State-java.lang.String-java.lang.String-boolean-boolean-">GeneralDiamondResult</a></span>(<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;witnessState,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/factorization/GeneralDiamondResult.html#GeneralDiamondResult-uniol.apt.adt.ts.State-java.lang.String-java.lang.String-boolean-boolean-">GeneralDiamondResult</a></span>(<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;witnessState,
                     java.lang.String&nbsp;label1,
                     java.lang.String&nbsp;label2,
                     boolean&nbsp;label1Forward,
                     boolean&nbsp;label2Forward)</code>
 <div class="block">Creates a new negative GeneralDiamondResult with witness values that
  specify why the LTS is not a T'-gdiam.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/factorization/LabelSeparationResult.html#LabelSeparationResult-uniol.apt.adt.ts.State-uniol.apt.adt.ts.State-">LabelSeparationResult</a></span>(<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;witnessState1,
+                     <a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;witnessState2)</code>
+<div class="block">Constructs a new negative LabelSeparationResult with the two states
+ as witnesses.</div>
 </td>
 </tr>
 </tbody>
@@ -556,47 +571,6 @@
 <tr class="rowColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/isomorphism/Isomorphism.html#Isomorphism-org.apache.commons.collections4.BidiMap-">Isomorphism</a></span>(org.apache.commons.collections4.BidiMap&lt;? extends <a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>,? extends <a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;&nbsp;m)</code>
 <div class="block">Construct a Isomorphism from the given map.</div>
-</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li class="blockList"><a name="uniol.apt.analysis.labelseparation">
-<!--   -->
-</a>
-<h3>Uses of <a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a> in <a href="../../../../../uniol/apt/analysis/labelseparation/package-summary.html">uniol.apt.analysis.labelseparation</a></h3>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
-<caption><span>Methods in <a href="../../../../../uniol/apt/analysis/labelseparation/package-summary.html">uniol.apt.analysis.labelseparation</a> that return <a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a></code></td>
-<td class="colLast"><span class="typeNameLabel">LabelSeparationResult.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/labelseparation/LabelSeparationResult.html#getWitnessState1--">getWitnessState1</a></span>()</code>
-<div class="block">Returns the first witness state if the LTS is not T'-separated.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a></code></td>
-<td class="colLast"><span class="typeNameLabel">LabelSeparationResult.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/labelseparation/LabelSeparationResult.html#getWitnessState2--">getWitnessState2</a></span>()</code>
-<div class="block">Returns the second witness state if the LTS is not T'-separated.</div>
-</td>
-</tr>
-</tbody>
-</table>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
-<caption><span>Constructors in <a href="../../../../../uniol/apt/analysis/labelseparation/package-summary.html">uniol.apt.analysis.labelseparation</a> with parameters of type <a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colOne" scope="col">Constructor and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/labelseparation/LabelSeparationResult.html#LabelSeparationResult-uniol.apt.adt.ts.State-uniol.apt.adt.ts.State-">LabelSeparationResult</a></span>(<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;witnessState1,
-                     <a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;witnessState2)</code>
-<div class="block">Constructs a new negative LabelSeparationResult with the two states
- as witnesses.</div>
 </td>
 </tr>
 </tbody>
