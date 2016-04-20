@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":9,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -187,25 +187,39 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../uniol/apt/analysis/synthesize/Region.Builder.html" title="class in uniol.apt.analysis.synthesize">Region.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.Builder.html#addWeightOn-int-java.math.BigInteger-">addWeightOn</a></span>(int&nbsp;index,
+           java.math.BigInteger&nbsp;weight)</code>
+<div class="block">Add some weight around the given event.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../uniol/apt/analysis/synthesize/Region.Builder.html" title="class in uniol.apt.analysis.synthesize">Region.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.Builder.html#addWeightOn-java.lang.String-java.math.BigInteger-">addWeightOn</a></span>(java.lang.String&nbsp;event,
+           java.math.BigInteger&nbsp;weight)</code>
+<div class="block">Add some weight around the given event.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../uniol/apt/analysis/synthesize/Region.Builder.html" title="class in uniol.apt.analysis.synthesize">Region.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.Builder.html#createPure-uniol.apt.analysis.synthesize.RegionUtility-java.util.List-">createPure</a></span>(<a href="../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility,
           java.util.List&lt;java.math.BigInteger&gt;&nbsp;vector)</code>
 <div class="block">Create a new region builder for a pure region with the given weights.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/analysis/synthesize/Region.Builder.html" title="class in uniol.apt.analysis.synthesize">Region.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.Builder.html#makePure--">makePure</a></span>()</code>
 <div class="block">Turn this builder's weight into the weight for a normal region.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.Builder.html#withInitialMarking-java.math.BigInteger-">withInitialMarking</a></span>(java.math.BigInteger&nbsp;initial)</code>
 <div class="block">Create a region from the current state of the builder and the given initial marking.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.Builder.html#withNormalRegionInitialMarking--">withNormalRegionInitialMarking</a></span>()</code>
 <div class="block">Create a region from the current state of this builder and the initial marking that a normal region
@@ -288,6 +302,44 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="addWeightOn-java.lang.String-java.math.BigInteger-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addWeightOn</h4>
+<pre>public&nbsp;<a href="../../../../uniol/apt/analysis/synthesize/Region.Builder.html" title="class in uniol.apt.analysis.synthesize">Region.Builder</a>&nbsp;addWeightOn(java.lang.String&nbsp;event,
+                                  java.math.BigInteger&nbsp;weight)</pre>
+<div class="block">Add some weight around the given event. If the argument is positive, the forward weight is increased
+ accordingly, otherwise the backward weight is increased.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>event</code> - The event whose weight should be modified.</dd>
+<dd><code>weight</code> - The weight that should be added.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>This builder instance.</dd>
+</dl>
+</li>
+</ul>
+<a name="addWeightOn-int-java.math.BigInteger-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addWeightOn</h4>
+<pre>public&nbsp;<a href="../../../../uniol/apt/analysis/synthesize/Region.Builder.html" title="class in uniol.apt.analysis.synthesize">Region.Builder</a>&nbsp;addWeightOn(int&nbsp;index,
+                                  java.math.BigInteger&nbsp;weight)</pre>
+<div class="block">Add some weight around the given event. If the argument is positive, the forward weight is increased
+ accordingly, otherwise the backward weight is increased.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>index</code> - The event index whose weight should be modified.</dd>
+<dd><code>weight</code> - The weight that should be added.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>This builder instance.</dd>
+</dl>
+</li>
+</ul>
 <a name="addLoopAround-java.lang.String-java.math.BigInteger-">
 <!--   -->
 </a>

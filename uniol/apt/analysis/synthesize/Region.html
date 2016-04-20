@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -156,80 +156,98 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.html#checkValidRegion--">checkValidRegion</a></span>()</code>
+<div class="block">Check if this region is indeed a valid region and throw an exception if not.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.html#equals-java.lang.Object-">equals</a></span>(java.lang.Object&nbsp;obj)</code>&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>java.math.BigInteger</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.html#evaluateParikhVector-java.util.List-">evaluateParikhVector</a></span>(java.util.List&lt;java.math.BigInteger&gt;&nbsp;vector)</code>
 <div class="block">Evaluate the given Parikh vector with respect to this region.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.html#findArcWithWrongEffect--">findArcWithWrongEffect</a></span>()</code>
+<div class="block">Check if this region allows the cycles that it must allow.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>,java.lang.String&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.html#findPreventedArc--">findPreventedArc</a></span>()</code>
+<div class="block">Check if this region prevents any arcs that it should not prevent.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.math.BigInteger</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.html#getBackwardWeight-int-">getBackwardWeight</a></span>(int&nbsp;index)</code>
 <div class="block">Return the backward weight for the given event index.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.math.BigInteger</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.html#getBackwardWeight-java.lang.String-">getBackwardWeight</a></span>(java.lang.String&nbsp;event)</code>
 <div class="block">Return the backward weight for the given event.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.math.BigInteger</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.html#getForwardWeight-int-">getForwardWeight</a></span>(int&nbsp;index)</code>
 <div class="block">Return the forward weight for the given event index.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.math.BigInteger</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.html#getForwardWeight-java.lang.String-">getForwardWeight</a></span>(java.lang.String&nbsp;event)</code>
 <div class="block">Return the forward weight for the given event.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.math.BigInteger</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.html#getInitialMarking--">getInitialMarking</a></span>()</code>
 <div class="block">Return the initial marking of this region.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.math.BigInteger</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.html#getMarkingForState-uniol.apt.adt.ts.State-">getMarkingForState</a></span>(<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;state)</code>
 <div class="block">Get the marking that a normal region based on this abstract would assign to the given state.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.html#getRegionUtility--">getRegionUtility</a></span>()</code>
 <div class="block">Return the region utility which this region uses.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.html#getTransitionSystem--">getTransitionSystem</a></span>()</code>
 <div class="block">Return the transitions system on which this region is defined.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>java.math.BigInteger</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.html#getWeight-int-">getWeight</a></span>(int&nbsp;index)</code>
 <div class="block">Return the total weight for the given event index.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>java.math.BigInteger</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.html#getWeight-java.lang.String-">getWeight</a></span>(java.lang.String&nbsp;event)</code>
 <div class="block">Return the total weight for the given event.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -425,6 +443,57 @@ extends java.lang.Object</pre>
 <dd>The resulting number.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../uniol/apt/analysis/synthesize/UnreachableException.html" title="class in uniol.apt.analysis.synthesize">UnreachableException</a></code> - if the given state is unreachable from the initial state</dd>
+</dl>
+</li>
+</ul>
+<a name="findPreventedArc--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findPreventedArc</h4>
+<pre>public&nbsp;<a href="../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>,java.lang.String&gt;&nbsp;findPreventedArc()</pre>
+<div class="block">Check if this region prevents any arcs that it should not prevent.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A pair of a state in which an enabled event is prevented by this region</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><code>checkValidRegion</code></dd>
+</dl>
+</li>
+</ul>
+<a name="findArcWithWrongEffect--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>findArcWithWrongEffect</h4>
+<pre>public&nbsp;<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&nbsp;findArcWithWrongEffect()</pre>
+<div class="block">Check if this region allows the cycles that it must allow. This function checks for all arcs if the marking
+ of the source state plus the effect of the transition is the marking of the target state.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>An arc which does not lead to the expected state.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><code>checkValidRegion</code></dd>
+</dl>
+</li>
+</ul>
+<a name="checkValidRegion--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>checkValidRegion</h4>
+<pre>public&nbsp;void&nbsp;checkValidRegion()
+                      throws <a href="../../../../uniol/apt/analysis/synthesize/InvalidRegionException.html" title="class in uniol.apt.analysis.synthesize">InvalidRegionException</a></pre>
+<div class="block">Check if this region is indeed a valid region and throw an exception if not.</div>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../uniol/apt/analysis/synthesize/InvalidRegionException.html" title="class in uniol.apt.analysis.synthesize">InvalidRegionException</a></code> - If this region is not valid.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><code>findPreventedArc</code>, 
+<code>findArcWithWrongEffect</code></dd>
 </dl>
 </li>
 </ul>

@@ -665,24 +665,30 @@
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code><a href="../../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>,java.lang.String&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">Region.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/Region.html#findPreventedArc--">findPreventedArc</a></span>()</code>
+<div class="block">Check if this region prevents any arcs that it should not prevent.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>java.util.Map&lt;java.lang.String,java.util.Set&lt;<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">SynthesizePN.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/SynthesizePN.html#getFailedEventStateSeparationProblems--">getFailedEventStateSeparationProblems</a></span>()</code>
 <div class="block">Get all the event/state separation problems which could not be solved.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>java.util.Collection&lt;java.util.Set&lt;<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">SynthesizePN.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/SynthesizePN.html#getFailedStateSeparationProblems--">getFailedStateSeparationProblems</a></span>()</code>
 <div class="block">Get all the state separation problems which could not be solved.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../uniol/apt/util/SpanningTree.html" title="class in uniol.apt.util">SpanningTree</a>&lt;<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>,<a href="../../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>,<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">RegionUtility.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/RegionUtility.html#getSpanningTree--">getSpanningTree</a></span>()</code>
 <div class="block">Get the spanning tree on which this RegionUtility operates.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>java.util.Iterator&lt;<a href="../../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>,java.lang.String&gt;&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">SynthesizePN.EventStateSeparationProblems.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/SynthesizePN.EventStateSeparationProblems.html#iterator--">iterator</a></span>()</code>&nbsp;</td>
 </tr>
@@ -736,6 +742,20 @@
 <td class="colFirst"><code>static java.util.Set&lt;java.lang.String&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">AbstractSynthesizeModule.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.html#getStateIDs-java.util.Set-">getStateIDs</a></span>(java.util.Set&lt;<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;&nbsp;states)</code>
 <div class="block">Get the IDs of a set of states.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructors in <a href="../../../../../uniol/apt/analysis/synthesize/package-summary.html">uniol.apt.analysis.synthesize</a> with parameters of type <a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/InvalidRegionException.html#InvalidRegionException-uniol.apt.adt.ts.State-java.lang.String-">InvalidRegionException</a></span>(<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;state,
+                      java.lang.String&nbsp;event)</code>
+<div class="block">Constructor creates an InvalidRegionException because the region prevents the given event in the given state.</div>
 </td>
 </tr>
 </tbody>

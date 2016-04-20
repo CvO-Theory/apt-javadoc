@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":10,"i5":6,"i6":10,"i7":6,"i8":10};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":10,"i5":6,"i6":10,"i7":6,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.Options.html" title="class in uniol.apt.analysis.synthesize"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.ConfigureSynthesizePNBuilder.html" title="interface in uniol.apt.analysis.synthesize"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?uniol/apt/analysis/synthesize/AbstractSynthesizeModule.html" target="_top">Frames</a></li>
@@ -149,12 +149,16 @@ implements <a href="../../../../uniol/apt/module/Module.html" title="interface i
 <th class="colLast" scope="col">Class and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><code>protected static interface&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.ConfigureSynthesizePNBuilder.html" title="interface in uniol.apt.analysis.synthesize">AbstractSynthesizeModule.ConfigureSynthesizePNBuilder</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.Options.html" title="class in uniol.apt.analysis.synthesize">AbstractSynthesizeModule.Options</a></span></code>
 <div class="block">Instances of this class hold options that can be specified for synthesis.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>protected static interface&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.TransitionSystemForOptions.html" title="interface in uniol.apt.analysis.synthesize">AbstractSynthesizeModule.TransitionSystemForOptions</a></span></code>&nbsp;</td>
 </tr>
@@ -239,6 +243,13 @@ implements <a href="../../../../uniol/apt/module/Module.html" title="interface i
 </td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.html#runSynthesis-uniol.apt.analysis.synthesize.AbstractSynthesizeModule.TransitionSystemForOptions-uniol.apt.analysis.synthesize.AbstractSynthesizeModule.ConfigureSynthesizePNBuilder-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">runSynthesis</a></span>(<a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.TransitionSystemForOptions.html" title="interface in uniol.apt.analysis.synthesize">AbstractSynthesizeModule.TransitionSystemForOptions</a>&nbsp;tsForOpts,
+            <a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.ConfigureSynthesizePNBuilder.html" title="interface in uniol.apt.analysis.synthesize">AbstractSynthesizeModule.ConfigureSynthesizePNBuilder</a>&nbsp;configure,
+            <a href="../../../../uniol/apt/module/ModuleInput.html" title="interface in uniol.apt.module">ModuleInput</a>&nbsp;input,
+            <a href="../../../../uniol/apt/module/ModuleOutput.html" title="interface in uniol.apt.module">ModuleOutput</a>&nbsp;output)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.html#runSynthesis-uniol.apt.analysis.synthesize.AbstractSynthesizeModule.TransitionSystemForOptions-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">runSynthesis</a></span>(<a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.TransitionSystemForOptions.html" title="interface in uniol.apt.analysis.synthesize">AbstractSynthesizeModule.TransitionSystemForOptions</a>&nbsp;tsForOpts,
             <a href="../../../../uniol/apt/module/ModuleInput.html" title="interface in uniol.apt.module">ModuleInput</a>&nbsp;input,
@@ -389,6 +400,23 @@ implements <a href="../../../../uniol/apt/module/Module.html" title="interface i
 </dl>
 </li>
 </ul>
+<a name="runSynthesis-uniol.apt.analysis.synthesize.AbstractSynthesizeModule.TransitionSystemForOptions-uniol.apt.analysis.synthesize.AbstractSynthesizeModule.ConfigureSynthesizePNBuilder-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>runSynthesis</h4>
+<pre>public&nbsp;<a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN</a>&nbsp;runSynthesis(<a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.TransitionSystemForOptions.html" title="interface in uniol.apt.analysis.synthesize">AbstractSynthesizeModule.TransitionSystemForOptions</a>&nbsp;tsForOpts,
+                                 <a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.ConfigureSynthesizePNBuilder.html" title="interface in uniol.apt.analysis.synthesize">AbstractSynthesizeModule.ConfigureSynthesizePNBuilder</a>&nbsp;configure,
+                                 <a href="../../../../uniol/apt/module/ModuleInput.html" title="interface in uniol.apt.module">ModuleInput</a>&nbsp;input,
+                                 <a href="../../../../uniol/apt/module/ModuleOutput.html" title="interface in uniol.apt.module">ModuleOutput</a>&nbsp;output)
+                          throws <a href="../../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></pre>
+<dl>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></code></dd>
+</dl>
+</li>
+</ul>
 <a name="getCategories--">
 <!--   -->
 </a>
@@ -474,7 +502,7 @@ implements <a href="../../../../uniol/apt/module/Module.html" title="interface i
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.Options.html" title="class in uniol.apt.analysis.synthesize"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.ConfigureSynthesizePNBuilder.html" title="interface in uniol.apt.analysis.synthesize"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?uniol/apt/analysis/synthesize/AbstractSynthesizeModule.html" target="_top">Frames</a></li>

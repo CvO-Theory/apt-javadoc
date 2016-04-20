@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":9,"i5":9,"i6":10,"i7":10,"i8":10,"i9":10};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -76,13 +76,13 @@ var activeTableTab = "activeTableTab";
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -115,38 +115,14 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public static class <span class="typeNameLabel">SynthesizePN.Builder</span>
 extends java.lang.Object</pre>
-<div class="block">Builder class for creating instances of SynthesizePN. You create an instance of this class, give it all the
- state that you want and then use one of the <a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#buildForIsomorphicBehavior--"><code>buildForIsomorphicBehavior()</code></a> and <a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#buildForLanguageEquivalence--"><code>buildForLanguageEquivalence()</code></a> methods to create a SynthesizePN instance.</div>
+<div class="block">Builder class for creating instances of SynthesizePN. You create an instance of this class via <code>createForIsomorphicBehaviour</code> or <code>createForLanguageEquivalence</code>, give it all the state that you want
+ and then use one of the <a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#build--"><code>build()</code></a> method to create a SynthesizePN instance.</div>
 </li>
 </ul>
 </div>
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- ======== CONSTRUCTOR SUMMARY ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="constructor.summary">
-<!--   -->
-</a>
-<h3>Constructor Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
-<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colOne" scope="col">Constructor and Description</th>
-</tr>
-<tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#Builder-uniol.apt.analysis.synthesize.RegionUtility-">Builder</a></span>(<a href="../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility)</code>
-<div class="block">Create a builder that targets the given RegionUtility.</div>
-</td>
-</tr>
-<tr class="rowColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#Builder-uniol.apt.adt.ts.TransitionSystem-">Builder</a></span>(<a href="../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</code>
-<div class="block">Create a builder that targets the given TransitionSystem.</div>
-</td>
-</tr>
-</table>
-</li>
-</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -154,36 +130,68 @@ extends java.lang.Object</pre>
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#buildForIsomorphicBehavior--">buildForIsomorphicBehavior</a></span>()</code>
-<div class="block">Create a SynthesizePN instance that synthesizes the given state up to isomorphism.</div>
+<td class="colFirst"><code><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#addRegion-uniol.apt.analysis.synthesize.Region-">addRegion</a></span>(<a href="../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a>&nbsp;r)</code>
+<div class="block">Add an already-known region to this builder.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#buildForLanguageEquivalence--">buildForLanguageEquivalence</a></span>()</code>
-<div class="block">Create a SynthesizePN instance that synthesizes the given state up to language equivalence.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#build--">build</a></span>()</code>
+<div class="block">Create a SynthesizePN instance for the current configuration of this builder.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>static <a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#createForIsomorphicBehaviour-uniol.apt.analysis.synthesize.RegionUtility-">createForIsomorphicBehaviour</a></span>(<a href="../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility)</code>
+<div class="block">Create a builder that targets the given RegionUtility and will synthesize up to isomorphic behaviour.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#createForIsomorphicBehaviour-uniol.apt.adt.ts.TransitionSystem-">createForIsomorphicBehaviour</a></span>(<a href="../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</code>
+<div class="block">Create a builder that targets the given TransitionSystem and will synthesize up to isomorphic
+ behaviour.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>static <a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#createForLanguageEquivalence-uniol.apt.analysis.synthesize.RegionUtility-">createForLanguageEquivalence</a></span>(<a href="../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility)</code>
+<div class="block">Create a builder that targets the given RegionUtility and will synthesize up to language equivalence.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#createForLanguageEquivalence-uniol.apt.adt.ts.TransitionSystem-">createForLanguageEquivalence</a></span>(<a href="../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</code>
+<div class="block">Create a builder that targets the given TransitionSystem and will synthesize up to language
+ equivalence.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/analysis/synthesize/PNProperties.html" title="class in uniol.apt.analysis.synthesize">PNProperties</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#getProperties--">getProperties</a></span>()</code>
 <div class="block">Get the required properties for the synthesized Petri net.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code><a href="../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#getRegionUtility--">getRegionUtility</a></span>()</code>
+<div class="block">Get the region utility that will be used for Petri net synthesis.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#setProperties-uniol.apt.analysis.synthesize.PNProperties-">setProperties</a></span>(<a href="../../../../uniol/apt/analysis/synthesize/PNProperties.html" title="class in uniol.apt.analysis.synthesize">PNProperties</a>&nbsp;props)</code>
 <div class="block">Set required properties for the synthesized Petri net.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#setQuickFail-boolean-">setQuickFail</a></span>(boolean&nbsp;qf)</code>
 <div class="block">Set the quick fail mode for the SynthesizePN instance.</div>
@@ -205,48 +213,84 @@ extends java.lang.Object</pre>
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
-<!-- ========= CONSTRUCTOR DETAIL ======== -->
-<ul class="blockList">
-<li class="blockList"><a name="constructor.detail">
-<!--   -->
-</a>
-<h3>Constructor Detail</h3>
-<a name="Builder-uniol.apt.analysis.synthesize.RegionUtility-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>Builder</h4>
-<pre>public&nbsp;Builder(<a href="../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility)</pre>
-<div class="block">Create a builder that targets the given RegionUtility.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>utility</code> - The region utility whose transition system should be synthesized.</dd>
-</dl>
-</li>
-</ul>
-<a name="Builder-uniol.apt.adt.ts.TransitionSystem-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>Builder</h4>
-<pre>public&nbsp;Builder(<a href="../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</pre>
-<div class="block">Create a builder that targets the given TransitionSystem.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>ts</code> - The transition system that should be synthesized.</dd>
-</dl>
-</li>
-</ul>
-</li>
-</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="createForIsomorphicBehaviour-uniol.apt.analysis.synthesize.RegionUtility-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createForIsomorphicBehaviour</h4>
+<pre>public static&nbsp;<a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a>&nbsp;createForIsomorphicBehaviour(<a href="../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility)</pre>
+<div class="block">Create a builder that targets the given RegionUtility and will synthesize up to isomorphic behaviour.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>utility</code> - The region utility whose transition system should be synthesized.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A new builder instance</dd>
+</dl>
+</li>
+</ul>
+<a name="createForIsomorphicBehaviour-uniol.apt.adt.ts.TransitionSystem-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createForIsomorphicBehaviour</h4>
+<pre>public static&nbsp;<a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a>&nbsp;createForIsomorphicBehaviour(<a href="../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</pre>
+<div class="block">Create a builder that targets the given TransitionSystem and will synthesize up to isomorphic
+ behaviour.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ts</code> - The transition system that should be synthesized.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A new builder instance</dd>
+</dl>
+</li>
+</ul>
+<a name="createForLanguageEquivalence-uniol.apt.analysis.synthesize.RegionUtility-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createForLanguageEquivalence</h4>
+<pre>public static&nbsp;<a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a>&nbsp;createForLanguageEquivalence(<a href="../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility)</pre>
+<div class="block">Create a builder that targets the given RegionUtility and will synthesize up to language equivalence.
+ The transition system that the region utility targets must already be a limited unfolding!</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>utility</code> - The region utility whose transition system should be synthesized.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A new builder instance</dd>
+</dl>
+</li>
+</ul>
+<a name="createForLanguageEquivalence-uniol.apt.adt.ts.TransitionSystem-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createForLanguageEquivalence</h4>
+<pre>public static&nbsp;<a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a>&nbsp;createForLanguageEquivalence(<a href="../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)
+                                                         throws <a href="../../../../uniol/apt/analysis/exception/NonDeterministicException.html" title="class in uniol.apt.analysis.exception">NonDeterministicException</a></pre>
+<div class="block">Create a builder that targets the given TransitionSystem and will synthesize up to language
+ equivalence.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ts</code> - The transition system that should be synthesized.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A new builder instance</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../uniol/apt/analysis/exception/NonDeterministicException.html" title="class in uniol.apt.analysis.exception">NonDeterministicException</a></code> - if the transition system is non-deterministic</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../uniol/apt/analysis/synthesize/LimitedUnfolding.html#calculateLimitedUnfolding-uniol.apt.adt.ts.TransitionSystem-"><code>LimitedUnfolding.calculateLimitedUnfolding(uniol.apt.adt.ts.TransitionSystem)</code></a></dd>
+</dl>
+</li>
+</ul>
 <a name="setProperties-uniol.apt.analysis.synthesize.PNProperties-">
 <!--   -->
 </a>
@@ -278,6 +322,20 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
+<a name="getRegionUtility--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRegionUtility</h4>
+<pre>public&nbsp;<a href="../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;getRegionUtility()</pre>
+<div class="block">Get the region utility that will be used for Petri net synthesis.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The region utility.</dd>
+</dl>
+</li>
+</ul>
 <a name="setQuickFail-boolean-">
 <!--   -->
 </a>
@@ -298,40 +356,39 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a name="buildForLanguageEquivalence--">
+<a name="addRegion-uniol.apt.analysis.synthesize.Region-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>buildForLanguageEquivalence</h4>
-<pre>public&nbsp;<a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN</a>&nbsp;buildForLanguageEquivalence()
-                                         throws <a href="../../../../uniol/apt/analysis/synthesize/MissingLocationException.html" title="class in uniol.apt.analysis.synthesize">MissingLocationException</a>,
-                                                <a href="../../../../uniol/apt/analysis/exception/NonDeterministicException.html" title="class in uniol.apt.analysis.exception">NonDeterministicException</a></pre>
-<div class="block">Create a SynthesizePN instance that synthesizes the given state up to language equivalence.</div>
+<h4>addRegion</h4>
+<pre>public&nbsp;<a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a>&nbsp;addRegion(<a href="../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a>&nbsp;r)
+                               throws <a href="../../../../uniol/apt/analysis/synthesize/InvalidRegionException.html" title="class in uniol.apt.analysis.synthesize">InvalidRegionException</a></pre>
+<div class="block">Add an already-known region to this builder. If some regions are already known, adding them can speed
+ up the Petri net synthesis.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>r</code> - The region that should be added.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A synthesizePN instance that synthesizes the input up to language equivalence.</dd>
+<dd>this</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../../uniol/apt/analysis/synthesize/MissingLocationException.html" title="class in uniol.apt.analysis.synthesize">MissingLocationException</a></code> - if the transition system for the utility has locations for only some
- events</dd>
-<dd><code><a href="../../../../uniol/apt/analysis/exception/NonDeterministicException.html" title="class in uniol.apt.analysis.exception">NonDeterministicException</a></code> - if the transition system is non-deterministic</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../uniol/apt/analysis/synthesize/LimitedUnfolding.html#calculateLimitedUnfolding-uniol.apt.adt.ts.TransitionSystem-"><code>LimitedUnfolding.calculateLimitedUnfolding(uniol.apt.adt.ts.TransitionSystem)</code></a></dd>
+<dd><code>java.lang.IllegalArgumentException</code> - If the given region belongs to a different RegionUtility</dd>
+<dd><code><a href="../../../../uniol/apt/analysis/synthesize/InvalidRegionException.html" title="class in uniol.apt.analysis.synthesize">InvalidRegionException</a></code> - If the given region is not valid</dd>
 </dl>
 </li>
 </ul>
-<a name="buildForIsomorphicBehavior--">
+<a name="build--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>buildForIsomorphicBehavior</h4>
-<pre>public&nbsp;<a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN</a>&nbsp;buildForIsomorphicBehavior()
-                                        throws <a href="../../../../uniol/apt/analysis/synthesize/MissingLocationException.html" title="class in uniol.apt.analysis.synthesize">MissingLocationException</a></pre>
-<div class="block">Create a SynthesizePN instance that synthesizes the given state up to isomorphism.</div>
+<h4>build</h4>
+<pre>public&nbsp;<a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN</a>&nbsp;build()
+                   throws <a href="../../../../uniol/apt/analysis/synthesize/MissingLocationException.html" title="class in uniol.apt.analysis.synthesize">MissingLocationException</a></pre>
+<div class="block">Create a SynthesizePN instance for the current configuration of this builder.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A SynthesizePN instance that synthesizes the input up to isomorphism.</dd>
+<dd>A SynthesizePN instance that synthesize the input as configured in this builder.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../uniol/apt/analysis/synthesize/MissingLocationException.html" title="class in uniol.apt.analysis.synthesize">MissingLocationException</a></code> - if the transition system for the utility has locations for only some
  events</dd>
@@ -393,13 +450,13 @@ extends java.lang.Object</pre>
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
+<li>Constr&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>

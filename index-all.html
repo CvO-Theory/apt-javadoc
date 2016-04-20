@@ -213,6 +213,8 @@
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/AbstractSynthesizeModule.html#AbstractSynthesizeModule--">AbstractSynthesizeModule()</a></span> - Constructor for class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/AbstractSynthesizeModule.html" title="class in uniol.apt.analysis.synthesize">AbstractSynthesizeModule</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="uniol/apt/analysis/synthesize/AbstractSynthesizeModule.ConfigureSynthesizePNBuilder.html" title="interface in uniol.apt.analysis.synthesize"><span class="typeNameLink">AbstractSynthesizeModule.ConfigureSynthesizePNBuilder</span></a> - Interface in <a href="uniol/apt/analysis/synthesize/package-summary.html">uniol.apt.analysis.synthesize</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="uniol/apt/analysis/synthesize/AbstractSynthesizeModule.Options.html" title="class in uniol.apt.analysis.synthesize"><span class="typeNameLink">AbstractSynthesizeModule.Options</span></a> - Class in <a href="uniol/apt/analysis/synthesize/package-summary.html">uniol.apt.analysis.synthesize</a></dt>
 <dd>
 <div class="block">Instances of this class hold options that can be specified for synthesis.</div>
@@ -349,6 +351,10 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/generator/philnet/TristatePhilNetGenerator.html#addPhilPT-uniol.apt.adt.pn.PetriNet-int-">addPhilPT(PetriNet, int)</a></span> - Method in class uniol.apt.generator.philnet.<a href="uniol/apt/generator/philnet/TristatePhilNetGenerator.html" title="class in uniol.apt.generator.philnet">TristatePhilNetGenerator</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#addRegion-uniol.apt.analysis.synthesize.Region-">addRegion(Region)</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a></dt>
+<dd>
+<div class="block">Add an already-known region to this builder.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/Region.Builder.html#addRegionWithFactor-uniol.apt.analysis.synthesize.Region-java.math.BigInteger-">addRegionWithFactor(Region, BigInteger)</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/Region.Builder.html" title="class in uniol.apt.analysis.synthesize">Region.Builder</a></dt>
 <dd>
 <div class="block">Add the weights of a region with some factor applied to our current state.</div>
@@ -417,6 +423,14 @@
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/ReturnValuesTransformerImpl.html#addTransformation-java.lang.Class-uniol.apt.ui.ReturnValueTransformation-">addTransformation(Class&lt;T&gt;, ReturnValueTransformation&lt;T&gt;)</a></span> - Method in class uniol.apt.ui.impl.<a href="uniol/apt/ui/impl/ReturnValuesTransformerImpl.html" title="class in uniol.apt.ui.impl">ReturnValuesTransformerImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/Region.Builder.html#addWeightOn-java.lang.String-java.math.BigInteger-">addWeightOn(String, BigInteger)</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/Region.Builder.html" title="class in uniol.apt.analysis.synthesize">Region.Builder</a></dt>
+<dd>
+<div class="block">Add some weight around the given event.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/Region.Builder.html#addWeightOn-int-java.math.BigInteger-">addWeightOn(int, BigInteger)</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/Region.Builder.html" title="class in uniol.apt.analysis.synthesize">Region.Builder</a></dt>
+<dd>
+<div class="block">Add some weight around the given event.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/compiler/AbstractServiceProcessor.html#allowGenerics">allowGenerics</a></span> - Variable in class uniol.apt.compiler.<a href="uniol/apt/compiler/AbstractServiceProcessor.html" title="class in uniol.apt.compiler">AbstractServiceProcessor</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="uniol/apt/analysis/cycles/lts/AllSmallCyclesHavePVOne.html" title="class in uniol.apt.analysis.cycles.lts"><span class="typeNameLink">AllSmallCyclesHavePVOne</span></a> - Class in <a href="uniol/apt/analysis/cycles/lts/package-summary.html">uniol.apt.analysis.cycles.lts</a></dt>
@@ -818,6 +832,10 @@
 <dd>
 <div class="block">Construct a new BoundedResult instance.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#build--">build()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a></dt>
+<dd>
+<div class="block">Create a SynthesizePN instance for the current configuration of this builder.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/Region.Builder.html#Builder-uniol.apt.analysis.synthesize.RegionUtility-java.util.List-java.util.List-">Builder(RegionUtility, List&lt;BigInteger&gt;, List&lt;BigInteger&gt;)</a></span> - Constructor for class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/Region.Builder.html" title="class in uniol.apt.analysis.synthesize">Region.Builder</a></dt>
 <dd>
 <div class="block">Create a builder for the region with the given weights.</div>
@@ -829,22 +847,6 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/Region.Builder.html#Builder-uniol.apt.analysis.synthesize.Region-">Builder(Region)</a></span> - Constructor for class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/Region.Builder.html" title="class in uniol.apt.analysis.synthesize">Region.Builder</a></dt>
 <dd>
 <div class="block">Create a builder and initialize the weights from the given region.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#Builder-uniol.apt.analysis.synthesize.RegionUtility-">Builder(RegionUtility)</a></span> - Constructor for class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a></dt>
-<dd>
-<div class="block">Create a builder that targets the given RegionUtility.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#Builder-uniol.apt.adt.ts.TransitionSystem-">Builder(TransitionSystem)</a></span> - Constructor for class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a></dt>
-<dd>
-<div class="block">Create a builder that targets the given TransitionSystem.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#buildForIsomorphicBehavior--">buildForIsomorphicBehavior()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a></dt>
-<dd>
-<div class="block">Create a SynthesizePN instance that synthesizes the given state up to isomorphism.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#buildForLanguageEquivalence--">buildForLanguageEquivalence()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a></dt>
-<dd>
-<div class="block">Create a SynthesizePN instance that synthesizes the given state up to language equivalence.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/lts/extension/ExtendTransitionSystem.html#buildLTS-java.util.BitSet-">buildLTS(BitSet)</a></span> - Method in class uniol.apt.analysis.lts.extension.<a href="uniol/apt/analysis/lts/extension/ExtendTransitionSystem.html" title="class in uniol.apt.analysis.lts.extension">ExtendTransitionSystem</a></dt>
 <dd>&nbsp;</dd>
@@ -1169,6 +1171,10 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/live/WeaklyLiveModule.html#checkTransitionLiveness-uniol.apt.module.ModuleOutput-uniol.apt.adt.pn.PetriNet-uniol.apt.adt.pn.Transition-">checkTransitionLiveness(ModuleOutput, PetriNet, Transition)</a></span> - Method in class uniol.apt.analysis.live.<a href="uniol/apt/analysis/live/WeaklyLiveModule.html" title="class in uniol.apt.analysis.live">WeaklyLiveModule</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/Region.html#checkValidRegion--">checkValidRegion()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a></dt>
+<dd>
+<div class="block">Check if this region is indeed a valid region and throw an exception if not.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/live/Live.html#checkWeaklyLive-uniol.apt.adt.pn.PetriNet-uniol.apt.adt.pn.Transition-">checkWeaklyLive(PetriNet, Transition)</a></span> - Static method in class uniol.apt.analysis.live.<a href="uniol/apt/analysis/live/Live.html" title="class in uniol.apt.analysis.live">Live</a></dt>
 <dd>
 <div class="block">Check if the given transition is weakly live.</div>
@@ -1338,6 +1344,8 @@
 <div class="block">This module tests if a Petri net is concurrency-preserving.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/conpres/ConcurrencyPreservingModule.html#ConcurrencyPreservingModule--">ConcurrencyPreservingModule()</a></span> - Constructor for class uniol.apt.analysis.conpres.<a href="uniol/apt/analysis/conpres/ConcurrencyPreservingModule.html" title="class in uniol.apt.analysis.conpres">ConcurrencyPreservingModule</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/AbstractSynthesizeModule.ConfigureSynthesizePNBuilder.html#configureSynthesizePNBuilder-uniol.apt.analysis.synthesize.SynthesizePN.Builder-">configureSynthesizePNBuilder(SynthesizePN.Builder)</a></span> - Method in interface uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/AbstractSynthesizeModule.ConfigureSynthesizePNBuilder.html" title="interface in uniol.apt.analysis.synthesize">AbstractSynthesizeModule.ConfigureSynthesizePNBuilder</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="uniol/apt/analysis/cf/ConflictFree.html" title="class in uniol.apt.analysis.cf"><span class="typeNameLink">ConflictFree</span></a> - Class in <a href="uniol/apt/analysis/cf/package-summary.html">uniol.apt.analysis.cf</a></dt>
 <dd>
@@ -1510,6 +1518,24 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/adt/pn/PetriNet.html#createFlow-uniol.apt.adt.pn.Flow-">createFlow(Flow)</a></span> - Method in class uniol.apt.adt.pn.<a href="uniol/apt/adt/pn/PetriNet.html" title="class in uniol.apt.adt.pn">PetriNet</a></dt>
 <dd>
 <div class="block">Creates a new flow in this petri net by copying the values from an existing arc.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#createForIsomorphicBehaviour-uniol.apt.analysis.synthesize.RegionUtility-">createForIsomorphicBehaviour(RegionUtility)</a></span> - Static method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a></dt>
+<dd>
+<div class="block">Create a builder that targets the given RegionUtility and will synthesize up to isomorphic behaviour.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#createForIsomorphicBehaviour-uniol.apt.adt.ts.TransitionSystem-">createForIsomorphicBehaviour(TransitionSystem)</a></span> - Static method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a></dt>
+<dd>
+<div class="block">Create a builder that targets the given TransitionSystem and will synthesize up to isomorphic
+ behaviour.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#createForLanguageEquivalence-uniol.apt.analysis.synthesize.RegionUtility-">createForLanguageEquivalence(RegionUtility)</a></span> - Static method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a></dt>
+<dd>
+<div class="block">Create a builder that targets the given RegionUtility and will synthesize up to language equivalence.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#createForLanguageEquivalence-uniol.apt.adt.ts.TransitionSystem-">createForLanguageEquivalence(TransitionSystem)</a></span> - Static method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a></dt>
+<dd>
+<div class="block">Create a builder that targets the given TransitionSystem and will synthesize up to language
+ equivalence.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/adt/pn/PetriNet.html#createPlace-java.lang.String-">createPlace(String)</a></span> - Method in class uniol.apt.adt.pn.<a href="uniol/apt/adt/pn/PetriNet.html" title="class in uniol.apt.adt.pn">PetriNet</a></dt>
 <dd>
@@ -4140,6 +4166,10 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/AptPNFormatParser.FinalMarkingsContext.html#FinalMarkingsContext-org.antlr.v4.runtime.ParserRuleContext-int-">FinalMarkingsContext(ParserRuleContext, int)</a></span> - Constructor for class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/AptPNFormatParser.FinalMarkingsContext.html" title="class in uniol.apt.io.parser.impl">AptPNFormatParser.FinalMarkingsContext</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/Region.html#findArcWithWrongEffect--">findArcWithWrongEffect()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a></dt>
+<dd>
+<div class="block">Check if this region allows the cycles that it must allow.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/util/equations/EquationSystem.html#findBasis--">findBasis()</a></span> - Method in class uniol.apt.util.equations.<a href="uniol/apt/util/equations/EquationSystem.html" title="class in uniol.apt.util.equations">EquationSystem</a></dt>
 <dd>
 <div class="block">Calculate a basis of the equation system.</div>
@@ -4206,6 +4236,10 @@
 <dd>
 <div class="block">Find a word whose prefixes (including the word) conform to a given predicate and which itself also conforms
  to a second predicate.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/Region.html#findPreventedArc--">findPreventedArc()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a></dt>
+<dd>
+<div class="block">Check if this region prevents any arcs that it should not prevent.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/util/equations/InequalitySystemSolver.html#findSolution--">findSolution()</a></span> - Method in class uniol.apt.util.equations.<a href="uniol/apt/util/equations/InequalitySystemSolver.html" title="class in uniol.apt.util.equations">InequalitySystemSolver</a></dt>
 <dd>
@@ -5335,6 +5369,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/LimitedUnfoldingModule.html#getLongDescription--">getLongDescription()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/LimitedUnfoldingModule.html" title="class in uniol.apt.analysis.synthesize">LimitedUnfoldingModule</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizeExtendModule.html#getLongDescription--">getLongDescription()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizeExtendModule.html" title="class in uniol.apt.analysis.synthesize">SynthesizeExtendModule</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizeModule.html#getLongDescription--">getLongDescription()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizeModule.html" title="class in uniol.apt.analysis.synthesize">SynthesizeModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizeWordModule.html#getLongDescription--">getLongDescription()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizeWordModule.html" title="class in uniol.apt.analysis.synthesize">SynthesizeWordModule</a></dt>
@@ -5600,6 +5636,8 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/FindWordsModule.html#getName--">getName()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/FindWordsModule.html" title="class in uniol.apt.analysis.synthesize">FindWordsModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/LimitedUnfoldingModule.html#getName--">getName()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/LimitedUnfoldingModule.html" title="class in uniol.apt.analysis.synthesize">LimitedUnfoldingModule</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizeExtendModule.html#getName--">getName()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizeExtendModule.html" title="class in uniol.apt.analysis.synthesize">SynthesizeExtendModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizeModule.html#getName--">getName()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizeModule.html" title="class in uniol.apt.analysis.synthesize">SynthesizeModule</a></dt>
 <dd>&nbsp;</dd>
@@ -6095,6 +6133,10 @@
 <dd>
 <div class="block">Return the region utility which this region uses.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#getRegionUtility--">getRegionUtility()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a></dt>
+<dd>
+<div class="block">Get the region utility that will be used for Petri net synthesis.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/renderer/AbstractRenderers.html#getRenderer-java.lang.String-">getRenderer(String)</a></span> - Method in class uniol.apt.io.renderer.<a href="uniol/apt/io/renderer/AbstractRenderers.html" title="class in uniol.apt.io.renderer">AbstractRenderers</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/renderer/Renderers.html#getRenderer-java.lang.String-">getRenderer(String)</a></span> - Method in interface uniol.apt.io.renderer.<a href="uniol/apt/io/renderer/Renderers.html" title="interface in uniol.apt.io.renderer">Renderers</a></dt>
@@ -6530,6 +6572,8 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/FindWordsModule.html#getShortDescription--">getShortDescription()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/FindWordsModule.html" title="class in uniol.apt.analysis.synthesize">FindWordsModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/LimitedUnfoldingModule.html#getShortDescription--">getShortDescription()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/LimitedUnfoldingModule.html" title="class in uniol.apt.analysis.synthesize">LimitedUnfoldingModule</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizeExtendModule.html#getShortDescription--">getShortDescription()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizeExtendModule.html" title="class in uniol.apt.analysis.synthesize">SynthesizeExtendModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizeModule.html#getShortDescription--">getShortDescription()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizeModule.html" title="class in uniol.apt.analysis.synthesize">SynthesizeModule</a></dt>
 <dd>&nbsp;</dd>
@@ -7475,6 +7519,16 @@
 <dd>
 <div class="block">Get a finite automaton accepting the intersection of the languages of two automatons.</div>
 </dd>
+<dt><a href="uniol/apt/analysis/synthesize/InvalidRegionException.html" title="class in uniol.apt.analysis.synthesize"><span class="typeNameLink">InvalidRegionException</span></a> - Exception in <a href="uniol/apt/analysis/synthesize/package-summary.html">uniol.apt.analysis.synthesize</a></dt>
+<dd>
+<div class="block">An InvalidRegionException is thrown when a Region turns out not to be a region.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/InvalidRegionException.html#InvalidRegionException-uniol.apt.adt.ts.State-java.lang.String-">InvalidRegionException(State, String)</a></span> - Constructor for exception uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/InvalidRegionException.html" title="class in uniol.apt.analysis.synthesize">InvalidRegionException</a></dt>
+<dd>
+<div class="block">Constructor creates an InvalidRegionException because the region prevents the given event in the given state.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/InvalidRegionException.html#InvalidRegionException-uniol.apt.adt.ts.Arc-">InvalidRegionException(Arc)</a></span> - Constructor for exception uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/InvalidRegionException.html" title="class in uniol.apt.analysis.synthesize">InvalidRegionException</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="uniol/apt/ui/impl/parameter/InvariantAlgorithmParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter"><span class="typeNameLink">InvariantAlgorithmParameterTransformation</span></a> - Class in <a href="uniol/apt/ui/impl/parameter/package-summary.html">uniol.apt.ui.impl.parameter</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/parameter/InvariantAlgorithmParameterTransformation.html#InvariantAlgorithmParameterTransformation--">InvariantAlgorithmParameterTransformation()</a></span> - Constructor for class uniol.apt.ui.impl.parameter.<a href="uniol/apt/ui/impl/parameter/InvariantAlgorithmParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">InvariantAlgorithmParameterTransformation</a></dt>
@@ -10239,6 +10293,8 @@
 <dd>
 <div class="block">Override point for specification of extra input parameters.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizeExtendModule.html#requireExtra-uniol.apt.module.ModuleInputSpec-">requireExtra(ModuleInputSpec)</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizeExtendModule.html" title="class in uniol.apt.analysis.synthesize">SynthesizeExtendModule</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizeModule.html#requireExtra-uniol.apt.module.ModuleInputSpec-">requireExtra(ModuleInputSpec)</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizeModule.html" title="class in uniol.apt.analysis.synthesize">SynthesizeModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizeWordModule.html#requireExtra-uniol.apt.module.ModuleInputSpec-">requireExtra(ModuleInputSpec)</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizeWordModule.html" title="class in uniol.apt.analysis.synthesize">SynthesizeWordModule</a></dt>
@@ -10682,6 +10738,10 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/AbstractSynthesizeModule.html#runSynthesis-uniol.apt.analysis.synthesize.AbstractSynthesizeModule.TransitionSystemForOptions-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">runSynthesis(AbstractSynthesizeModule.TransitionSystemForOptions, ModuleInput, ModuleOutput)</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/AbstractSynthesizeModule.html" title="class in uniol.apt.analysis.synthesize">AbstractSynthesizeModule</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/AbstractSynthesizeModule.html#runSynthesis-uniol.apt.analysis.synthesize.AbstractSynthesizeModule.TransitionSystemForOptions-uniol.apt.analysis.synthesize.AbstractSynthesizeModule.ConfigureSynthesizePNBuilder-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">runSynthesis(AbstractSynthesizeModule.TransitionSystemForOptions, AbstractSynthesizeModule.ConfigureSynthesizePNBuilder, ModuleInput, ModuleOutput)</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/AbstractSynthesizeModule.html" title="class in uniol.apt.analysis.synthesize">AbstractSynthesizeModule</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizeExtendModule.html#runSynthesis-uniol.apt.analysis.synthesize.AbstractSynthesizeModule.TransitionSystemForOptions-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">runSynthesis(AbstractSynthesizeModule.TransitionSystemForOptions, ModuleInput, ModuleOutput)</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizeExtendModule.html" title="class in uniol.apt.analysis.synthesize">SynthesizeExtendModule</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/renderer/impl/ThrowingErrorListener.html#runTimeError-org.stringtemplate.v4.misc.STMessage-">runTimeError(STMessage)</a></span> - Method in class uniol.apt.io.renderer.impl.<a href="uniol/apt/io/renderer/impl/ThrowingErrorListener.html" title="class in uniol.apt.io.renderer.impl">ThrowingErrorListener</a></dt>
 <dd>&nbsp;</dd>
 </dl>
@@ -10799,6 +10859,8 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/language/WordList.html#serialVersionUID">serialVersionUID</a></span> - Static variable in class uniol.apt.analysis.language.<a href="uniol/apt/analysis/language/WordList.html" title="class in uniol.apt.analysis.language">WordList</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/sideconditions/SideConditions.html#serialVersionUID">serialVersionUID</a></span> - Static variable in class uniol.apt.analysis.sideconditions.<a href="uniol/apt/analysis/sideconditions/SideConditions.html" title="class in uniol.apt.analysis.sideconditions">SideConditions</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/InvalidRegionException.html#serialVersionUID">serialVersionUID</a></span> - Static variable in exception uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/InvalidRegionException.html" title="class in uniol.apt.analysis.synthesize">InvalidRegionException</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/MissingLocationException.html#serialVersionUID">serialVersionUID</a></span> - Static variable in exception uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/MissingLocationException.html" title="class in uniol.apt.analysis.synthesize">MissingLocationException</a></dt>
 <dd>&nbsp;</dd>
@@ -11596,6 +11658,12 @@
 <div class="block">Creates with Synet to a given labeled transition system a petrinet with locations.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synet/SynthesizeDistributedLTSModule.html#SynthesizeDistributedLTSModule--">SynthesizeDistributedLTSModule()</a></span> - Constructor for class uniol.apt.analysis.synet.<a href="uniol/apt/analysis/synet/SynthesizeDistributedLTSModule.html" title="class in uniol.apt.analysis.synet">SynthesizeDistributedLTSModule</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="uniol/apt/analysis/synthesize/SynthesizeExtendModule.html" title="class in uniol.apt.analysis.synthesize"><span class="typeNameLink">SynthesizeExtendModule</span></a> - Class in <a href="uniol/apt/analysis/synthesize/package-summary.html">uniol.apt.analysis.synthesize</a></dt>
+<dd>
+<div class="block">Provide the net synthesis with some input regions as a module.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizeExtendModule.html#SynthesizeExtendModule--">SynthesizeExtendModule()</a></span> - Constructor for class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizeExtendModule.html" title="class in uniol.apt.analysis.synthesize">SynthesizeExtendModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="uniol/apt/analysis/synthesize/SynthesizeModule.html" title="class in uniol.apt.analysis.synthesize"><span class="typeNameLink">SynthesizeModule</span></a> - Class in <a href="uniol/apt/analysis/synthesize/package-summary.html">uniol.apt.analysis.synthesize</a></dt>
 <dd>
