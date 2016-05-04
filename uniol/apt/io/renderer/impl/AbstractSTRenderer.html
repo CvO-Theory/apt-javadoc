@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -153,9 +153,10 @@ extends <a href="../../../../../uniol/apt/io/renderer/impl/AbstractRenderer.html
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/renderer/impl/AbstractSTRenderer.html#AbstractSTRenderer-java.lang.String-java.lang.String-java.lang.String-">AbstractSTRenderer</a></span>(java.lang.String&nbsp;templateFile,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/renderer/impl/AbstractSTRenderer.html#AbstractSTRenderer-java.lang.String-java.lang.String-java.lang.String-java.lang.String...-">AbstractSTRenderer</a></span>(java.lang.String&nbsp;templateFile,
                   java.lang.String&nbsp;templateName,
-                  java.lang.String&nbsp;format)</code>
+                  java.lang.String&nbsp;format,
+                  java.lang.String...&nbsp;extensions)</code>
 <div class="block">Constructor</div>
 </td>
 </tr>
@@ -175,12 +176,18 @@ extends <a href="../../../../../uniol/apt/io/renderer/impl/AbstractRenderer.html
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>java.util.List&lt;java.lang.String&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/renderer/impl/AbstractSTRenderer.html#getFileExtensions--">getFileExtensions</a></span>()</code>
+<div class="block">Get a list of recommended file extensions.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/renderer/impl/AbstractSTRenderer.html#getFormat--">getFormat</a></span>()</code>
 <div class="block">Which format does this parser understand?</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/renderer/impl/AbstractSTRenderer.html#render-G-java.io.Writer-">render</a></span>(<a href="../../../../../uniol/apt/io/renderer/impl/AbstractSTRenderer.html" title="type parameter in AbstractSTRenderer">G</a>&nbsp;obj,
       java.io.Writer&nbsp;writer)</code>
@@ -216,7 +223,7 @@ extends <a href="../../../../../uniol/apt/io/renderer/impl/AbstractRenderer.html
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AbstractSTRenderer-java.lang.String-java.lang.String-java.lang.String-">
+<a name="AbstractSTRenderer-java.lang.String-java.lang.String-java.lang.String-java.lang.String...-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -224,13 +231,15 @@ extends <a href="../../../../../uniol/apt/io/renderer/impl/AbstractRenderer.html
 <h4>AbstractSTRenderer</h4>
 <pre>protected&nbsp;AbstractSTRenderer(java.lang.String&nbsp;templateFile,
                              java.lang.String&nbsp;templateName,
-                             java.lang.String&nbsp;format)</pre>
+                             java.lang.String&nbsp;format,
+                             java.lang.String...&nbsp;extensions)</pre>
 <div class="block">Constructor</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>templateFile</code> - file name of the template file</dd>
 <dd><code>templateName</code> - name of the main rule in the template file</dd>
 <dd><code>format</code> - The name of the supported file format</dd>
+<dd><code>extensions</code> - The list of recommended file extensions</dd>
 </dl>
 </li>
 </ul>
@@ -269,7 +278,7 @@ extends <a href="../../../../../uniol/apt/io/renderer/impl/AbstractRenderer.html
 <a name="getFormat--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getFormat</h4>
 <pre>public&nbsp;java.lang.String&nbsp;getFormat()</pre>
@@ -278,6 +287,21 @@ extends <a href="../../../../../uniol/apt/io/renderer/impl/AbstractRenderer.html
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>name of the supported format</dd>
+</dl>
+</li>
+</ul>
+<a name="getFileExtensions--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getFileExtensions</h4>
+<pre>public&nbsp;java.util.List&lt;java.lang.String&gt;&nbsp;getFileExtensions()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../uniol/apt/io/renderer/Renderer.html#getFileExtensions--">Renderer</a></code></span></div>
+<div class="block">Get a list of recommended file extensions. The first entry is the preferred extension.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the list of recommended file extensions</dd>
 </dl>
 </li>
 </ul>

@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -182,12 +182,18 @@ implements <a href="../../../../../uniol/apt/io/renderer/Renderer.html" title="i
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>java.util.List&lt;java.lang.String&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/renderer/impl/LoLAPNRenderer.html#getFileExtensions--">getFileExtensions</a></span>()</code>
+<div class="block">Get a list of recommended file extensions.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/renderer/impl/LoLAPNRenderer.html#getFormat--">getFormat</a></span>()</code>
 <div class="block">Which format does this parser understand?</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/renderer/impl/LoLAPNRenderer.html#render-uniol.apt.adt.pn.PetriNet-java.io.Writer-">render</a></span>(<a href="../../../../../uniol/apt/adt/pn/PetriNet.html" title="class in uniol.apt.adt.pn">PetriNet</a>&nbsp;pn,
       java.io.Writer&nbsp;writer)</code>
@@ -282,6 +288,23 @@ implements <a href="../../../../../uniol/apt/io/renderer/Renderer.html" title="i
 <dd><code><a href="../../../../../uniol/apt/io/renderer/Renderer.html#getFormat--">getFormat</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../uniol/apt/io/renderer/Renderer.html" title="interface in uniol.apt.io.renderer">Renderer</a>&lt;<a href="../../../../../uniol/apt/adt/pn/PetriNet.html" title="class in uniol.apt.adt.pn">PetriNet</a>&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>name of the supported format</dd>
+</dl>
+</li>
+</ul>
+<a name="getFileExtensions--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFileExtensions</h4>
+<pre>public&nbsp;java.util.List&lt;java.lang.String&gt;&nbsp;getFileExtensions()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../uniol/apt/io/renderer/Renderer.html#getFileExtensions--">Renderer</a></code></span></div>
+<div class="block">Get a list of recommended file extensions. The first entry is the preferred extension.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../uniol/apt/io/renderer/Renderer.html#getFileExtensions--">getFileExtensions</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../uniol/apt/io/renderer/Renderer.html" title="interface in uniol.apt.io.renderer">Renderer</a>&lt;<a href="../../../../../uniol/apt/adt/pn/PetriNet.html" title="class in uniol.apt.adt.pn">PetriNet</a>&gt;</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the list of recommended file extensions</dd>
 </dl>
 </li>
 </ul>

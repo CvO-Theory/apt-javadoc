@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -134,30 +134,36 @@ var activeTableTab = "activeTableTab";
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>java.util.List&lt;java.lang.String&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/io/parser/Parser.html#getFileExtensions--">getFileExtensions</a></span>()</code>
+<div class="block">Get a list of recommended file extensions.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/io/parser/Parser.html#getFormat--">getFormat</a></span>()</code>
 <div class="block">Which format does this parser understand?</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/io/parser/Parser.html" title="type parameter in Parser">G</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/io/parser/Parser.html#parse-java.io.InputStream-">parse</a></span>(java.io.InputStream&nbsp;input)</code>
 <div class="block">Parse an input stream into an object.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/io/parser/Parser.html" title="type parameter in Parser">G</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/io/parser/Parser.html#parseFile-java.io.File-">parseFile</a></span>(java.io.File&nbsp;file)</code>
 <div class="block">Parse an object from a file.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/io/parser/Parser.html" title="type parameter in Parser">G</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/io/parser/Parser.html#parseFile-java.lang.String-">parseFile</a></span>(java.lang.String&nbsp;filename)</code>
 <div class="block">Parse an object from a file.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/io/parser/Parser.html" title="type parameter in Parser">G</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/io/parser/Parser.html#parseString-java.lang.String-">parseString</a></span>(java.lang.String&nbsp;input)</code>
 <div class="block">Parse a string into an object.</div>
@@ -189,6 +195,20 @@ var activeTableTab = "activeTableTab";
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>name of the supported format</dd>
+</dl>
+</li>
+</ul>
+<a name="getFileExtensions--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFileExtensions</h4>
+<pre>java.util.List&lt;java.lang.String&gt;&nbsp;getFileExtensions()</pre>
+<div class="block">Get a list of recommended file extensions.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the list of recommended file extensions</dd>
 </dl>
 </li>
 </ul>
