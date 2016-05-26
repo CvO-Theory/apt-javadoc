@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../uniol/apt/adt/extension/IExtensible.html" title="interface in uniol.apt.adt.extension"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../uniol/apt/adt/extension/ExtensionProperty.html" title="enum in uniol.apt.adt.extension"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?uniol/apt/adt/extension/Extensible.html" target="_top">Frames</a></li>
@@ -165,7 +165,7 @@ implements <a href="../../../../uniol/apt/adt/extension/IExtensible.html" title=
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/extension/Extensible.html#copyExtensions-uniol.apt.adt.extension.Extensible-">copyExtensions</a></span>(<a href="../../../../uniol/apt/adt/extension/Extensible.html" title="class in uniol.apt.adt.extension">Extensible</a>&nbsp;e)</code>
-<div class="block">Copies the extentions from the given Extensible, marked as to copy, to
+<div class="block">Copies the extensions from the given Extensible, marked as to copy, to
  this extension list.</div>
 </td>
 </tr>
@@ -184,32 +184,43 @@ implements <a href="../../../../uniol/apt/adt/extension/IExtensible.html" title=
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.util.List&lt;<a href="../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.lang.String,java.lang.Object&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/extension/Extensible.html#getExtensions--">getExtensions</a></span>()</code>
-<div class="block">Calculates a list of pairs key-value of all extentions.</div>
+<div class="block">Calculates a list of pairs key-value of all extensions.</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>java.util.List&lt;<a href="../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.lang.String,java.lang.Object&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/extension/Extensible.html#getExtensionsWithoutProperty-uniol.apt.adt.extension.ExtensionProperty-">getExtensionsWithoutProperty</a></span>(<a href="../../../../uniol/apt/adt/extension/ExtensionProperty.html" title="enum in uniol.apt.adt.extension">ExtensionProperty</a>&nbsp;property)</code>
+<div class="block">Calculates a list of pairs key-value of all extensions without the given property.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>java.util.List&lt;<a href="../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.lang.String,java.lang.Object&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/extension/Extensible.html#getExtensionsWithProperty-uniol.apt.adt.extension.ExtensionProperty-">getExtensionsWithProperty</a></span>(<a href="../../../../uniol/apt/adt/extension/ExtensionProperty.html" title="enum in uniol.apt.adt.extension">ExtensionProperty</a>&nbsp;property)</code>
+<div class="block">Calculates a list of pairs key-value of all extensions with the given property.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>java.util.List&lt;<a href="../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.lang.String,java.lang.Object&gt;&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/extension/Extensible.html#getWriteToFileExtensions--">getWriteToFileExtensions</a></span>()</code>
+<div class="block">Calculates a list of pairs key-value which should be written to a file.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/extension/Extensible.html#hasExtension-java.lang.String-">hasExtension</a></span>(java.lang.String&nbsp;key)</code>
 <div class="block">Returns if this extension contains the given key.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/extension/Extensible.html#putExtension-java.lang.String-java.lang.Object-">putExtension</a></span>(java.lang.String&nbsp;key,
-            java.lang.Object&nbsp;value)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/extension/Extensible.html#putExtension-java.lang.String-java.lang.Object-uniol.apt.adt.extension.ExtensionProperty...-">putExtension</a></span>(java.lang.String&nbsp;key,
+            java.lang.Object&nbsp;value,
+            <a href="../../../../uniol/apt/adt/extension/ExtensionProperty.html" title="enum in uniol.apt.adt.extension">ExtensionProperty</a>...&nbsp;properties)</code>
 <div class="block">Saves the given value using the key as identifier with the flag to copy
  this object by coping the owner object.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/extension/Extensible.html#putExtension-java.lang.String-java.lang.Object-boolean-">putExtension</a></span>(java.lang.String&nbsp;key,
-            java.lang.Object&nbsp;value,
-            boolean&nbsp;copy)</code>
-<div class="block">Saves the given value using the key as identifier with the copy flag.</div>
-</td>
-</tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/extension/Extensible.html#removeExtension-java.lang.String-">removeExtension</a></span>(java.lang.String&nbsp;key)</code>
 <div class="block">Removes the value associated with the given key.</div>
@@ -270,26 +281,7 @@ implements <a href="../../../../uniol/apt/adt/extension/IExtensible.html" title=
 </dl>
 </li>
 </ul>
-<a name="putExtension-java.lang.String-java.lang.Object-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>putExtension</h4>
-<pre>public&nbsp;void&nbsp;putExtension(java.lang.String&nbsp;key,
-                         java.lang.Object&nbsp;value)</pre>
-<div class="block">Saves the given value using the key as identifier with the flag to copy
- this object by coping the owner object.</div>
-<dl>
-<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../uniol/apt/adt/extension/IExtensible.html#putExtension-java.lang.String-java.lang.Object-">putExtension</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../uniol/apt/adt/extension/IExtensible.html" title="interface in uniol.apt.adt.extension">IExtensible</a></code></dd>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>key</code> - An identifying key as string.</dd>
-<dd><code>value</code> - Any value.</dd>
-</dl>
-</li>
-</ul>
-<a name="putExtension-java.lang.String-java.lang.Object-boolean-">
+<a name="putExtension-java.lang.String-java.lang.Object-uniol.apt.adt.extension.ExtensionProperty...-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -297,13 +289,16 @@ implements <a href="../../../../uniol/apt/adt/extension/IExtensible.html" title=
 <h4>putExtension</h4>
 <pre>public&nbsp;void&nbsp;putExtension(java.lang.String&nbsp;key,
                          java.lang.Object&nbsp;value,
-                         boolean&nbsp;copy)</pre>
-<div class="block">Saves the given value using the key as identifier with the copy flag.</div>
+                         <a href="../../../../uniol/apt/adt/extension/ExtensionProperty.html" title="enum in uniol.apt.adt.extension">ExtensionProperty</a>...&nbsp;properties)</pre>
+<div class="block">Saves the given value using the key as identifier with the flag to copy
+ this object by coping the owner object.</div>
 <dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../uniol/apt/adt/extension/IExtensible.html#putExtension-java.lang.String-java.lang.Object-uniol.apt.adt.extension.ExtensionProperty...-">putExtension</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../uniol/apt/adt/extension/IExtensible.html" title="interface in uniol.apt.adt.extension">IExtensible</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>key</code> - An identifying key as string.</dd>
 <dd><code>value</code> - Any value.</dd>
-<dd><code>copy</code> - The flag if this object should be copied.</dd>
+<dd><code>properties</code> - Properties that this extension should have.</dd>
 </dl>
 </li>
 </ul>
@@ -350,11 +345,58 @@ implements <a href="../../../../uniol/apt/adt/extension/IExtensible.html" title=
 <li class="blockList">
 <h4>getExtensions</h4>
 <pre>public&nbsp;java.util.List&lt;<a href="../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.lang.String,java.lang.Object&gt;&gt;&nbsp;getExtensions()</pre>
-<div class="block">Calculates a list of pairs key-value of all extentions. Attention it's a
- referenzcopy!</div>
+<div class="block">Calculates a list of pairs key-value of all extensions. Attention it's a reference copy!</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A list of key-value-pairs of all extentions.</dd>
+<dd>A list of key-value-pairs of all extensions.</dd>
+</dl>
+</li>
+</ul>
+<a name="getExtensionsWithProperty-uniol.apt.adt.extension.ExtensionProperty-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExtensionsWithProperty</h4>
+<pre>public&nbsp;java.util.List&lt;<a href="../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.lang.String,java.lang.Object&gt;&gt;&nbsp;getExtensionsWithProperty(<a href="../../../../uniol/apt/adt/extension/ExtensionProperty.html" title="enum in uniol.apt.adt.extension">ExtensionProperty</a>&nbsp;property)</pre>
+<div class="block">Calculates a list of pairs key-value of all extensions with the given property. Attention it's a reference
+ copy!</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>property</code> - The property to look for</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A list of key-value-pairs of all extensions.</dd>
+</dl>
+</li>
+</ul>
+<a name="getExtensionsWithoutProperty-uniol.apt.adt.extension.ExtensionProperty-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExtensionsWithoutProperty</h4>
+<pre>public&nbsp;java.util.List&lt;<a href="../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.lang.String,java.lang.Object&gt;&gt;&nbsp;getExtensionsWithoutProperty(<a href="../../../../uniol/apt/adt/extension/ExtensionProperty.html" title="enum in uniol.apt.adt.extension">ExtensionProperty</a>&nbsp;property)</pre>
+<div class="block">Calculates a list of pairs key-value of all extensions without the given property. Attention it's a reference
+ copy!</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>property</code> - The property to look for</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A list of key-value-pairs of all extensions.</dd>
+</dl>
+</li>
+</ul>
+<a name="getWriteToFileExtensions--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getWriteToFileExtensions</h4>
+<pre>public&nbsp;java.util.List&lt;<a href="../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.lang.String,java.lang.Object&gt;&gt;&nbsp;getWriteToFileExtensions()</pre>
+<div class="block">Calculates a list of pairs key-value which should be written to a file. Attention it's a reference copy!</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A list of pair key-value-pairs which should be copied.</dd>
 </dl>
 </li>
 </ul>
@@ -365,8 +407,7 @@ implements <a href="../../../../uniol/apt/adt/extension/IExtensible.html" title=
 <li class="blockList">
 <h4>getCopyExtensions</h4>
 <pre>public&nbsp;java.util.List&lt;<a href="../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.lang.String,java.lang.Object&gt;&gt;&nbsp;getCopyExtensions()</pre>
-<div class="block">Calculates a list of pairs key-value which should be copied. Attention
- it's a referenzcopy!</div>
+<div class="block">Calculates a list of pairs key-value which should be copied. Attention it's a reference copy!</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A list of pair key-value-pairs which should be copied.</dd>
@@ -380,7 +421,7 @@ implements <a href="../../../../uniol/apt/adt/extension/IExtensible.html" title=
 <li class="blockList">
 <h4>copyExtensions</h4>
 <pre>public final&nbsp;void&nbsp;copyExtensions(<a href="../../../../uniol/apt/adt/extension/Extensible.html" title="class in uniol.apt.adt.extension">Extensible</a>&nbsp;e)</pre>
-<div class="block">Copies the extentions from the given Extensible, marked as to copy, to
+<div class="block">Copies the extensions from the given Extensible, marked as to copy, to
  this extension list. Attention it's just a reference copy!</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -417,7 +458,7 @@ implements <a href="../../../../uniol/apt/adt/extension/IExtensible.html" title=
 <div class="subNav">
 <ul class="navList">
 <li>Prev&nbsp;Class</li>
-<li><a href="../../../../uniol/apt/adt/extension/IExtensible.html" title="interface in uniol.apt.adt.extension"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../uniol/apt/adt/extension/ExtensionProperty.html" title="enum in uniol.apt.adt.extension"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?uniol/apt/adt/extension/Extensible.html" target="_top">Frames</a></li>
