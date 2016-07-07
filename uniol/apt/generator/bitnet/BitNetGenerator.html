@@ -18,12 +18,6 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
-var altColor = "altColor";
-var rowColor = "rowColor";
-var tableTab = "tableTab";
-var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -50,7 +44,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../uniol/apt/generator/bitnet/Bit.html" title="class in uniol.apt.generator.bitnet"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../uniol/apt/generator/bitnet/SimpleBitNetGenerator.html" title="class in uniol.apt.generator.bitnet"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../uniol/apt/generator/bitnet/ConnectedBitNetGenerator.html" title="class in uniol.apt.generator.bitnet"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?uniol/apt/generator/bitnet/BitNetGenerator.html" target="_top">Frames</a></li>
@@ -77,13 +71,13 @@ var activeTableTab = "activeTableTab";
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#method.summary">Method</a></li>
+<li>Method</li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">Method</a></li>
+<li>Method</li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -100,12 +94,17 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <dl>
+<dt>All Superinterfaces:</dt>
+<dd><a href="../../../../uniol/apt/generator/NetGenerator.html" title="interface in uniol.apt.generator">NetGenerator</a></dd>
+</dl>
+<dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../../uniol/apt/generator/bitnet/SimpleBitNetGenerator.html" title="class in uniol.apt.generator.bitnet">SimpleBitNetGenerator</a></dd>
+<dd><a href="../../../../uniol/apt/generator/bitnet/ConnectedBitNetGenerator.html" title="class in uniol.apt.generator.bitnet">ConnectedBitNetGenerator</a>, <a href="../../../../uniol/apt/generator/bitnet/SimpleBitNetGenerator.html" title="class in uniol.apt.generator.bitnet">SimpleBitNetGenerator</a></dd>
 </dl>
 <hr>
 <br>
-<pre>public interface <span class="typeNameLabel">BitNetGenerator</span></pre>
+<pre>public interface <span class="typeNameLabel">BitNetGenerator</span>
+extends <a href="../../../../uniol/apt/generator/NetGenerator.html" title="interface in uniol.apt.generator">NetGenerator</a></pre>
 <div class="block">Interface for generators of bit nets</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
@@ -123,48 +122,12 @@ var activeTableTab = "activeTableTab";
 <!--   -->
 </a>
 <h3>Method Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/PetriNet.html" title="class in uniol.apt.adt.pn">PetriNet</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/generator/bitnet/BitNetGenerator.html#generateNet-int-">generateNet</a></span>(int&nbsp;n)</code>
-<div class="block">Method to generate a bit net</div>
-</td>
-</tr>
-</table>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="details">
 <ul class="blockList">
-<li class="blockList">
-<!-- ============ METHOD DETAIL ========== -->
-<ul class="blockList">
-<li class="blockList"><a name="method.detail">
+<li class="blockList"><a name="methods.inherited.from.class.uniol.apt.generator.NetGenerator">
 <!--   -->
 </a>
-<h3>Method Detail</h3>
-<a name="generateNet-int-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>generateNet</h4>
-<pre><a href="../../../../uniol/apt/adt/pn/PetriNet.html" title="class in uniol.apt.adt.pn">PetriNet</a>&nbsp;generateNet(int&nbsp;n)</pre>
-<div class="block">Method to generate a bit net</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>n</code> - number of bits</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>The generated Petri net</dd>
-</dl>
-</li>
+<h3>Methods inherited from interface&nbsp;uniol.apt.generator.<a href="../../../../uniol/apt/generator/NetGenerator.html" title="interface in uniol.apt.generator">NetGenerator</a></h3>
+<code><a href="../../../../uniol/apt/generator/NetGenerator.html#generateNet-int-">generateNet</a></code></li>
 </ul>
 </li>
 </ul>
@@ -195,7 +158,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../uniol/apt/generator/bitnet/Bit.html" title="class in uniol.apt.generator.bitnet"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../uniol/apt/generator/bitnet/SimpleBitNetGenerator.html" title="class in uniol.apt.generator.bitnet"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../uniol/apt/generator/bitnet/ConnectedBitNetGenerator.html" title="class in uniol.apt.generator.bitnet"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../index.html?uniol/apt/generator/bitnet/BitNetGenerator.html" target="_top">Frames</a></li>
@@ -222,13 +185,13 @@ var activeTableTab = "activeTableTab";
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#method.summary">Method</a></li>
+<li>Method</li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">Method</a></li>
+<li>Method</li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">
