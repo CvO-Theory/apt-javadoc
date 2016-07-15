@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -163,11 +163,17 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/AllSmallCyclesHavePVOne.html#incomparableCycleFound--">incomparableCycleFound</a></span>()</code>
+<div class="block">Check if a cycle was found whose Parikh vector is incomparable to the all-ones-vector.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/AllSmallCyclesHavePVOne.html#noPV1CycleFound--">noPV1CycleFound</a></span>()</code>
 <div class="block">Check if a cycle with Parikh vector 1 was found.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/AllSmallCyclesHavePVOne.html#smallCyclesHavePVOne--">smallCyclesHavePVOne</a></span>()</code>
 <div class="block">Check if all small cycles have Parikh vector 1.</div>
@@ -246,6 +252,20 @@ extends java.lang.Object</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true if no such cycle was found.</dd>
+</dl>
+</li>
+</ul>
+<a name="incomparableCycleFound--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>incomparableCycleFound</h4>
+<pre>public&nbsp;boolean&nbsp;incomparableCycleFound()</pre>
+<div class="block">Check if a cycle was found whose Parikh vector is incomparable to the all-ones-vector.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>true if such a cycle was found.</dd>
 </dl>
 </li>
 </ul>
