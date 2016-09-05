@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":9,"i6":9,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -201,25 +201,32 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.Builder.html#copyRegionToUtility-uniol.apt.analysis.synthesize.RegionUtility-uniol.apt.analysis.synthesize.Region-">copyRegionToUtility</a></span>(<a href="../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility,
+                   <a href="../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a>&nbsp;region)</code>
+<div class="block">Create a copy of a region for a different RegionUtility.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../uniol/apt/analysis/synthesize/Region.Builder.html" title="class in uniol.apt.analysis.synthesize">Region.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.Builder.html#createPure-uniol.apt.analysis.synthesize.RegionUtility-java.util.List-">createPure</a></span>(<a href="../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility,
           java.util.List&lt;java.math.BigInteger&gt;&nbsp;vector)</code>
 <div class="block">Create a new region builder for a pure region with the given weights.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/analysis/synthesize/Region.Builder.html" title="class in uniol.apt.analysis.synthesize">Region.Builder</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.Builder.html#makePure--">makePure</a></span>()</code>
 <div class="block">Turn this builder's weight into the weight for a normal region.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.Builder.html#withInitialMarking-java.math.BigInteger-">withInitialMarking</a></span>(java.math.BigInteger&nbsp;initial)</code>
 <div class="block">Create a region from the current state of the builder and the given initial marking.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/Region.Builder.html#withNormalRegionInitialMarking--">withNormalRegionInitialMarking</a></span>()</code>
 <div class="block">Create a region from the current state of this builder and the initial marking that a normal region
@@ -450,7 +457,7 @@ extends java.lang.Object</pre>
 <a name="createPure-uniol.apt.analysis.synthesize.RegionUtility-java.util.List-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>createPure</h4>
 <pre>public static&nbsp;<a href="../../../../uniol/apt/analysis/synthesize/Region.Builder.html" title="class in uniol.apt.analysis.synthesize">Region.Builder</a>&nbsp;createPure(<a href="../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility,
@@ -462,6 +469,28 @@ extends java.lang.Object</pre>
 <dd><code>vector</code> - A vector which contains the weight for each event in the order described by utility.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A region builder containing the given weights.</dd>
+</dl>
+</li>
+</ul>
+<a name="copyRegionToUtility-uniol.apt.analysis.synthesize.RegionUtility-uniol.apt.analysis.synthesize.Region-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>copyRegionToUtility</h4>
+<pre>public static&nbsp;<a href="../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a>&nbsp;copyRegionToUtility(<a href="../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility,
+                                         <a href="../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a>&nbsp;region)</pre>
+<div class="block">Create a copy of a region for a different RegionUtility. The given utility and the utility used by
+ the given region must have the same event list!</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>utility</code> - The utility to use.</dd>
+<dd><code>region</code> - The region to copy to the given utility.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A new region with the same weights and initial token count as the given region, but refering
+ to the given region utility.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - When the event lists are different.</dd>
 </dl>
 </li>
 </ul>

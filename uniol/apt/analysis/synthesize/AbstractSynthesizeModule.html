@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":9,"i3":9,"i4":10,"i5":6,"i6":10,"i7":6,"i8":10,"i9":10};
+var methods = {"i0":10,"i1":9,"i2":9,"i3":10,"i4":6,"i5":10,"i6":6,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -201,55 +201,50 @@ implements <a href="../../../../uniol/apt/module/Module.html" title="interface i
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>protected java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.html#getOptionsDescription-java.lang.String-java.lang.String-">getOptionsDescription</a></span>(java.lang.String&nbsp;extraOptions,
-                     java.lang.String&nbsp;extraOptionsDescriptions)</code>&nbsp;</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.html#getSolvedEventStateSeparationProblems-uniol.apt.adt.ts.TransitionSystem-java.util.Collection-">getSolvedEventStateSeparationProblems</a></span>(<a href="../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
                                      java.util.Collection&lt;<a href="../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a>&gt;&nbsp;regions)</code>
 <div class="block">Get a string representation that describes for each region which Event/State Separation Problems it solves.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static java.util.Set&lt;java.lang.String&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.html#getStateIDs-java.util.Set-">getStateIDs</a></span>(java.util.Set&lt;<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;&nbsp;states)</code>
 <div class="block">Get the IDs of a set of states.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.html#provide-uniol.apt.module.ModuleOutputSpec-">provide</a></span>(<a href="../../../../uniol/apt/module/ModuleOutputSpec.html" title="interface in uniol.apt.module">ModuleOutputSpec</a>&nbsp;outputSpec)</code>
 <div class="block">Specify the return values of the module.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>protected abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.html#provideExtra-uniol.apt.module.ModuleOutputSpec-">provideExtra</a></span>(<a href="../../../../uniol/apt/module/ModuleOutputSpec.html" title="interface in uniol.apt.module">ModuleOutputSpec</a>&nbsp;outputSpec)</code>
 <div class="block">Override point for specification of extra return values.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.html#require-uniol.apt.module.ModuleInputSpec-">require</a></span>(<a href="../../../../uniol/apt/module/ModuleInputSpec.html" title="interface in uniol.apt.module">ModuleInputSpec</a>&nbsp;inputSpec)</code>
 <div class="block">Specify the parameters of the module.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>protected abstract void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.html#requireExtra-uniol.apt.module.ModuleInputSpec-">requireExtra</a></span>(<a href="../../../../uniol/apt/module/ModuleInputSpec.html" title="interface in uniol.apt.module">ModuleInputSpec</a>&nbsp;inputSpec)</code>
 <div class="block">Override point for specification of extra input parameters.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.html#runSynthesis-uniol.apt.analysis.synthesize.AbstractSynthesizeModule.TransitionSystemForOptions-uniol.apt.analysis.synthesize.AbstractSynthesizeModule.ConfigureSynthesizePNBuilder-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">runSynthesis</a></span>(<a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.TransitionSystemForOptions.html" title="interface in uniol.apt.analysis.synthesize">AbstractSynthesizeModule.TransitionSystemForOptions</a>&nbsp;tsForOpts,
             <a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.ConfigureSynthesizePNBuilder.html" title="interface in uniol.apt.analysis.synthesize">AbstractSynthesizeModule.ConfigureSynthesizePNBuilder</a>&nbsp;configure,
             <a href="../../../../uniol/apt/module/ModuleInput.html" title="interface in uniol.apt.module">ModuleInput</a>&nbsp;input,
             <a href="../../../../uniol/apt/module/ModuleOutput.html" title="interface in uniol.apt.module">ModuleOutput</a>&nbsp;output)</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/analysis/synthesize/SynthesizePN.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.html#runSynthesis-uniol.apt.analysis.synthesize.AbstractSynthesizeModule.TransitionSystemForOptions-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">runSynthesis</a></span>(<a href="../../../../uniol/apt/analysis/synthesize/AbstractSynthesizeModule.TransitionSystemForOptions.html" title="interface in uniol.apt.analysis.synthesize">AbstractSynthesizeModule.TransitionSystemForOptions</a>&nbsp;tsForOpts,
             <a href="../../../../uniol/apt/module/ModuleInput.html" title="interface in uniol.apt.module">ModuleInput</a>&nbsp;input,
@@ -308,16 +303,6 @@ implements <a href="../../../../uniol/apt/module/Module.html" title="interface i
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getOptionsDescription-java.lang.String-java.lang.String-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getOptionsDescription</h4>
-<pre>protected final&nbsp;java.lang.String&nbsp;getOptionsDescription(java.lang.String&nbsp;extraOptions,
-                                                       java.lang.String&nbsp;extraOptionsDescriptions)</pre>
-</li>
-</ul>
 <a name="requireExtra-uniol.apt.module.ModuleInputSpec-">
 <!--   -->
 </a>

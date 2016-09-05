@@ -134,25 +134,32 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Region.Builder.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/Region.Builder.html#copyRegionToUtility-uniol.apt.analysis.synthesize.RegionUtility-uniol.apt.analysis.synthesize.Region-">copyRegionToUtility</a></span>(<a href="../../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility,
+                   <a href="../../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a>&nbsp;region)</code>
+<div class="block">Create a copy of a region for a different RegionUtility.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a></code></td>
 <td class="colLast"><span class="typeNameLabel">SynthesizePN.Builder.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#createForIsomorphicBehaviour-uniol.apt.analysis.synthesize.RegionUtility-">createForIsomorphicBehaviour</a></span>(<a href="../../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility)</code>
 <div class="block">Create a builder that targets the given RegionUtility and will synthesize up to isomorphic behaviour.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN.Builder</a></code></td>
 <td class="colLast"><span class="typeNameLabel">SynthesizePN.Builder.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/SynthesizePN.Builder.html#createForLanguageEquivalence-uniol.apt.analysis.synthesize.RegionUtility-">createForLanguageEquivalence</a></span>(<a href="../../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility)</code>
 <div class="block">Create a builder that targets the given RegionUtility and will synthesize up to language equivalence.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../uniol/apt/analysis/synthesize/Region.Builder.html" title="class in uniol.apt.analysis.synthesize">Region.Builder</a></code></td>
 <td class="colLast"><span class="typeNameLabel">Region.Builder.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/Region.Builder.html#createPure-uniol.apt.analysis.synthesize.RegionUtility-java.util.List-">createPure</a></span>(<a href="../../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility,
           java.util.List&lt;java.math.BigInteger&gt;&nbsp;vector)</code>
 <div class="block">Create a new region builder for a pure region with the given weights.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><span class="typeNameLabel">SynthesizePN.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/SynthesizePN.html#isDistributedImplementation-uniol.apt.analysis.synthesize.RegionUtility-uniol.apt.analysis.synthesize.PNProperties-uniol.apt.adt.pn.PetriNet-">isDistributedImplementation</a></span>(<a href="../../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility,
                            <a href="../../../../../uniol/apt/analysis/synthesize/PNProperties.html" title="class in uniol.apt.analysis.synthesize">PNProperties</a>&nbsp;properties,
@@ -160,7 +167,7 @@
 <div class="block">Check if the PetriNet is a distributed implementation</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><span class="typeNameLabel">SynthesizePN.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/SynthesizePN.html#minimizeRegions-uniol.apt.analysis.synthesize.RegionUtility-java.util.Set-boolean-">minimizeRegions</a></span>(<a href="../../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility,
                java.util.Set&lt;<a href="../../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a>&gt;&nbsp;requiredRegions,
@@ -168,7 +175,7 @@
 <div class="block">Try to eliminate redundant regions.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../uniol/apt/adt/pn/PetriNet.html" title="class in uniol.apt.adt.pn">PetriNet</a></code></td>
 <td class="colLast"><span class="typeNameLabel">SynthesizePN.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/SynthesizePN.html#synthesizePetriNet-uniol.apt.analysis.synthesize.RegionUtility-java.util.Set-">synthesizePetriNet</a></span>(<a href="../../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility,
                   java.util.Set&lt;<a href="../../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a>&gt;&nbsp;regions)</code>
