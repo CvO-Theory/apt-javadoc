@@ -1552,7 +1552,10 @@
 <tr class="altColor">
 <td class="colFirst"><code>static java.util.List&lt;<a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">ModuleUtils.</span><code><span class="memberNameLink"><a href="../../../../uniol/apt/module/impl/ModuleUtils.html#getModulesByCategory-java.util.Collection-uniol.apt.module.Category-">getModulesByCategory</a></span>(java.util.Collection&lt;<a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>&gt;&nbsp;modules,
-                    <a href="../../../../uniol/apt/module/Category.html" title="enum in uniol.apt.module">Category</a>&nbsp;category)</code>&nbsp;</td>
+                    <a href="../../../../uniol/apt/module/Category.html" title="enum in uniol.apt.module">Category</a>&nbsp;category)</code>
+<div class="block">Returns the subset of the given module collection that is part of the
+ given category.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -1579,11 +1582,16 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static java.util.List&lt;<a href="../../../../uniol/apt/module/impl/Parameter.html" title="class in uniol.apt.module.impl">Parameter</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">ModuleUtils.</span><code><span class="memberNameLink"><a href="../../../../uniol/apt/module/impl/ModuleUtils.html#getAllParameters-uniol.apt.module.Module-">getAllParameters</a></span>(<a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>&nbsp;module)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">ModuleUtils.</span><code><span class="memberNameLink"><a href="../../../../uniol/apt/module/impl/ModuleUtils.html#getAllParameters-uniol.apt.module.Module-">getAllParameters</a></span>(<a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>&nbsp;module)</code>
+<div class="block">Returns all (required and optional) of the module's input parameters.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static java.util.List&lt;<a href="../../../../uniol/apt/module/impl/ReturnValue.html" title="class in uniol.apt.module.impl">ReturnValue</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">ModuleUtils.</span><code><span class="memberNameLink"><a href="../../../../uniol/apt/module/impl/ModuleUtils.html#getFileReturnValues-uniol.apt.module.Module-">getFileReturnValues</a></span>(<a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>&nbsp;module)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">ModuleUtils.</span><code><span class="memberNameLink"><a href="../../../../uniol/apt/module/impl/ModuleUtils.html#getFileReturnValues-uniol.apt.module.Module-">getFileReturnValues</a></span>(<a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>&nbsp;module)</code>
+<div class="block">Returns a list of return values with the file property that the
+ module will provide after execution.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../../uniol/apt/module/ModuleInputSpec.html" title="interface in uniol.apt.module">ModuleInputSpec</a></code></td>
@@ -1608,20 +1616,30 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static java.util.List&lt;<a href="../../../../uniol/apt/module/impl/OptionalParameter.html" title="class in uniol.apt.module.impl">OptionalParameter</a>&lt;?&gt;&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">ModuleUtils.</span><code><span class="memberNameLink"><a href="../../../../uniol/apt/module/impl/ModuleUtils.html#getOptionalParameters-uniol.apt.module.Module-">getOptionalParameters</a></span>(<a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>&nbsp;module)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">ModuleUtils.</span><code><span class="memberNameLink"><a href="../../../../uniol/apt/module/impl/ModuleUtils.html#getOptionalParameters-uniol.apt.module.Module-">getOptionalParameters</a></span>(<a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>&nbsp;module)</code>
+<div class="block">Returns the module's optional input parameters.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>static java.util.List&lt;<a href="../../../../uniol/apt/module/impl/Parameter.html" title="class in uniol.apt.module.impl">Parameter</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">ModuleUtils.</span><code><span class="memberNameLink"><a href="../../../../uniol/apt/module/impl/ModuleUtils.html#getParameters-uniol.apt.module.Module-">getParameters</a></span>(<a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>&nbsp;module)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">ModuleUtils.</span><code><span class="memberNameLink"><a href="../../../../uniol/apt/module/impl/ModuleUtils.html#getParameters-uniol.apt.module.Module-">getParameters</a></span>(<a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>&nbsp;module)</code>
+<div class="block">Returns the module's required input parameters.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>static java.util.List&lt;<a href="../../../../uniol/apt/module/impl/ReturnValue.html" title="class in uniol.apt.module.impl">ReturnValue</a>&gt;</code></td>
-<td class="colLast"><span class="typeNameLabel">ModuleUtils.</span><code><span class="memberNameLink"><a href="../../../../uniol/apt/module/impl/ModuleUtils.html#getReturnValues-uniol.apt.module.Module-">getReturnValues</a></span>(<a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>&nbsp;module)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">ModuleUtils.</span><code><span class="memberNameLink"><a href="../../../../uniol/apt/module/impl/ModuleUtils.html#getReturnValues-uniol.apt.module.Module-">getReturnValues</a></span>(<a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>&nbsp;module)</code>
+<div class="block">Returns a list of return values that the module will provide after
+ execution.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>java.util.List&lt;java.lang.Object&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">ModuleInvoker.</span><code><span class="memberNameLink"><a href="../../../../uniol/apt/module/impl/ModuleInvoker.html#invoke-uniol.apt.module.Module-java.lang.Object...-">invoke</a></span>(<a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>&nbsp;module,
-      java.lang.Object...&nbsp;arguments)</code>&nbsp;</td>
+      java.lang.Object...&nbsp;arguments)</code>
+<div class="block">Maps the given array of arguments to the modules required and
+ optional input parameters and then executes the module on those.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
@@ -1641,7 +1659,10 @@
 <tr class="altColor">
 <td class="colFirst"><code>static java.util.List&lt;<a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">ModuleUtils.</span><code><span class="memberNameLink"><a href="../../../../uniol/apt/module/impl/ModuleUtils.html#getModulesByCategory-java.util.Collection-uniol.apt.module.Category-">getModulesByCategory</a></span>(java.util.Collection&lt;<a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>&gt;&nbsp;modules,
-                    <a href="../../../../uniol/apt/module/Category.html" title="enum in uniol.apt.module">Category</a>&nbsp;category)</code>&nbsp;</td>
+                    <a href="../../../../uniol/apt/module/Category.html" title="enum in uniol.apt.module">Category</a>&nbsp;category)</code>
+<div class="block">Returns the subset of the given module collection that is part of the
+ given category.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -1706,7 +1727,9 @@
 <tr class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <td class="colLast"><span class="typeNameLabel">UIUtils.</span><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/UIUtils.html#getModuleUsage-uniol.apt.module.Module-uniol.apt.ui.ParametersTransformer-">getModuleUsage</a></span>(<a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>&nbsp;module,
-              <a href="../../../../uniol/apt/ui/ParametersTransformer.html" title="interface in uniol.apt.ui">ParametersTransformer</a>&nbsp;parametersTransformer)</code>&nbsp;</td>
+              <a href="../../../../uniol/apt/ui/ParametersTransformer.html" title="interface in uniol.apt.ui">ParametersTransformer</a>&nbsp;parametersTransformer)</code>
+<div class="block">Returns a usage string describing how to use the module.</div>
+</td>
 </tr>
 </tbody>
 </table>

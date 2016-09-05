@@ -70,7 +70,7 @@
 <li>Summary:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#annotation.type.required.element.summary">Required</a>&nbsp;|&nbsp;</li>
-<li>Optional</li>
+<li><a href="#annotation.type.optional.element.summary">Optional</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
@@ -100,7 +100,7 @@ public @interface <span class="memberNameLabel">AptParameterTransformation</span
 <div class="block">Annotation marking <a href="../../../uniol/apt/ui/ParameterTransformation.html" title="interface in uniol.apt.ui"><code>ParameterTransformation</code></a> implementations.</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
-<dd>Uli Schlachter</dd>
+<dd>Uli Schlachter, Jonas Prellberg</dd>
 </dl>
 </li>
 </ul>
@@ -127,6 +127,28 @@ public @interface <span class="memberNameLabel">AptParameterTransformation</span
 </table>
 </li>
 </ul>
+<!-- =========== ANNOTATION TYPE OPTIONAL MEMBER SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="annotation.type.optional.element.summary">
+<!--   -->
+</a>
+<h3>Optional Element Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Optional Element Summary table, listing optional elements, and an explanation">
+<caption><span>Optional Elements</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Optional Element and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/ui/AptParameterTransformation.html#fileSource--">fileSource</a></span></code>
+<div class="block">Marks <a href="../../../uniol/apt/ui/ParameterTransformation.html" title="interface in uniol.apt.ui"><code>ParameterTransformation</code></a> implementations that transform
+ parameter values typically saved in files.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
 </li>
 </ul>
 </div>
@@ -149,6 +171,28 @@ public @interface <span class="memberNameLabel">AptParameterTransformation</span
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The type of parameters that is supported.</dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
+<!-- ============ ANNOTATION TYPE MEMBER DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="fileSource--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>fileSource</h4>
+<pre>public abstract&nbsp;boolean&nbsp;fileSource</pre>
+<div class="block">Marks <a href="../../../uniol/apt/ui/ParameterTransformation.html" title="interface in uniol.apt.ui"><code>ParameterTransformation</code></a> implementations that transform
+ parameter values typically saved in files. This value will be
+ detected by calling code to decide if the parameter value is
+ interpreted as a file path and needs to be read first before passing
+ the value string to the transformer.</div>
+<dl>
+<dt>Default:</dt>
+<dd>false</dd>
 </dl>
 </li>
 </ul>
@@ -207,7 +251,7 @@ public @interface <span class="memberNameLabel">AptParameterTransformation</span
 <li>Summary:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li><a href="#annotation.type.required.element.summary">Required</a>&nbsp;|&nbsp;</li>
-<li>Optional</li>
+<li><a href="#annotation.type.optional.element.summary">Optional</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>

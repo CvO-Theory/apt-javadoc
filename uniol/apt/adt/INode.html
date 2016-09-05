@@ -117,12 +117,16 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public interface <span class="typeNameLabel">INode&lt;G extends <a href="../../../uniol/apt/adt/IGraph.html" title="interface in uniol.apt.adt">IGraph</a>&lt;G,E,N&gt;,E extends <a href="../../../uniol/apt/adt/IEdge.html" title="interface in uniol.apt.adt">IEdge</a>&lt;G,E,N&gt;,N extends INode&lt;G,E,N&gt;&gt;</span>
 extends <a href="../../../uniol/apt/adt/extension/IExtensible.html" title="interface in uniol.apt.adt.extension">IExtensible</a></pre>
-<div class="block"><a href="../../../uniol/apt/adt/INode.html" title="interface in uniol.apt.adt"><code>INode</code></a> is an abstract interface to a common node. It is possible to retrieve a view of the pre- and postsets as
- edge sets as well as node sets.
- The generic parameter define what types are used for the graph and edges as well as the node itself. This allows to
- extend any node in a typesafe manner at compiletime. Additionally one may add any data to the node using the
+<div class="block"><a href="../../../uniol/apt/adt/INode.html" title="interface in uniol.apt.adt"><code>INode</code></a> is an abstract interface to a common node. It is possible to
+ retrieve a view of the pre- and postsets as edge sets as well as node sets.
+
+ <p>The generic parameter define what types are used for the graph and edges as
+ well as the node itself. This allows to extend any node in a typesafe manner
+ at compiletime. Additionally one may add any data to the node using the
  IExtensible interface methods at runtime.
- For examples have a look at the pn.Place, pn.Transition, ts.Transition or Node classes.</div>
+
+ <p>For examples have a look at the pn.Place, pn.Transition, ts.Transition or
+ Node classes.</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
 <dd>Dennis-Michael Borde, Manuel Gieseking</dd>

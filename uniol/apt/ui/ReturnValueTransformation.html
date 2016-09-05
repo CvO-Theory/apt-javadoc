@@ -135,7 +135,10 @@ var activeTableTab = "activeTableTab";
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/ui/ReturnValueTransformation.html#transform-java.io.Writer-T-">transform</a></span>(java.io.Writer&nbsp;output,
-         <a href="../../../uniol/apt/ui/ReturnValueTransformation.html" title="type parameter in ReturnValueTransformation">T</a>&nbsp;arg)</code>&nbsp;</td>
+         <a href="../../../uniol/apt/ui/ReturnValueTransformation.html" title="type parameter in ReturnValueTransformation">T</a>&nbsp;arg)</code>
+<div class="block">Transforms the given argument into a string and appends it to the
+ writer.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -164,10 +167,17 @@ var activeTableTab = "activeTableTab";
                <a href="../../../uniol/apt/ui/ReturnValueTransformation.html" title="type parameter in ReturnValueTransformation">T</a>&nbsp;arg)
         throws <a href="../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a>,
                java.io.IOException</pre>
+<div class="block">Transforms the given argument into a string and appends it to the
+ writer.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>output</code> - writer</dd>
+<dd><code>arg</code> - argument</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></code></dd>
-<dd><code>java.io.IOException</code></dd>
+<dd><code><a href="../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></code> - exception that could get raised during transformation
+                 of the argument to a string</dd>
+<dd><code>java.io.IOException</code> - exception that could get raised by
+                 <code>Writer.append(CharSequence)</code></dd>
 </dl>
 </li>
 </ul>

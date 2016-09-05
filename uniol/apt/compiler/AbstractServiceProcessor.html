@@ -225,12 +225,17 @@ extends javax.annotation.processing.AbstractProcessor</pre>
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/compiler/AbstractServiceProcessor.html#error-javax.lang.model.element.Element-java.lang.String-java.lang.Object...-">error</a></span>(javax.lang.model.element.Element&nbsp;ele,
      java.lang.String&nbsp;fmt,
-     java.lang.Object...&nbsp;args)</code>&nbsp;</td>
+     java.lang.Object...&nbsp;args)</code>
+<div class="block">Prints an error message using the <code>Messager</code> object that is
+ associated with the given element's location.</div>
+</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>protected void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/compiler/AbstractServiceProcessor.html#error-java.lang.String-java.lang.Object...-">error</a></span>(java.lang.String&nbsp;fmt,
-     java.lang.Object...&nbsp;args)</code>&nbsp;</td>
+     java.lang.Object...&nbsp;args)</code>
+<div class="block">Prints an error message using the <code>Messager</code> object.</div>
+</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.util.Set&lt;java.lang.String&gt;</code></td>
@@ -518,6 +523,13 @@ extends javax.annotation.processing.AbstractProcessor</pre>
 <h4>error</h4>
 <pre>protected&nbsp;void&nbsp;error(java.lang.String&nbsp;fmt,
                      java.lang.Object...&nbsp;args)</pre>
+<div class="block">Prints an error message using the <code>Messager</code> object.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>fmt</code> - format string for
+                <code>String.format(String, Object...)</code></dd>
+<dd><code>args</code> - arguments used in the format string</dd>
+</dl>
 </li>
 </ul>
 <a name="error-javax.lang.model.element.Element-java.lang.String-java.lang.Object...-">
@@ -529,6 +541,15 @@ extends javax.annotation.processing.AbstractProcessor</pre>
 <pre>protected&nbsp;void&nbsp;error(javax.lang.model.element.Element&nbsp;ele,
                      java.lang.String&nbsp;fmt,
                      java.lang.Object...&nbsp;args)</pre>
+<div class="block">Prints an error message using the <code>Messager</code> object that is
+ associated with the given element's location.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ele</code> - element that the error message is associated with</dd>
+<dd><code>fmt</code> - format string for
+                <code>String.format(String, Object...)</code></dd>
+<dd><code>args</code> - arguments used in the format string</dd>
+</dl>
 </li>
 </ul>
 </li>

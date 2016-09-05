@@ -43,7 +43,7 @@
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../uniol/apt/ui/impl/parameter/AbstractMapParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../uniol/apt/ui/impl/parameter/AptPNParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -69,9 +69,9 @@
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.uniol.apt.ui.impl.parameter.ParserParameterTransformation">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.uniol.apt.ui.impl.parameter.ParserParameterTransformation">Method</a></li>
+<li><a href="#methods.inherited.from.class.uniol.apt.ui.impl.parameter.AbstractParserParameterTransformation">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
@@ -94,7 +94,7 @@
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
-<li><a href="../../../../../uniol/apt/ui/impl/parameter/ParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">uniol.apt.ui.impl.parameter.ParserParameterTransformation</a>&lt;<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&gt;</li>
+<li><a href="../../../../../uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">uniol.apt.ui.impl.parameter.AbstractParserParameterTransformation</a>&lt;<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&gt;</li>
 <li>
 <ul class="inheritance">
 <li>uniol.apt.ui.impl.parameter.AptLTSParserParameterTransformation</li>
@@ -112,9 +112,10 @@
 </dl>
 <hr>
 <br>
-<pre><a href="../../../../../uniol/apt/ui/AptParameterTransformation.html" title="annotation in uniol.apt.ui">@AptParameterTransformation</a>(<a href="../../../../../uniol/apt/ui/AptParameterTransformation.html#value--">value</a>=<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem.class</a>)
+<pre><a href="../../../../../uniol/apt/ui/AptParameterTransformation.html" title="annotation in uniol.apt.ui">@AptParameterTransformation</a>(<a href="../../../../../uniol/apt/ui/AptParameterTransformation.html#value--">value</a>=<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem.class</a>,
+                            <a href="../../../../../uniol/apt/ui/AptParameterTransformation.html#fileSource--">fileSource</a>=true)
 public class <span class="typeNameLabel">AptLTSParserParameterTransformation</span>
-extends <a href="../../../../../uniol/apt/ui/impl/parameter/ParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">ParserParameterTransformation</a>&lt;<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&gt;
+extends <a href="../../../../../uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">AbstractParserParameterTransformation</a>&lt;<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&gt;
 implements <a href="../../../../../uniol/apt/ui/ParameterTransformation.html" title="interface in uniol.apt.ui">ParameterTransformation</a>&lt;<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&gt;</pre>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
@@ -126,21 +127,6 @@ implements <a href="../../../../../uniol/apt/ui/ParameterTransformation.html" ti
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
-<!-- =========== FIELD SUMMARY =========== -->
-<ul class="blockList">
-<li class="blockList"><a name="field.summary">
-<!--   -->
-</a>
-<h3>Field Summary</h3>
-<ul class="blockList">
-<li class="blockList"><a name="fields.inherited.from.class.uniol.apt.ui.impl.parameter.ParserParameterTransformation">
-<!--   -->
-</a>
-<h3>Fields inherited from class&nbsp;uniol.apt.ui.impl.parameter.<a href="../../../../../uniol/apt/ui/impl/parameter/ParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">ParserParameterTransformation</a></h3>
-<code><a href="../../../../../uniol/apt/ui/impl/parameter/ParserParameterTransformation.html#STANDARD_INPUT_SYMBOL">STANDARD_INPUT_SYMBOL</a></code></li>
-</ul>
-</li>
-</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -165,11 +151,11 @@ implements <a href="../../../../../uniol/apt/ui/ParameterTransformation.html" ti
 </a>
 <h3>Method Summary</h3>
 <ul class="blockList">
-<li class="blockList"><a name="methods.inherited.from.class.uniol.apt.ui.impl.parameter.ParserParameterTransformation">
+<li class="blockList"><a name="methods.inherited.from.class.uniol.apt.ui.impl.parameter.AbstractParserParameterTransformation">
 <!--   -->
 </a>
-<h3>Methods inherited from class&nbsp;uniol.apt.ui.impl.parameter.<a href="../../../../../uniol/apt/ui/impl/parameter/ParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">ParserParameterTransformation</a></h3>
-<code><a href="../../../../../uniol/apt/ui/impl/parameter/ParserParameterTransformation.html#transform-java.lang.String-">transform</a></code></li>
+<h3>Methods inherited from class&nbsp;uniol.apt.ui.impl.parameter.<a href="../../../../../uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">AbstractParserParameterTransformation</a></h3>
+<code><a href="../../../../../uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html#transform-java.lang.String-">transform</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -241,7 +227,7 @@ implements <a href="../../../../../uniol/apt/ui/ParameterTransformation.html" ti
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../uniol/apt/ui/impl/parameter/AbstractMapParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../uniol/apt/ui/impl/parameter/AptPNParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -267,9 +253,9 @@ implements <a href="../../../../../uniol/apt/ui/ParameterTransformation.html" ti
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li><a href="#fields.inherited.from.class.uniol.apt.ui.impl.parameter.ParserParameterTransformation">Field</a>&nbsp;|&nbsp;</li>
+<li>Field&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
-<li><a href="#methods.inherited.from.class.uniol.apt.ui.impl.parameter.ParserParameterTransformation">Method</a></li>
+<li><a href="#methods.inherited.from.class.uniol.apt.ui.impl.parameter.AbstractParserParameterTransformation">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>

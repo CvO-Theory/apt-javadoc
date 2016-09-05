@@ -149,6 +149,12 @@
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/AbstractParser.html#AbstractParser--">AbstractParser()</a></span> - Constructor for class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/AbstractParser.html" title="class in uniol.apt.io.parser.impl">AbstractParser</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter"><span class="typeNameLink">AbstractParserParameterTransformation</span></a>&lt;<a href="uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html" title="type parameter in AbstractParserParameterTransformation">G</a>&gt; - Class in <a href="uniol/apt/ui/impl/parameter/package-summary.html">uniol.apt.ui.impl.parameter</a></dt>
+<dd>
+<div class="block">Abstract transformation that uses a parser to interpret a given string.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html#AbstractParserParameterTransformation-uniol.apt.io.parser.Parser-java.lang.String-">AbstractParserParameterTransformation(Parser&lt;G&gt;, String)</a></span> - Constructor for class uniol.apt.ui.impl.parameter.<a href="uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">AbstractParserParameterTransformation</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="uniol/apt/io/parser/AbstractParsers.html" title="class in uniol.apt.io.parser"><span class="typeNameLink">AbstractParsers</span></a>&lt;<a href="uniol/apt/io/parser/AbstractParsers.html" title="type parameter in AbstractParsers">T</a>&gt; - Class in <a href="uniol/apt/io/parser/package-summary.html">uniol.apt.io.parser</a></dt>
 <dd>
 <div class="block">Class which provides the correct parser for a given format.</div>
@@ -428,7 +434,9 @@
 <div class="block">Adds a transformation.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/ReturnValuesTransformerImpl.html#addTransformation-java.lang.Class-uniol.apt.ui.ReturnValueTransformation-">addTransformation(Class&lt;T&gt;, ReturnValueTransformation&lt;T&gt;)</a></span> - Method in class uniol.apt.ui.impl.<a href="uniol/apt/ui/impl/ReturnValuesTransformerImpl.html" title="class in uniol.apt.ui.impl">ReturnValuesTransformerImpl</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Adds a transformation that handles objects of the given class.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/Region.Builder.html#addWeightOn-java.lang.String-java.math.BigInteger-">addWeightOn(String, BigInteger)</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/Region.Builder.html" title="class in uniol.apt.analysis.synthesize">Region.Builder</a></dt>
 <dd>
 <div class="block">Add some weight around the given event.</div>
@@ -1833,7 +1841,9 @@
 <div class="block">Deletes the column with the given index from this matrix.</div>
 </dd>
 <dt><a href="uniol/apt/ui/DescribedParameterTransformation.html" title="interface in uniol.apt.ui"><span class="typeNameLink">DescribedParameterTransformation</span></a>&lt;<a href="uniol/apt/ui/DescribedParameterTransformation.html" title="type parameter in DescribedParameterTransformation">T</a>&gt; - Interface in <a href="uniol/apt/ui/package-summary.html">uniol.apt.ui</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Transforms a parameter that is given as a string into some target type T.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/AptLTSFormatParser.html#description--">description()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/AptLTSFormatParser.html" title="class in uniol.apt.io.parser.impl">AptLTSFormatParser</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/AptLTSFormatParser.TsContext.html#description--">description()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/AptLTSFormatParser.TsContext.html" title="class in uniol.apt.io.parser.impl">AptLTSFormatParser.TsContext</a></dt>
@@ -3011,9 +3021,14 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/util/EquivalenceRelation.html#EquivalenceRelation--">EquivalenceRelation()</a></span> - Constructor for class uniol.apt.util.<a href="uniol/apt/util/EquivalenceRelation.html" title="class in uniol.apt.util">EquivalenceRelation</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/compiler/AbstractServiceProcessor.html#error-java.lang.String-java.lang.Object...-">error(String, Object...)</a></span> - Method in class uniol.apt.compiler.<a href="uniol/apt/compiler/AbstractServiceProcessor.html" title="class in uniol.apt.compiler">AbstractServiceProcessor</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Prints an error message using the <code>Messager</code> object.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/compiler/AbstractServiceProcessor.html#error-javax.lang.model.element.Element-java.lang.String-java.lang.Object...-">error(Element, String, Object...)</a></span> - Method in class uniol.apt.compiler.<a href="uniol/apt/compiler/AbstractServiceProcessor.html" title="class in uniol.apt.compiler">AbstractServiceProcessor</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Prints an error message using the <code>Messager</code> object that is
+ associated with the given element's location.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/Region.html#evaluateParikhVector-java.util.List-">evaluateParikhVector(List&lt;BigInteger&gt;)</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a></dt>
 <dd>
 <div class="block">Evaluate the given Parikh vector with respect to this region.</div>
@@ -4245,6 +4260,20 @@
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fcnet/FCNetModule.html#FCNetModule--">FCNetModule()</a></span> - Constructor for class uniol.apt.analysis.fcnet.<a href="uniol/apt/analysis/fcnet/FCNetModule.html" title="class in uniol.apt.analysis.fcnet">FCNetModule</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="uniol/apt/io/converter/FileBackedString.html" title="class in uniol.apt.io.converter"><span class="typeNameLink">FileBackedString</span></a> - Class in <a href="uniol/apt/io/converter/package-summary.html">uniol.apt.io.converter</a></dt>
+<dd>
+<div class="block">String wrapper that is used in module parameter declarations to signify that
+ the annotated parameter will be given as a file name and must therefore be
+ read by the <a href="uniol/apt/ui/ParametersTransformer.html" title="interface in uniol.apt.ui"><code>ParametersTransformer</code></a> before being passed to the module.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/converter/FileBackedString.html#FileBackedString-java.lang.String-">FileBackedString(String)</a></span> - Constructor for class uniol.apt.io.converter.<a href="uniol/apt/io/converter/FileBackedString.html" title="class in uniol.apt.io.converter">FileBackedString</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="uniol/apt/ui/impl/parameter/FileBackedStringParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter"><span class="typeNameLink">FileBackedStringParameterTransformation</span></a> - Class in <a href="uniol/apt/ui/impl/parameter/package-summary.html">uniol.apt.ui.impl.parameter</a></dt>
+<dd>
+<div class="block">Transform a string into itself (aka identity function).</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/parameter/FileBackedStringParameterTransformation.html#FileBackedStringParameterTransformation--">FileBackedStringParameterTransformation()</a></span> - Constructor for class uniol.apt.ui.impl.parameter.<a href="uniol/apt/ui/impl/parameter/FileBackedStringParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">FileBackedStringParameterTransformation</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/AptPNFormatParser.html#finalMarkings--">finalMarkings()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/AptPNFormatParser.html" title="class in uniol.apt.io.parser.impl">AptPNFormatParser</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/AptPNFormatParser.PnContext.html#finalMarkings--">finalMarkings()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/AptPNFormatParser.PnContext.html" title="class in uniol.apt.io.parser.impl">AptPNFormatParser.PnContext</a></dt>
@@ -4340,8 +4369,6 @@
 <dd>
 <div class="block">Find all words that can be generated by a Petri net from a given class.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/FindWords.html#FindWords--">FindWords()</a></span> - Constructor for class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/FindWords.html" title="class in uniol.apt.analysis.synthesize">FindWords</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="uniol/apt/analysis/synthesize/FindWords.LengthDoneCallback.html" title="interface in uniol.apt.analysis.synthesize"><span class="typeNameLink">FindWords.LengthDoneCallback</span></a> - Interface in <a href="uniol/apt/analysis/synthesize/package-summary.html">uniol.apt.analysis.synthesize</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="uniol/apt/analysis/synthesize/FindWords.WordCallback.html" title="interface in uniol.apt.analysis.synthesize"><span class="typeNameLink">FindWords.WordCallback</span></a> - Interface in <a href="uniol/apt/analysis/synthesize/package-summary.html">uniol.apt.analysis.synthesize</a></dt>
@@ -4670,7 +4697,9 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/module/impl/ModuleInputSpecImpl.html#getAllParameters--">getAllParameters()</a></span> - Method in class uniol.apt.module.impl.<a href="uniol/apt/module/impl/ModuleInputSpecImpl.html" title="class in uniol.apt.module.impl">ModuleInputSpecImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/module/impl/ModuleUtils.html#getAllParameters-uniol.apt.module.Module-">getAllParameters(Module)</a></span> - Static method in class uniol.apt.module.impl.<a href="uniol/apt/module/impl/ModuleUtils.html" title="class in uniol.apt.module.impl">ModuleUtils</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns all (required and optional) of the module's input parameters.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/adt/automaton/DeterministicFiniteAutomaton.html#getAlphabet--">getAlphabet()</a></span> - Method in interface uniol.apt.adt.automaton.<a href="uniol/apt/adt/automaton/DeterministicFiniteAutomaton.html" title="interface in uniol.apt.adt.automaton">DeterministicFiniteAutomaton</a></dt>
 <dd>
 <div class="block">Get the alphabet of the automaton.</div>
@@ -5141,7 +5170,10 @@
 <div class="block">Get a list of recommended file extensions.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/module/impl/ModuleUtils.html#getFileReturnValues-uniol.apt.module.Module-">getFileReturnValues(Module)</a></span> - Static method in class uniol.apt.module.impl.<a href="uniol/apt/module/impl/ModuleUtils.html" title="class in uniol.apt.module.impl">ModuleUtils</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns a list of return values with the file property that the
+ module will provide after execution.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/module/impl/ModuleUtils.html#getFilledInputSpec-uniol.apt.module.Module-">getFilledInputSpec(Module)</a></span> - Static method in class uniol.apt.module.impl.<a href="uniol/apt/module/impl/ModuleUtils.html" title="class in uniol.apt.module.impl">ModuleUtils</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/module/impl/ModuleUtils.html#getFilledOutputSpec-uniol.apt.module.Module-">getFilledOutputSpec(Module)</a></span> - Static method in class uniol.apt.module.impl.<a href="uniol/apt/module/impl/ModuleUtils.html" title="class in uniol.apt.module.impl">ModuleUtils</a></dt>
@@ -5246,7 +5278,10 @@
 <div class="block">Which format does this parser understand?</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/ui/DescribedParameterTransformation.html#getFormatDescription--">getFormatDescription()</a></span> - Method in interface uniol.apt.ui.<a href="uniol/apt/ui/DescribedParameterTransformation.html" title="interface in uniol.apt.ui">DescribedParameterTransformation</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns a description of the string format that the parameter is
+ expected to follow.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/parameter/FiniteAutomatonParameterTransformation.html#getFormatDescription--">getFormatDescription()</a></span> - Method in class uniol.apt.ui.impl.parameter.<a href="uniol/apt/ui/impl/parameter/FiniteAutomatonParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">FiniteAutomatonParameterTransformation</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/parameter/WordParameterTransformation.html#getFormatDescription--">getFormatDescription()</a></span> - Method in class uniol.apt.ui.impl.parameter.<a href="uniol/apt/ui/impl/parameter/WordParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">WordParameterTransformation</a></dt>
@@ -5645,9 +5680,14 @@
 <div class="block">Gets all modules that are used in APT.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/module/impl/ModuleUtils.html#getModulesByCategory-java.util.Collection-uniol.apt.module.Category-">getModulesByCategory(Collection&lt;Module&gt;, Category)</a></span> - Static method in class uniol.apt.module.impl.<a href="uniol/apt/module/impl/ModuleUtils.html" title="class in uniol.apt.module.impl">ModuleUtils</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns the subset of the given module collection that is part of the
+ given category.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/UIUtils.html#getModuleUsage-uniol.apt.module.Module-uniol.apt.ui.ParametersTransformer-">getModuleUsage(Module, ParametersTransformer)</a></span> - Static method in class uniol.apt.ui.impl.<a href="uniol/apt/ui/impl/UIUtils.html" title="class in uniol.apt.ui.impl">UIUtils</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns a usage string describing how to use the module.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/isomorphism/IsomorphismLogic.ExtendedState.html#getN--">getN()</a></span> - Method in class uniol.apt.analysis.isomorphism.<a href="uniol/apt/analysis/isomorphism/IsomorphismLogic.ExtendedState.html" title="class in uniol.apt.analysis.isomorphism">IsomorphismLogic.ExtendedState</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/adt/IGraph.html#getName--">getName()</a></span> - Method in interface uniol.apt.adt.<a href="uniol/apt/adt/IGraph.html" title="interface in uniol.apt.adt">IGraph</a></dt>
@@ -5952,7 +5992,9 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/module/impl/ModuleInputSpecImpl.html#getOptionalParameters--">getOptionalParameters()</a></span> - Method in class uniol.apt.module.impl.<a href="uniol/apt/module/impl/ModuleInputSpecImpl.html" title="class in uniol.apt.module.impl">ModuleInputSpecImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/module/impl/ModuleUtils.html#getOptionalParameters-uniol.apt.module.Module-">getOptionalParameters(Module)</a></span> - Static method in class uniol.apt.module.impl.<a href="uniol/apt/module/impl/ModuleUtils.html" title="class in uniol.apt.module.impl">ModuleUtils</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns the module's optional input parameters.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/adt/subgraph/SubEdge.html#getOriginalEdge--">getOriginalEdge()</a></span> - Method in class uniol.apt.adt.subgraph.<a href="uniol/apt/adt/subgraph/SubEdge.html" title="class in uniol.apt.adt.subgraph">SubEdge</a></dt>
 <dd>
 <div class="block">Get the edge of the original graph that this edge represents.</div>
@@ -5982,7 +6024,9 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/module/impl/ModuleInputSpecImpl.html#getParameters--">getParameters()</a></span> - Method in class uniol.apt.module.impl.<a href="uniol/apt/module/impl/ModuleInputSpecImpl.html" title="class in uniol.apt.module.impl">ModuleInputSpecImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/module/impl/ModuleUtils.html#getParameters-uniol.apt.module.Module-">getParameters(Module)</a></span> - Static method in class uniol.apt.module.impl.<a href="uniol/apt/module/impl/ModuleUtils.html" title="class in uniol.apt.module.impl">ModuleUtils</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns the module's required input parameters.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/RegionUtility.html#getParikhVectorForEdge-uniol.apt.adt.ts.Arc-">getParikhVectorForEdge(Arc)</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a></dt>
 <dd>
 <div class="block">Get the Parikh vector for an edge.</div>
@@ -6317,7 +6361,10 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/module/impl/ModuleOutputSpecImpl.html#getReturnValues--">getReturnValues()</a></span> - Method in class uniol.apt.module.impl.<a href="uniol/apt/module/impl/ModuleOutputSpecImpl.html" title="class in uniol.apt.module.impl">ModuleOutputSpecImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/module/impl/ModuleUtils.html#getReturnValues-uniol.apt.module.Module-">getReturnValues(Module)</a></span> - Static method in class uniol.apt.module.impl.<a href="uniol/apt/module/impl/ModuleUtils.html" title="class in uniol.apt.module.impl">ModuleUtils</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns a list of return values that the module will provide after
+ execution.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/util/SpanningTree.html#getReversed-G-">getReversed(G)</a></span> - Static method in class uniol.apt.util.<a href="uniol/apt/util/SpanningTree.html" title="class in uniol.apt.util">SpanningTree</a></dt>
 <dd>
 <div class="block">Construct a spanning tree for the given graph with arcs reversed.</div>
@@ -7053,7 +7100,9 @@
 <div class="block">Gets the transformation that can transform objects of the given type.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/ui/ReturnValuesTransformer.html#getTransformation-java.lang.Class-">getTransformation(Class&lt;T&gt;)</a></span> - Method in interface uniol.apt.ui.<a href="uniol/apt/ui/ReturnValuesTransformer.html" title="interface in uniol.apt.ui">ReturnValuesTransformer</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Returns an object that transforms objects of type T to strings.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/ParametersTransformerImpl.html#getTransformationDescription-java.lang.Class-">getTransformationDescription(Class&lt;?&gt;)</a></span> - Method in class uniol.apt.ui.impl.<a href="uniol/apt/ui/impl/ParametersTransformerImpl.html" title="class in uniol.apt.ui.impl">ParametersTransformerImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/ui/ParametersTransformer.html#getTransformationDescription-java.lang.Class-">getTransformationDescription(Class&lt;?&gt;)</a></span> - Method in interface uniol.apt.ui.<a href="uniol/apt/ui/ParametersTransformer.html" title="interface in uniol.apt.ui">ParametersTransformer</a></dt>
@@ -7122,6 +7171,8 @@
 <dd>
 <div class="block">Returns the value of this token.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/converter/FileBackedString.html#getValue--">getValue()</a></span> - Method in class uniol.apt.io.converter.<a href="uniol/apt/io/converter/FileBackedString.html" title="class in uniol.apt.io.converter">FileBackedString</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/module/impl/ExitStatus.html#getValue--">getValue()</a></span> - Method in enum uniol.apt.module.impl.<a href="uniol/apt/module/impl/ExitStatus.html" title="enum in uniol.apt.module.impl">ExitStatus</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/module/impl/ModuleOutputImpl.html#getValue-java.lang.String-">getValue(String)</a></span> - Method in class uniol.apt.module.impl.<a href="uniol/apt/module/impl/ModuleOutputImpl.html" title="class in uniol.apt.module.impl">ModuleOutputImpl</a></dt>
@@ -7680,7 +7731,7 @@
 <dd>&nbsp;</dd>
 <dt><a href="uniol/apt/ui/impl/parameter/IntegerParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter"><span class="typeNameLink">IntegerParameterTransformation</span></a> - Class in <a href="uniol/apt/ui/impl/parameter/package-summary.html">uniol.apt.ui.impl.parameter</a></dt>
 <dd>
-<div class="block">Transform a string into itself (aka identity function).</div>
+<div class="block">Transform a string into an integer value.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/parameter/IntegerParameterTransformation.html#IntegerParameterTransformation--">IntegerParameterTransformation()</a></span> - Constructor for class uniol.apt.ui.impl.parameter.<a href="uniol/apt/ui/impl/parameter/IntegerParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">IntegerParameterTransformation</a></dt>
 <dd>&nbsp;</dd>
@@ -7739,7 +7790,10 @@
 <div class="block">Construct the inverse of the given petri net.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/module/impl/ModuleInvoker.html#invoke-uniol.apt.module.Module-java.lang.Object...-">invoke(Module, Object...)</a></span> - Method in class uniol.apt.module.impl.<a href="uniol/apt/module/impl/ModuleInvoker.html" title="class in uniol.apt.module.impl">ModuleInvoker</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Maps the given array of arguments to the modules required and
+ optional input parameters and then executes the module on those.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/adt/AbstractGraph.html#invokeListeners--">invokeListeners()</a></span> - Method in class uniol.apt.adt.<a href="uniol/apt/adt/AbstractGraph.html" title="class in uniol.apt.adt">AbstractGraph</a></dt>
 <dd>
 <div class="block">This method invokes all listeners and remove those that request to be removed.</div>
@@ -8367,7 +8421,9 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/bcf/BCF.Result.html#m">m</a></span> - Variable in class uniol.apt.analysis.bcf.<a href="uniol/apt/analysis/bcf/BCF.Result.html" title="class in uniol.apt.analysis.bcf">BCF.Result</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/APT.html#main-java.lang.String:A-">main(String[])</a></span> - Static method in class uniol.apt.<a href="uniol/apt/APT.html" title="class in uniol.apt">APT</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Program entry point.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/Region.Builder.html#makePure--">makePure()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/Region.Builder.html" title="class in uniol.apt.analysis.synthesize">Region.Builder</a></dt>
 <dd>
 <div class="block">Turn this builder's weight into the weight for a normal region.</div>
@@ -9012,8 +9068,6 @@
 <dd>
 <div class="block">Was only event/state separation solved or also state separation?</div>
 </dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/APT.html#openOutput-java.lang.String-">openOutput(String)</a></span> - Static method in class uniol.apt.<a href="uniol/apt/APT.html" title="class in uniol.apt">APT</a></dt>
-<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatLexer.html#OPT">OPT</a></span> - Static variable in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatLexer.html" title="class in uniol.apt.io.parser.impl">RegexFormatLexer</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatOptContext.html#OPT--">OPT()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatOptContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatOptContext</a></dt>
@@ -9041,7 +9095,9 @@
 <div class="block">Makes it possible to add an optional parameter to module.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/module/impl/OptionalParameter.html#OptionalParameter-java.lang.String-java.lang.Class-T-java.lang.String-java.lang.String-java.lang.String...-">OptionalParameter(String, Class&lt;T&gt;, T, String, String, String...)</a></span> - Constructor for class uniol.apt.module.impl.<a href="uniol/apt/module/impl/OptionalParameter.html" title="class in uniol.apt.module.impl">OptionalParameter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates a new optional parameter specification.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/AptLTSFormatParser.OptionContext.html#OptionContext-org.antlr.v4.runtime.ParserRuleContext-int-">OptionContext(ParserRuleContext, int)</a></span> - Constructor for class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/AptLTSFormatParser.OptionContext.html" title="class in uniol.apt.io.parser.impl">AptLTSFormatParser.OptionContext</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/AptPNFormatParser.OptionContext.html#OptionContext-org.antlr.v4.runtime.ParserRuleContext-int-">OptionContext(ParserRuleContext, int)</a></span> - Constructor for class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/AptPNFormatParser.OptionContext.html" title="class in uniol.apt.io.parser.impl">AptPNFormatParser.OptionContext</a></dt>
@@ -9129,7 +9185,9 @@
 <div class="block">A POJO for a parameter.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/module/impl/Parameter.html#Parameter-java.lang.String-java.lang.Class-java.lang.String-java.lang.String:A-">Parameter(String, Class&lt;?&gt;, String, String[])</a></span> - Constructor for class uniol.apt.module.impl.<a href="uniol/apt/module/impl/Parameter.html" title="class in uniol.apt.module.impl">Parameter</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates a new parameter specification.</div>
+</dd>
 <dt><a href="uniol/apt/ui/ParametersParser.html" title="interface in uniol.apt.ui"><span class="typeNameLink">ParametersParser</span></a> - Interface in <a href="uniol/apt/ui/package-summary.html">uniol.apt.ui</a></dt>
 <dd>
 <div class="block">All the things a command-line parser must provide us with re modules and
@@ -9148,7 +9206,9 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/ParametersTransformerImpl.html#ParametersTransformerImpl--">ParametersTransformerImpl()</a></span> - Constructor for class uniol.apt.ui.impl.<a href="uniol/apt/ui/impl/ParametersTransformerImpl.html" title="class in uniol.apt.ui.impl">ParametersTransformerImpl</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="uniol/apt/ui/ParameterTransformation.html" title="interface in uniol.apt.ui"><span class="typeNameLink">ParameterTransformation</span></a>&lt;<a href="uniol/apt/ui/ParameterTransformation.html" title="type parameter in ParameterTransformation">T</a>&gt; - Interface in <a href="uniol/apt/ui/package-summary.html">uniol.apt.ui</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Transforms a parameter that is given as a string into some target type T.</div>
+</dd>
 <dt><a href="uniol/apt/compiler/ParameterTransformationProcessor.html" title="class in uniol.apt.compiler"><span class="typeNameLink">ParameterTransformationProcessor</span></a> - Class in <a href="uniol/apt/compiler/package-summary.html">uniol.apt.compiler</a></dt>
 <dd>
 <div class="block">Annotation processor which scans for an AptParameterTransformation annotation, analyzes all classes marked by this
@@ -9277,10 +9337,6 @@
 <dd>
 <div class="block">Constructor</div>
 </dd>
-<dt><a href="uniol/apt/ui/impl/parameter/ParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter"><span class="typeNameLink">ParserParameterTransformation</span></a>&lt;<a href="uniol/apt/ui/impl/parameter/ParserParameterTransformation.html" title="type parameter in ParserParameterTransformation">G</a>&gt; - Class in <a href="uniol/apt/ui/impl/parameter/package-summary.html">uniol.apt.ui.impl.parameter</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/parameter/ParserParameterTransformation.html#ParserParameterTransformation-uniol.apt.io.parser.Parser-java.lang.String-">ParserParameterTransformation(Parser&lt;G&gt;, String)</a></span> - Constructor for class uniol.apt.ui.impl.parameter.<a href="uniol/apt/ui/impl/parameter/ParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">ParserParameterTransformation</a></dt>
-<dd>&nbsp;</dd>
 <dt><a href="uniol/apt/compiler/ParserProcessor.html" title="class in uniol.apt.compiler"><span class="typeNameLink">ParserProcessor</span></a> - Class in <a href="uniol/apt/compiler/package-summary.html">uniol.apt.compiler</a></dt>
 <dd>
 <div class="block">Annotation Processor which searches for classes annotated with AptParser, analyzes them and write them in lists in
@@ -9303,9 +9359,15 @@
 <dt><a href="uniol/apt/analysis/persistent/PersistentModule.html" title="class in uniol.apt.analysis.persistent"><span class="typeNameLink">PersistentModule</span></a> - Class in <a href="uniol/apt/analysis/persistent/package-summary.html">uniol.apt.analysis.persistent</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/persistent/PersistentModule.html#PersistentModule-boolean-">PersistentModule(boolean)</a></span> - Constructor for class uniol.apt.analysis.persistent.<a href="uniol/apt/analysis/persistent/PersistentModule.html" title="class in uniol.apt.analysis.persistent">PersistentModule</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Initializes the <a href="uniol/apt/analysis/persistent/PersistentModule.html" title="class in uniol.apt.analysis.persistent"><code>PersistentModule</code></a> with the backwards-flag set
+ to the given value.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/persistent/PersistentModule.html#PersistentModule--">PersistentModule()</a></span> - Constructor for class uniol.apt.analysis.persistent.<a href="uniol/apt/analysis/persistent/PersistentModule.html" title="class in uniol.apt.analysis.persistent">PersistentModule</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Initializes the <a href="uniol/apt/analysis/persistent/PersistentModule.html" title="class in uniol.apt.analysis.persistent"><code>PersistentModule</code></a> with the backwards-flag set
+ to <code>false</code>.</div>
+</dd>
 <dt><a href="uniol/apt/analysis/persistent/PersistentNet.html" title="class in uniol.apt.analysis.persistent"><span class="typeNameLink">PersistentNet</span></a> - Class in <a href="uniol/apt/analysis/persistent/package-summary.html">uniol.apt.analysis.persistent</a></dt>
 <dd>
 <div class="block">Check if a given Petri net is persistent.</div>
@@ -9562,8 +9624,9 @@
 <dd>&nbsp;</dd>
 <dt><a href="uniol/apt/pnanalysis/PnAnalysis.html" title="class in uniol.apt.pnanalysis"><span class="typeNameLink">PnAnalysis</span></a> - Class in <a href="uniol/apt/pnanalysis/package-summary.html">uniol.apt.pnanalysis</a></dt>
 <dd>
-<div class="block">Checks for a given Petri net depending on g and k, if there is a T-system, whose reachability graph is isomorph to
- the reachability graph of the given Petri net.</div>
+<div class="block">Checks for a given Petri net depending on g and k, if there is a T-system,
+ whose reachability graph is isomorph to the reachability graph of the given
+ Petri net.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/pnanalysis/PnAnalysis.html#PnAnalysis--">PnAnalysis()</a></span> - Constructor for class uniol.apt.pnanalysis.<a href="uniol/apt/pnanalysis/PnAnalysis.html" title="class in uniol.apt.pnanalysis">PnAnalysis</a></dt>
 <dd>&nbsp;</dd>
@@ -10532,7 +10595,9 @@
 <div class="block">A POJO for a return value.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/module/impl/ReturnValue.html#ReturnValue-java.lang.String-java.lang.Class-java.lang.String:A-">ReturnValue(String, Class&lt;?&gt;, String[])</a></span> - Constructor for class uniol.apt.module.impl.<a href="uniol/apt/module/impl/ReturnValue.html" title="class in uniol.apt.module.impl">ReturnValue</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Creates a new return value specification.</div>
+</dd>
 <dt><a href="uniol/apt/ui/ReturnValuesTransformer.html" title="interface in uniol.apt.ui"><span class="typeNameLink">ReturnValuesTransformer</span></a> - Interface in <a href="uniol/apt/ui/package-summary.html">uniol.apt.ui</a></dt>
 <dd>
 <div class="block">This is just the reverse of <a href="uniol/apt/ui/ParametersTransformer.html" title="interface in uniol.apt.ui"><code>ParametersTransformer</code></a>.</div>
@@ -10983,7 +11048,8 @@
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/separation/SeparationLogic.html#SeparationLogic-uniol.apt.adt.pn.PetriNet-boolean-long-java.util.ArrayList-int-boolean-">SeparationLogic(PetriNet, boolean, long, ArrayList&lt;String&gt;, int, boolean)</a></span> - Constructor for class uniol.apt.analysis.separation.<a href="uniol/apt/analysis/separation/SeparationLogic.html" title="class in uniol.apt.analysis.separation">SeparationLogic</a></dt>
 <dd>
-<div class="block">Class constructor.</div>
+<div class="block">Main idea is to compute reachability graph for net with marking k*M0
+ (rg_kM0) and reachability graph with marking M0 (rg_M0).</div>
 </dd>
 <dt><a href="uniol/apt/analysis/separation/SeparationResult.html" title="class in uniol.apt.analysis.separation"><span class="typeNameLink">SeparationResult</span></a> - Class in <a href="uniol/apt/analysis/separation/package-summary.html">uniol.apt.analysis.separation</a></dt>
 <dd>
@@ -11530,18 +11596,6 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/AptLTSFormatParser.ArcContext.html#src">src</a></span> - Variable in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/AptLTSFormatParser.ArcContext.html" title="class in uniol.apt.io.parser.impl">AptLTSFormatParser.ArcContext</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/APT.html#STANDARD_INPUT_SYMBOL">STANDARD_INPUT_SYMBOL</a></span> - Static variable in class uniol.apt.<a href="uniol/apt/APT.html" title="class in uniol.apt">APT</a></dt>
-<dd>
-<div class="block">Symbol that signals that a file should be read from the standard input.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/io/converter/AbstractConvertModule.html#STANDARD_INPUT_SYMBOL">STANDARD_INPUT_SYMBOL</a></span> - Static variable in class uniol.apt.io.converter.<a href="uniol/apt/io/converter/AbstractConvertModule.html" title="class in uniol.apt.io.converter">AbstractConvertModule</a></dt>
-<dd>
-<div class="block">Symbol that signals that a file should be read from the standard input.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/parameter/NetOrTSParameterTransformation.html#STANDARD_INPUT_SYMBOL">STANDARD_INPUT_SYMBOL</a></span> - Static variable in class uniol.apt.ui.impl.parameter.<a href="uniol/apt/ui/impl/parameter/NetOrTSParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">NetOrTSParameterTransformation</a></dt>
-<dd>
-<div class="block">Symbol that signals that a file should be read from the standard input.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/parameter/ParserParameterTransformation.html#STANDARD_INPUT_SYMBOL">STANDARD_INPUT_SYMBOL</a></span> - Static variable in class uniol.apt.ui.impl.parameter.<a href="uniol/apt/ui/impl/parameter/ParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">ParserParameterTransformation</a></dt>
 <dd>
 <div class="block">Symbol that signals that a file should be read from the standard input.</div>
 </dd>
@@ -12177,13 +12231,13 @@
 <dd>&nbsp;</dd>
 <dt><a href="uniol/apt/io/renderer/impl/TikzLTSRenderer.html" title="class in uniol.apt.io.renderer.impl"><span class="typeNameLink">TikzLTSRenderer</span></a> - Class in <a href="uniol/apt/io/renderer/impl/package-summary.html">uniol.apt.io.renderer.impl</a></dt>
 <dd>
-<div class="block">This class renders Petri nets in the dot graph file format</div>
+<div class="block">This class renders transition systems as LaTeX tikz graphics.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/renderer/impl/TikzLTSRenderer.html#TikzLTSRenderer--">TikzLTSRenderer()</a></span> - Constructor for class uniol.apt.io.renderer.impl.<a href="uniol/apt/io/renderer/impl/TikzLTSRenderer.html" title="class in uniol.apt.io.renderer.impl">TikzLTSRenderer</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="uniol/apt/io/renderer/impl/TikzPNRenderer.html" title="class in uniol.apt.io.renderer.impl"><span class="typeNameLink">TikzPNRenderer</span></a> - Class in <a href="uniol/apt/io/renderer/impl/package-summary.html">uniol.apt.io.renderer.impl</a></dt>
 <dd>
-<div class="block">This class renders Petri nets in the dot graph file format</div>
+<div class="block">This class renders Petri nets as LaTeX tikz graphics.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/renderer/impl/TikzPNRenderer.html#TikzPNRenderer--">TikzPNRenderer()</a></span> - Constructor for class uniol.apt.io.renderer.impl.<a href="uniol/apt/io/renderer/impl/TikzPNRenderer.html" title="class in uniol.apt.io.renderer.impl">TikzPNRenderer</a></dt>
 <dd>&nbsp;</dd>
@@ -12443,6 +12497,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/Region.html#toString--">toString()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/converter/FileBackedString.html#toString--">toString()</a></span> - Method in class uniol.apt.io.converter.<a href="uniol/apt/io/converter/FileBackedString.html" title="class in uniol.apt.io.converter">FileBackedString</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/util/equations/EquationSystem.html#toString--">toString()</a></span> - Method in class uniol.apt.util.equations.<a href="uniol/apt/util/equations/EquationSystem.html" title="class in uniol.apt.util.equations">EquationSystem</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/util/equations/InequalitySystem.Comparator.html#toString--">toString()</a></span> - Method in enum uniol.apt.util.equations.<a href="uniol/apt/util/equations/InequalitySystem.Comparator.html" title="enum in uniol.apt.util.equations">InequalitySystem.Comparator</a></dt>
@@ -12466,7 +12522,9 @@
 <div class="block">Gets a transition system and checks if it is totally reachable</div>
 </dd>
 <dt><a href="uniol/apt/analysis/totallyreachable/TotallyReachable.Algorithm.html" title="enum in uniol.apt.analysis.totallyreachable"><span class="typeNameLink">TotallyReachable.Algorithm</span></a> - Enum in <a href="uniol/apt/analysis/totallyreachable/package-summary.html">uniol.apt.analysis.totallyreachable</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Enumeration to select the reachability test implementation.</div>
+</dd>
 <dt><a href="uniol/apt/analysis/totallyreachable/TotallyReachableModule.html" title="class in uniol.apt.analysis.totallyreachable"><span class="typeNameLink">TotallyReachableModule</span></a> - Class in <a href="uniol/apt/analysis/totallyreachable/package-summary.html">uniol.apt.analysis.totallyreachable</a></dt>
 <dd>
 <div class="block">Check if the given LTS is totally reachable.</div>
@@ -12485,15 +12543,15 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/parameter/AbstractMapParameterTransformation.html#transform-java.lang.String-">transform(String)</a></span> - Method in class uniol.apt.ui.impl.parameter.<a href="uniol/apt/ui/impl/parameter/AbstractMapParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">AbstractMapParameterTransformation</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/parameter/FiniteAutomatonParameterTransformation.html#transform-java.lang.String-">transform(String)</a></span> - Method in class uniol.apt.ui.impl.parameter.<a href="uniol/apt/ui/impl/parameter/FiniteAutomatonParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">FiniteAutomatonParameterTransformation</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html#transform-java.lang.String-">transform(String)</a></span> - Method in class uniol.apt.ui.impl.parameter.<a href="uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">AbstractParserParameterTransformation</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/parameter/FileBackedStringParameterTransformation.html#transform-java.lang.String-">transform(String)</a></span> - Method in class uniol.apt.ui.impl.parameter.<a href="uniol/apt/ui/impl/parameter/FileBackedStringParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">FileBackedStringParameterTransformation</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/parameter/GraphParameterTransformation.html#transform-java.lang.String-">transform(String)</a></span> - Method in class uniol.apt.ui.impl.parameter.<a href="uniol/apt/ui/impl/parameter/GraphParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">GraphParameterTransformation</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/parameter/IntegerParameterTransformation.html#transform-java.lang.String-">transform(String)</a></span> - Method in class uniol.apt.ui.impl.parameter.<a href="uniol/apt/ui/impl/parameter/IntegerParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">IntegerParameterTransformation</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/parameter/NetOrTSParameterTransformation.html#transform-java.lang.String-">transform(String)</a></span> - Method in class uniol.apt.ui.impl.parameter.<a href="uniol/apt/ui/impl/parameter/NetOrTSParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">NetOrTSParameterTransformation</a></dt>
-<dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/parameter/ParserParameterTransformation.html#transform-java.lang.String-">transform(String)</a></span> - Method in class uniol.apt.ui.impl.parameter.<a href="uniol/apt/ui/impl/parameter/ParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">ParserParameterTransformation</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/parameter/StringParameterTransformation.html#transform-java.lang.String-">transform(String)</a></span> - Method in class uniol.apt.ui.impl.parameter.<a href="uniol/apt/ui/impl/parameter/StringParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">StringParameterTransformation</a></dt>
 <dd>&nbsp;</dd>
@@ -12534,11 +12592,33 @@
 <div class="block">Transforms a parameter string to an object of a specific type.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/ui/ParameterTransformation.html#transform-java.lang.String-">transform(String)</a></span> - Method in interface uniol.apt.ui.<a href="uniol/apt/ui/ParameterTransformation.html" title="interface in uniol.apt.ui">ParameterTransformation</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Transforms the given string-typed parameter into some target type T.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/ui/ReturnValuesTransformer.html#transform-java.io.Writer-java.lang.Object-java.lang.Class-">transform(Writer, Object, Class&lt;T&gt;)</a></span> - Method in interface uniol.apt.ui.<a href="uniol/apt/ui/ReturnValuesTransformer.html" title="interface in uniol.apt.ui">ReturnValuesTransformer</a></dt>
-<dd>&nbsp;</dd>
+<dd>
+<div class="block">Transforms the given argument to a string and appends it to the given
+ writer.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/ui/ReturnValueTransformation.html#transform-java.io.Writer-T-">transform(Writer, T)</a></span> - Method in interface uniol.apt.ui.<a href="uniol/apt/ui/ReturnValueTransformation.html" title="interface in uniol.apt.ui">ReturnValueTransformation</a></dt>
+<dd>
+<div class="block">Transforms the given argument into a string and appends it to the
+ writer.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/ParametersTransformerImpl.html#transformFile-java.lang.String-java.lang.Class-">transformFile(String, Class&lt;?&gt;)</a></span> - Method in class uniol.apt.ui.impl.<a href="uniol/apt/ui/impl/ParametersTransformerImpl.html" title="class in uniol.apt.ui.impl">ParametersTransformerImpl</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/ui/ParametersTransformer.html#transformFile-java.lang.String-java.lang.Class-">transformFile(String, Class&lt;?&gt;)</a></span> - Method in interface uniol.apt.ui.<a href="uniol/apt/ui/ParametersTransformer.html" title="interface in uniol.apt.ui">ParametersTransformer</a></dt>
+<dd>
+<div class="block">Transforms a parameter string containing a filename to an object of a
+ specific type.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/ui/impl/ParametersTransformerImpl.html#transformString-java.lang.String-java.lang.Class-">transformString(String, Class&lt;?&gt;)</a></span> - Method in class uniol.apt.ui.impl.<a href="uniol/apt/ui/impl/ParametersTransformerImpl.html" title="class in uniol.apt.ui.impl">ParametersTransformerImpl</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/ui/ParametersTransformer.html#transformString-java.lang.String-java.lang.Class-">transformString(String, Class&lt;?&gt;)</a></span> - Method in interface uniol.apt.ui.<a href="uniol/apt/ui/ParametersTransformer.html" title="interface in uniol.apt.ui">ParametersTransformer</a></dt>
+<dd>
+<div class="block">Transforms a parameter string containing the raw parameter value to
+ an object of a specific type.</div>
+</dd>
 <dt><a href="uniol/apt/adt/pn/Transition.html" title="class in uniol.apt.adt.pn"><span class="typeNameLink">Transition</span></a> - Class in <a href="uniol/apt/adt/pn/package-summary.html">uniol.apt.adt.pn</a></dt>
 <dd>
 <div class="block">The Transition class for PetriNets.</div>

@@ -117,7 +117,7 @@ var activeTableTab = "activeTableTab";
 public class <span class="typeNameLabel">IntegerParameterTransformation</span>
 extends java.lang.Object
 implements <a href="../../../../../uniol/apt/ui/ParameterTransformation.html" title="interface in uniol.apt.ui">ParameterTransformation</a>&lt;java.lang.Integer&gt;</pre>
-<div class="block">Transform a string into itself (aka identity function).</div>
+<div class="block">Transform a string into an integer value.</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
 <dd>Renke Grunwald</dd>
@@ -159,7 +159,9 @@ implements <a href="../../../../../uniol/apt/ui/ParameterTransformation.html" ti
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>java.lang.Integer</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/ui/impl/parameter/IntegerParameterTransformation.html#transform-java.lang.String-">transform</a></span>(java.lang.String&nbsp;arg)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/ui/impl/parameter/IntegerParameterTransformation.html#transform-java.lang.String-">transform</a></span>(java.lang.String&nbsp;arg)</code>
+<div class="block">Transforms the given string-typed parameter into some target type T.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -208,11 +210,17 @@ implements <a href="../../../../../uniol/apt/ui/ParameterTransformation.html" ti
 <h4>transform</h4>
 <pre>public&nbsp;java.lang.Integer&nbsp;transform(java.lang.String&nbsp;arg)
                             throws <a href="../../../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../uniol/apt/ui/ParameterTransformation.html#transform-java.lang.String-">ParameterTransformation</a></code></span></div>
+<div class="block">Transforms the given string-typed parameter into some target type T.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../../uniol/apt/ui/ParameterTransformation.html#transform-java.lang.String-">transform</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../uniol/apt/ui/ParameterTransformation.html" title="interface in uniol.apt.ui">ParameterTransformation</a>&lt;java.lang.Integer&gt;</code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>arg</code> - parameter</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>parameter transformed into type T</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></code></dd>
+<dd><code><a href="../../../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></code> - thrown when the transformation fails</dd>
 </dl>
 </li>
 </ul>

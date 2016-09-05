@@ -1618,7 +1618,10 @@
 <tr class="altColor">
 <td class="colFirst"><code>java.util.List&lt;java.lang.Object&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">ModuleInvoker.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/module/impl/ModuleInvoker.html#invoke-uniol.apt.module.Module-java.lang.Object...-">invoke</a></span>(<a href="../../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>&nbsp;module,
-      java.lang.Object...&nbsp;arguments)</code>&nbsp;</td>
+      java.lang.Object...&nbsp;arguments)</code>
+<div class="block">Maps the given array of arguments to the modules required and
+ optional input parameters and then executes the module on those.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
@@ -1671,7 +1674,9 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../uniol/apt/ui/ParameterTransformation.html" title="type parameter in ParameterTransformation">T</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ParameterTransformation.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/ui/ParameterTransformation.html#transform-java.lang.String-">transform</a></span>(java.lang.String&nbsp;arg)</code>&nbsp;</td>
+<td class="colLast"><span class="typeNameLabel">ParameterTransformation.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/ui/ParameterTransformation.html#transform-java.lang.String-">transform</a></span>(java.lang.String&nbsp;arg)</code>
+<div class="block">Transforms the given string-typed parameter into some target type T.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
@@ -1684,12 +1689,34 @@
 <td class="colFirst"><code>&lt;T&gt;&nbsp;void</code></td>
 <td class="colLast"><span class="typeNameLabel">ReturnValuesTransformer.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/ui/ReturnValuesTransformer.html#transform-java.io.Writer-java.lang.Object-java.lang.Class-">transform</a></span>(java.io.Writer&nbsp;output,
          java.lang.Object&nbsp;arg,
-         java.lang.Class&lt;T&gt;&nbsp;klass)</code>&nbsp;</td>
+         java.lang.Class&lt;T&gt;&nbsp;klass)</code>
+<div class="block">Transforms the given argument to a string and appends it to the given
+ writer.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">ReturnValueTransformation.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/ui/ReturnValueTransformation.html#transform-java.io.Writer-T-">transform</a></span>(java.io.Writer&nbsp;output,
-         <a href="../../../../../uniol/apt/ui/ReturnValueTransformation.html" title="type parameter in ReturnValueTransformation">T</a>&nbsp;arg)</code>&nbsp;</td>
+         <a href="../../../../../uniol/apt/ui/ReturnValueTransformation.html" title="type parameter in ReturnValueTransformation">T</a>&nbsp;arg)</code>
+<div class="block">Transforms the given argument into a string and appends it to the
+ writer.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.lang.Object</code></td>
+<td class="colLast"><span class="typeNameLabel">ParametersTransformer.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/ui/ParametersTransformer.html#transformFile-java.lang.String-java.lang.Class-">transformFile</a></span>(java.lang.String&nbsp;arg,
+             java.lang.Class&lt;?&gt;&nbsp;klass)</code>
+<div class="block">Transforms a parameter string containing a filename to an object of a
+ specific type.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.lang.Object</code></td>
+<td class="colLast"><span class="typeNameLabel">ParametersTransformer.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/ui/ParametersTransformer.html#transformString-java.lang.String-java.lang.Class-">transformString</a></span>(java.lang.String&nbsp;arg,
+               java.lang.Class&lt;?&gt;&nbsp;klass)</code>
+<div class="block">Transforms a parameter string containing the raw parameter value to
+ an object of a specific type.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -1726,6 +1753,16 @@
          java.lang.Object&nbsp;arg,
          java.lang.Class&lt;T&gt;&nbsp;klass)</code>&nbsp;</td>
 </tr>
+<tr class="altColor">
+<td class="colFirst"><code>java.lang.Object</code></td>
+<td class="colLast"><span class="typeNameLabel">ParametersTransformerImpl.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/ui/impl/ParametersTransformerImpl.html#transformFile-java.lang.String-java.lang.Class-">transformFile</a></span>(java.lang.String&nbsp;arg,
+             java.lang.Class&lt;?&gt;&nbsp;klass)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>java.lang.Object</code></td>
+<td class="colLast"><span class="typeNameLabel">ParametersTransformerImpl.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/ui/impl/ParametersTransformerImpl.html#transformString-java.lang.String-java.lang.Class-">transformString</a></span>(java.lang.String&nbsp;arg,
+               java.lang.Class&lt;?&gt;&nbsp;klass)</code>&nbsp;</td>
+</tr>
 </tbody>
 </table>
 </li>
@@ -1745,26 +1782,22 @@
 <td class="colLast"><span class="typeNameLabel">WordParameterTransformation.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/ui/impl/parameter/WordParameterTransformation.html#transform-java.lang.String-">transform</a></span>(java.lang.String&nbsp;arg)</code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../uniol/apt/ui/impl/parameter/ParserParameterTransformation.html" title="type parameter in ParserParameterTransformation">G</a></code></td>
-<td class="colLast"><span class="typeNameLabel">ParserParameterTransformation.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/ui/impl/parameter/ParserParameterTransformation.html#transform-java.lang.String-">transform</a></span>(java.lang.String&nbsp;filename)</code>&nbsp;</td>
+<td class="colFirst"><code><a href="../../../../../uniol/apt/adt/PetriNetOrTransitionSystem.html" title="class in uniol.apt.adt">PetriNetOrTransitionSystem</a></code></td>
+<td class="colLast"><span class="typeNameLabel">NetOrTSParameterTransformation.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/ui/impl/parameter/NetOrTSParameterTransformation.html#transform-java.lang.String-">transform</a></span>(java.lang.String&nbsp;input)</code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code><a href="../../../../../uniol/apt/adt/PetriNetOrTransitionSystem.html" title="class in uniol.apt.adt">PetriNetOrTransitionSystem</a></code></td>
-<td class="colLast"><span class="typeNameLabel">NetOrTSParameterTransformation.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/ui/impl/parameter/NetOrTSParameterTransformation.html#transform-java.lang.String-">transform</a></span>(java.lang.String&nbsp;filename)</code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
 <td class="colFirst"><code>java.lang.Integer</code></td>
 <td class="colLast"><span class="typeNameLabel">IntegerParameterTransformation.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/ui/impl/parameter/IntegerParameterTransformation.html#transform-java.lang.String-">transform</a></span>(java.lang.String&nbsp;arg)</code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../uniol/apt/adt/IGraph.html" title="interface in uniol.apt.adt">IGraph</a>&lt;?,?,?&gt;</code></td>
 <td class="colLast"><span class="typeNameLabel">GraphParameterTransformation.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/ui/impl/parameter/GraphParameterTransformation.html#transform-java.lang.String-">transform</a></span>(java.lang.String&nbsp;arg)</code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
-<td class="colFirst"><code><a href="../../../../../uniol/apt/adt/automaton/FiniteAutomaton.html" title="interface in uniol.apt.adt.automaton">FiniteAutomaton</a></code></td>
-<td class="colLast"><span class="typeNameLabel">FiniteAutomatonParameterTransformation.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/ui/impl/parameter/FiniteAutomatonParameterTransformation.html#transform-java.lang.String-">transform</a></span>(java.lang.String&nbsp;regularExpression)</code>&nbsp;</td>
-</tr>
 <tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html" title="type parameter in AbstractParserParameterTransformation">G</a></code></td>
+<td class="colLast"><span class="typeNameLabel">AbstractParserParameterTransformation.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html#transform-java.lang.String-">transform</a></span>(java.lang.String&nbsp;input)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../uniol/apt/ui/impl/parameter/AbstractMapParameterTransformation.html" title="type parameter in AbstractMapParameterTransformation">T</a></code></td>
 <td class="colLast"><span class="typeNameLabel">AbstractMapParameterTransformation.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/ui/impl/parameter/AbstractMapParameterTransformation.html#transform-java.lang.String-">transform</a></span>(java.lang.String&nbsp;arg)</code>&nbsp;</td>
 </tr>

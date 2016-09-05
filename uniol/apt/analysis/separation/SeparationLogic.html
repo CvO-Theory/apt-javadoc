@@ -140,7 +140,8 @@ extends java.lang.Object</pre>
                java.util.ArrayList&lt;java.lang.String&gt;&nbsp;chosenFiringSequence,
                int&nbsp;maxLength,
                boolean&nbsp;fullOutput)</code>
-<div class="block">Class constructor.</div>
+<div class="block">Main idea is to compute reachability graph for net with marking k*M0
+ (rg_kM0) and reachability graph with marking M0 (rg_M0).</div>
 </td>
 </tr>
 </table>
@@ -207,25 +208,28 @@ extends java.lang.Object</pre>
                        int&nbsp;maxLength,
                        boolean&nbsp;fullOutput)
                 throws <a href="../../../../uniol/apt/analysis/exception/UnboundedException.html" title="class in uniol.apt.analysis.exception">UnboundedException</a></pre>
-<div class="block">Class constructor.
+<div class="block">Main idea is to compute reachability graph for net with marking k*M0
+ (rg_kM0) and reachability graph with marking M0 (rg_M0).
 
- Note:
-   We check every possible firable sequence -- using Coverabily Class, so unbounded
-   nets will be sorted out.
-   Main idea is to compute reachability graph for net with marking k*M0 (rg_kM0) and
-   reachability graph with marking M0 (rg_M0).
-   Strongly separation: Try to realize every sequence of rg_kM0 with sequences from rg_M0.
-   Sequences from rg_M0 can be used k times. It is allowed to switch between sequences
-   of rg_M0 but the order in a sequence must not be changed.
-   Weakly separation: Same as strongly but here the order in a sequence can be changed.</div>
+ <p>Note: We check every possible firable sequence -- using Coverabily
+ Class, so unbounded nets will be sorted out.
+
+ <p>Strongly separation: Try to realize every sequence of rg_kM0 with
+ sequences from rg_M0. Sequences from rg_M0 can be used k times. It is
+ allowed to switch between sequences of rg_M0 but the order in a
+ sequence must not be changed.
+
+ <p>Weakly separation: Same as strongly but here the order in a sequence
+ can be changed.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>petriNet</code> - Net which will be checked</dd>
 <dd><code>stronglyCheck</code> - check strong or weakly</dd>
-<dd><code>initK</code> - Value for k, k == 0 -&gt; compute the maximum k and use it. k must be "ok" - see separation class</dd>
+<dd><code>initK</code> - Value for k, k == 0 -&gt; compute the maximum k and
+                use it. k must be "ok" - see separation class</dd>
 <dd><code>chosenFiringSequence</code> - check this given firing sequence - null for unused</dd>
-<dd><code>maxLength</code> - check all sequences up this length - must be greater than 0
-        - unused if chosenFiringSequence was set</dd>
+<dd><code>maxLength</code> - check all sequences up this length - must be greater
+                than 0 - unused if chosenFiringSequence was set</dd>
 <dd><code>fullOutput</code> - outputs every firing sequence</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../uniol/apt/analysis/exception/UnboundedException.html" title="class in uniol.apt.analysis.exception">UnboundedException</a></code> - Unbounded exception</dd>

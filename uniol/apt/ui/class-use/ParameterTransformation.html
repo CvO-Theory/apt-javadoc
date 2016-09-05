@@ -112,7 +112,9 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>interface&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/DescribedParameterTransformation.html" title="interface in uniol.apt.ui">DescribedParameterTransformation</a>&lt;T&gt;</span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/DescribedParameterTransformation.html" title="interface in uniol.apt.ui">DescribedParameterTransformation</a>&lt;T&gt;</span></code>
+<div class="block">Transforms a parameter that is given as a string into some target type T.</div>
+</td>
 </tr>
 </tbody>
 </table>
@@ -192,19 +194,31 @@
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/parameter/AptLTSParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">AptLTSParserParameterTransformation</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">AbstractParserParameterTransformation</a>&lt;G&gt;</span></code>
+<div class="block">Abstract transformation that uses a parser to interpret a given string.</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/parameter/AptPNParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">AptPNParserParameterTransformation</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/parameter/AptLTSParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">AptLTSParserParameterTransformation</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/parameter/ComputeSmallestCyclesAlgorithmsParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">ComputeSmallestCyclesAlgorithmsParameterTransformation</a></span></code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/parameter/AptPNParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">AptPNParserParameterTransformation</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/parameter/ComputeSmallestCyclesAlgorithmsParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">ComputeSmallestCyclesAlgorithmsParameterTransformation</a></span></code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/parameter/ExtendModeParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">ExtendModeParameterTransformation</a></span></code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/parameter/FileBackedStringParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">FileBackedStringParameterTransformation</a></span></code>
+<div class="block">Transform a string into itself (aka identity function).</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
@@ -217,7 +231,7 @@
 <tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/parameter/IntegerParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">IntegerParameterTransformation</a></span></code>
-<div class="block">Transform a string into itself (aka identity function).</div>
+<div class="block">Transform a string into an integer value.</div>
 </td>
 </tr>
 <tr class="altColor">
@@ -240,15 +254,11 @@
 </tr>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/parameter/ParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">ParserParameterTransformation</a>&lt;G&gt;</span></code>&nbsp;</td>
-</tr>
-<tr class="rowColor">
-<td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/parameter/StringParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">StringParameterTransformation</a></span></code>
 <div class="block">Transform a string into itself (aka identity function).</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/parameter/WordParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">WordParameterTransformation</a></span></code>
 <div class="block">Transform a string into an instance of Word.</div>

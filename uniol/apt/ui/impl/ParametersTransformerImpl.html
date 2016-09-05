@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -187,6 +187,22 @@ implements <a href="../../../../uniol/apt/ui/ParametersTransformer.html" title="
 <div class="block">Transforms a parameter string to an object of a specific type.</div>
 </td>
 </tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>java.lang.Object</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/ParametersTransformerImpl.html#transformFile-java.lang.String-java.lang.Class-">transformFile</a></span>(java.lang.String&nbsp;arg,
+             java.lang.Class&lt;?&gt;&nbsp;klass)</code>
+<div class="block">Transforms a parameter string containing a filename to an object of a
+ specific type.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>java.lang.Object</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/ParametersTransformerImpl.html#transformString-java.lang.String-java.lang.Class-">transformString</a></span>(java.lang.String&nbsp;arg,
+               java.lang.Class&lt;?&gt;&nbsp;klass)</code>
+<div class="block">Transforms a parameter string containing the raw parameter value to
+ an object of a specific type.</div>
+</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -292,26 +308,82 @@ implements <a href="../../../../uniol/apt/ui/ParametersTransformer.html" title="
 <a name="transform-java.lang.String-java.lang.Class-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>transform</h4>
 <pre>public&nbsp;java.lang.Object&nbsp;transform(java.lang.String&nbsp;arg,
                                   java.lang.Class&lt;?&gt;&nbsp;klass)
                            throws <a href="../../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../uniol/apt/ui/ParametersTransformer.html#transform-java.lang.String-java.lang.Class-">ParametersTransformer</a></code></span></div>
-<div class="block">Transforms a parameter string to an object of a specific type.</div>
+<div class="block">Transforms a parameter string to an object of a specific type. The
+ string argument is either interpreted as a filename or raw parameter
+ value depending on the type it is being transformed into.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../uniol/apt/ui/ParametersTransformer.html#transform-java.lang.String-java.lang.Class-">transform</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../uniol/apt/ui/ParametersTransformer.html" title="interface in uniol.apt.ui">ParametersTransformer</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>arg</code> - the parameter string</dd>
 <dd><code>klass</code> - the type of the object the parameter string should be
-            transformed to</dd>
+                transformed to</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the transformed object</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../../uniol/apt/module/exception/NoSuchTransformationException.html" title="class in uniol.apt.module.exception">NoSuchTransformationException</a></code> - When no suitable transformation is available</dd>
-<dd><code><a href="../../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></code></dd>
+<dd><code><a href="../../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></code> - When no suitable transformation is available</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../uniol/apt/ui/AptParameterTransformation.html#fileSource--"><code>AptParameterTransformation.fileSource()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="transformString-java.lang.String-java.lang.Class-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>transformString</h4>
+<pre>public&nbsp;java.lang.Object&nbsp;transformString(java.lang.String&nbsp;arg,
+                                        java.lang.Class&lt;?&gt;&nbsp;klass)
+                                 throws <a href="../../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../uniol/apt/ui/ParametersTransformer.html#transformString-java.lang.String-java.lang.Class-">ParametersTransformer</a></code></span></div>
+<div class="block">Transforms a parameter string containing the raw parameter value to
+ an object of a specific type.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../uniol/apt/ui/ParametersTransformer.html#transformString-java.lang.String-java.lang.Class-">transformString</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../uniol/apt/ui/ParametersTransformer.html" title="interface in uniol.apt.ui">ParametersTransformer</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>arg</code> - the parameter string</dd>
+<dd><code>klass</code> - the type of the object the parameter string should be
+                transformed to</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the transformed object</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></code> - When no suitable transformation is available</dd>
+</dl>
+</li>
+</ul>
+<a name="transformFile-java.lang.String-java.lang.Class-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>transformFile</h4>
+<pre>public&nbsp;java.lang.Object&nbsp;transformFile(java.lang.String&nbsp;arg,
+                                      java.lang.Class&lt;?&gt;&nbsp;klass)
+                               throws <a href="../../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../uniol/apt/ui/ParametersTransformer.html#transformFile-java.lang.String-java.lang.Class-">ParametersTransformer</a></code></span></div>
+<div class="block">Transforms a parameter string containing a filename to an object of a
+ specific type. The file will be read and the contents then passed to
+ <a href="../../../../uniol/apt/ui/ParametersTransformer.html#transformString-java.lang.String-java.lang.Class-"><code>ParametersTransformer.transformString(String, Class)</code></a>.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../uniol/apt/ui/ParametersTransformer.html#transformFile-java.lang.String-java.lang.Class-">transformFile</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../uniol/apt/ui/ParametersTransformer.html" title="interface in uniol.apt.ui">ParametersTransformer</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>arg</code> - the parameter string</dd>
+<dd><code>klass</code> - the type of the object the parameter string should be
+                transformed to</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the transformed object</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></code> - When no suitable transformation is available</dd>
 </dl>
 </li>
 </ul>

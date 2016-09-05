@@ -137,7 +137,9 @@ extends java.lang.Object</pre>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>static java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/UIUtils.html#getModuleUsage-uniol.apt.module.Module-uniol.apt.ui.ParametersTransformer-">getModuleUsage</a></span>(<a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>&nbsp;module,
-              <a href="../../../../uniol/apt/ui/ParametersTransformer.html" title="interface in uniol.apt.ui">ParametersTransformer</a>&nbsp;parametersTransformer)</code>&nbsp;</td>
+              <a href="../../../../uniol/apt/ui/ParametersTransformer.html" title="interface in uniol.apt.ui">ParametersTransformer</a>&nbsp;parametersTransformer)</code>
+<div class="block">Returns a usage string describing how to use the module.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -170,9 +172,17 @@ extends java.lang.Object</pre>
 <pre>public static&nbsp;java.lang.String&nbsp;getModuleUsage(<a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a>&nbsp;module,
                                               <a href="../../../../uniol/apt/ui/ParametersTransformer.html" title="interface in uniol.apt.ui">ParametersTransformer</a>&nbsp;parametersTransformer)
                                        throws <a href="../../../../uniol/apt/module/exception/NoSuchTransformationException.html" title="class in uniol.apt.module.exception">NoSuchTransformationException</a></pre>
+<div class="block">Returns a usage string describing how to use the module.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>module</code> - module in question</dd>
+<dd><code>parametersTransformer</code> - transformer for getting descriptions of the string
+                transformations</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>usage string</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../../uniol/apt/module/exception/NoSuchTransformationException.html" title="class in uniol.apt.module.exception">NoSuchTransformationException</a></code></dd>
+<dd><code><a href="../../../../uniol/apt/module/exception/NoSuchTransformationException.html" title="class in uniol.apt.module.exception">NoSuchTransformationException</a></code> - thrown if there is no applicable transformation for a
+                 parameter</dd>
 </dl>
 </li>
 </ul>

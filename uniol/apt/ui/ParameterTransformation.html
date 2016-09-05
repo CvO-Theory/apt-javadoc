@@ -100,16 +100,21 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <dl>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - transformation target type</dd>
+</dl>
+<dl>
 <dt>All Known Subinterfaces:</dt>
 <dd><a href="../../../uniol/apt/ui/DescribedParameterTransformation.html" title="interface in uniol.apt.ui">DescribedParameterTransformation</a>&lt;T&gt;</dd>
 </dl>
 <dl>
 <dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../uniol/apt/ui/impl/parameter/AbstractMapParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">AbstractMapParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/AptLTSParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">AptLTSParserParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/AptPNParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">AptPNParserParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/ComputeSmallestCyclesAlgorithmsParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">ComputeSmallestCyclesAlgorithmsParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/ExtendModeParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">ExtendModeParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/FiniteAutomatonParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">FiniteAutomatonParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/GraphParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">GraphParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/IntegerParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">IntegerParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/InvariantAlgorithmParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">InvariantAlgorithmParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/InvariantKindParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">InvariantKindParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/MatrixFileFormatParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">MatrixFileFormatParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/NetOrTSParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">NetOrTSParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/ParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">ParserParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/StringParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">StringParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/WordParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">WordParameterTransformation</a></dd>
+<dd><a href="../../../uniol/apt/ui/impl/parameter/AbstractMapParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">AbstractMapParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">AbstractParserParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/AptLTSParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">AptLTSParserParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/AptPNParserParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">AptPNParserParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/ComputeSmallestCyclesAlgorithmsParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">ComputeSmallestCyclesAlgorithmsParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/ExtendModeParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">ExtendModeParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/FileBackedStringParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">FileBackedStringParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/FiniteAutomatonParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">FiniteAutomatonParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/GraphParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">GraphParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/IntegerParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">IntegerParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/InvariantAlgorithmParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">InvariantAlgorithmParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/InvariantKindParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">InvariantKindParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/MatrixFileFormatParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">MatrixFileFormatParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/NetOrTSParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">NetOrTSParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/StringParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">StringParameterTransformation</a>, <a href="../../../uniol/apt/ui/impl/parameter/WordParameterTransformation.html" title="class in uniol.apt.ui.impl.parameter">WordParameterTransformation</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">ParameterTransformation&lt;T&gt;</span></pre>
+<div class="block">Transforms a parameter that is given as a string into some target type T.</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
 <dd>Renke Grunwald</dd>
@@ -134,7 +139,9 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../uniol/apt/ui/ParameterTransformation.html" title="type parameter in ParameterTransformation">T</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/ui/ParameterTransformation.html#transform-java.lang.String-">transform</a></span>(java.lang.String&nbsp;arg)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/ui/ParameterTransformation.html#transform-java.lang.String-">transform</a></span>(java.lang.String&nbsp;arg)</code>
+<div class="block">Transforms the given string-typed parameter into some target type T.</div>
+</td>
 </tr>
 </table>
 </li>
@@ -159,9 +166,14 @@ var activeTableTab = "activeTableTab";
 <h4>transform</h4>
 <pre><a href="../../../uniol/apt/ui/ParameterTransformation.html" title="type parameter in ParameterTransformation">T</a>&nbsp;transform(java.lang.String&nbsp;arg)
      throws <a href="../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></pre>
+<div class="block">Transforms the given string-typed parameter into some target type T.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>arg</code> - parameter</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>parameter transformed into type T</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></code></dd>
+<dd><code><a href="../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></code> - thrown when the transformation fails</dd>
 </dl>
 </li>
 </ul>
