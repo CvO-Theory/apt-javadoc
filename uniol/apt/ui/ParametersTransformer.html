@@ -151,9 +151,9 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/ui/ParametersTransformer.html#transformFile-java.lang.String-java.lang.Class-">transformFile</a></span>(java.lang.String&nbsp;arg,
-             java.lang.Class&lt;?&gt;&nbsp;klass)</code>
-<div class="block">Transforms a parameter string containing a filename to an object of a
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/ui/ParametersTransformer.html#transformStream-java.io.InputStream-java.lang.Class-">transformStream</a></span>(java.io.InputStream&nbsp;istr,
+               java.lang.Class&lt;?&gt;&nbsp;klass)</code>
+<div class="block">Transforms the contents read from the given stream to an object of a
  specific type.</div>
 </td>
 </tr>
@@ -227,8 +227,9 @@ var activeTableTab = "activeTableTab";
                            java.lang.Class&lt;?&gt;&nbsp;klass)
                     throws <a href="../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></pre>
 <div class="block">Transforms a parameter string to an object of a specific type. The
- string argument is either interpreted as a filename or raw parameter
- value depending on the type it is being transformed into.</div>
+ string argument is either interpreted as a filename, input stream or
+ raw parameter value depending on its value and the type it is being
+ transformed into.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>arg</code> - the parameter string</dd>
@@ -266,21 +267,21 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="transformFile-java.lang.String-java.lang.Class-">
+<a name="transformStream-java.io.InputStream-java.lang.Class-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>transformFile</h4>
-<pre>java.lang.Object&nbsp;transformFile(java.lang.String&nbsp;arg,
-                               java.lang.Class&lt;?&gt;&nbsp;klass)
-                        throws <a href="../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></pre>
-<div class="block">Transforms a parameter string containing a filename to an object of a
+<h4>transformStream</h4>
+<pre>java.lang.Object&nbsp;transformStream(java.io.InputStream&nbsp;istr,
+                                 java.lang.Class&lt;?&gt;&nbsp;klass)
+                          throws <a href="../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></pre>
+<div class="block">Transforms the contents read from the given stream to an object of a
  specific type. The file will be read and the contents then passed to
  <a href="../../../uniol/apt/ui/ParametersTransformer.html#transformString-java.lang.String-java.lang.Class-"><code>transformString(String, Class)</code></a>.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>arg</code> - the parameter string</dd>
+<dd><code>istr</code> - input stream to read</dd>
 <dd><code>klass</code> - the type of the object the parameter string should be
                 transformed to</dd>
 <dt><span class="returnLabel">Returns:</span></dt>

@@ -75,13 +75,13 @@ var activeTableTab = "activeTableTab";
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
@@ -132,6 +132,28 @@ implements <a href="../../../../uniol/apt/ui/ParametersTransformer.html" title="
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- =========== FIELD SUMMARY =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.summary">
+<!--   -->
+</a>
+<h3>Field Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Field Summary table, listing fields, and an explanation">
+<caption><span>Fields</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/ParametersTransformerImpl.html#STANDARD_INPUT_SYMBOL">STANDARD_INPUT_SYMBOL</a></span></code>
+<div class="block">Symbol that signals that a file should be read from the standard
+ input.</div>
+</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ======== CONSTRUCTOR SUMMARY ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.summary">
@@ -189,9 +211,9 @@ implements <a href="../../../../uniol/apt/ui/ParametersTransformer.html" title="
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.Object</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/ParametersTransformerImpl.html#transformFile-java.lang.String-java.lang.Class-">transformFile</a></span>(java.lang.String&nbsp;arg,
-             java.lang.Class&lt;?&gt;&nbsp;klass)</code>
-<div class="block">Transforms a parameter string containing a filename to an object of a
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/ParametersTransformerImpl.html#transformStream-java.io.InputStream-java.lang.Class-">transformStream</a></span>(java.io.InputStream&nbsp;istr,
+               java.lang.Class&lt;?&gt;&nbsp;klass)</code>
+<div class="block">Transforms the contents read from the given stream to an object of a
  specific type.</div>
 </td>
 </tr>
@@ -219,6 +241,29 @@ implements <a href="../../../../uniol/apt/ui/ParametersTransformer.html" title="
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ============ FIELD DETAIL =========== -->
+<ul class="blockList">
+<li class="blockList"><a name="field.detail">
+<!--   -->
+</a>
+<h3>Field Detail</h3>
+<a name="STANDARD_INPUT_SYMBOL">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>STANDARD_INPUT_SYMBOL</h4>
+<pre>public static final&nbsp;java.lang.String STANDARD_INPUT_SYMBOL</pre>
+<div class="block">Symbol that signals that a file should be read from the standard
+ input.</div>
+<dl>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../../../constant-values.html#uniol.apt.ui.impl.ParametersTransformerImpl.STANDARD_INPUT_SYMBOL">Constant Field Values</a></dd>
+</dl>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ========= CONSTRUCTOR DETAIL ======== -->
 <ul class="blockList">
 <li class="blockList"><a name="constructor.detail">
@@ -316,8 +361,9 @@ implements <a href="../../../../uniol/apt/ui/ParametersTransformer.html" title="
                            throws <a href="../../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../uniol/apt/ui/ParametersTransformer.html#transform-java.lang.String-java.lang.Class-">ParametersTransformer</a></code></span></div>
 <div class="block">Transforms a parameter string to an object of a specific type. The
- string argument is either interpreted as a filename or raw parameter
- value depending on the type it is being transformed into.</div>
+ string argument is either interpreted as a filename, input stream or
+ raw parameter value depending on its value and the type it is being
+ transformed into.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../uniol/apt/ui/ParametersTransformer.html#transform-java.lang.String-java.lang.Class-">transform</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../uniol/apt/ui/ParametersTransformer.html" title="interface in uniol.apt.ui">ParametersTransformer</a></code></dd>
@@ -360,24 +406,24 @@ implements <a href="../../../../uniol/apt/ui/ParametersTransformer.html" title="
 </dl>
 </li>
 </ul>
-<a name="transformFile-java.lang.String-java.lang.Class-">
+<a name="transformStream-java.io.InputStream-java.lang.Class-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>transformFile</h4>
-<pre>public&nbsp;java.lang.Object&nbsp;transformFile(java.lang.String&nbsp;arg,
-                                      java.lang.Class&lt;?&gt;&nbsp;klass)
-                               throws <a href="../../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../uniol/apt/ui/ParametersTransformer.html#transformFile-java.lang.String-java.lang.Class-">ParametersTransformer</a></code></span></div>
-<div class="block">Transforms a parameter string containing a filename to an object of a
+<h4>transformStream</h4>
+<pre>public&nbsp;java.lang.Object&nbsp;transformStream(java.io.InputStream&nbsp;istr,
+                                        java.lang.Class&lt;?&gt;&nbsp;klass)
+                                 throws <a href="../../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../uniol/apt/ui/ParametersTransformer.html#transformStream-java.io.InputStream-java.lang.Class-">ParametersTransformer</a></code></span></div>
+<div class="block">Transforms the contents read from the given stream to an object of a
  specific type. The file will be read and the contents then passed to
  <a href="../../../../uniol/apt/ui/ParametersTransformer.html#transformString-java.lang.String-java.lang.Class-"><code>ParametersTransformer.transformString(String, Class)</code></a>.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../uniol/apt/ui/ParametersTransformer.html#transformFile-java.lang.String-java.lang.Class-">transformFile</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../uniol/apt/ui/ParametersTransformer.html" title="interface in uniol.apt.ui">ParametersTransformer</a></code></dd>
+<dd><code><a href="../../../../uniol/apt/ui/ParametersTransformer.html#transformStream-java.io.InputStream-java.lang.Class-">transformStream</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../uniol/apt/ui/ParametersTransformer.html" title="interface in uniol.apt.ui">ParametersTransformer</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>arg</code> - the parameter string</dd>
+<dd><code>istr</code> - input stream to read</dd>
 <dd><code>klass</code> - the type of the object the parameter string should be
                 transformed to</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -441,13 +487,13 @@ implements <a href="../../../../uniol/apt/ui/ParametersTransformer.html" title="
 <ul class="subNavList">
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.summary">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
-<li>Field&nbsp;|&nbsp;</li>
+<li><a href="#field.detail">Field</a>&nbsp;|&nbsp;</li>
 <li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
