@@ -179,7 +179,8 @@ extends java.lang.Object</pre>
 <h4>overapproximate</h4>
 <pre>public static&nbsp;<a href="../../../../uniol/apt/adt/pn/PetriNet.html" title="class in uniol.apt.adt.pn">PetriNet</a>&nbsp;overapproximate(<a href="../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
                                        <a href="../../../../uniol/apt/analysis/synthesize/PNProperties.html" title="class in uniol.apt.analysis.synthesize">PNProperties</a>&nbsp;properties)
-                                throws <a href="../../../../uniol/apt/analysis/synthesize/MissingLocationException.html" title="class in uniol.apt.analysis.synthesize">MissingLocationException</a></pre>
+                                throws <a href="../../../../uniol/apt/analysis/synthesize/MissingLocationException.html" title="class in uniol.apt.analysis.synthesize">MissingLocationException</a>,
+                                       <a href="../../../../uniol/apt/analysis/synthesize/separation/UnsupportedPNPropertiesException.html" title="class in uniol.apt.analysis.synthesize.separation">UnsupportedPNPropertiesException</a></pre>
 <div class="block">Calculate the minimal Petri Net over-approximation of a transition system.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -189,6 +190,7 @@ extends java.lang.Object</pre>
 <dd>A Petri net being a minimal over-approximation of the input.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../uniol/apt/analysis/synthesize/MissingLocationException.html" title="class in uniol.apt.analysis.synthesize">MissingLocationException</a></code> - If some states of the input have a location and others do not.</dd>
+<dd><code><a href="../../../../uniol/apt/analysis/synthesize/separation/UnsupportedPNPropertiesException.html" title="class in uniol.apt.analysis.synthesize.separation">UnsupportedPNPropertiesException</a></code> - If overapproximation is not possible for the given input.</dd>
 </dl>
 </li>
 </ul>
