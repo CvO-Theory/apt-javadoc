@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -222,30 +222,36 @@ implements <a href="../../../uniol/apt/adt/INode.html" title="interface in uniol
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>java.lang.Iterable&lt;<a href="../../../uniol/apt/adt/Node.html" title="type parameter in Node">E</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/adt/Node.html#getNeighboringEdges--">getNeighboringEdges</a></span>()</code>
+<div class="block">Retrieves a view of all edges connected to this node.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../uniol/apt/adt/Node.html" title="type parameter in Node">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/adt/Node.html#getPostsetEdges--">getPostsetEdges</a></span>()</code>
 <div class="block">Retrieves a view of all edges beginning in this node.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../uniol/apt/adt/Node.html" title="type parameter in Node">N</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/adt/Node.html#getPostsetNodes--">getPostsetNodes</a></span>()</code>
 <div class="block">Retrieves a view of all nodes which have an incoming edge from this node.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../uniol/apt/adt/Node.html" title="type parameter in Node">E</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/adt/Node.html#getPresetEdges--">getPresetEdges</a></span>()</code>
 <div class="block">Retrieves a view of all edges targeting this node.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../uniol/apt/adt/Node.html" title="type parameter in Node">N</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/adt/Node.html#getPresetNodes--">getPresetNodes</a></span>()</code>
 <div class="block">Retrieves a view of all nodes which have an outgoing edge to this node.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/adt/Node.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -454,6 +460,20 @@ implements <a href="../../../uniol/apt/adt/INode.html" title="interface in uniol
 <dd><code><a href="../../../uniol/apt/adt/INode.html#getPostsetEdges--">getPostsetEdges</a></code>&nbsp;in interface&nbsp;<code><a href="../../../uniol/apt/adt/INode.html" title="interface in uniol.apt.adt">INode</a>&lt;<a href="../../../uniol/apt/adt/Node.html" title="type parameter in Node">G</a> extends <a href="../../../uniol/apt/adt/IGraph.html" title="interface in uniol.apt.adt">IGraph</a>&lt;<a href="../../../uniol/apt/adt/Node.html" title="type parameter in Node">G</a>,<a href="../../../uniol/apt/adt/Node.html" title="type parameter in Node">E</a>,<a href="../../../uniol/apt/adt/Node.html" title="type parameter in Node">N</a>&gt;,<a href="../../../uniol/apt/adt/Node.html" title="type parameter in Node">E</a> extends <a href="../../../uniol/apt/adt/IEdge.html" title="interface in uniol.apt.adt">IEdge</a>&lt;<a href="../../../uniol/apt/adt/Node.html" title="type parameter in Node">G</a>,<a href="../../../uniol/apt/adt/Node.html" title="type parameter in Node">E</a>,<a href="../../../uniol/apt/adt/Node.html" title="type parameter in Node">N</a>&gt;,<a href="../../../uniol/apt/adt/Node.html" title="type parameter in Node">N</a> extends <a href="../../../uniol/apt/adt/INode.html" title="interface in uniol.apt.adt">INode</a>&lt;<a href="../../../uniol/apt/adt/Node.html" title="type parameter in Node">G</a>,<a href="../../../uniol/apt/adt/Node.html" title="type parameter in Node">E</a>,<a href="../../../uniol/apt/adt/Node.html" title="type parameter in Node">N</a>&gt;&gt;</code></dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A unmodifiable set of edges of given type E.</dd>
+</dl>
+</li>
+</ul>
+<a name="getNeighboringEdges--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getNeighboringEdges</h4>
+<pre>public&nbsp;java.lang.Iterable&lt;<a href="../../../uniol/apt/adt/Node.html" title="type parameter in Node">E</a>&gt;&nbsp;getNeighboringEdges()</pre>
+<div class="block">Retrieves a view of all edges connected to this node.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>An unmodifable iterable of edges of given type E.</dd>
 </dl>
 </li>
 </ul>
