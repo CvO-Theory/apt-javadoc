@@ -74,3 +74,4 @@ uniol.apt.ui.impl.parameter
 uniol.apt.ui.impl.returns
 uniol.apt.util
 uniol.apt.util.equations
+uniol.apt.util.interrupt

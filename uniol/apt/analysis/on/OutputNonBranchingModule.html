@@ -103,7 +103,12 @@ var activeTableTab = "activeTableTab";
 <li><a href="../../../../uniol/apt/module/AbstractModule.html" title="class in uniol.apt.module">uniol.apt.module.AbstractModule</a></li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../uniol/apt/module/AbstractInterruptibleModule.html" title="class in uniol.apt.module">uniol.apt.module.AbstractInterruptibleModule</a></li>
+<li>
+<ul class="inheritance">
 <li>uniol.apt.analysis.on.OutputNonBranchingModule</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -114,14 +119,14 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a></dd>
+<dd><a href="../../../../uniol/apt/module/InterruptibleModule.html" title="interface in uniol.apt.module">InterruptibleModule</a>, <a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a></dd>
 </dl>
 <hr>
 <br>
 <pre><a href="../../../../uniol/apt/module/AptModule.html" title="annotation in uniol.apt.module">@AptModule</a>
 public class <span class="typeNameLabel">OutputNonBranchingModule</span>
-extends <a href="../../../../uniol/apt/module/AbstractModule.html" title="class in uniol.apt.module">AbstractModule</a>
-implements <a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a></pre>
+extends <a href="../../../../uniol/apt/module/AbstractInterruptibleModule.html" title="class in uniol.apt.module">AbstractInterruptibleModule</a>
+implements <a href="../../../../uniol/apt/module/InterruptibleModule.html" title="interface in uniol.apt.module">InterruptibleModule</a></pre>
 <div class="block">This module tests if a Petri net is output-nonbranching. That is:
  <code>\forall s \in S: \mid s^\bullet \mid \leq 1</code></div>
 <dl>
@@ -215,11 +220,25 @@ implements <a href="../../../../uniol/apt/module/Module.html" title="interface i
 </tr>
 </table>
 <ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.uniol.apt.module.AbstractInterruptibleModule">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;uniol.apt.module.<a href="../../../../uniol/apt/module/AbstractInterruptibleModule.html" title="class in uniol.apt.module">AbstractInterruptibleModule</a></h3>
+<code><a href="../../../../uniol/apt/module/AbstractInterruptibleModule.html#run-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-uniol.apt.util.interrupt.Interrupter-">run</a></code></li>
+</ul>
+<ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;java.lang.Object</h3>
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.uniol.apt.module.InterruptibleModule">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;uniol.apt.module.<a href="../../../../uniol/apt/module/InterruptibleModule.html" title="interface in uniol.apt.module">InterruptibleModule</a></h3>
+<code><a href="../../../../uniol/apt/module/InterruptibleModule.html#run-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-uniol.apt.util.interrupt.Interrupter-">run</a></code></li>
 </ul>
 </li>
 </ul>
