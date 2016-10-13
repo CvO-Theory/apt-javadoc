@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -163,36 +163,42 @@ implements <a href="../../../../uniol/apt/module/Module.html" title="interface i
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../../../uniol/apt/module/Category.html" title="enum in uniol.apt.module">Category</a>[]</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/SynthesizeOverapproximateModule.html#getCategories--">getCategories</a></span>()</code>
+<div class="block">Returns the categories the module belongs to.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/SynthesizeOverapproximateModule.html#getLongDescription--">getLongDescription</a></span>()</code>
 <div class="block">Returns a long description of the module.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/SynthesizeOverapproximateModule.html#getName--">getName</a></span>()</code>
 <div class="block">Returns the name of the module.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/SynthesizeOverapproximateModule.html#getShortDescription--">getShortDescription</a></span>()</code>
 <div class="block">Returns a short description of the module.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/SynthesizeOverapproximateModule.html#provide-uniol.apt.module.ModuleOutputSpec-">provide</a></span>(<a href="../../../../uniol/apt/module/ModuleOutputSpec.html" title="interface in uniol.apt.module">ModuleOutputSpec</a>&nbsp;outputSpec)</code>
 <div class="block">Specify the return values of the module.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/SynthesizeOverapproximateModule.html#require-uniol.apt.module.ModuleInputSpec-">require</a></span>(<a href="../../../../uniol/apt/module/ModuleInputSpec.html" title="interface in uniol.apt.module">ModuleInputSpec</a>&nbsp;inputSpec)</code>
 <div class="block">Specify the parameters of the module.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/SynthesizeOverapproximateModule.html#run-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">run</a></span>(<a href="../../../../uniol/apt/module/ModuleInput.html" title="interface in uniol.apt.module">ModuleInput</a>&nbsp;input,
    <a href="../../../../uniol/apt/module/ModuleOutput.html" title="interface in uniol.apt.module">ModuleOutput</a>&nbsp;output)</code>
@@ -206,7 +212,7 @@ implements <a href="../../../../uniol/apt/module/Module.html" title="interface i
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;uniol.apt.module.<a href="../../../../uniol/apt/module/AbstractModule.html" title="class in uniol.apt.module">AbstractModule</a></h3>
-<code><a href="../../../../uniol/apt/module/AbstractModule.html#getCategories--">getCategories</a>, <a href="../../../../uniol/apt/module/AbstractModule.html#getTitle--">getTitle</a></code></li>
+<code><a href="../../../../uniol/apt/module/AbstractModule.html#getTitle--">getTitle</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -220,7 +226,7 @@ implements <a href="../../../../uniol/apt/module/Module.html" title="interface i
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;uniol.apt.module.<a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a></h3>
-<code><a href="../../../../uniol/apt/module/Module.html#getCategories--">getCategories</a>, <a href="../../../../uniol/apt/module/Module.html#getTitle--">getTitle</a></code></li>
+<code><a href="../../../../uniol/apt/module/Module.html#getTitle--">getTitle</a></code></li>
 </ul>
 </li>
 </ul>
@@ -365,7 +371,7 @@ implements <a href="../../../../uniol/apt/module/Module.html" title="interface i
 <a name="run-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>run</h4>
 <pre>public&nbsp;void&nbsp;run(<a href="../../../../uniol/apt/module/ModuleInput.html" title="interface in uniol.apt.module">ModuleInput</a>&nbsp;input,
@@ -394,8 +400,26 @@ implements <a href="../../../../uniol/apt/module/Module.html" title="interface i
 <dd><code>output</code> - storage of the outputs</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></code> - On various kinds of errors that prevent the module from working.</dd>
-<dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../uniol/apt/module/impl/ExampleModule.html#run-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-"><code>for an example implementation</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="getCategories--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getCategories</h4>
+<pre>public&nbsp;<a href="../../../../uniol/apt/module/Category.html" title="enum in uniol.apt.module">Category</a>[]&nbsp;getCategories()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../uniol/apt/module/Module.html#getCategories--">Module</a></code></span></div>
+<div class="block">Returns the categories the module belongs to. The categories are used to
+ improve the module overview making particular modules faster to find. If
+ null is returned the module is automatically assigned to the default
+ category.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../uniol/apt/module/Module.html#getCategories--">getCategories</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a></code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>an array of categories</dd>
 </dl>
 </li>
 </ul>

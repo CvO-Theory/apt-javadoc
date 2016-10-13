@@ -35,6 +35,7 @@ uniol.apt.analysis.on
 uniol.apt.analysis.persistent
 uniol.apt.analysis.petrify
 uniol.apt.analysis.plain
+uniol.apt.analysis.presynthesis.pps
 uniol.apt.analysis.product
 uniol.apt.analysis.reversible
 uniol.apt.analysis.separation
