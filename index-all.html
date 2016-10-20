@@ -1471,6 +1471,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprIdContext.html#copyFrom-uniol.apt.io.parser.impl.RegexFormatParser.ExprIdContext-">copyFrom(RegexFormatParser.ExprIdContext)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprIdContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprIdContext</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNegatePrefixContext.html#copyFrom-uniol.apt.io.parser.impl.RegexFormatParser.ExprNegatePrefixContext-">copyFrom(RegexFormatParser.ExprNegatePrefixContext)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNegatePrefixContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNegatePrefixContext</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatContext.html#copyFrom-uniol.apt.io.parser.impl.RegexFormatParser.ExprRepeatContext-">copyFrom(RegexFormatParser.ExprRepeatContext)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatContext</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/SynetPNFormatParser.FlowContext.html#copyFrom-uniol.apt.io.parser.impl.SynetPNFormatParser.FlowContext-">copyFrom(SynetPNFormatParser.FlowContext)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/SynetPNFormatParser.FlowContext.html" title="class in uniol.apt.io.parser.impl">SynetPNFormatParser.FlowContext</a></dt>
@@ -2154,13 +2156,35 @@
 <div class="block">Enter a parse tree produced by the <code>exprIdParentheses</code>
  labeled alternative in <a href="uniol/apt/io/parser/impl/RegexFormatParser.html#exprId--"><code>RegexFormatParser.exprId()</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#enterExprNegate-uniol.apt.io.parser.impl.RegexFormatParser.ExprNegateContext-">enterExprNegate(RegexFormatParser.ExprNegateContext)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html" title="class in uniol.apt.io.parser.impl">RegexFormatParserBaseListener</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#enterExprNPDirect-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPDirectContext-">enterExprNPDirect(RegexFormatParser.ExprNPDirectContext)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html" title="class in uniol.apt.io.parser.impl">RegexFormatParserBaseListener</a></dt>
 <dd>
-<div class="block">Enter a parse tree produced by <a href="uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegate--"><code>RegexFormatParser.exprNegate()</code></a>.</div>
+<div class="block">Enter a parse tree produced by the <code>exprNPDirect</code>
+ labeled alternative in <a href="uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParserListener.html#enterExprNegate-uniol.apt.io.parser.impl.RegexFormatParser.ExprNegateContext-">enterExprNegate(RegexFormatParser.ExprNegateContext)</a></span> - Method in interface uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParserListener.html" title="interface in uniol.apt.io.parser.impl">RegexFormatParserListener</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParserListener.html#enterExprNPDirect-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPDirectContext-">enterExprNPDirect(RegexFormatParser.ExprNPDirectContext)</a></span> - Method in interface uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParserListener.html" title="interface in uniol.apt.io.parser.impl">RegexFormatParserListener</a></dt>
 <dd>
-<div class="block">Enter a parse tree produced by <a href="uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegate--"><code>RegexFormatParser.exprNegate()</code></a>.</div>
+<div class="block">Enter a parse tree produced by the <code>exprNPDirect</code>
+ labeled alternative in <a href="uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#enterExprNPNegate-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPNegateContext-">enterExprNPNegate(RegexFormatParser.ExprNPNegateContext)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html" title="class in uniol.apt.io.parser.impl">RegexFormatParserBaseListener</a></dt>
+<dd>
+<div class="block">Enter a parse tree produced by the <code>exprNPNegate</code>
+ labeled alternative in <a href="uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParserListener.html#enterExprNPNegate-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPNegateContext-">enterExprNPNegate(RegexFormatParser.ExprNPNegateContext)</a></span> - Method in interface uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParserListener.html" title="interface in uniol.apt.io.parser.impl">RegexFormatParserListener</a></dt>
+<dd>
+<div class="block">Enter a parse tree produced by the <code>exprNPNegate</code>
+ labeled alternative in <a href="uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#enterExprNPPrefix-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPPrefixContext-">enterExprNPPrefix(RegexFormatParser.ExprNPPrefixContext)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html" title="class in uniol.apt.io.parser.impl">RegexFormatParserBaseListener</a></dt>
+<dd>
+<div class="block">Enter a parse tree produced by the <code>exprNPPrefix</code>
+ labeled alternative in <a href="uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParserListener.html#enterExprNPPrefix-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPPrefixContext-">enterExprNPPrefix(RegexFormatParser.ExprNPPrefixContext)</a></span> - Method in interface uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParserListener.html" title="interface in uniol.apt.io.parser.impl">RegexFormatParserListener</a></dt>
+<dd>
+<div class="block">Enter a parse tree produced by the <code>exprNPPrefix</code>
+ labeled alternative in <a href="uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#enterExprOr-uniol.apt.io.parser.impl.RegexFormatParser.ExprOrContext-">enterExprOr(RegexFormatParser.ExprOrContext)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html" title="class in uniol.apt.io.parser.impl">RegexFormatParserBaseListener</a></dt>
 <dd>
@@ -2706,7 +2730,11 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprIdParenthesesContext.html#enterRule-org.antlr.v4.runtime.tree.ParseTreeListener-">enterRule(ParseTreeListener)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprIdParenthesesContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprIdParenthesesContext</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNegateContext.html#enterRule-org.antlr.v4.runtime.tree.ParseTreeListener-">enterRule(ParseTreeListener)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNegateContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNegateContext</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPDirectContext.html#enterRule-org.antlr.v4.runtime.tree.ParseTreeListener-">enterRule(ParseTreeListener)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPDirectContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPDirectContext</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPNegateContext.html#enterRule-org.antlr.v4.runtime.tree.ParseTreeListener-">enterRule(ParseTreeListener)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPNegateContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPNegateContext</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPPrefixContext.html#enterRule-org.antlr.v4.runtime.tree.ParseTreeListener-">enterRule(ParseTreeListener)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPPrefixContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPPrefixContext</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprOrContext.html#enterRule-org.antlr.v4.runtime.tree.ParseTreeListener-">enterRule(ParseTreeListener)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprOrContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprOrContext</a></dt>
 <dd>&nbsp;</dd>
@@ -3275,13 +3303,35 @@
 <div class="block">Exit a parse tree produced by the <code>exprIdParentheses</code>
  labeled alternative in <a href="uniol/apt/io/parser/impl/RegexFormatParser.html#exprId--"><code>RegexFormatParser.exprId()</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprNegate-uniol.apt.io.parser.impl.RegexFormatParser.ExprNegateContext-">exitExprNegate(RegexFormatParser.ExprNegateContext)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html" title="class in uniol.apt.io.parser.impl">RegexFormatParserBaseListener</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprNPDirect-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPDirectContext-">exitExprNPDirect(RegexFormatParser.ExprNPDirectContext)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html" title="class in uniol.apt.io.parser.impl">RegexFormatParserBaseListener</a></dt>
 <dd>
-<div class="block">Exit a parse tree produced by <a href="uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegate--"><code>RegexFormatParser.exprNegate()</code></a>.</div>
+<div class="block">Exit a parse tree produced by the <code>exprNPDirect</code>
+ labeled alternative in <a href="uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParserListener.html#exitExprNegate-uniol.apt.io.parser.impl.RegexFormatParser.ExprNegateContext-">exitExprNegate(RegexFormatParser.ExprNegateContext)</a></span> - Method in interface uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParserListener.html" title="interface in uniol.apt.io.parser.impl">RegexFormatParserListener</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParserListener.html#exitExprNPDirect-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPDirectContext-">exitExprNPDirect(RegexFormatParser.ExprNPDirectContext)</a></span> - Method in interface uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParserListener.html" title="interface in uniol.apt.io.parser.impl">RegexFormatParserListener</a></dt>
 <dd>
-<div class="block">Exit a parse tree produced by <a href="uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegate--"><code>RegexFormatParser.exprNegate()</code></a>.</div>
+<div class="block">Exit a parse tree produced by the <code>exprNPDirect</code>
+ labeled alternative in <a href="uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprNPNegate-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPNegateContext-">exitExprNPNegate(RegexFormatParser.ExprNPNegateContext)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html" title="class in uniol.apt.io.parser.impl">RegexFormatParserBaseListener</a></dt>
+<dd>
+<div class="block">Exit a parse tree produced by the <code>exprNPNegate</code>
+ labeled alternative in <a href="uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParserListener.html#exitExprNPNegate-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPNegateContext-">exitExprNPNegate(RegexFormatParser.ExprNPNegateContext)</a></span> - Method in interface uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParserListener.html" title="interface in uniol.apt.io.parser.impl">RegexFormatParserListener</a></dt>
+<dd>
+<div class="block">Exit a parse tree produced by the <code>exprNPNegate</code>
+ labeled alternative in <a href="uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprNPPrefix-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPPrefixContext-">exitExprNPPrefix(RegexFormatParser.ExprNPPrefixContext)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html" title="class in uniol.apt.io.parser.impl">RegexFormatParserBaseListener</a></dt>
+<dd>
+<div class="block">Exit a parse tree produced by the <code>exprNPPrefix</code>
+ labeled alternative in <a href="uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParserListener.html#exitExprNPPrefix-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPPrefixContext-">exitExprNPPrefix(RegexFormatParser.ExprNPPrefixContext)</a></span> - Method in interface uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParserListener.html" title="interface in uniol.apt.io.parser.impl">RegexFormatParserListener</a></dt>
+<dd>
+<div class="block">Exit a parse tree produced by the <code>exprNPPrefix</code>
+ labeled alternative in <a href="uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprOr-uniol.apt.io.parser.impl.RegexFormatParser.ExprOrContext-">exitExprOr(RegexFormatParser.ExprOrContext)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html" title="class in uniol.apt.io.parser.impl">RegexFormatParserBaseListener</a></dt>
 <dd>
@@ -3827,7 +3877,11 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprIdParenthesesContext.html#exitRule-org.antlr.v4.runtime.tree.ParseTreeListener-">exitRule(ParseTreeListener)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprIdParenthesesContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprIdParenthesesContext</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNegateContext.html#exitRule-org.antlr.v4.runtime.tree.ParseTreeListener-">exitRule(ParseTreeListener)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNegateContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNegateContext</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPDirectContext.html#exitRule-org.antlr.v4.runtime.tree.ParseTreeListener-">exitRule(ParseTreeListener)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPDirectContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPDirectContext</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPNegateContext.html#exitRule-org.antlr.v4.runtime.tree.ParseTreeListener-">exitRule(ParseTreeListener)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPNegateContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPNegateContext</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPPrefixContext.html#exitRule-org.antlr.v4.runtime.tree.ParseTreeListener-">exitRule(ParseTreeListener)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPPrefixContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPPrefixContext</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprOrContext.html#exitRule-org.antlr.v4.runtime.tree.ParseTreeListener-">exitRule(ParseTreeListener)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprOrContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprOrContext</a></dt>
 <dd>&nbsp;</dd>
@@ -4111,7 +4165,11 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.html#exprId--">exprId()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNegateContext.html#exprId--">exprId()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNegateContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNegateContext</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPDirectContext.html#exprId--">exprId()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPDirectContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPDirectContext</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPNegateContext.html#exprId--">exprId()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPNegateContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPNegateContext</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPPrefixContext.html#exprId--">exprId()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPPrefixContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPPrefixContext</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprIdAtomContext.html#ExprIdAtomContext-uniol.apt.io.parser.impl.RegexFormatParser.ExprIdContext-">ExprIdAtomContext(RegexFormatParser.ExprIdContext)</a></span> - Constructor for class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprIdAtomContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprIdAtomContext</a></dt>
 <dd>&nbsp;</dd>
@@ -4127,23 +4185,31 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprIdParenthesesContext.html#ExprIdParenthesesContext-uniol.apt.io.parser.impl.RegexFormatParser.ExprIdContext-">ExprIdParenthesesContext(RegexFormatParser.ExprIdContext)</a></span> - Constructor for class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprIdParenthesesContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprIdParenthesesContext</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegate--">exprNegate()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--">exprNegatePrefix()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatExactContext.html#exprNegate--">exprNegate()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatExactContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatExactContext</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatExactContext.html#exprNegatePrefix--">exprNegatePrefix()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatExactContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatExactContext</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatLeastContext.html#exprNegate--">exprNegate()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatLeastContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatLeastContext</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatLeastContext.html#exprNegatePrefix--">exprNegatePrefix()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatLeastContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatLeastContext</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatMinmaxContext.html#exprNegate--">exprNegate()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatMinmaxContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatMinmaxContext</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatMinmaxContext.html#exprNegatePrefix--">exprNegatePrefix()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatMinmaxContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatMinmaxContext</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatNothingContext.html#exprNegate--">exprNegate()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatNothingContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatNothingContext</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatNothingContext.html#exprNegatePrefix--">exprNegatePrefix()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatNothingContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatNothingContext</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatOptContext.html#exprNegate--">exprNegate()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatOptContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatOptContext</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatOptContext.html#exprNegatePrefix--">exprNegatePrefix()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatOptContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatOptContext</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatPlusContext.html#exprNegate--">exprNegate()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatPlusContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatPlusContext</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatPlusContext.html#exprNegatePrefix--">exprNegatePrefix()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatPlusContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatPlusContext</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatStarContext.html#exprNegate--">exprNegate()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatStarContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatStarContext</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatStarContext.html#exprNegatePrefix--">exprNegatePrefix()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatStarContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatStarContext</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNegateContext.html#ExprNegateContext-org.antlr.v4.runtime.ParserRuleContext-int-">ExprNegateContext(ParserRuleContext, int)</a></span> - Constructor for class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNegateContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNegateContext</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNegatePrefixContext.html#ExprNegatePrefixContext-org.antlr.v4.runtime.ParserRuleContext-int-">ExprNegatePrefixContext(ParserRuleContext, int)</a></span> - Constructor for class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNegatePrefixContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNegatePrefixContext</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNegatePrefixContext.html#ExprNegatePrefixContext--">ExprNegatePrefixContext()</a></span> - Constructor for class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNegatePrefixContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNegatePrefixContext</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPDirectContext.html#ExprNPDirectContext-uniol.apt.io.parser.impl.RegexFormatParser.ExprNegatePrefixContext-">ExprNPDirectContext(RegexFormatParser.ExprNegatePrefixContext)</a></span> - Constructor for class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPDirectContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPDirectContext</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPNegateContext.html#ExprNPNegateContext-uniol.apt.io.parser.impl.RegexFormatParser.ExprNegatePrefixContext-">ExprNPNegateContext(RegexFormatParser.ExprNegatePrefixContext)</a></span> - Constructor for class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPNegateContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPNegateContext</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPPrefixContext.html#ExprNPPrefixContext-uniol.apt.io.parser.impl.RegexFormatParser.ExprNegatePrefixContext-">ExprNPPrefixContext(RegexFormatParser.ExprNegatePrefixContext)</a></span> - Constructor for class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPPrefixContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPPrefixContext</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprContext.html#exprOr--">exprOr()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprContext</a></dt>
 <dd>&nbsp;</dd>
@@ -6560,7 +6626,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprIdContext.html#getRuleIndex--">getRuleIndex()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprIdContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprIdContext</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNegateContext.html#getRuleIndex--">getRuleIndex()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNegateContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNegateContext</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNegatePrefixContext.html#getRuleIndex--">getRuleIndex()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNegatePrefixContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNegatePrefixContext</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprOrContext.html#getRuleIndex--">getRuleIndex()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprOrContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprOrContext</a></dt>
 <dd>&nbsp;</dd>
@@ -8916,7 +8982,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatLexer.html#NEGATE">NEGATE</a></span> - Static variable in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatLexer.html" title="class in uniol.apt.io.parser.impl">RegexFormatLexer</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNegateContext.html#NEGATE--">NEGATE()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNegateContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNegateContext</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPNegateContext.html#NEGATE--">NEGATE()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPNegateContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPNegateContext</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.html#NEGATE">NEGATE</a></span> - Static variable in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser</a></dt>
 <dd>&nbsp;</dd>
@@ -9857,6 +9923,16 @@
 <dd>
 <div class="block">Constructor creates a new PreconditionFailedException with a message @message and a cause @cause.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatLexer.html#PREFIX">PREFIX</a></span> - Static variable in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatLexer.html" title="class in uniol.apt.io.parser.impl">RegexFormatLexer</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPPrefixContext.html#PREFIX--">PREFIX()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPPrefixContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPPrefixContext</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.html#PREFIX">PREFIX</a></span> - Static variable in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/adt/automaton/FiniteAutomatonUtility.html#prefixClosure-uniol.apt.adt.automaton.FiniteAutomaton-">prefixClosure(FiniteAutomaton)</a></span> - Static method in class uniol.apt.adt.automaton.<a href="uniol/apt/adt/automaton/FiniteAutomatonUtility.html" title="class in uniol.apt.adt.automaton">FiniteAutomatonUtility</a></dt>
+<dd>
+<div class="block">Get a finite automaton accepting the prefix closure of the language of the given automaton.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/adt/automaton/FiniteAutomatonUtility.html#prefixLanguageLTS-uniol.apt.adt.automaton.FiniteAutomaton-">prefixLanguageLTS(FiniteAutomaton)</a></span> - Static method in class uniol.apt.adt.automaton.<a href="uniol/apt/adt/automaton/FiniteAutomatonUtility.html" title="class in uniol.apt.adt.automaton">FiniteAutomatonUtility</a></dt>
 <dd>
 <div class="block">Construct a transition system that describes the prefix language of the given finite automaton.</div>
@@ -10231,7 +10307,13 @@
 <dd>&nbsp;</dd>
 <dt><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprIdParenthesesContext.html" title="class in uniol.apt.io.parser.impl"><span class="typeNameLink">RegexFormatParser.ExprIdParenthesesContext</span></a> - Class in <a href="uniol/apt/io/parser/impl/package-summary.html">uniol.apt.io.parser.impl</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNegateContext.html" title="class in uniol.apt.io.parser.impl"><span class="typeNameLink">RegexFormatParser.ExprNegateContext</span></a> - Class in <a href="uniol/apt/io/parser/impl/package-summary.html">uniol.apt.io.parser.impl</a></dt>
+<dt><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNegatePrefixContext.html" title="class in uniol.apt.io.parser.impl"><span class="typeNameLink">RegexFormatParser.ExprNegatePrefixContext</span></a> - Class in <a href="uniol/apt/io/parser/impl/package-summary.html">uniol.apt.io.parser.impl</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPDirectContext.html" title="class in uniol.apt.io.parser.impl"><span class="typeNameLink">RegexFormatParser.ExprNPDirectContext</span></a> - Class in <a href="uniol/apt/io/parser/impl/package-summary.html">uniol.apt.io.parser.impl</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPNegateContext.html" title="class in uniol.apt.io.parser.impl"><span class="typeNameLink">RegexFormatParser.ExprNPNegateContext</span></a> - Class in <a href="uniol/apt/io/parser/impl/package-summary.html">uniol.apt.io.parser.impl</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprNPPrefixContext.html" title="class in uniol.apt.io.parser.impl"><span class="typeNameLink">RegexFormatParser.ExprNPPrefixContext</span></a> - Class in <a href="uniol/apt/io/parser/impl/package-summary.html">uniol.apt.io.parser.impl</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprOrContext.html" title="class in uniol.apt.io.parser.impl"><span class="typeNameLink">RegexFormatParser.ExprOrContext</span></a> - Class in <a href="uniol/apt/io/parser/impl/package-summary.html">uniol.apt.io.parser.impl</a></dt>
 <dd>&nbsp;</dd>
@@ -10790,7 +10872,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.html#RULE_exprId">RULE_exprId</a></span> - Static variable in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.html#RULE_exprNegate">RULE_exprNegate</a></span> - Static variable in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.html#RULE_exprNegatePrefix">RULE_exprNegatePrefix</a></span> - Static variable in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.html#RULE_exprOr">RULE_exprOr</a></span> - Static variable in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser</a></dt>
 <dd>&nbsp;</dd>

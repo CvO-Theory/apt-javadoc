@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -213,200 +213,230 @@ implements <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserLis
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#enterExprNegate-uniol.apt.io.parser.impl.RegexFormatParser.ExprNegateContext-">enterExprNegate</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprNegateContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNegateContext</a>&nbsp;ctx)</code>
-<div class="block">Enter a parse tree produced by <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegate--"><code>RegexFormatParser.exprNegate()</code></a>.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#enterExprNPDirect-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPDirectContext-">enterExprNPDirect</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprNPDirectContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPDirectContext</a>&nbsp;ctx)</code>
+<div class="block">Enter a parse tree produced by the <code>exprNPDirect</code>
+ labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#enterExprNPNegate-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPNegateContext-">enterExprNPNegate</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprNPNegateContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPNegateContext</a>&nbsp;ctx)</code>
+<div class="block">Enter a parse tree produced by the <code>exprNPNegate</code>
+ labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#enterExprNPPrefix-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPPrefixContext-">enterExprNPPrefix</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprNPPrefixContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPPrefixContext</a>&nbsp;ctx)</code>
+<div class="block">Enter a parse tree produced by the <code>exprNPPrefix</code>
+ labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.</div>
+</td>
+</tr>
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#enterExprOr-uniol.apt.io.parser.impl.RegexFormatParser.ExprOrContext-">enterExprOr</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprOrContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprOrContext</a>&nbsp;ctx)</code>
 <div class="block">Enter a parse tree produced by <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprOr--"><code>RegexFormatParser.exprOr()</code></a>.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#enterExprRepeatExact-uniol.apt.io.parser.impl.RegexFormatParser.ExprRepeatExactContext-">enterExprRepeatExact</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatExactContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatExactContext</a>&nbsp;ctx)</code>
 <div class="block">Enter a parse tree produced by the <code>exprRepeatExact</code>
  labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprRepeat--"><code>RegexFormatParser.exprRepeat()</code></a>.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#enterExprRepeatLeast-uniol.apt.io.parser.impl.RegexFormatParser.ExprRepeatLeastContext-">enterExprRepeatLeast</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatLeastContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatLeastContext</a>&nbsp;ctx)</code>
 <div class="block">Enter a parse tree produced by the <code>exprRepeatLeast</code>
  labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprRepeat--"><code>RegexFormatParser.exprRepeat()</code></a>.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#enterExprRepeatMinmax-uniol.apt.io.parser.impl.RegexFormatParser.ExprRepeatMinmaxContext-">enterExprRepeatMinmax</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatMinmaxContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatMinmaxContext</a>&nbsp;ctx)</code>
 <div class="block">Enter a parse tree produced by the <code>exprRepeatMinmax</code>
  labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprRepeat--"><code>RegexFormatParser.exprRepeat()</code></a>.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#enterExprRepeatNothing-uniol.apt.io.parser.impl.RegexFormatParser.ExprRepeatNothingContext-">enterExprRepeatNothing</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatNothingContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatNothingContext</a>&nbsp;ctx)</code>
 <div class="block">Enter a parse tree produced by the <code>exprRepeatNothing</code>
  labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprRepeat--"><code>RegexFormatParser.exprRepeat()</code></a>.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#enterExprRepeatOpt-uniol.apt.io.parser.impl.RegexFormatParser.ExprRepeatOptContext-">enterExprRepeatOpt</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatOptContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatOptContext</a>&nbsp;ctx)</code>
 <div class="block">Enter a parse tree produced by the <code>exprRepeatOpt</code>
  labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprRepeat--"><code>RegexFormatParser.exprRepeat()</code></a>.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#enterExprRepeatPlus-uniol.apt.io.parser.impl.RegexFormatParser.ExprRepeatPlusContext-">enterExprRepeatPlus</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatPlusContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatPlusContext</a>&nbsp;ctx)</code>
 <div class="block">Enter a parse tree produced by the <code>exprRepeatPlus</code>
  labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprRepeat--"><code>RegexFormatParser.exprRepeat()</code></a>.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#enterExprRepeatStar-uniol.apt.io.parser.impl.RegexFormatParser.ExprRepeatStarContext-">enterExprRepeatStar</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatStarContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatStarContext</a>&nbsp;ctx)</code>
 <div class="block">Enter a parse tree produced by the <code>exprRepeatStar</code>
  labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprRepeat--"><code>RegexFormatParser.exprRepeat()</code></a>.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#enterStart-uniol.apt.io.parser.impl.RegexFormatParser.StartContext-">enterStart</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.StartContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.StartContext</a>&nbsp;ctx)</code>
 <div class="block">Enter a parse tree produced by <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#start--"><code>RegexFormatParser.start()</code></a>.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitEveryRule-org.antlr.v4.runtime.ParserRuleContext-">exitEveryRule</a></span>(org.antlr.v4.runtime.ParserRuleContext&nbsp;ctx)</code></td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExpr-uniol.apt.io.parser.impl.RegexFormatParser.ExprContext-">exitExpr</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprContext</a>&nbsp;ctx)</code>
 <div class="block">Exit a parse tree produced by <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#expr--"><code>RegexFormatParser.expr()</code></a>.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprAnd-uniol.apt.io.parser.impl.RegexFormatParser.ExprAndContext-">exitExprAnd</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprAndContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprAndContext</a>&nbsp;ctx)</code>
 <div class="block">Exit a parse tree produced by <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprAnd--"><code>RegexFormatParser.exprAnd()</code></a>.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprConcat-uniol.apt.io.parser.impl.RegexFormatParser.ExprConcatContext-">exitExprConcat</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprConcatContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprConcatContext</a>&nbsp;ctx)</code>
 <div class="block">Exit a parse tree produced by <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprConcat--"><code>RegexFormatParser.exprConcat()</code></a>.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprIdAtom-uniol.apt.io.parser.impl.RegexFormatParser.ExprIdAtomContext-">exitExprIdAtom</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprIdAtomContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprIdAtomContext</a>&nbsp;ctx)</code>
 <div class="block">Exit a parse tree produced by the <code>exprIdAtom</code>
  labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprId--"><code>RegexFormatParser.exprId()</code></a>.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprIdEmpty-uniol.apt.io.parser.impl.RegexFormatParser.ExprIdEmptyContext-">exitExprIdEmpty</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprIdEmptyContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprIdEmptyContext</a>&nbsp;ctx)</code>
 <div class="block">Exit a parse tree produced by the <code>exprIdEmpty</code>
  labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprId--"><code>RegexFormatParser.exprId()</code></a>.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprIdEpsilon-uniol.apt.io.parser.impl.RegexFormatParser.ExprIdEpsilonContext-">exitExprIdEpsilon</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprIdEpsilonContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprIdEpsilonContext</a>&nbsp;ctx)</code>
 <div class="block">Exit a parse tree produced by the <code>exprIdEpsilon</code>
  labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprId--"><code>RegexFormatParser.exprId()</code></a>.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprIdId-uniol.apt.io.parser.impl.RegexFormatParser.ExprIdIdContext-">exitExprIdId</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprIdIdContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprIdIdContext</a>&nbsp;ctx)</code>
 <div class="block">Exit a parse tree produced by the <code>exprIdId</code>
  labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprId--"><code>RegexFormatParser.exprId()</code></a>.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprIdParentheses-uniol.apt.io.parser.impl.RegexFormatParser.ExprIdParenthesesContext-">exitExprIdParentheses</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprIdParenthesesContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprIdParenthesesContext</a>&nbsp;ctx)</code>
 <div class="block">Exit a parse tree produced by the <code>exprIdParentheses</code>
  labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprId--"><code>RegexFormatParser.exprId()</code></a>.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprNegate-uniol.apt.io.parser.impl.RegexFormatParser.ExprNegateContext-">exitExprNegate</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprNegateContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNegateContext</a>&nbsp;ctx)</code>
-<div class="block">Exit a parse tree produced by <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegate--"><code>RegexFormatParser.exprNegate()</code></a>.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprNPDirect-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPDirectContext-">exitExprNPDirect</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprNPDirectContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPDirectContext</a>&nbsp;ctx)</code>
+<div class="block">Exit a parse tree produced by the <code>exprNPDirect</code>
+ labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i31" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprNPNegate-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPNegateContext-">exitExprNPNegate</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprNPNegateContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPNegateContext</a>&nbsp;ctx)</code>
+<div class="block">Exit a parse tree produced by the <code>exprNPNegate</code>
+ labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.</div>
+</td>
+</tr>
+<tr id="i32" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprNPPrefix-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPPrefixContext-">exitExprNPPrefix</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprNPPrefixContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPPrefixContext</a>&nbsp;ctx)</code>
+<div class="block">Exit a parse tree produced by the <code>exprNPPrefix</code>
+ labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.</div>
+</td>
+</tr>
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprOr-uniol.apt.io.parser.impl.RegexFormatParser.ExprOrContext-">exitExprOr</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprOrContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprOrContext</a>&nbsp;ctx)</code>
 <div class="block">Exit a parse tree produced by <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprOr--"><code>RegexFormatParser.exprOr()</code></a>.</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprRepeatExact-uniol.apt.io.parser.impl.RegexFormatParser.ExprRepeatExactContext-">exitExprRepeatExact</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatExactContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatExactContext</a>&nbsp;ctx)</code>
 <div class="block">Exit a parse tree produced by the <code>exprRepeatExact</code>
  labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprRepeat--"><code>RegexFormatParser.exprRepeat()</code></a>.</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprRepeatLeast-uniol.apt.io.parser.impl.RegexFormatParser.ExprRepeatLeastContext-">exitExprRepeatLeast</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatLeastContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatLeastContext</a>&nbsp;ctx)</code>
 <div class="block">Exit a parse tree produced by the <code>exprRepeatLeast</code>
  labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprRepeat--"><code>RegexFormatParser.exprRepeat()</code></a>.</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprRepeatMinmax-uniol.apt.io.parser.impl.RegexFormatParser.ExprRepeatMinmaxContext-">exitExprRepeatMinmax</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatMinmaxContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatMinmaxContext</a>&nbsp;ctx)</code>
 <div class="block">Exit a parse tree produced by the <code>exprRepeatMinmax</code>
  labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprRepeat--"><code>RegexFormatParser.exprRepeat()</code></a>.</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprRepeatNothing-uniol.apt.io.parser.impl.RegexFormatParser.ExprRepeatNothingContext-">exitExprRepeatNothing</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatNothingContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatNothingContext</a>&nbsp;ctx)</code>
 <div class="block">Exit a parse tree produced by the <code>exprRepeatNothing</code>
  labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprRepeat--"><code>RegexFormatParser.exprRepeat()</code></a>.</div>
 </td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprRepeatOpt-uniol.apt.io.parser.impl.RegexFormatParser.ExprRepeatOptContext-">exitExprRepeatOpt</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatOptContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatOptContext</a>&nbsp;ctx)</code>
 <div class="block">Exit a parse tree produced by the <code>exprRepeatOpt</code>
  labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprRepeat--"><code>RegexFormatParser.exprRepeat()</code></a>.</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprRepeatPlus-uniol.apt.io.parser.impl.RegexFormatParser.ExprRepeatPlusContext-">exitExprRepeatPlus</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatPlusContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatPlusContext</a>&nbsp;ctx)</code>
 <div class="block">Exit a parse tree produced by the <code>exprRepeatPlus</code>
  labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprRepeat--"><code>RegexFormatParser.exprRepeat()</code></a>.</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitExprRepeatStar-uniol.apt.io.parser.impl.RegexFormatParser.ExprRepeatStarContext-">exitExprRepeatStar</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprRepeatStarContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprRepeatStarContext</a>&nbsp;ctx)</code>
 <div class="block">Exit a parse tree produced by the <code>exprRepeatStar</code>
  labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprRepeat--"><code>RegexFormatParser.exprRepeat()</code></a>.</div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#exitStart-uniol.apt.io.parser.impl.RegexFormatParser.StartContext-">exitStart</a></span>(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.StartContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.StartContext</a>&nbsp;ctx)</code>
 <div class="block">Exit a parse tree produced by <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#start--"><code>RegexFormatParser.start()</code></a>.</div>
 </td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#visitErrorNode-org.antlr.v4.runtime.tree.ErrorNode-">visitErrorNode</a></span>(org.antlr.v4.runtime.tree.ErrorNode&nbsp;node)</code></td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserBaseListener.html#visitTerminal-org.antlr.v4.runtime.tree.TerminalNode-">visitTerminal</a></span>(org.antlr.v4.runtime.tree.TerminalNode&nbsp;node)</code></td>
 </tr>
@@ -895,37 +925,115 @@ implements <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserLis
 </dl>
 </li>
 </ul>
-<a name="enterExprNegate-uniol.apt.io.parser.impl.RegexFormatParser.ExprNegateContext-">
+<a name="enterExprNPDirect-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPDirectContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>enterExprNegate</h4>
-<pre>public&nbsp;void&nbsp;enterExprNegate(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprNegateContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNegateContext</a>&nbsp;ctx)</pre>
-<div class="block">Enter a parse tree produced by <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegate--"><code>RegexFormatParser.exprNegate()</code></a>.
+<h4>enterExprNPDirect</h4>
+<pre>public&nbsp;void&nbsp;enterExprNPDirect(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprNPDirectContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPDirectContext</a>&nbsp;ctx)</pre>
+<div class="block">Enter a parse tree produced by the <code>exprNPDirect</code>
+ labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.
 
  <p>The default implementation does nothing.</p></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserListener.html#enterExprNegate-uniol.apt.io.parser.impl.RegexFormatParser.ExprNegateContext-">enterExprNegate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserListener.html" title="interface in uniol.apt.io.parser.impl">RegexFormatParserListener</a></code></dd>
+<dd><code><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserListener.html#enterExprNPDirect-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPDirectContext-">enterExprNPDirect</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserListener.html" title="interface in uniol.apt.io.parser.impl">RegexFormatParserListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>ctx</code> - the parse tree</dd>
 </dl>
 </li>
 </ul>
-<a name="exitExprNegate-uniol.apt.io.parser.impl.RegexFormatParser.ExprNegateContext-">
+<a name="exitExprNPDirect-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPDirectContext-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>exitExprNegate</h4>
-<pre>public&nbsp;void&nbsp;exitExprNegate(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprNegateContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNegateContext</a>&nbsp;ctx)</pre>
-<div class="block">Exit a parse tree produced by <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegate--"><code>RegexFormatParser.exprNegate()</code></a>.
+<h4>exitExprNPDirect</h4>
+<pre>public&nbsp;void&nbsp;exitExprNPDirect(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprNPDirectContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPDirectContext</a>&nbsp;ctx)</pre>
+<div class="block">Exit a parse tree produced by the <code>exprNPDirect</code>
+ labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.
 
  <p>The default implementation does nothing.</p></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserListener.html#exitExprNegate-uniol.apt.io.parser.impl.RegexFormatParser.ExprNegateContext-">exitExprNegate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserListener.html" title="interface in uniol.apt.io.parser.impl">RegexFormatParserListener</a></code></dd>
+<dd><code><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserListener.html#exitExprNPDirect-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPDirectContext-">exitExprNPDirect</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserListener.html" title="interface in uniol.apt.io.parser.impl">RegexFormatParserListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+</dl>
+</li>
+</ul>
+<a name="enterExprNPNegate-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPNegateContext-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>enterExprNPNegate</h4>
+<pre>public&nbsp;void&nbsp;enterExprNPNegate(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprNPNegateContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPNegateContext</a>&nbsp;ctx)</pre>
+<div class="block">Enter a parse tree produced by the <code>exprNPNegate</code>
+ labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.
+
+ <p>The default implementation does nothing.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserListener.html#enterExprNPNegate-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPNegateContext-">enterExprNPNegate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserListener.html" title="interface in uniol.apt.io.parser.impl">RegexFormatParserListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+</dl>
+</li>
+</ul>
+<a name="exitExprNPNegate-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPNegateContext-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>exitExprNPNegate</h4>
+<pre>public&nbsp;void&nbsp;exitExprNPNegate(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprNPNegateContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPNegateContext</a>&nbsp;ctx)</pre>
+<div class="block">Exit a parse tree produced by the <code>exprNPNegate</code>
+ labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.
+
+ <p>The default implementation does nothing.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserListener.html#exitExprNPNegate-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPNegateContext-">exitExprNPNegate</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserListener.html" title="interface in uniol.apt.io.parser.impl">RegexFormatParserListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+</dl>
+</li>
+</ul>
+<a name="enterExprNPPrefix-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPPrefixContext-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>enterExprNPPrefix</h4>
+<pre>public&nbsp;void&nbsp;enterExprNPPrefix(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprNPPrefixContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPPrefixContext</a>&nbsp;ctx)</pre>
+<div class="block">Enter a parse tree produced by the <code>exprNPPrefix</code>
+ labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.
+
+ <p>The default implementation does nothing.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserListener.html#enterExprNPPrefix-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPPrefixContext-">enterExprNPPrefix</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserListener.html" title="interface in uniol.apt.io.parser.impl">RegexFormatParserListener</a></code></dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ctx</code> - the parse tree</dd>
+</dl>
+</li>
+</ul>
+<a name="exitExprNPPrefix-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPPrefixContext-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>exitExprNPPrefix</h4>
+<pre>public&nbsp;void&nbsp;exitExprNPPrefix(<a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.ExprNPPrefixContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprNPPrefixContext</a>&nbsp;ctx)</pre>
+<div class="block">Exit a parse tree produced by the <code>exprNPPrefix</code>
+ labeled alternative in <a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParser.html#exprNegatePrefix--"><code>RegexFormatParser.exprNegatePrefix()</code></a>.
+
+ <p>The default implementation does nothing.</p></div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserListener.html#exitExprNPPrefix-uniol.apt.io.parser.impl.RegexFormatParser.ExprNPPrefixContext-">exitExprNPPrefix</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../uniol/apt/io/parser/impl/RegexFormatParserListener.html" title="interface in uniol.apt.io.parser.impl">RegexFormatParserListener</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>ctx</code> - the parse tree</dd>
 </dl>
