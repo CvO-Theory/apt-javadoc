@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -165,59 +165,71 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/ParikhVector.html#add-uniol.apt.adt.ts.ParikhVector-">add</a></span>(<a href="../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&nbsp;p2)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/ParikhVector.html#add-java.util.List-">add</a></span>(java.util.List&lt;java.lang.String&gt;&nbsp;sequence)</code>
 <div class="block">Combines two Parikh vectors to one new.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code><a href="../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/ParikhVector.html#add-uniol.apt.adt.ts.ParikhVector-">add</a></span>(<a href="../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&nbsp;p2)</code>
+<div class="block">Combines two Parikh vectors to one new.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/ParikhVector.html#add-java.lang.String...-">add</a></span>(java.lang.String...&nbsp;sequence)</code>
+<div class="block">Combines two Parikh vectors to one new.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/ParikhVector.html#equals-java.lang.Object-">equals</a></span>(java.lang.Object&nbsp;obj)</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/ParikhVector.html#get-java.lang.String-">get</a></span>(java.lang.String&nbsp;c)</code>
 <div class="block">Returns the occurrences of the given label in this Parikh vector.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.util.Set&lt;java.lang.String&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/ParikhVector.html#getLabels--">getLabels</a></span>()</code>
 <div class="block">Return the labels for which this Parikh vector contains a non-zero entry.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/ParikhVector.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/ParikhVector.html#isUncomparableTo-uniol.apt.adt.ts.ParikhVector-">isUncomparableTo</a></span>(<a href="../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&nbsp;pv2)</code>
 <div class="block">Test if this Parikh vector is incomparable with the given Parikh vector.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/ParikhVector.html#mutuallyDisjoint-uniol.apt.adt.ts.ParikhVector-">mutuallyDisjoint</a></span>(<a href="../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&nbsp;pv2)</code>
 <div class="block">Check if two Parikh vectors are mutually disjoint.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/ParikhVector.html#sameOrMutuallyDisjoint-uniol.apt.adt.ts.ParikhVector-">sameOrMutuallyDisjoint</a></span>(<a href="../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&nbsp;pv2)</code>
 <div class="block">Checks two Parikh vectors if they are equal or mutually disjoint.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/ParikhVector.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/ParikhVector.html#tryCompareTo-uniol.apt.adt.ts.ParikhVector-">tryCompareTo</a></span>(<a href="../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&nbsp;pv2)</code>
 <div class="block">Compare this Parikh vector with the given Parikh vector.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/ParikhVector.html#tryRemove-java.lang.String-int-">tryRemove</a></span>(java.lang.String&nbsp;event,
          int&nbsp;n)</code>
@@ -309,6 +321,38 @@ extends java.lang.Object</pre>
 <dd><code>p2</code> - - the second Parikh vector to add.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the combination of this and p2.</dd>
+</dl>
+</li>
+</ul>
+<a name="add-java.lang.String...-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>add</h4>
+<pre>public&nbsp;<a href="../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&nbsp;add(java.lang.String...&nbsp;sequence)</pre>
+<div class="block">Combines two Parikh vectors to one new.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sequence</code> - the sequence of labels that should be added</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the combination of this and the given sequence</dd>
+</dl>
+</li>
+</ul>
+<a name="add-java.util.List-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>add</h4>
+<pre>public&nbsp;<a href="../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&nbsp;add(java.util.List&lt;java.lang.String&gt;&nbsp;sequence)</pre>
+<div class="block">Combines two Parikh vectors to one new.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>sequence</code> - the sequence of labels that should be added</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the combination of this and the given sequence</dd>
 </dl>
 </li>
 </ul>

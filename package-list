@@ -36,6 +36,8 @@ uniol.apt.analysis.persistent
 uniol.apt.analysis.petrify
 uniol.apt.analysis.plain
 uniol.apt.analysis.presynthesis.pps
+uniol.apt.analysis.processmining
+uniol.apt.analysis.processmining.algebra
 uniol.apt.analysis.product
 uniol.apt.analysis.reversible
 uniol.apt.analysis.separation
