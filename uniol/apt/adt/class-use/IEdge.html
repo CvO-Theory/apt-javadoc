@@ -105,6 +105,10 @@
 </td>
 </tr>
 <tr class="altColor">
+<td class="colFirst"><a href="#uniol.apt.analysis.cycles">uniol.apt.analysis.cycles</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="#uniol.apt.util">uniol.apt.util</a></td>
 <td class="colLast">
 <div class="block">Various reusable utility functions.</div>
@@ -302,6 +306,41 @@
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a></span></code>
 <div class="block">Arcs serve as edges in a TransitionSystem.</div>
 </td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="uniol.apt.analysis.cycles">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../uniol/apt/adt/IEdge.html" title="interface in uniol.apt.adt">IEdge</a> in <a href="../../../../uniol/apt/analysis/cycles/package-summary.html">uniol.apt.analysis.cycles</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing classes, and an explanation">
+<caption><span>Classes in <a href="../../../../uniol/apt/analysis/cycles/package-summary.html">uniol.apt.analysis.cycles</a> with type parameters of type <a href="../../../../uniol/apt/adt/IEdge.html" title="interface in uniol.apt.adt">IEdge</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Interface and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/cycles/CycleCallback.html" title="interface in uniol.apt.analysis.cycles">CycleCallback</a>&lt;G extends <a href="../../../../uniol/apt/adt/IGraph.html" title="interface in uniol.apt.adt">IGraph</a>&lt;G,E,N&gt;,E extends <a href="../../../../uniol/apt/adt/IEdge.html" title="interface in uniol.apt.adt">IEdge</a>&lt;G,E,N&gt;,N extends <a href="../../../../uniol/apt/adt/INode.html" title="interface in uniol.apt.adt">INode</a>&lt;G,E,N&gt;&gt;</span></code>
+<div class="block">Callback which gets used by the <a href="../../../../uniol/apt/analysis/cycles/CycleSearch.html" title="class in uniol.apt.analysis.cycles"><code>CycleSearch</code></a> class to notify the
+ caller about cycles.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../uniol/apt/analysis/cycles/package-summary.html">uniol.apt.analysis.cycles</a> with type parameters of type <a href="../../../../uniol/apt/adt/IEdge.html" title="interface in uniol.apt.adt">IEdge</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>&lt;G extends <a href="../../../../uniol/apt/adt/IGraph.html" title="interface in uniol.apt.adt">IGraph</a>&lt;G,E,N&gt;,E extends <a href="../../../../uniol/apt/adt/IEdge.html" title="interface in uniol.apt.adt">IEdge</a>&lt;G,E,N&gt;,N extends <a href="../../../../uniol/apt/adt/INode.html" title="interface in uniol.apt.adt">INode</a>&lt;G,E,N&gt;&gt;<br>void</code></td>
+<td class="colLast"><span class="typeNameLabel">CycleSearch.</span><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/cycles/CycleSearch.html#searchCycles-G-uniol.apt.analysis.cycles.CycleCallback-">searchCycles</a></span>(G&nbsp;graph,
+            <a href="../../../../uniol/apt/analysis/cycles/CycleCallback.html" title="interface in uniol.apt.analysis.cycles">CycleCallback</a>&lt;G,E,N&gt;&nbsp;cycleCb)</code>&nbsp;</td>
 </tr>
 </tbody>
 </table>

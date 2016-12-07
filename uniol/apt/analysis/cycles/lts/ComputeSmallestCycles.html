@@ -18,8 +18,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -50,7 +50,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../uniol/apt/analysis/cycles/lts/AllSmallCyclesHavePVOne.html" title="class in uniol.apt.analysis.cycles.lts"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../uniol/apt/analysis/cycles/lts/ComputeSmallestCyclesAlgorithms.html" title="enum in uniol.apt.analysis.cycles.lts"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../uniol/apt/analysis/cycles/lts/CycleCounterExample.html" title="class in uniol.apt.analysis.cycles.lts"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html" target="_top">Frames</a></li>
@@ -76,13 +76,13 @@ var activeTableTab = "activeTableTab";
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
@@ -93,21 +93,26 @@ var activeTableTab = "activeTableTab";
 <!-- ======== START OF CLASS DATA ======== -->
 <div class="header">
 <div class="subTitle">uniol.apt.analysis.cycles.lts</div>
-<h2 title="Interface ComputeSmallestCycles" class="title">Interface ComputeSmallestCycles</h2>
+<h2 title="Class ComputeSmallestCycles" class="title">Class ComputeSmallestCycles</h2>
 </div>
 <div class="contentContainer">
+<ul class="inheritance">
+<li>java.lang.Object</li>
+<li>
+<ul class="inheritance">
+<li>uniol.apt.analysis.cycles.lts.ComputeSmallestCycles</li>
+</ul>
+</li>
+</ul>
 <div class="description">
 <ul class="blockList">
 <li class="blockList">
-<dl>
-<dt>All Known Implementing Classes:</dt>
-<dd><a href="../../../../../uniol/apt/analysis/cycles/lts/AbstractComputeSmallestCycles.html" title="class in uniol.apt.analysis.cycles.lts">AbstractComputeSmallestCycles</a></dd>
-</dl>
 <hr>
 <br>
-<pre>public interface <span class="typeNameLabel">ComputeSmallestCycles</span></pre>
-<div class="block">This is an interface for  algorithms for computing smallest cycles and parikh vectors, checking if all smallest
- cycles having the same parikh vector, or having the same or mutually disjoint parikh vectors.</div>
+<pre>public class <span class="typeNameLabel">ComputeSmallestCycles</span>
+extends java.lang.Object</pre>
+<div class="block">This class computes smallest cycles and parikh vectors, checking if all smallest cycles having the same parikh
+ vector, or having the same or mutually disjoint parikh vectors.</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
 <dd>Chris, Manuel</dd>
@@ -118,6 +123,23 @@ var activeTableTab = "activeTableTab";
 <div class="summary">
 <ul class="blockList">
 <li class="blockList">
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.summary">
+<!--   -->
+</a>
+<h3>Constructor Summary</h3>
+<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Constructor Summary table, listing constructors, and an explanation">
+<caption><span>Constructors</span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#ComputeSmallestCycles--">ComputeSmallestCycles</a></span>()</code>&nbsp;</td>
+</tr>
+</table>
+</li>
+</ul>
 <!-- ========== METHOD SUMMARY =========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.summary">
@@ -125,7 +147,7 @@ var activeTableTab = "activeTableTab";
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -190,6 +212,13 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;java.lang.Object</h3>
+<code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
+</ul>
 </li>
 </ul>
 </li>
@@ -198,6 +227,23 @@ var activeTableTab = "activeTableTab";
 <div class="details">
 <ul class="blockList">
 <li class="blockList">
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<ul class="blockList">
+<li class="blockList"><a name="constructor.detail">
+<!--   -->
+</a>
+<h3>Constructor Detail</h3>
+<a name="ComputeSmallestCycles--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>ComputeSmallestCycles</h4>
+<pre>public&nbsp;ComputeSmallestCycles()</pre>
+</li>
+</ul>
+</li>
+</ul>
 <!-- ============ METHOD DETAIL ========== -->
 <ul class="blockList">
 <li class="blockList"><a name="method.detail">
@@ -210,7 +256,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>computePVsOfSmallestCycles</h4>
-<pre>java.util.Set&lt;<a href="../../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.util.List&lt;java.lang.String&gt;,<a href="../../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&gt;&gt;&nbsp;computePVsOfSmallestCycles(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</pre>
+<pre>public&nbsp;java.util.Set&lt;<a href="../../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.util.List&lt;java.lang.String&gt;,<a href="../../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&gt;&gt;&nbsp;computePVsOfSmallestCycles(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</pre>
 <div class="block">Computes the parikh vectors of all smallest cycles of an labeled transition system. (Requirement A10)</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -226,7 +272,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>checkSameOrMutallyDisjointPVs</h4>
-<pre>boolean&nbsp;checkSameOrMutallyDisjointPVs(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</pre>
+<pre>public&nbsp;boolean&nbsp;checkSameOrMutallyDisjointPVs(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</pre>
 <div class="block">Checks a labeled transition system if all smallest cycles have the same or mutally disjoint parikh vectors.
  (Requirement A8b)</div>
 <dl>
@@ -244,7 +290,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>checkSamePVs</h4>
-<pre>boolean&nbsp;checkSamePVs(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</pre>
+<pre>public&nbsp;boolean&nbsp;checkSamePVs(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</pre>
 <div class="block">Checks a labeled transition system if all smallest cycles have the same parikh vector. (Requirement A8a)</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -260,8 +306,8 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>computePVsOfSmallestCycles</h4>
-<pre>java.util.Set&lt;<a href="../../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.util.List&lt;java.lang.String&gt;,<a href="../../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&gt;&gt;&nbsp;computePVsOfSmallestCycles(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
-                                                                                              boolean&nbsp;smallest)</pre>
+<pre>public&nbsp;java.util.Set&lt;<a href="../../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.util.List&lt;java.lang.String&gt;,<a href="../../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&gt;&gt;&nbsp;computePVsOfSmallestCycles(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
+                                                                                                     boolean&nbsp;smallest)</pre>
 <div class="block">Computes the parikh vectors of all smallest cycles of an labeled transition system. (Requirement A10)</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -279,8 +325,8 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>checkSameOrMutallyDisjointPVs</h4>
-<pre>boolean&nbsp;checkSameOrMutallyDisjointPVs(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
-                                      boolean&nbsp;smallest)</pre>
+<pre>public&nbsp;boolean&nbsp;checkSameOrMutallyDisjointPVs(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
+                                             boolean&nbsp;smallest)</pre>
 <div class="block">Checks a labeled transition system if all smallest cycles have the same or mutally disjoint parikh vectors.
  (Requirement A8b)</div>
 <dl>
@@ -300,8 +346,8 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>checkSamePVs</h4>
-<pre>boolean&nbsp;checkSamePVs(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
-                     boolean&nbsp;smallest)</pre>
+<pre>public&nbsp;boolean&nbsp;checkSamePVs(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
+                            boolean&nbsp;smallest)</pre>
 <div class="block">Checks a labeled transition system if all smallest cycles have the same parikh vector. (Requirement A8a)</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -319,7 +365,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>checkSameOrMutallyDisjointPVs</h4>
-<pre>boolean&nbsp;checkSameOrMutallyDisjointPVs(java.util.Set&lt;<a href="../../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.util.List&lt;java.lang.String&gt;,<a href="../../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&gt;&gt;&nbsp;cycles)</pre>
+<pre>public&nbsp;boolean&nbsp;checkSameOrMutallyDisjointPVs(java.util.Set&lt;<a href="../../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.util.List&lt;java.lang.String&gt;,<a href="../../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&gt;&gt;&nbsp;cycles)</pre>
 <div class="block">Checks whether in the given set of cycles and parikh vectors all cycles have the same or mutally disjoint
  parikh vectors.</div>
 <dl>
@@ -336,7 +382,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockList">
 <li class="blockList">
 <h4>checkSamePVs</h4>
-<pre>boolean&nbsp;checkSamePVs(java.util.Set&lt;<a href="../../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.util.List&lt;java.lang.String&gt;,<a href="../../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&gt;&gt;&nbsp;cycles)</pre>
+<pre>public&nbsp;boolean&nbsp;checkSamePVs(java.util.Set&lt;<a href="../../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.util.List&lt;java.lang.String&gt;,<a href="../../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&gt;&gt;&nbsp;cycles)</pre>
 <div class="block">Checks whether in the given set of cycles and parikh vectors all cycles have the same parikh vector.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -352,7 +398,7 @@ var activeTableTab = "activeTableTab";
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getCounterExample</h4>
-<pre><a href="../../../../../uniol/apt/analysis/cycles/lts/CycleCounterExample.html" title="class in uniol.apt.analysis.cycles.lts">CycleCounterExample</a>&nbsp;getCounterExample()</pre>
+<pre>public&nbsp;<a href="../../../../../uniol/apt/analysis/cycles/lts/CycleCounterExample.html" title="class in uniol.apt.analysis.cycles.lts">CycleCounterExample</a>&nbsp;getCounterExample()</pre>
 <div class="block">Function for returning a counter example (as requirements A8a, A8b, A10 state that two counter-examples
  should be found in case the condition of the parikh vectors is not met).</div>
 <dl>
@@ -390,7 +436,7 @@ var activeTableTab = "activeTableTab";
 <div class="subNav">
 <ul class="navList">
 <li><a href="../../../../../uniol/apt/analysis/cycles/lts/AllSmallCyclesHavePVOne.html" title="class in uniol.apt.analysis.cycles.lts"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../uniol/apt/analysis/cycles/lts/ComputeSmallestCyclesAlgorithms.html" title="enum in uniol.apt.analysis.cycles.lts"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li><a href="../../../../../uniol/apt/analysis/cycles/lts/CycleCounterExample.html" title="class in uniol.apt.analysis.cycles.lts"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html" target="_top">Frames</a></li>
@@ -416,13 +462,13 @@ var activeTableTab = "activeTableTab";
 <li>Summary:&nbsp;</li>
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.summary">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.summary">Method</a></li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
-<li>Constr&nbsp;|&nbsp;</li>
+<li><a href="#constructor.detail">Constr</a>&nbsp;|&nbsp;</li>
 <li><a href="#method.detail">Method</a></li>
 </ul>
 </div>
