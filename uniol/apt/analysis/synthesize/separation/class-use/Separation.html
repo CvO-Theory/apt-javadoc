@@ -95,21 +95,6 @@
 <!--   -->
 </a>
 <h3>Uses of <a href="../../../../../../uniol/apt/analysis/synthesize/separation/Separation.html" title="interface in uniol.apt.analysis.synthesize.separation">Separation</a> in <a href="../../../../../../uniol/apt/analysis/synthesize/separation/package-summary.html">uniol.apt.analysis.synthesize.separation</a></h3>
-<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subinterfaces, and an explanation">
-<caption><span>Subinterfaces of <a href="../../../../../../uniol/apt/analysis/synthesize/separation/Separation.html" title="interface in uniol.apt.analysis.synthesize.separation">Separation</a> in <a href="../../../../../../uniol/apt/analysis/synthesize/separation/package-summary.html">uniol.apt.analysis.synthesize.separation</a></span><span class="tabEnd">&nbsp;</span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Interface and Description</th>
-</tr>
-<tbody>
-<tr class="altColor">
-<td class="colFirst"><code>interface&nbsp;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../uniol/apt/analysis/synthesize/separation/SuccessfulSeparation.html" title="interface in uniol.apt.analysis.synthesize.separation">SuccessfulSeparation</a></span></code>
-<div class="block">Interface representing a guaranteed successful synthesis.</div>
-</td>
-</tr>
-</tbody>
-</table>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
 <caption><span>Methods in <a href="../../../../../../uniol/apt/analysis/synthesize/separation/package-summary.html">uniol.apt.analysis.synthesize.separation</a> that return <a href="../../../../../../uniol/apt/analysis/synthesize/separation/Separation.html" title="interface in uniol.apt.analysis.synthesize.separation">Separation</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
@@ -122,6 +107,22 @@
 <td class="colLast"><span class="typeNameLabel">SeparationUtility.</span><code><span class="memberNameLink"><a href="../../../../../../uniol/apt/analysis/synthesize/separation/SeparationUtility.html#createSeparationInstance-uniol.apt.analysis.synthesize.RegionUtility-uniol.apt.analysis.synthesize.PNProperties-">createSeparationInstance</a></span>(<a href="../../../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility,
                         <a href="../../../../../../uniol/apt/analysis/synthesize/PNProperties.html" title="class in uniol.apt.analysis.synthesize">PNProperties</a>&nbsp;properties)</code>
 <div class="block">Construct a new Separation instance.</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructors in <a href="../../../../../../uniol/apt/analysis/synthesize/separation/package-summary.html">uniol.apt.analysis.synthesize.separation</a> with parameters of type <a href="../../../../../../uniol/apt/analysis/synthesize/separation/Separation.html" title="interface in uniol.apt.analysis.synthesize.separation">Separation</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../uniol/apt/analysis/synthesize/separation/SeparationSynthesizer.html#SeparationSynthesizer-uniol.apt.adt.ts.TransitionSystem-uniol.apt.analysis.synthesize.separation.Separation-boolean-boolean-">SeparationSynthesizer</a></span>(<a href="../../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
+                     <a href="../../../../../../uniol/apt/analysis/synthesize/separation/Separation.html" title="interface in uniol.apt.analysis.synthesize.separation">Separation</a>&nbsp;separation,
+                     boolean&nbsp;onlyEventSeparation,
+                     boolean&nbsp;quickFail)</code>
+<div class="block">Synthesize the given transition system via the given separation implementation.</div>
 </td>
 </tr>
 </tbody>

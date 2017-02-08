@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,7 +49,7 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../uniol/apt/analysis/synthesize/separation/Separation.html" title="interface in uniol.apt.analysis.synthesize.separation"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../uniol/apt/analysis/synthesize/separation/SeparationSynthesizer.html" title="class in uniol.apt.analysis.synthesize.separation"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../uniol/apt/analysis/synthesize/separation/SMTInterpolHelper.html" title="class in uniol.apt.analysis.synthesize.separation"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
@@ -142,20 +142,29 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../uniol/apt/analysis/synthesize/separation/Synthesizer.html" title="interface in uniol.apt.analysis.synthesize.separation">Synthesizer</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/separation/SeparationUtility.html#createSynthesizerInstance-uniol.apt.analysis.synthesize.RegionUtility-uniol.apt.analysis.synthesize.PNProperties-boolean-boolean-">createSynthesizerInstance</a></span>(<a href="../../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility,
+                         <a href="../../../../../uniol/apt/analysis/synthesize/PNProperties.html" title="class in uniol.apt.analysis.synthesize">PNProperties</a>&nbsp;properties,
+                         boolean&nbsp;onlyEventSeparation,
+                         boolean&nbsp;quickFail)</code>
+<div class="block">Construct a new Synthesizer instance.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>static java.lang.String[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/separation/SeparationUtility.html#getLocationMap-uniol.apt.analysis.synthesize.RegionUtility-uniol.apt.analysis.synthesize.PNProperties-">getLocationMap</a></span>(<a href="../../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility,
               <a href="../../../../../uniol/apt/analysis/synthesize/PNProperties.html" title="class in uniol.apt.analysis.synthesize">PNProperties</a>&nbsp;properties)</code>
 <div class="block">Calculate a mapping from events to their location.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/separation/SeparationUtility.html#isEventEnabled-uniol.apt.adt.ts.State-java.lang.String-">isEventEnabled</a></span>(<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;state,
               java.lang.String&nbsp;event)</code>
 <div class="block">Test if there exists an outgoing arc labelled with the given event.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/separation/SeparationUtility.html#isSeparatingRegion-uniol.apt.analysis.synthesize.Region-uniol.apt.adt.ts.State-uniol.apt.adt.ts.State-">isSeparatingRegion</a></span>(<a href="../../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a>&nbsp;region,
                   <a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;state,
@@ -163,7 +172,7 @@ extends java.lang.Object</pre>
 <div class="block">Check if the given region separates the two given states.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/separation/SeparationUtility.html#isSeparatingRegion-uniol.apt.analysis.synthesize.Region-uniol.apt.adt.ts.State-java.lang.String-">isSeparatingRegion</a></span>(<a href="../../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a>&nbsp;region,
                   <a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;state,
@@ -276,7 +285,7 @@ extends java.lang.Object</pre>
 <a name="createSeparationInstance-uniol.apt.analysis.synthesize.RegionUtility-uniol.apt.analysis.synthesize.PNProperties-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>createSeparationInstance</h4>
 <pre>public static&nbsp;<a href="../../../../../uniol/apt/analysis/synthesize/separation/Separation.html" title="interface in uniol.apt.analysis.synthesize.separation">Separation</a>&nbsp;createSeparationInstance(<a href="../../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility,
@@ -287,6 +296,32 @@ extends java.lang.Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>utility</code> - The region utility to use.</dd>
 <dd><code>properties</code> - Properties that the calculated region should satisfy.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A suitable Separation instance</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../../uniol/apt/analysis/synthesize/MissingLocationException.html" title="class in uniol.apt.analysis.synthesize">MissingLocationException</a></code> - if the transition system for the utility has locations for only some events</dd>
+</dl>
+</li>
+</ul>
+<a name="createSynthesizerInstance-uniol.apt.analysis.synthesize.RegionUtility-uniol.apt.analysis.synthesize.PNProperties-boolean-boolean-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>createSynthesizerInstance</h4>
+<pre>public static&nbsp;<a href="../../../../../uniol/apt/analysis/synthesize/separation/Synthesizer.html" title="interface in uniol.apt.analysis.synthesize.separation">Synthesizer</a>&nbsp;createSynthesizerInstance(<a href="../../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility,
+                                                    <a href="../../../../../uniol/apt/analysis/synthesize/PNProperties.html" title="class in uniol.apt.analysis.synthesize">PNProperties</a>&nbsp;properties,
+                                                    boolean&nbsp;onlyEventSeparation,
+                                                    boolean&nbsp;quickFail)
+                                             throws <a href="../../../../../uniol/apt/analysis/synthesize/MissingLocationException.html" title="class in uniol.apt.analysis.synthesize">MissingLocationException</a></pre>
+<div class="block">Construct a new Synthesizer instance.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>utility</code> - The region utility to use.</dd>
+<dd><code>properties</code> - Properties that the calculated region should satisfy.</dd>
+<dd><code>onlyEventSeparation</code> - A flag indicating that state separation should be ignored.</dd>
+<dd><code>quickFail</code> - If true, stop the calculation as soon as it is known that it won't be successful. If false,
+ try to solve all separation problems. Only if true will the list of failed problems be fully filled.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A suitable Separation instance</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
@@ -322,7 +357,7 @@ extends java.lang.Object</pre>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../uniol/apt/analysis/synthesize/separation/Separation.html" title="interface in uniol.apt.analysis.synthesize.separation"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
+<li><a href="../../../../../uniol/apt/analysis/synthesize/separation/SeparationSynthesizer.html" title="class in uniol.apt.analysis.synthesize.separation"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
 <li><a href="../../../../../uniol/apt/analysis/synthesize/separation/SMTInterpolHelper.html" title="class in uniol.apt.analysis.synthesize.separation"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">

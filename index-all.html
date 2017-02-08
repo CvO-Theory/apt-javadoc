@@ -1690,6 +1690,10 @@
 <dd>
 <div class="block">Creates #count new states in this TransitionSystem with a auto generated ids.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/separation/SeparationUtility.html#createSynthesizerInstance-uniol.apt.analysis.synthesize.RegionUtility-uniol.apt.analysis.synthesize.PNProperties-boolean-boolean-">createSynthesizerInstance(RegionUtility, PNProperties, boolean, boolean)</a></span> - Static method in class uniol.apt.analysis.synthesize.separation.<a href="uniol/apt/analysis/synthesize/separation/SeparationUtility.html" title="class in uniol.apt.analysis.synthesize.separation">SeparationUtility</a></dt>
+<dd>
+<div class="block">Construct a new Synthesizer instance.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/adt/pn/PetriNet.html#createTransition-java.lang.String-">createTransition(String)</a></span> - Method in class uniol.apt.adt.pn.<a href="uniol/apt/adt/pn/PetriNet.html" title="class in uniol.apt.adt.pn">PetriNet</a></dt>
 <dd>
 <div class="block">Creates a new transition to the petri net with the given id.</div>
@@ -6821,9 +6825,11 @@
 <dd>
 <div class="block">Get all separating regions which were calculated</div>
 </dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/separation/SuccessfulSeparation.html#getSeparatingRegions--">getSeparatingRegions()</a></span> - Method in interface uniol.apt.analysis.synthesize.separation.<a href="uniol/apt/analysis/synthesize/separation/SuccessfulSeparation.html" title="interface in uniol.apt.analysis.synthesize.separation">SuccessfulSeparation</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/separation/SeparationSynthesizer.html#getSeparatingRegions--">getSeparatingRegions()</a></span> - Method in class uniol.apt.analysis.synthesize.separation.<a href="uniol/apt/analysis/synthesize/separation/SeparationSynthesizer.html" title="class in uniol.apt.analysis.synthesize.separation">SeparationSynthesizer</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/separation/Synthesizer.html#getSeparatingRegions--">getSeparatingRegions()</a></span> - Method in interface uniol.apt.analysis.synthesize.separation.<a href="uniol/apt/analysis/synthesize/separation/Synthesizer.html" title="interface in uniol.apt.analysis.synthesize.separation">Synthesizer</a></dt>
 <dd>
-<div class="block">Get regions so that all separation problems are solved.</div>
+<div class="block">Get separating regions.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizePN.html#getSeparatingRegions--">getSeparatingRegions()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizePN.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN</a></dt>
 <dd>
@@ -7395,6 +7401,18 @@
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/reversible/ReversibleTS.html#getUnreversibleStates--">getUnreversibleStates()</a></span> - Method in class uniol.apt.analysis.reversible.<a href="uniol/apt/analysis/reversible/ReversibleTS.html" title="class in uniol.apt.analysis.reversible">ReversibleTS</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/separation/SeparationSynthesizer.html#getUnsolvableEventStateSeparationProblems--">getUnsolvableEventStateSeparationProblems()</a></span> - Method in class uniol.apt.analysis.synthesize.separation.<a href="uniol/apt/analysis/synthesize/separation/SeparationSynthesizer.html" title="class in uniol.apt.analysis.synthesize.separation">SeparationSynthesizer</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/separation/Synthesizer.html#getUnsolvableEventStateSeparationProblems--">getUnsolvableEventStateSeparationProblems()</a></span> - Method in interface uniol.apt.analysis.synthesize.separation.<a href="uniol/apt/analysis/synthesize/separation/Synthesizer.html" title="interface in uniol.apt.analysis.synthesize.separation">Synthesizer</a></dt>
+<dd>
+<div class="block">Get all unsolvable event/state separation problems.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/separation/SeparationSynthesizer.html#getUnsolvableStateSeparationProblems--">getUnsolvableStateSeparationProblems()</a></span> - Method in class uniol.apt.analysis.synthesize.separation.<a href="uniol/apt/analysis/synthesize/separation/SeparationSynthesizer.html" title="class in uniol.apt.analysis.synthesize.separation">SeparationSynthesizer</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/separation/Synthesizer.html#getUnsolvableStateSeparationProblems--">getUnsolvableStateSeparationProblems()</a></span> - Method in interface uniol.apt.analysis.synthesize.separation.<a href="uniol/apt/analysis/synthesize/separation/Synthesizer.html" title="interface in uniol.apt.analysis.synthesize.separation">Synthesizer</a></dt>
+<dd>
+<div class="block">Get all unsolvable sate separation problems.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizePN.html#getUtility--">getUtility()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizePN.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN</a></dt>
 <dd>
 <div class="block">Get the RegionUtility instance used for synthesis.</div>
@@ -8871,7 +8889,7 @@
 <dd>
 <div class="block">Calculate a Petri net with a minimal number of places solving some PN-synthesis problem.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizePN.html#minimizeRegions-uniol.apt.analysis.synthesize.RegionUtility-java.util.Set-boolean-">minimizeRegions(RegionUtility, Set&lt;Region&gt;, boolean)</a></span> - Static method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizePN.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/SynthesizePN.html#minimizeRegions-uniol.apt.adt.ts.TransitionSystem-java.util.Set-boolean-">minimizeRegions(TransitionSystem, Set&lt;Region&gt;, boolean)</a></span> - Static method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/SynthesizePN.html" title="class in uniol.apt.analysis.synthesize">SynthesizePN</a></dt>
 <dd>
 <div class="block">Try to eliminate redundant regions.</div>
 </dd>
@@ -11469,6 +11487,14 @@
 <dd>
 <div class="block">Class constructor.</div>
 </dd>
+<dt><a href="uniol/apt/analysis/synthesize/separation/SeparationSynthesizer.html" title="class in uniol.apt.analysis.synthesize.separation"><span class="typeNameLink">SeparationSynthesizer</span></a> - Class in <a href="uniol/apt/analysis/synthesize/separation/package-summary.html">uniol.apt.analysis.synthesize.separation</a></dt>
+<dd>
+<div class="block">Interface for something that synthesizes a Petri net.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/separation/SeparationSynthesizer.html#SeparationSynthesizer-uniol.apt.adt.ts.TransitionSystem-uniol.apt.analysis.synthesize.separation.Separation-boolean-boolean-">SeparationSynthesizer(TransitionSystem, Separation, boolean, boolean)</a></span> - Constructor for class uniol.apt.analysis.synthesize.separation.<a href="uniol/apt/analysis/synthesize/separation/SeparationSynthesizer.html" title="class in uniol.apt.analysis.synthesize.separation">SeparationSynthesizer</a></dt>
+<dd>
+<div class="block">Synthesize the given transition system via the given separation implementation.</div>
+</dd>
 <dt><a href="uniol/apt/analysis/synthesize/separation/SeparationUtility.html" title="class in uniol.apt.analysis.synthesize.separation"><span class="typeNameLink">SeparationUtility</span></a> - Class in <a href="uniol/apt/analysis/synthesize/separation/package-summary.html">uniol.apt.analysis.synthesize.separation</a></dt>
 <dd>
 <div class="block">Helper functions for solving separation problems.</div>
@@ -12195,10 +12221,6 @@
 <dd>
 <div class="block">A SubNode is a node of a SubGraph.</div>
 </dd>
-<dt><a href="uniol/apt/analysis/synthesize/separation/SuccessfulSeparation.html" title="interface in uniol.apt.analysis.synthesize.separation"><span class="typeNameLink">SuccessfulSeparation</span></a> - Interface in <a href="uniol/apt/analysis/synthesize/separation/package-summary.html">uniol.apt.analysis.synthesize.separation</a></dt>
-<dd>
-<div class="block">Interface representing a guaranteed successful synthesis.</div>
-</dd>
 <dt><a href="uniol/apt/analysis/sum/Sum.html" title="class in uniol.apt.analysis.sum"><span class="typeNameLink">Sum</span></a> - Class in <a href="uniol/apt/analysis/sum/package-summary.html">uniol.apt.analysis.sum</a></dt>
 <dd>
 <div class="block">Provides methods to compute the synchronous or asynchronous sum of two PN.</div>
@@ -12389,6 +12411,10 @@
 <dt><a href="uniol/apt/analysis/synthesize/SynthesizePN.EventStateSeparationProblems.html" title="class in uniol.apt.analysis.synthesize"><span class="typeNameLink">SynthesizePN.EventStateSeparationProblems</span></a> - Class in <a href="uniol/apt/analysis/synthesize/package-summary.html">uniol.apt.analysis.synthesize</a></dt>
 <dd>
 <div class="block">Iterable for iterating over all event/state separation problems of a transition system.</div>
+</dd>
+<dt><a href="uniol/apt/analysis/synthesize/separation/Synthesizer.html" title="interface in uniol.apt.analysis.synthesize.separation"><span class="typeNameLink">Synthesizer</span></a> - Interface in <a href="uniol/apt/analysis/synthesize/separation/package-summary.html">uniol.apt.analysis.synthesize.separation</a></dt>
+<dd>
+<div class="block">Interface for something that synthesizes a Petri net.</div>
 </dd>
 <dt><a href="uniol/apt/analysis/synthesize/SynthesizeUtils.html" title="class in uniol.apt.analysis.synthesize"><span class="typeNameLink">SynthesizeUtils</span></a> - Class in <a href="uniol/apt/analysis/synthesize/package-summary.html">uniol.apt.analysis.synthesize</a></dt>
 <dd>

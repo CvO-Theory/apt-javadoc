@@ -168,14 +168,6 @@
 </td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>static void</code></td>
-<td class="colLast"><span class="typeNameLabel">SynthesizePN.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/SynthesizePN.html#minimizeRegions-uniol.apt.analysis.synthesize.RegionUtility-java.util.Set-boolean-">minimizeRegions</a></span>(<a href="../../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility,
-               java.util.Set&lt;<a href="../../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a>&gt;&nbsp;requiredRegions,
-               boolean&nbsp;onlyEventSeparation)</code>
-<div class="block">Try to eliminate redundant regions.</div>
-</td>
-</tr>
-<tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../uniol/apt/adt/pn/PetriNet.html" title="class in uniol.apt.adt.pn">PetriNet</a></code></td>
 <td class="colLast"><span class="typeNameLabel">SynthesizePN.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/SynthesizePN.html#synthesizePetriNet-uniol.apt.analysis.synthesize.RegionUtility-java.util.Set-">synthesizePetriNet</a></span>(<a href="../../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility,
                   java.util.Set&lt;<a href="../../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a>&gt;&nbsp;regions)</code>
@@ -224,6 +216,15 @@
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../uniol/apt/analysis/synthesize/separation/Synthesizer.html" title="interface in uniol.apt.analysis.synthesize.separation">Synthesizer</a></code></td>
+<td class="colLast"><span class="typeNameLabel">SeparationUtility.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/separation/SeparationUtility.html#createSynthesizerInstance-uniol.apt.analysis.synthesize.RegionUtility-uniol.apt.analysis.synthesize.PNProperties-boolean-boolean-">createSynthesizerInstance</a></span>(<a href="../../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility,
+                         <a href="../../../../../uniol/apt/analysis/synthesize/PNProperties.html" title="class in uniol.apt.analysis.synthesize">PNProperties</a>&nbsp;properties,
+                         boolean&nbsp;onlyEventSeparation,
+                         boolean&nbsp;quickFail)</code>
+<div class="block">Construct a new Synthesizer instance.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>static java.lang.String[]</code></td>
 <td class="colLast"><span class="typeNameLabel">SeparationUtility.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/separation/SeparationUtility.html#getLocationMap-uniol.apt.analysis.synthesize.RegionUtility-uniol.apt.analysis.synthesize.PNProperties-">getLocationMap</a></span>(<a href="../../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility,
               <a href="../../../../../uniol/apt/analysis/synthesize/PNProperties.html" title="class in uniol.apt.analysis.synthesize">PNProperties</a>&nbsp;properties)</code>

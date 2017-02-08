@@ -163,18 +163,22 @@
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><a href="#uniol.apt.analysis.synthesize.separation">uniol.apt.analysis.synthesize.separation</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><a href="#uniol.apt.analysis.totallyreachable">uniol.apt.analysis.totallyreachable</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#uniol.apt.io.parser.impl">uniol.apt.io.parser.impl</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="#uniol.apt.io.renderer.impl">uniol.apt.io.renderer.impl</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="#uniol.apt.ui.impl.returns">uniol.apt.ui.impl.returns</a></td>
 <td class="colLast">&nbsp;</td>
 </tr>
@@ -922,6 +926,14 @@
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><span class="typeNameLabel">SynthesizePN.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/SynthesizePN.html#minimizeRegions-uniol.apt.adt.ts.TransitionSystem-java.util.Set-boolean-">minimizeRegions</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
+               java.util.Set&lt;<a href="../../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a>&gt;&nbsp;requiredRegions,
+               boolean&nbsp;onlyEventSeparation)</code>
+<div class="block">Try to eliminate redundant regions.</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../uniol/apt/adt/pn/PetriNet.html" title="class in uniol.apt.adt.pn">PetriNet</a></code></td>
 <td class="colLast"><span class="typeNameLabel">OverapproximatePN.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/OverapproximatePN.html#overapproximate-uniol.apt.adt.ts.TransitionSystem-uniol.apt.analysis.synthesize.PNProperties-">overapproximate</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
                <a href="../../../../../uniol/apt/analysis/synthesize/PNProperties.html" title="class in uniol.apt.analysis.synthesize">PNProperties</a>&nbsp;properties)</code>
@@ -960,6 +972,27 @@
 <tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/RegionUtility.html#RegionUtility-uniol.apt.util.SpanningTree-">RegionUtility</a></span>(<a href="../../../../../uniol/apt/util/SpanningTree.html" title="class in uniol.apt.util">SpanningTree</a>&lt;<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>,<a href="../../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>,<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;&nbsp;tree)</code>
 <div class="block">Construct a new RegionUtility.</div>
+</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="uniol.apt.analysis.synthesize.separation">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a> in <a href="../../../../../uniol/apt/analysis/synthesize/separation/package-summary.html">uniol.apt.analysis.synthesize.separation</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
+<caption><span>Constructors in <a href="../../../../../uniol/apt/analysis/synthesize/separation/package-summary.html">uniol.apt.analysis.synthesize.separation</a> with parameters of type <a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colOne" scope="col">Constructor and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/separation/SeparationSynthesizer.html#SeparationSynthesizer-uniol.apt.adt.ts.TransitionSystem-uniol.apt.analysis.synthesize.separation.Separation-boolean-boolean-">SeparationSynthesizer</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
+                     <a href="../../../../../uniol/apt/analysis/synthesize/separation/Separation.html" title="interface in uniol.apt.analysis.synthesize.separation">Separation</a>&nbsp;separation,
+                     boolean&nbsp;onlyEventSeparation,
+                     boolean&nbsp;quickFail)</code>
+<div class="block">Synthesize the given transition system via the given separation implementation.</div>
 </td>
 </tr>
 </tbody>
