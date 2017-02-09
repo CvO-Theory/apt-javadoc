@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -165,36 +165,30 @@ extends <a href="../../../../uniol/apt/adt/Edge.html" title="class in uniol.apt.
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/Flow.html#compare-java.lang.Object-">compare</a></span>(java.lang.Object&nbsp;obj)</code>
-<div class="block">Compares this flow to another by checking there weight, source- and targetid.</div>
-</td>
-</tr>
-<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Place.html" title="class in uniol.apt.adt.pn">Place</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/Flow.html#getPlace--">getPlace</a></span>()</code>
 <div class="block">Gets the place for this flow.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Transition.html" title="class in uniol.apt.adt.pn">Transition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/Flow.html#getTransition--">getTransition</a></span>()</code>
 <div class="block">Gets the transition for this flow.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/Flow.html#getWeight--">getWeight</a></span>()</code>
 <div class="block">Gets the weight of this flow.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/Flow.html#setWeight-int-">setWeight</a></span>(int&nbsp;w)</code>
 <div class="block">Sets the weight of this flow.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/Flow.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -294,23 +288,6 @@ extends <a href="../../../../uniol/apt/adt/Edge.html" title="class in uniol.apt.
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the transition of the flow.</dd>
-</dl>
-</li>
-</ul>
-<a name="compare-java.lang.Object-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>compare</h4>
-<pre>public&nbsp;boolean&nbsp;compare(java.lang.Object&nbsp;obj)</pre>
-<div class="block">Compares this flow to another by checking there weight, source- and targetid. Also checking if the belong to
- the same net.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>obj</code> - - the other object to compare to</dd>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>true if the label, source- and targetid are equal and the reference of petri net are the same.</dd>
 </dl>
 </li>
 </ul>
