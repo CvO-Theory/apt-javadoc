@@ -100,22 +100,34 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><a href="../../../../uniol/apt/util/interrupt/ChainedInterrupter.html" title="class in uniol.apt.util.interrupt">ChainedInterrupter</a></td>
+<td class="colLast">
+<div class="block">Interrupter that checks if any out of a given list of interrupters triggered.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../uniol/apt/util/interrupt/InterrupterRegistry.html" title="class in uniol.apt.util.interrupt">InterrupterRegistry</a></td>
 <td class="colLast">
 <div class="block">Handles <a href="../../../../uniol/apt/util/interrupt/Interrupter.html" title="interface in uniol.apt.util.interrupt"><code>Interrupter</code></a> implementations for different threads.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><a href="../../../../uniol/apt/util/interrupt/NoOpInterrupter.html" title="class in uniol.apt.util.interrupt">NoOpInterrupter</a></td>
 <td class="colLast">
 <div class="block">Interrupter that never interrupts modules.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><a href="../../../../uniol/apt/util/interrupt/ThreadStatusInterrupter.html" title="class in uniol.apt.util.interrupt">ThreadStatusInterrupter</a></td>
 <td class="colLast">
 <div class="block">Interrupter that checks <code>Thread.isInterrupted()</code> to determine if a
  module should be interrupted.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><a href="../../../../uniol/apt/util/interrupt/TimeoutInterrupter.html" title="class in uniol.apt.util.interrupt">TimeoutInterrupter</a></td>
+<td class="colLast">
+<div class="block">Interrupter that takes a timestamp when created and uses that to implement a timeout.</div>
 </td>
 </tr>
 </tbody>
