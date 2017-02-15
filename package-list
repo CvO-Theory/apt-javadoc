@@ -67,6 +67,7 @@ uniol.apt.io.parser
 uniol.apt.io.parser.impl
 uniol.apt.io.renderer
 uniol.apt.io.renderer.impl
+uniol.apt.json
 uniol.apt.module
 uniol.apt.module.exception
 uniol.apt.module.impl
