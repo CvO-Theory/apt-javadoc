@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -161,12 +161,26 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code><a href="../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/adt/PetriNetOrTransitionSystem.html#getCoverabilityLTS--">getCoverabilityLTS</a></span>()</code>
+<div class="block">Either gets the stored transition system or, if a Petri net is stored, the coverability graph of the stored
+ Petri net.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../uniol/apt/adt/pn/PetriNet.html" title="class in uniol.apt.adt.pn">PetriNet</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/adt/PetriNetOrTransitionSystem.html#getNet--">getNet</a></span>()</code>
 <div class="block">Gets the stored Petri net or null.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/adt/PetriNetOrTransitionSystem.html#getReachabilityLTS--">getReachabilityLTS</a></span>()</code>
+<div class="block">Either gets the stored transition system or, if a Petri net is stored, the reachability graph of the stored
+ Petri net.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/adt/PetriNetOrTransitionSystem.html#getTs--">getTs</a></span>()</code>
 <div class="block">Gets the stored labeled transition system or null.</div>
@@ -247,7 +261,7 @@ extends java.lang.Object</pre>
 <a name="getTs--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getTs</h4>
 <pre>public&nbsp;<a href="../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;getTs()</pre>
@@ -255,6 +269,39 @@ extends java.lang.Object</pre>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Labeled transition or null</dd>
+</dl>
+</li>
+</ul>
+<a name="getReachabilityLTS--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getReachabilityLTS</h4>
+<pre>public&nbsp;<a href="../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;getReachabilityLTS()
+                                    throws <a href="../../../uniol/apt/analysis/exception/UnboundedException.html" title="class in uniol.apt.analysis.exception">UnboundedException</a></pre>
+<div class="block">Either gets the stored transition system or, if a Petri net is stored, the reachability graph of the stored
+ Petri net.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Labeled transition system.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../uniol/apt/analysis/exception/UnboundedException.html" title="class in uniol.apt.analysis.exception">UnboundedException</a></code> - If the stored Petri net is unbounded.</dd>
+</dl>
+</li>
+</ul>
+<a name="getCoverabilityLTS--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getCoverabilityLTS</h4>
+<pre>public&nbsp;<a href="../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;getCoverabilityLTS()</pre>
+<div class="block">Either gets the stored transition system or, if a Petri net is stored, the coverability graph of the stored
+ Petri net.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Labeled transition system.</dd>
 </dl>
 </li>
 </ul>

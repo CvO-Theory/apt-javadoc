@@ -1095,10 +1095,9 @@
 <dd>
 <div class="block">This class manages the attributes for check</div>
 </dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/analysis/bisimulation/Bisimulation.html#checkBisimulation-uniol.apt.adt.PetriNetOrTransitionSystem-uniol.apt.adt.PetriNetOrTransitionSystem-">checkBisimulation(PetriNetOrTransitionSystem, PetriNetOrTransitionSystem)</a></span> - Method in class uniol.apt.analysis.bisimulation.<a href="uniol/apt/analysis/bisimulation/Bisimulation.html" title="class in uniol.apt.analysis.bisimulation">Bisimulation</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/bisimulation/Bisimulation.html#checkBisimulation-uniol.apt.adt.ts.TransitionSystem-uniol.apt.adt.ts.TransitionSystem-">checkBisimulation(TransitionSystem, TransitionSystem)</a></span> - Method in class uniol.apt.analysis.bisimulation.<a href="uniol/apt/analysis/bisimulation/Bisimulation.html" title="class in uniol.apt.analysis.bisimulation">Bisimulation</a></dt>
 <dd>
-<div class="block">Check,
- 1.</div>
+<div class="block">Check, if the given transition systems are bisimilar.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/bounded/Bounded.html#checkBounded-uniol.apt.adt.pn.PetriNet-">checkBounded(PetriNet)</a></span> - Static method in class uniol.apt.analysis.bounded.<a href="uniol/apt/analysis/bounded/Bounded.html" title="class in uniol.apt.analysis.bounded">Bounded</a></dt>
 <dd>
@@ -5198,6 +5197,11 @@
 <div class="block">Function for returning a counter example (as requirements A8a, A8b, A10 state that two counter-examples
  should be found in case the condition of the parikh vectors is not met).</div>
 </dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/adt/PetriNetOrTransitionSystem.html#getCoverabilityLTS--">getCoverabilityLTS()</a></span> - Method in class uniol.apt.adt.<a href="uniol/apt/adt/PetriNetOrTransitionSystem.html" title="class in uniol.apt.adt">PetriNetOrTransitionSystem</a></dt>
+<dd>
+<div class="block">Either gets the stored transition system or, if a Petri net is stored, the coverability graph of the stored
+ Petri net.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/coverability/CoverabilityGraphNode.html#getCoveredNode--">getCoveredNode()</a></span> - Method in class uniol.apt.analysis.coverability.<a href="uniol/apt/analysis/coverability/CoverabilityGraphNode.html" title="class in uniol.apt.analysis.coverability">CoverabilityGraphNode</a></dt>
 <dd>
 <div class="block">Get the node in the coverability graph that is covered by this node, if such a node exists.</div>
@@ -6532,6 +6536,11 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/coverability/CoverabilityGraph.html#getReachabilityGraph-uniol.apt.adt.pn.PetriNet-">getReachabilityGraph(PetriNet)</a></span> - Static method in class uniol.apt.analysis.coverability.<a href="uniol/apt/analysis/coverability/CoverabilityGraph.html" title="class in uniol.apt.analysis.coverability">CoverabilityGraph</a></dt>
 <dd>
 <div class="block">Construct the reachability graph for a given Petri net.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/adt/PetriNetOrTransitionSystem.html#getReachabilityLTS--">getReachabilityLTS()</a></span> - Method in class uniol.apt.adt.<a href="uniol/apt/adt/PetriNetOrTransitionSystem.html" title="class in uniol.apt.adt">PetriNetOrTransitionSystem</a></dt>
+<dd>
+<div class="block">Either gets the stored transition system or, if a Petri net is stored, the reachability graph of the stored
+ Petri net.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/RegionUtility.html#getReachingParikhVector-uniol.apt.adt.ts.State-">getReachingParikhVector(State)</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a></dt>
 <dd>&nbsp;</dd>
