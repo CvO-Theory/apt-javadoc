@@ -158,15 +158,6 @@ extends java.lang.Object</pre>
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/isomorphism/IsomorphismLogic.html#IsomorphismLogic-uniol.apt.adt.pn.PetriNet-uniol.apt.adt.pn.PetriNet-boolean-">IsomorphismLogic</a></span>(<a href="../../../../uniol/apt/adt/pn/PetriNet.html" title="class in uniol.apt.adt.pn">PetriNet</a>&nbsp;pn1,
-                <a href="../../../../uniol/apt/adt/pn/PetriNet.html" title="class in uniol.apt.adt.pn">PetriNet</a>&nbsp;pn2,
-                boolean&nbsp;checkLabels)</code>
-<div class="block">Constructor that accepts PetriNets and implicitly
- calculates their reachability graphs, or -- if one
- of them is unbounded -- throws an exception.</div>
-</td>
-</tr>
-<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/isomorphism/IsomorphismLogic.html#IsomorphismLogic-uniol.apt.adt.ts.TransitionSystem-uniol.apt.adt.ts.TransitionSystem-boolean-">IsomorphismLogic</a></span>(<a href="../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;lts1,
                 <a href="../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;lts2,
                 boolean&nbsp;checkLabels)</code>
@@ -229,7 +220,7 @@ extends java.lang.Object</pre>
 <a name="IsomorphismLogic-uniol.apt.adt.ts.TransitionSystem-uniol.apt.adt.ts.TransitionSystem-boolean-">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>IsomorphismLogic</h4>
 <pre>public&nbsp;IsomorphismLogic(<a href="../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;lts1,
@@ -242,29 +233,6 @@ extends java.lang.Object</pre>
 <dd><code>lts2</code> - The second LTS to test.</dd>
 <dd><code>checkLabels</code> - If true, "strong isomorphism" is tested and labels have to be identical between the LTS.
                     Otherwise labels are ignored.</dd>
-</dl>
-</li>
-</ul>
-<a name="IsomorphismLogic-uniol.apt.adt.pn.PetriNet-uniol.apt.adt.pn.PetriNet-boolean-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>IsomorphismLogic</h4>
-<pre>public&nbsp;IsomorphismLogic(<a href="../../../../uniol/apt/adt/pn/PetriNet.html" title="class in uniol.apt.adt.pn">PetriNet</a>&nbsp;pn1,
-                        <a href="../../../../uniol/apt/adt/pn/PetriNet.html" title="class in uniol.apt.adt.pn">PetriNet</a>&nbsp;pn2,
-                        boolean&nbsp;checkLabels)
-                 throws <a href="../../../../uniol/apt/analysis/exception/UnboundedException.html" title="class in uniol.apt.analysis.exception">UnboundedException</a></pre>
-<div class="block">Constructor that accepts PetriNets and implicitly
- calculates their reachability graphs, or -- if one
- of them is unbounded -- throws an exception.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>pn1</code> - The first Petri net whose reachability graph is to be tested for isomorphism.</dd>
-<dd><code>pn2</code> - The second Petri net whose reachability graph is to be tested for isomorphism.</dd>
-<dd><code>checkLabels</code> - see other constructor for information</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../../uniol/apt/analysis/exception/UnboundedException.html" title="class in uniol.apt.analysis.exception">UnboundedException</a></code> - If one of the nets is unbounded.</dd>
 </dl>
 </li>
 </ul>
