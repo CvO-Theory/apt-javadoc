@@ -31,6 +31,7 @@ uniol.apt.analysis.isomorphism
 uniol.apt.analysis.language
 uniol.apt.analysis.live
 uniol.apt.analysis.lts.extension
+uniol.apt.analysis.mf
 uniol.apt.analysis.on
 uniol.apt.analysis.persistent
 uniol.apt.analysis.petrify
