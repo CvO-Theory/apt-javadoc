@@ -163,7 +163,9 @@ extends java.lang.Object</pre>
             java.util.SortedSet&lt;java.lang.Character&gt;&nbsp;alphabet,
             boolean&nbsp;quickFail,
             <a href="../../../../uniol/apt/analysis/synthesize/FindWords.WordCallback.html" title="interface in uniol.apt.analysis.synthesize">FindWords.WordCallback</a>&nbsp;wordCallback,
-            <a href="../../../../uniol/apt/analysis/synthesize/FindWords.LengthDoneCallback.html" title="interface in uniol.apt.analysis.synthesize">FindWords.LengthDoneCallback</a>&nbsp;lengthDoneCallback)</code>&nbsp;</td>
+            <a href="../../../../uniol/apt/analysis/synthesize/FindWords.LengthDoneCallback.html" title="interface in uniol.apt.analysis.synthesize">FindWords.LengthDoneCallback</a>&nbsp;lengthDoneCallback)</code>
+<div class="block">Generate Petri net solvable words with the given characteristics.</div>
+</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -199,9 +201,17 @@ extends java.lang.Object</pre>
                                 <a href="../../../../uniol/apt/analysis/synthesize/FindWords.WordCallback.html" title="interface in uniol.apt.analysis.synthesize">FindWords.WordCallback</a>&nbsp;wordCallback,
                                 <a href="../../../../uniol/apt/analysis/synthesize/FindWords.LengthDoneCallback.html" title="interface in uniol.apt.analysis.synthesize">FindWords.LengthDoneCallback</a>&nbsp;lengthDoneCallback)
                          throws <a href="../../../../uniol/apt/analysis/exception/PreconditionFailedException.html" title="class in uniol.apt.analysis.exception">PreconditionFailedException</a></pre>
+<div class="block">Generate Petri net solvable words with the given characteristics.</div>
 <dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>properties</code> - The properties that should be considered.</dd>
+<dd><code>alphabet</code> - The alphabet from which words should be generated.</dd>
+<dd><code>quickFail</code> - Should quick-fail synthesis be done or should full synthesis be attempted?</dd>
+<dd><code>wordCallback</code> - Callback that should be called for each word that is found.</dd>
+<dd><code>lengthDoneCallback</code> - Callback that should be called when all words of a given length were handled.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../../uniol/apt/analysis/exception/PreconditionFailedException.html" title="class in uniol.apt.analysis.exception">PreconditionFailedException</a></code></dd>
+<dd><code><a href="../../../../uniol/apt/analysis/exception/PreconditionFailedException.html" title="class in uniol.apt.analysis.exception">PreconditionFailedException</a></code> - If a combination of properties is specified for which there is no
+ sensible definition of 'minimally unsolvable word', i.e. plain+k-marking.</dd>
 </dl>
 </li>
 </ul>

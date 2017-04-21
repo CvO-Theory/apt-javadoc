@@ -249,6 +249,10 @@ extends java.lang.Object</pre>
 <h4>getCurrentThreadInterrupter</h4>
 <pre>public static&nbsp;<a href="../../../../uniol/apt/util/interrupt/Interrupter.html" title="interface in uniol.apt.util.interrupt">Interrupter</a>&nbsp;getCurrentThreadInterrupter()</pre>
 <div class="block">Returns the interrupter for the currently executing (calling) thread.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The interrupter for the current thread.</dd>
+</dl>
 </li>
 </ul>
 <a name="throwIfInterruptRequestedForCurrentThread--">
@@ -257,8 +261,7 @@ extends java.lang.Object</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>throwIfInterruptRequestedForCurrentThread</h4>
-<pre>public static&nbsp;void&nbsp;throwIfInterruptRequestedForCurrentThread()
-                                                      throws <a href="../../../../uniol/apt/util/interrupt/UncheckedInterruptedException.html" title="class in uniol.apt.util.interrupt">UncheckedInterruptedException</a></pre>
+<pre>public static&nbsp;void&nbsp;throwIfInterruptRequestedForCurrentThread()</pre>
 <div class="block">Throws an exception if the interrupter for the currently executing
  (calling) thread determines that a task should be aborted.</div>
 <dl>

@@ -169,7 +169,9 @@ extends <a href="../../../../uniol/apt/module/exception/ModuleException.html" ti
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/InvalidRegionException.html#InvalidRegionException-uniol.apt.adt.ts.Arc-">InvalidRegionException</a></span>(<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&nbsp;arc)</code>&nbsp;</td>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/InvalidRegionException.html#InvalidRegionException-uniol.apt.adt.ts.Arc-">InvalidRegionException</a></span>(<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&nbsp;arc)</code>
+<div class="block">Constructor creates an InvalidRegionException because the region is not consistent for the given arc.</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/synthesize/InvalidRegionException.html#InvalidRegionException-uniol.apt.adt.ts.State-java.lang.String-">InvalidRegionException</a></span>(<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;state,
@@ -258,6 +260,13 @@ extends <a href="../../../../uniol/apt/module/exception/ModuleException.html" ti
 <li class="blockList">
 <h4>InvalidRegionException</h4>
 <pre>public&nbsp;InvalidRegionException(<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&nbsp;arc)</pre>
+<div class="block">Constructor creates an InvalidRegionException because the region is not consistent for the given arc. This
+ means that the number of tokens assigned to the source of the arc plus the effect of the label of the arc
+ does not equal the number of tokens assigned to the target of the arc.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>arc</code> - The arc that is not handled correctly</dd>
+</dl>
 </li>
 </ul>
 </li>
