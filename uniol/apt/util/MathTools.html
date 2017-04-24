@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -163,6 +163,13 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>static int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/util/MathTools.html#meanTowardsMinusInfinity-int-int-">meanTowardsMinusInfinity</a></span>(int&nbsp;x,
+                        int&nbsp;y)</code>
+<div class="block">Calculate the average of two numbers, rounding towards minus infinity.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>static int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/util/MathTools.html#mod-int-int-">mod</a></span>(int&nbsp;a,
    int&nbsp;b)</code>
 <div class="block">Calculates the mathematical modulo, so that it's given the positive value.</div>
@@ -263,7 +270,7 @@ extends java.lang.Object</pre>
 <a name="mod-int-int-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>mod</h4>
 <pre>public static&nbsp;int&nbsp;mod(int&nbsp;a,
@@ -275,6 +282,25 @@ extends java.lang.Object</pre>
 <dd><code>b</code> - - dividend.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a modulo b.</dd>
+</dl>
+</li>
+</ul>
+<a name="meanTowardsMinusInfinity-int-int-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>meanTowardsMinusInfinity</h4>
+<pre>public static&nbsp;int&nbsp;meanTowardsMinusInfinity(int&nbsp;x,
+                                           int&nbsp;y)</pre>
+<div class="block">Calculate the average of two numbers, rounding towards minus infinity. This does the equivalent of
+ <pre>(x+y)&gt;&gt;1</pre>, but handles integer over- and underflow correctly.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>x</code> - First number</dd>
+<dd><code>y</code> - Second number</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The average.</dd>
 </dl>
 </li>
 </ul>
