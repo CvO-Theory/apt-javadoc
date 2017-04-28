@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -156,24 +156,18 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>java.util.List&lt;<a href="../../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/AllSmallCyclesHavePVOne.html#getCounterExample--">getCounterExample</a></span>()</code>
-<div class="block">Get the counter example that proves that smaller cycles than with Parikh vector 1 exists.</div>
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/AllSmallCyclesHavePVOne.html#nonMultipleOfPV1CycleFound--">nonMultipleOfPV1CycleFound</a></span>()</code>
+<div class="block">Check if a cycle with Parikh vector not a multiple of 1 was found.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/AllSmallCyclesHavePVOne.html#incomparableCycleFound--">incomparableCycleFound</a></span>()</code>
-<div class="block">Check if a cycle was found whose Parikh vector is incomparable to the all-ones-vector.</div>
-</td>
-</tr>
-<tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/AllSmallCyclesHavePVOne.html#noPV1CycleFound--">noPV1CycleFound</a></span>()</code>
 <div class="block">Check if a cycle with Parikh vector 1 was found.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/AllSmallCyclesHavePVOne.html#smallCyclesHavePVOne--">smallCyclesHavePVOne</a></span>()</code>
 <div class="block">Check if all small cycles have Parikh vector 1.</div>
@@ -227,20 +221,6 @@ extends java.lang.Object</pre>
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="getCounterExample--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getCounterExample</h4>
-<pre>public&nbsp;java.util.List&lt;<a href="../../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&gt;&nbsp;getCounterExample()</pre>
-<div class="block">Get the counter example that proves that smaller cycles than with Parikh vector 1 exists.</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>Either an empty list or an ordered list of arcs that form a cycle around the initial state.</dd>
-</dl>
-</li>
-</ul>
 <a name="noPV1CycleFound--">
 <!--   -->
 </a>
@@ -255,14 +235,14 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a name="incomparableCycleFound--">
+<a name="nonMultipleOfPV1CycleFound--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>incomparableCycleFound</h4>
-<pre>public&nbsp;boolean&nbsp;incomparableCycleFound()</pre>
-<div class="block">Check if a cycle was found whose Parikh vector is incomparable to the all-ones-vector.</div>
+<h4>nonMultipleOfPV1CycleFound</h4>
+<pre>public&nbsp;boolean&nbsp;nonMultipleOfPV1CycleFound()</pre>
+<div class="block">Check if a cycle with Parikh vector not a multiple of 1 was found.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true if such a cycle was found.</dd>
@@ -276,8 +256,7 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>smallCyclesHavePVOne</h4>
 <pre>public&nbsp;boolean&nbsp;smallCyclesHavePVOne()</pre>
-<div class="block">Check if all small cycles have Parikh vector 1. This is equivalent to !noPV1CycleFound() &amp;&amp;
- getCounterExample().isEmpty().</div>
+<div class="block">Check if all small cycles have Parikh vector 1.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>True if all small cycles have Parikh vector 1.</dd>
