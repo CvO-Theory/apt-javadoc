@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -241,16 +241,22 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr id="i10" class="altColor">
+<td class="colFirst"><code><a href="../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/ParikhVector.html#residual-uniol.apt.adt.ts.ParikhVector-">residual</a></span>(<a href="../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&nbsp;other)</code>
+<div class="block">Compute the residual of this Parikh vector with another Parikh vector.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/ParikhVector.html#sameOrMutuallyDisjoint-uniol.apt.adt.ts.ParikhVector-">sameOrMutuallyDisjoint</a></span>(<a href="../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&nbsp;pv2)</code>
 <div class="block">Checks two Parikh vectors if they are equal or mutually disjoint.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/ParikhVector.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/ParikhVector.html#tryRemove-java.lang.String-int-">tryRemove</a></span>(java.lang.String&nbsp;event,
          int&nbsp;n)</code>
@@ -393,6 +399,25 @@ extends java.lang.Object</pre>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The new ParikhVector or null, if the given event doesn't occur often enough in the original
  ParikhVector</dd>
+</dl>
+</li>
+</ul>
+<a name="residual-uniol.apt.adt.ts.ParikhVector-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>residual</h4>
+<pre>public&nbsp;<a href="../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&nbsp;residual(<a href="../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&nbsp;other)</pre>
+<div class="block">Compute the residual of this Parikh vector with another Parikh vector. For each event <pre>t</pre>, the
+ resulting Parikh vector will contain <pre>t</pre> exactly <pre>max{ 0, this.get(t)-other.get(t) }</pre>
+ times. In other words, this computes the difference between the two Parikh vector, but subtraction saturates
+ at zero.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>other</code> - The Parikh vector to subtract.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The residual.</dd>
 </dl>
 </li>
 </ul>

@@ -455,14 +455,6 @@
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/compiler/AbstractServiceProcessor.html#allowGenerics">allowGenerics</a></span> - Variable in class uniol.apt.compiler.<a href="uniol/apt/compiler/AbstractServiceProcessor.html" title="class in uniol.apt.compiler">AbstractServiceProcessor</a></dt>
 <dd>&nbsp;</dd>
-<dt><a href="uniol/apt/analysis/cycles/lts/AllSmallCyclesHavePVOne.html" title="class in uniol.apt.analysis.cycles.lts"><span class="typeNameLink">AllSmallCyclesHavePVOne</span></a> - Class in <a href="uniol/apt/analysis/cycles/lts/package-summary.html">uniol.apt.analysis.cycles.lts</a></dt>
-<dd>
-<div class="block">A special-case implementation for checking if all small cycles of a transition system have Parikh vector all one.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/AllSmallCyclesHavePVOne.html#AllSmallCyclesHavePVOne-uniol.apt.adt.ts.TransitionSystem-">AllSmallCyclesHavePVOne(TransitionSystem)</a></span> - Constructor for class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/AllSmallCyclesHavePVOne.html" title="class in uniol.apt.analysis.cycles.lts">AllSmallCyclesHavePVOne</a></dt>
-<dd>
-<div class="block">Check if each event occurs exactly once in each small cycle.</div>
-</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatLexer.html#AND">AND</a></span> - Static variable in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatLexer.html" title="class in uniol.apt.io.parser.impl">RegexFormatLexer</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.html#AND">AND</a></span> - Static variable in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser</a></dt>
@@ -1162,11 +1154,7 @@
 <dd>
 <div class="block">Checks a labeled transition system if all smallest cycles have the same or mutally disjoint parikh vectors.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#checkSameOrMutallyDisjointPVs-uniol.apt.adt.ts.TransitionSystem-boolean-">checkSameOrMutallyDisjointPVs(TransitionSystem, boolean)</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html" title="class in uniol.apt.analysis.cycles.lts">ComputeSmallestCycles</a></dt>
-<dd>
-<div class="block">Checks a labeled transition system if all smallest cycles have the same or mutally disjoint parikh vectors.</div>
-</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#checkSameOrMutallyDisjointPVs-java.util.Set-">checkSameOrMutallyDisjointPVs(Set&lt;Pair&lt;List&lt;String&gt;, ParikhVector&gt;&gt;)</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html" title="class in uniol.apt.analysis.cycles.lts">ComputeSmallestCycles</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#checkSameOrMutallyDisjointPVs-java.util.Collection-">checkSameOrMutallyDisjointPVs(Collection&lt;? extends CyclePV&gt;)</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html" title="class in uniol.apt.analysis.cycles.lts">ComputeSmallestCycles</a></dt>
 <dd>
 <div class="block">Checks whether in the given set of cycles and parikh vectors all cycles have the same or mutally disjoint
  parikh vectors.</div>
@@ -1179,7 +1167,7 @@
 <dd>
 <div class="block">Checks a labeled transition system if all smallest cycles have the same parikh vector.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#checkSamePVs-java.util.Set-">checkSamePVs(Set&lt;Pair&lt;List&lt;String&gt;, ParikhVector&gt;&gt;)</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html" title="class in uniol.apt.analysis.cycles.lts">ComputeSmallestCycles</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#checkSamePVs-java.util.Collection-">checkSamePVs(Collection&lt;? extends CyclePV&gt;)</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html" title="class in uniol.apt.analysis.cycles.lts">ComputeSmallestCycles</a></dt>
 <dd>
 <div class="block">Checks whether in the given set of cycles and parikh vectors all cycles have the same parikh vector.</div>
 </dd>
@@ -1355,6 +1343,19 @@
 <div class="block">Computes the parikh vectors of all smallest cycles of an labeled transition system.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#computePVsOfSmallestCycles-uniol.apt.adt.ts.TransitionSystem-boolean-">computePVsOfSmallestCycles(TransitionSystem, boolean)</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html" title="class in uniol.apt.analysis.cycles.lts">ComputeSmallestCycles</a></dt>
+<dd>
+<div class="block">Computes the parikh vectors of all smallest cycles of an labeled transition system.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#computePVsOfSmallestCyclesViaChords-uniol.apt.adt.ts.TransitionSystem-">computePVsOfSmallestCyclesViaChords(TransitionSystem)</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html" title="class in uniol.apt.analysis.cycles.lts">ComputeSmallestCycles</a></dt>
+<dd>
+<div class="block">Computes the parikh vectors of all smallest cycles of a finite, totally reachable, deterministic and
+ persistent transition system.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#computePVsOfSmallestCyclesViaCycleSearch-uniol.apt.adt.ts.TransitionSystem-">computePVsOfSmallestCyclesViaCycleSearch(TransitionSystem)</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html" title="class in uniol.apt.analysis.cycles.lts">ComputeSmallestCycles</a></dt>
+<dd>
+<div class="block">Computes the parikh vectors of all smallest cycles of an labeled transition system.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#computePVsOfSmallestCyclesViaCycleSearch-uniol.apt.adt.ts.TransitionSystem-boolean-">computePVsOfSmallestCyclesViaCycleSearch(TransitionSystem, boolean)</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html" title="class in uniol.apt.analysis.cycles.lts">ComputeSmallestCycles</a></dt>
 <dd>
 <div class="block">Computes the parikh vectors of all smallest cycles of an labeled transition system.</div>
 </dd>
@@ -1757,6 +1758,14 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/bounded/BoundedResult.html#cycle">cycle</a></span> - Variable in class uniol.apt.analysis.bounded.<a href="uniol/apt/analysis/bounded/BoundedResult.html" title="class in uniol.apt.analysis.bounded">BoundedResult</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="uniol/apt/analysis/cycles/lts/Cycle.html" title="class in uniol.apt.analysis.cycles.lts"><span class="typeNameLink">Cycle</span></a> - Class in <a href="uniol/apt/analysis/cycles/lts/package-summary.html">uniol.apt.analysis.cycles.lts</a></dt>
+<dd>
+<div class="block">Representation of a cycle as a list of nodes and the Parikh vector of the edges.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/Cycle.html#Cycle-java.util.List-uniol.apt.adt.ts.ParikhVector-">Cycle(List&lt;State&gt;, ParikhVector)</a></span> - Constructor for class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/Cycle.html" title="class in uniol.apt.analysis.cycles.lts">Cycle</a></dt>
+<dd>
+<div class="block">Construct a new instance of this class from the given data.</div>
+</dd>
 <dt><a href="uniol/apt/analysis/cycles/CycleCallback.html" title="interface in uniol.apt.analysis.cycles"><span class="typeNameLink">CycleCallback</span></a>&lt;<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">G</a> extends <a href="uniol/apt/adt/IGraph.html" title="interface in uniol.apt.adt">IGraph</a>&lt;<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">G</a>,<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">E</a>,<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">N</a>&gt;,<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">E</a> extends <a href="uniol/apt/adt/IEdge.html" title="interface in uniol.apt.adt">IEdge</a>&lt;<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">G</a>,<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">E</a>,<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">N</a>&gt;,<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">N</a> extends <a href="uniol/apt/adt/INode.html" title="interface in uniol.apt.adt">INode</a>&lt;<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">G</a>,<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">E</a>,<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">N</a>&gt;&gt; - Interface in <a href="uniol/apt/analysis/cycles/package-summary.html">uniol.apt.analysis.cycles</a></dt>
 <dd>
 <div class="block">Callback which gets used by the <a href="uniol/apt/analysis/cycles/CycleSearch.html" title="class in uniol.apt.analysis.cycles"><code>CycleSearch</code></a> class to notify the
@@ -1766,7 +1775,7 @@
 <dd>
 <div class="block">Datastructure for storing two counterexamples for the module.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/CycleCounterExample.html#CycleCounterExample-uniol.apt.util.Pair-uniol.apt.util.Pair-">CycleCounterExample(Pair&lt;List&lt;String&gt;, ParikhVector&gt;, Pair&lt;List&lt;String&gt;, ParikhVector&gt;)</a></span> - Constructor for class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/CycleCounterExample.html" title="class in uniol.apt.analysis.cycles.lts">CycleCounterExample</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/CycleCounterExample.html#CycleCounterExample-uniol.apt.analysis.cycles.lts.CyclePV-uniol.apt.analysis.cycles.lts.CyclePV-">CycleCounterExample(CyclePV, CyclePV)</a></span> - Constructor for class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/CycleCounterExample.html" title="class in uniol.apt.analysis.cycles.lts">CycleCounterExample</a></dt>
 <dd>
 <div class="block">Constructor for creating a new counter example for the cycles.</div>
 </dd>
@@ -1786,11 +1795,26 @@
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/generator/module/CycleNetGeneratorModule.html#CycleNetGeneratorModule--">CycleNetGeneratorModule()</a></span> - Constructor for class uniol.apt.generator.module.<a href="uniol/apt/generator/module/CycleNetGeneratorModule.html" title="class in uniol.apt.generator.module">CycleNetGeneratorModule</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="uniol/apt/analysis/cycles/lts/CyclePV.html" title="class in uniol.apt.analysis.cycles.lts"><span class="typeNameLink">CyclePV</span></a> - Class in <a href="uniol/apt/analysis/cycles/lts/package-summary.html">uniol.apt.analysis.cycles.lts</a></dt>
+<dd>
+<div class="block">Representation of a cycle as its Parikh vector.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/CyclePV.html#CyclePV-uniol.apt.adt.ts.ParikhVector-">CyclePV(ParikhVector)</a></span> - Constructor for class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/CyclePV.html" title="class in uniol.apt.analysis.cycles.lts">CyclePV</a></dt>
+<dd>
+<div class="block">Construct a new cycle for the given Parikh vector.</div>
+</dd>
 <dt><a href="uniol/apt/analysis/cycles/CycleSearch.html" title="class in uniol.apt.analysis.cycles"><span class="typeNameLink">CycleSearch</span></a> - Class in <a href="uniol/apt/analysis/cycles/package-summary.html">uniol.apt.analysis.cycles</a></dt>
 <dd>
 <div class="block">Compute elementary cycles via Johnson's algorithm.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/CycleSearch.html#CycleSearch--">CycleSearch()</a></span> - Constructor for class uniol.apt.analysis.cycles.<a href="uniol/apt/analysis/cycles/CycleSearch.html" title="class in uniol.apt.analysis.cycles">CycleSearch</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="uniol/apt/analysis/cycles/CycleSearchViaChords.html" title="class in uniol.apt.analysis.cycles"><span class="typeNameLink">CycleSearchViaChords</span></a> - Class in <a href="uniol/apt/analysis/cycles/package-summary.html">uniol.apt.analysis.cycles</a></dt>
+<dd>
+<div class="block">Compute the Parikh vectors of the smallest cycles of a totally reachable, deterministic, and persistent LTS with
+ disjoint small cycles.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/CycleSearchViaChords.html#CycleSearchViaChords--">CycleSearchViaChords()</a></span> - Constructor for class uniol.apt.analysis.cycles.<a href="uniol/apt/analysis/cycles/CycleSearchViaChords.html" title="class in uniol.apt.analysis.cycles">CycleSearchViaChords</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="uniol/apt/analysis/cycles/lts/CyclesHaveSameOrMutallyDisjointPVModule.html" title="class in uniol.apt.analysis.cycles.lts"><span class="typeNameLink">CyclesHaveSameOrMutallyDisjointPVModule</span></a> - Class in <a href="uniol/apt/analysis/cycles/lts/package-summary.html">uniol.apt.analysis.cycles.lts</a></dt>
 <dd>
@@ -3077,6 +3101,10 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/adt/ts/Event.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class uniol.apt.adt.ts.<a href="uniol/apt/adt/ts/Event.html" title="class in uniol.apt.adt.ts">Event</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/adt/ts/ParikhVector.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class uniol.apt.adt.ts.<a href="uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/Cycle.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/Cycle.html" title="class in uniol.apt.analysis.cycles.lts">Cycle</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/CyclePV.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/CyclePV.html" title="class in uniol.apt.analysis.cycles.lts">CyclePV</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/processmining/algebra/AbstractMatrix.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class uniol.apt.analysis.processmining.algebra.<a href="uniol/apt/analysis/processmining/algebra/AbstractMatrix.html" title="class in uniol.apt.analysis.processmining.algebra">AbstractMatrix</a></dt>
 <dd>&nbsp;</dd>
@@ -6130,6 +6158,10 @@
 <dd>
 <div class="block">Get the identifiers of the nodes that are contained in this subgraph.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/Cycle.html#getNodeIDs--">getNodeIDs()</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/Cycle.html" title="class in uniol.apt.analysis.cycles.lts">Cycle</a></dt>
+<dd>
+<div class="block">Get the identifier of nodes on this cycle.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/util/SpanningTree.html#getNodePathFromStart-N-">getNodePathFromStart(N)</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/SpanningTree.html" title="class in uniol.apt.util">SpanningTree</a></dt>
 <dd>
 <div class="block">Get the path from the start node.</div>
@@ -6147,6 +6179,10 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/coverability/CoverabilityGraph.html#getNodes--">getNodes()</a></span> - Method in class uniol.apt.analysis.coverability.<a href="uniol/apt/analysis/coverability/CoverabilityGraph.html" title="class in uniol.apt.analysis.coverability">CoverabilityGraph</a></dt>
 <dd>
 <div class="block">Return an iterable for all nodes in this coverability graph.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/Cycle.html#getNodes--">getNodes()</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/Cycle.html" title="class in uniol.apt.analysis.cycles.lts">Cycle</a></dt>
+<dd>
+<div class="block">Get the nodes that this cycle contains.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/invariants/Matrix.html#getNoneZeroRow--">getNoneZeroRow()</a></span> - Method in class uniol.apt.analysis.invariants.<a href="uniol/apt/analysis/invariants/Matrix.html" title="class in uniol.apt.analysis.invariants">Matrix</a></dt>
 <dd>
@@ -6215,6 +6251,10 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/module/impl/ModuleUtils.html#getParameters-uniol.apt.module.Module-">getParameters(Module)</a></span> - Static method in class uniol.apt.module.impl.<a href="uniol/apt/module/impl/ModuleUtils.html" title="class in uniol.apt.module.impl">ModuleUtils</a></dt>
 <dd>
 <div class="block">Returns the module's required input parameters.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/CyclePV.html#getParikhVector--">getParikhVector()</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/CyclePV.html" title="class in uniol.apt.analysis.cycles.lts">CyclePV</a></dt>
+<dd>
+<div class="block">Get the Parikh vector underlying this cycle.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/RegionUtility.html#getParikhVectorForEdge-uniol.apt.adt.ts.Arc-">getParikhVectorForEdge(Arc)</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a></dt>
 <dd>
@@ -6504,6 +6544,10 @@
 <div class="block">Get the properties that were requested from synthesis.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/module/impl/Parameter.html#getProperties--">getProperties()</a></span> - Method in class uniol.apt.module.impl.<a href="uniol/apt/module/impl/Parameter.html" title="class in uniol.apt.module.impl">Parameter</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/exception/NonDisjointCyclesException.html#getPV1--">getPV1()</a></span> - Method in exception uniol.apt.analysis.exception.<a href="uniol/apt/analysis/exception/NonDisjointCyclesException.html" title="class in uniol.apt.analysis.exception">NonDisjointCyclesException</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/exception/NonDisjointCyclesException.html#getPV2--">getPV2()</a></span> - Method in exception uniol.apt.analysis.exception.<a href="uniol/apt/analysis/exception/NonDisjointCyclesException.html" title="class in uniol.apt.analysis.exception">NonDisjointCyclesException</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/coverability/CoverabilityGraph.html#getReachabilityGraph-uniol.apt.adt.pn.PetriNet-">getReachabilityGraph(PetriNet)</a></span> - Static method in class uniol.apt.analysis.coverability.<a href="uniol/apt/analysis/coverability/CoverabilityGraph.html" title="class in uniol.apt.analysis.coverability">CoverabilityGraph</a></dt>
 <dd>
@@ -7582,6 +7626,10 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/adt/ts/Event.html#hashCode--">hashCode()</a></span> - Method in class uniol.apt.adt.ts.<a href="uniol/apt/adt/ts/Event.html" title="class in uniol.apt.adt.ts">Event</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/adt/ts/ParikhVector.html#hashCode--">hashCode()</a></span> - Method in class uniol.apt.adt.ts.<a href="uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/Cycle.html#hashCode--">hashCode()</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/Cycle.html" title="class in uniol.apt.analysis.cycles.lts">Cycle</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/CyclePV.html#hashCode--">hashCode()</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/CyclePV.html" title="class in uniol.apt.analysis.cycles.lts">CyclePV</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/processmining/algebra/AbstractMatrix.html#hashCode--">hashCode()</a></span> - Method in class uniol.apt.analysis.processmining.algebra.<a href="uniol/apt/analysis/processmining/algebra/AbstractMatrix.html" title="class in uniol.apt.analysis.processmining.algebra">AbstractMatrix</a></dt>
 <dd>&nbsp;</dd>
@@ -9337,9 +9385,14 @@
 <div class="block">Constructor creates a new NonDeterministicException saying that the given TransitionSystem is
  non-deterministic.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/AllSmallCyclesHavePVOne.html#nonMultipleOfPV1CycleFound--">nonMultipleOfPV1CycleFound()</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/AllSmallCyclesHavePVOne.html" title="class in uniol.apt.analysis.cycles.lts">AllSmallCyclesHavePVOne</a></dt>
+<dt><a href="uniol/apt/analysis/exception/NonDisjointCyclesException.html" title="class in uniol.apt.analysis.exception"><span class="typeNameLink">NonDisjointCyclesException</span></a> - Exception in <a href="uniol/apt/analysis/exception/package-summary.html">uniol.apt.analysis.exception</a></dt>
 <dd>
-<div class="block">Check if a cycle with Parikh vector not a multiple of 1 was found.</div>
+<div class="block">A NonDisjointCyclesException is thrown when an analysis needs its input to have disjoint small cycles, but the given
+ input does not satisfy this requirement.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/exception/NonDisjointCyclesException.html#NonDisjointCyclesException-uniol.apt.adt.ts.TransitionSystem-uniol.apt.adt.ts.ParikhVector-uniol.apt.adt.ts.ParikhVector-">NonDisjointCyclesException(TransitionSystem, ParikhVector, ParikhVector)</a></span> - Constructor for exception uniol.apt.analysis.exception.<a href="uniol/apt/analysis/exception/NonDisjointCyclesException.html" title="class in uniol.apt.analysis.exception">NonDisjointCyclesException</a></dt>
+<dd>
+<div class="block">Constructor creates a new NonDisjointCyclesException for the given TransitionSystem.</div>
 </dd>
 <dt><a href="uniol/apt/analysis/sideconditions/NonPure.html" title="class in uniol.apt.analysis.sideconditions"><span class="typeNameLink">NonPure</span></a> - Class in <a href="uniol/apt/analysis/sideconditions/package-summary.html">uniol.apt.analysis.sideconditions</a></dt>
 <dd>
@@ -9356,10 +9409,6 @@
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/util/interrupt/NoOpInterrupter.html#NoOpInterrupter--">NoOpInterrupter()</a></span> - Constructor for class uniol.apt.util.interrupt.<a href="uniol/apt/util/interrupt/NoOpInterrupter.html" title="class in uniol.apt.util.interrupt">NoOpInterrupter</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/AllSmallCyclesHavePVOne.html#noPV1CycleFound--">noPV1CycleFound()</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/AllSmallCyclesHavePVOne.html" title="class in uniol.apt.analysis.cycles.lts">AllSmallCyclesHavePVOne</a></dt>
-<dd>
-<div class="block">Check if a cycle with Parikh vector 1 was found.</div>
-</dd>
 <dt><a href="uniol/apt/adt/exception/NoSuchEdgeException.html" title="class in uniol.apt.adt.exception"><span class="typeNameLink">NoSuchEdgeException</span></a> - Exception in <a href="uniol/apt/adt/exception/package-summary.html">uniol.apt.adt.exception</a></dt>
 <dd>
 <div class="block">The NoSuchEdgeException is thrown if the edge, which is tried to achieve, does not exists.</div>
@@ -11034,6 +11083,10 @@
 <dd>
 <div class="block">Resets the chances hashmap and gets all chances back to 1.0.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/adt/ts/ParikhVector.html#residual-uniol.apt.adt.ts.ParikhVector-">residual(ParikhVector)</a></span> - Method in class uniol.apt.adt.ts.<a href="uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a></dt>
+<dd>
+<div class="block">Compute the residual of this Parikh vector with another Parikh vector.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/TransitionSystemFilter.html#retainArcsByLabel-uniol.apt.adt.ts.TransitionSystem-java.util.Set-">retainArcsByLabel(TransitionSystem, Set&lt;String&gt;)</a></span> - Static method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/TransitionSystemFilter.html" title="class in uniol.apt.analysis.factorization">TransitionSystemFilter</a></dt>
 <dd>
 <div class="block">Creates a copy of the given TS that only contains arcs that have a
@@ -11493,6 +11546,8 @@
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/CycleSearch.html#searchCycles-G-uniol.apt.analysis.cycles.CycleCallback-">searchCycles(G, CycleCallback&lt;G, E, N&gt;)</a></span> - Method in class uniol.apt.analysis.cycles.<a href="uniol/apt/analysis/cycles/CycleSearch.html" title="class in uniol.apt.analysis.cycles">CycleSearch</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/CycleSearchViaChords.html#searchCycles-uniol.apt.adt.ts.TransitionSystem-">searchCycles(TransitionSystem)</a></span> - Method in class uniol.apt.analysis.cycles.<a href="uniol/apt/analysis/cycles/CycleSearchViaChords.html" title="class in uniol.apt.analysis.cycles">CycleSearchViaChords</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/AptLTSFormatParser.html#sempred-org.antlr.v4.runtime.RuleContext-int-int-">sempred(RuleContext, int, int)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/AptLTSFormatParser.html" title="class in uniol.apt.io.parser.impl">AptLTSFormatParser</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/AptPNFormatParser.html#sempred-org.antlr.v4.runtime.RuleContext-int-int-">sempred(RuleContext, int, int)</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/AptPNFormatParser.html" title="class in uniol.apt.io.parser.impl">AptPNFormatParser</a></dt>
@@ -11584,6 +11639,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/exception/NonDeterministicException.html#serialVersionUID">serialVersionUID</a></span> - Static variable in exception uniol.apt.analysis.exception.<a href="uniol/apt/analysis/exception/NonDeterministicException.html" title="class in uniol.apt.analysis.exception">NonDeterministicException</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/exception/NonDisjointCyclesException.html#serialVersionUID">serialVersionUID</a></span> - Static variable in exception uniol.apt.analysis.exception.<a href="uniol/apt/analysis/exception/NonDisjointCyclesException.html" title="class in uniol.apt.analysis.exception">NonDisjointCyclesException</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/exception/NoSuchTransitionException.html#serialVersionUID">serialVersionUID</a></span> - Static variable in exception uniol.apt.analysis.exception.<a href="uniol/apt/analysis/exception/NoSuchTransitionException.html" title="class in uniol.apt.analysis.exception">NoSuchTransitionException</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/exception/PreconditionFailedException.html#serialVersionUID">serialVersionUID</a></span> - Static variable in exception uniol.apt.analysis.exception.<a href="uniol/apt/analysis/exception/PreconditionFailedException.html" title="class in uniol.apt.analysis.exception">PreconditionFailedException</a></dt>
@@ -11669,7 +11726,7 @@
 <dd>
 <div class="block">Set the interrupter for the currently executing (calling) thread.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/CycleCounterExample.html#setFirst-uniol.apt.util.Pair-">setFirst(Pair&lt;List&lt;String&gt;, ParikhVector&gt;)</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/CycleCounterExample.html" title="class in uniol.apt.analysis.cycles.lts">CycleCounterExample</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/CycleCounterExample.html#setFirst-uniol.apt.analysis.cycles.lts.CyclePV-">setFirst(CyclePV)</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/CycleCounterExample.html" title="class in uniol.apt.analysis.cycles.lts">CycleCounterExample</a></dt>
 <dd>
 <div class="block">Sets the first counter example.</div>
 </dd>
@@ -11847,7 +11904,7 @@
 <dd>
 <div class="block">Sets the value of the parameter for the given name.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/CycleCounterExample.html#setSecond-uniol.apt.util.Pair-">setSecond(Pair&lt;List&lt;String&gt;, ParikhVector&gt;)</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/CycleCounterExample.html" title="class in uniol.apt.analysis.cycles.lts">CycleCounterExample</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/CycleCounterExample.html#setSecond-uniol.apt.analysis.cycles.lts.CyclePV-">setSecond(CyclePV)</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/CycleCounterExample.html" title="class in uniol.apt.analysis.cycles.lts">CycleCounterExample</a></dt>
 <dd>
 <div class="block">Sets the first counter example.</div>
 </dd>
@@ -12007,10 +12064,6 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/util/PowerSet.html#size--">size()</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/PowerSet.html" title="class in uniol.apt.util">PowerSet</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/AllSmallCyclesHavePVOne.html#smallCyclesHavePVOne--">smallCyclesHavePVOne()</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/AllSmallCyclesHavePVOne.html" title="class in uniol.apt.analysis.cycles.lts">AllSmallCyclesHavePVOne</a></dt>
-<dd>
-<div class="block">Check if all small cycles have Parikh vector 1.</div>
-</dd>
 <dt><a href="uniol/apt/check/SmartChanceGenerator.html" title="class in uniol.apt.check"><span class="typeNameLink">SmartChanceGenerator</span></a> - Class in <a href="uniol/apt/check/package-summary.html">uniol.apt.check</a></dt>
 <dd>
 <div class="block">This class implements an (experimental) petri net generator, inspired by the
@@ -13009,7 +13062,11 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/adt/ts/ParikhVector.html#toString--">toString()</a></span> - Method in class uniol.apt.adt.ts.<a href="uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/Cycle.html#toString--">toString()</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/Cycle.html" title="class in uniol.apt.analysis.cycles.lts">Cycle</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/CycleCounterExample.html#toString--">toString()</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/CycleCounterExample.html" title="class in uniol.apt.analysis.cycles.lts">CycleCounterExample</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/CyclePV.html#toString--">toString()</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/CyclePV.html" title="class in uniol.apt.analysis.cycles.lts">CyclePV</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/GeneralDiamondResult.html#toString--">toString()</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/GeneralDiamondResult.html" title="class in uniol.apt.analysis.factorization">GeneralDiamondResult</a></dt>
 <dd>&nbsp;</dd>

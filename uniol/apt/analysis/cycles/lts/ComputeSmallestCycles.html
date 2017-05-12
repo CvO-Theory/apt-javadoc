@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -49,8 +49,8 @@ var activeTableTab = "activeTableTab";
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../uniol/apt/analysis/cycles/lts/AllSmallCyclesHavePVOne.html" title="class in uniol.apt.analysis.cycles.lts"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../uniol/apt/analysis/cycles/lts/CycleCounterExample.html" title="class in uniol.apt.analysis.cycles.lts"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li>Prev&nbsp;Class</li>
+<li><a href="../../../../../uniol/apt/analysis/cycles/lts/Cycle.html" title="class in uniol.apt.analysis.cycles.lts"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html" target="_top">Frames</a></li>
@@ -154,7 +154,7 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#checkSameOrMutallyDisjointPVs-java.util.Set-">checkSameOrMutallyDisjointPVs</a></span>(java.util.Set&lt;<a href="../../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.util.List&lt;java.lang.String&gt;,<a href="../../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&gt;&gt;&nbsp;cycles)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#checkSameOrMutallyDisjointPVs-java.util.Collection-">checkSameOrMutallyDisjointPVs</a></span>(java.util.Collection&lt;? extends <a href="../../../../../uniol/apt/analysis/cycles/lts/CyclePV.html" title="class in uniol.apt.analysis.cycles.lts">CyclePV</a>&gt;&nbsp;cycles)</code>
 <div class="block">Checks whether in the given set of cycles and parikh vectors all cycles have the same or mutally disjoint
  parikh vectors.</div>
 </td>
@@ -167,44 +167,57 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#checkSameOrMutallyDisjointPVs-uniol.apt.adt.ts.TransitionSystem-boolean-">checkSameOrMutallyDisjointPVs</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
-                             boolean&nbsp;smallest)</code>
-<div class="block">Checks a labeled transition system if all smallest cycles have the same or mutally disjoint parikh vectors.</div>
-</td>
-</tr>
-<tr id="i3" class="rowColor">
-<td class="colFirst"><code>boolean</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#checkSamePVs-java.util.Set-">checkSamePVs</a></span>(java.util.Set&lt;<a href="../../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.util.List&lt;java.lang.String&gt;,<a href="../../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&gt;&gt;&nbsp;cycles)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#checkSamePVs-java.util.Collection-">checkSamePVs</a></span>(java.util.Collection&lt;? extends <a href="../../../../../uniol/apt/analysis/cycles/lts/CyclePV.html" title="class in uniol.apt.analysis.cycles.lts">CyclePV</a>&gt;&nbsp;cycles)</code>
 <div class="block">Checks whether in the given set of cycles and parikh vectors all cycles have the same parikh vector.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#checkSamePVs-uniol.apt.adt.ts.TransitionSystem-">checkSamePVs</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</code>
 <div class="block">Checks a labeled transition system if all smallest cycles have the same parikh vector.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#checkSamePVs-uniol.apt.adt.ts.TransitionSystem-boolean-">checkSamePVs</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
             boolean&nbsp;smallest)</code>
 <div class="block">Checks a labeled transition system if all smallest cycles have the same parikh vector.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
-<td class="colFirst"><code>java.util.Set&lt;<a href="../../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.util.List&lt;java.lang.String&gt;,<a href="../../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&gt;&gt;</code></td>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>java.util.Set&lt;? extends <a href="../../../../../uniol/apt/analysis/cycles/lts/CyclePV.html" title="class in uniol.apt.analysis.cycles.lts">CyclePV</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#computePVsOfSmallestCycles-uniol.apt.adt.ts.TransitionSystem-">computePVsOfSmallestCycles</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</code>
 <div class="block">Computes the parikh vectors of all smallest cycles of an labeled transition system.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code>java.util.Set&lt;<a href="../../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.util.List&lt;java.lang.String&gt;,<a href="../../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&gt;&gt;</code></td>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>java.util.Set&lt;? extends <a href="../../../../../uniol/apt/analysis/cycles/lts/CyclePV.html" title="class in uniol.apt.analysis.cycles.lts">CyclePV</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#computePVsOfSmallestCycles-uniol.apt.adt.ts.TransitionSystem-boolean-">computePVsOfSmallestCycles</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
                           boolean&nbsp;smallest)</code>
 <div class="block">Computes the parikh vectors of all smallest cycles of an labeled transition system.</div>
 </td>
 </tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>java.util.Set&lt;<a href="../../../../../uniol/apt/analysis/cycles/lts/CyclePV.html" title="class in uniol.apt.analysis.cycles.lts">CyclePV</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#computePVsOfSmallestCyclesViaChords-uniol.apt.adt.ts.TransitionSystem-">computePVsOfSmallestCyclesViaChords</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</code>
+<div class="block">Computes the parikh vectors of all smallest cycles of a finite, totally reachable, deterministic and
+ persistent transition system.</div>
+</td>
+</tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code>java.util.Set&lt;<a href="../../../../../uniol/apt/analysis/cycles/lts/Cycle.html" title="class in uniol.apt.analysis.cycles.lts">Cycle</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#computePVsOfSmallestCyclesViaCycleSearch-uniol.apt.adt.ts.TransitionSystem-">computePVsOfSmallestCyclesViaCycleSearch</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</code>
+<div class="block">Computes the parikh vectors of all smallest cycles of an labeled transition system.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>java.util.Set&lt;<a href="../../../../../uniol/apt/analysis/cycles/lts/Cycle.html" title="class in uniol.apt.analysis.cycles.lts">Cycle</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#computePVsOfSmallestCyclesViaCycleSearch-uniol.apt.adt.ts.TransitionSystem-boolean-">computePVsOfSmallestCyclesViaCycleSearch</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
+                                        boolean&nbsp;smallest)</code>
+<div class="block">Computes the parikh vectors of all smallest cycles of an labeled transition system.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../../uniol/apt/analysis/cycles/lts/CycleCounterExample.html" title="class in uniol.apt.analysis.cycles.lts">CycleCounterExample</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html#getCounterExample--">getCounterExample</a></span>()</code>
 <div class="block">Function for returning a counter example (as requirements A8a, A8b, A10 state that two counter-examples
@@ -256,7 +269,7 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>computePVsOfSmallestCycles</h4>
-<pre>public&nbsp;java.util.Set&lt;<a href="../../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.util.List&lt;java.lang.String&gt;,<a href="../../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&gt;&gt;&nbsp;computePVsOfSmallestCycles(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</pre>
+<pre>public&nbsp;java.util.Set&lt;? extends <a href="../../../../../uniol/apt/analysis/cycles/lts/CyclePV.html" title="class in uniol.apt.analysis.cycles.lts">CyclePV</a>&gt;&nbsp;computePVsOfSmallestCycles(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</pre>
 <div class="block">Computes the parikh vectors of all smallest cycles of an labeled transition system. (Requirement A10)</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -266,21 +279,19 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a name="checkSameOrMutallyDisjointPVs-uniol.apt.adt.ts.TransitionSystem-">
+<a name="computePVsOfSmallestCyclesViaCycleSearch-uniol.apt.adt.ts.TransitionSystem-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>checkSameOrMutallyDisjointPVs</h4>
-<pre>public&nbsp;boolean&nbsp;checkSameOrMutallyDisjointPVs(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</pre>
-<div class="block">Checks a labeled transition system if all smallest cycles have the same or mutally disjoint parikh vectors.
- (Requirement A8b)</div>
+<h4>computePVsOfSmallestCyclesViaCycleSearch</h4>
+<pre>public&nbsp;java.util.Set&lt;<a href="../../../../../uniol/apt/analysis/cycles/lts/Cycle.html" title="class in uniol.apt.analysis.cycles.lts">Cycle</a>&gt;&nbsp;computePVsOfSmallestCyclesViaCycleSearch(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</pre>
+<div class="block">Computes the parikh vectors of all smallest cycles of an labeled transition system. (Requirement A10)</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>ts</code> - - the transition system to examine.</dd>
+<dd><code>ts</code> - - the transitionsystem to compute the cycles from.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>true if the smallest cycles of the given transitionsystem have the same or mutally disjoint parikh
-         vectors.</dd>
+<dd>a list of the smallest cycles and their parikh vectors.</dd>
 </dl>
 </li>
 </ul>
@@ -306,8 +317,8 @@ extends java.lang.Object</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>computePVsOfSmallestCycles</h4>
-<pre>public&nbsp;java.util.Set&lt;<a href="../../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.util.List&lt;java.lang.String&gt;,<a href="../../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&gt;&gt;&nbsp;computePVsOfSmallestCycles(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
-                                                                                                     boolean&nbsp;smallest)</pre>
+<pre>public&nbsp;java.util.Set&lt;? extends <a href="../../../../../uniol/apt/analysis/cycles/lts/CyclePV.html" title="class in uniol.apt.analysis.cycles.lts">CyclePV</a>&gt;&nbsp;computePVsOfSmallestCycles(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
+                                                                   boolean&nbsp;smallest)</pre>
 <div class="block">Computes the parikh vectors of all smallest cycles of an labeled transition system. (Requirement A10)</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -319,21 +330,58 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a name="checkSameOrMutallyDisjointPVs-uniol.apt.adt.ts.TransitionSystem-boolean-">
+<a name="computePVsOfSmallestCyclesViaCycleSearch-uniol.apt.adt.ts.TransitionSystem-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>computePVsOfSmallestCyclesViaCycleSearch</h4>
+<pre>public&nbsp;java.util.Set&lt;<a href="../../../../../uniol/apt/analysis/cycles/lts/Cycle.html" title="class in uniol.apt.analysis.cycles.lts">Cycle</a>&gt;&nbsp;computePVsOfSmallestCyclesViaCycleSearch(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
+                                                                     boolean&nbsp;smallest)</pre>
+<div class="block">Computes the parikh vectors of all smallest cycles of an labeled transition system. (Requirement A10)</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ts</code> - - the transitionsystem to compute the cycles from.</dd>
+<dd><code>smallest</code> - - Flag which tells if all or just the smallest should be saved.
+                 (Storage vs. Time)</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a list of the smallest cycles and their parikh vectors.</dd>
+</dl>
+</li>
+</ul>
+<a name="computePVsOfSmallestCyclesViaChords-uniol.apt.adt.ts.TransitionSystem-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>computePVsOfSmallestCyclesViaChords</h4>
+<pre>public&nbsp;java.util.Set&lt;<a href="../../../../../uniol/apt/analysis/cycles/lts/CyclePV.html" title="class in uniol.apt.analysis.cycles.lts">CyclePV</a>&gt;&nbsp;computePVsOfSmallestCyclesViaChords(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)
+                                                           throws <a href="../../../../../uniol/apt/analysis/exception/PreconditionFailedException.html" title="class in uniol.apt.analysis.exception">PreconditionFailedException</a></pre>
+<div class="block">Computes the parikh vectors of all smallest cycles of a finite, totally reachable, deterministic and
+ persistent transition system.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ts</code> - - the transitionsystem to compute the cycles from.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a list of the smallest cycles and their parikh vectors.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../../uniol/apt/analysis/exception/PreconditionFailedException.html" title="class in uniol.apt.analysis.exception">PreconditionFailedException</a></code> - if the given lts is not totally reachable, deterministic, persistent, or
+ does not have the disjoint small cycles property.</dd>
+</dl>
+</li>
+</ul>
+<a name="checkSameOrMutallyDisjointPVs-uniol.apt.adt.ts.TransitionSystem-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>checkSameOrMutallyDisjointPVs</h4>
-<pre>public&nbsp;boolean&nbsp;checkSameOrMutallyDisjointPVs(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
-                                             boolean&nbsp;smallest)</pre>
+<pre>public&nbsp;boolean&nbsp;checkSameOrMutallyDisjointPVs(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</pre>
 <div class="block">Checks a labeled transition system if all smallest cycles have the same or mutally disjoint parikh vectors.
  (Requirement A8b)</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>ts</code> - - the transition system to examine.</dd>
-<dd><code>smallest</code> - - Flag which tells if all or just the smallest should be saved.
-                 (Storage vs. Time)</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>true if the smallest cycles of the given transitionsystem have the same or mutally disjoint parikh
          vectors.</dd>
@@ -359,13 +407,13 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a name="checkSameOrMutallyDisjointPVs-java.util.Set-">
+<a name="checkSameOrMutallyDisjointPVs-java.util.Collection-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>checkSameOrMutallyDisjointPVs</h4>
-<pre>public&nbsp;boolean&nbsp;checkSameOrMutallyDisjointPVs(java.util.Set&lt;<a href="../../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.util.List&lt;java.lang.String&gt;,<a href="../../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&gt;&gt;&nbsp;cycles)</pre>
+<pre>public&nbsp;boolean&nbsp;checkSameOrMutallyDisjointPVs(java.util.Collection&lt;? extends <a href="../../../../../uniol/apt/analysis/cycles/lts/CyclePV.html" title="class in uniol.apt.analysis.cycles.lts">CyclePV</a>&gt;&nbsp;cycles)</pre>
 <div class="block">Checks whether in the given set of cycles and parikh vectors all cycles have the same or mutally disjoint
  parikh vectors.</div>
 <dl>
@@ -376,13 +424,13 @@ extends java.lang.Object</pre>
 </dl>
 </li>
 </ul>
-<a name="checkSamePVs-java.util.Set-">
+<a name="checkSamePVs-java.util.Collection-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>checkSamePVs</h4>
-<pre>public&nbsp;boolean&nbsp;checkSamePVs(java.util.Set&lt;<a href="../../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.util.List&lt;java.lang.String&gt;,<a href="../../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&gt;&gt;&nbsp;cycles)</pre>
+<pre>public&nbsp;boolean&nbsp;checkSamePVs(java.util.Collection&lt;? extends <a href="../../../../../uniol/apt/analysis/cycles/lts/CyclePV.html" title="class in uniol.apt.analysis.cycles.lts">CyclePV</a>&gt;&nbsp;cycles)</pre>
 <div class="block">Checks whether in the given set of cycles and parikh vectors all cycles have the same parikh vector.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -435,8 +483,8 @@ extends java.lang.Object</pre>
 </div>
 <div class="subNav">
 <ul class="navList">
-<li><a href="../../../../../uniol/apt/analysis/cycles/lts/AllSmallCyclesHavePVOne.html" title="class in uniol.apt.analysis.cycles.lts"><span class="typeNameLink">Prev&nbsp;Class</span></a></li>
-<li><a href="../../../../../uniol/apt/analysis/cycles/lts/CycleCounterExample.html" title="class in uniol.apt.analysis.cycles.lts"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
+<li>Prev&nbsp;Class</li>
+<li><a href="../../../../../uniol/apt/analysis/cycles/lts/Cycle.html" title="class in uniol.apt.analysis.cycles.lts"><span class="typeNameLink">Next&nbsp;Class</span></a></li>
 </ul>
 <ul class="navList">
 <li><a href="../../../../../index.html?uniol/apt/analysis/cycles/lts/ComputeSmallestCycles.html" target="_top">Frames</a></li>
