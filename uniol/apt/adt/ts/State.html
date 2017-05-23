@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -165,26 +165,50 @@ extends <a href="../../../../uniol/apt/adt/Node.html" title="class in uniol.apt.
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/State.html#getPostsetEdges--">getPostsetEdges</a></span>()</code>
+<div class="block">Retrieves a view of all edges beginning in this node.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/State.html#getPostsetEdgesByLabel-java.lang.String-">getPostsetEdgesByLabel</a></span>(java.lang.String&nbsp;label)</code>
 <div class="block">Returns the set of arcs that start in the given node and have the
  given label.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/State.html#getPostsetNodes--">getPostsetNodes</a></span>()</code>
+<div class="block">Retrieves a view of all nodes which have an incoming edge from this node.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/State.html#getPostsetNodesByLabel-java.lang.String-">getPostsetNodesByLabel</a></span>(java.lang.String&nbsp;label)</code>
 <div class="block">Returns the set of states that is reached by arcs from this node with
  the given label.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/State.html#getPresetEdges--">getPresetEdges</a></span>()</code>
+<div class="block">Retrieves a view of all edges targeting this node.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/State.html#getPresetEdgesByLabel-java.lang.String-">getPresetEdgesByLabel</a></span>(java.lang.String&nbsp;label)</code>
 <div class="block">Returns the set of arcs that end in this node and have the
  given label.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/State.html#getPresetNodes--">getPresetNodes</a></span>()</code>
+<div class="block">Retrieves a view of all nodes which have an outgoing edge to this node.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/ts/State.html#getPresetNodesByLabel-java.lang.String-">getPresetNodesByLabel</a></span>(java.lang.String&nbsp;label)</code>
 <div class="block">Returns the set of states from which this node can be reached
@@ -197,7 +221,7 @@ extends <a href="../../../../uniol/apt/adt/Node.html" title="class in uniol.apt.
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;uniol.apt.adt.<a href="../../../../uniol/apt/adt/Node.html" title="class in uniol.apt.adt">Node</a></h3>
-<code><a href="../../../../uniol/apt/adt/Node.html#getGraph--">getGraph</a>, <a href="../../../../uniol/apt/adt/Node.html#getId--">getId</a>, <a href="../../../../uniol/apt/adt/Node.html#getNeighboringEdges--">getNeighboringEdges</a>, <a href="../../../../uniol/apt/adt/Node.html#getPostsetEdges--">getPostsetEdges</a>, <a href="../../../../uniol/apt/adt/Node.html#getPostsetNodes--">getPostsetNodes</a>, <a href="../../../../uniol/apt/adt/Node.html#getPresetEdges--">getPresetEdges</a>, <a href="../../../../uniol/apt/adt/Node.html#getPresetNodes--">getPresetNodes</a>, <a href="../../../../uniol/apt/adt/Node.html#toString--">toString</a></code></li>
+<code><a href="../../../../uniol/apt/adt/Node.html#getGraph--">getGraph</a>, <a href="../../../../uniol/apt/adt/Node.html#getId--">getId</a>, <a href="../../../../uniol/apt/adt/Node.html#getNeighboringEdges--">getNeighboringEdges</a>, <a href="../../../../uniol/apt/adt/Node.html#toString--">toString</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.uniol.apt.adt.extension.Extensible">
@@ -291,7 +315,7 @@ extends <a href="../../../../uniol/apt/adt/Node.html" title="class in uniol.apt.
 <a name="getPostsetEdgesByLabel-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getPostsetEdgesByLabel</h4>
 <pre>public&nbsp;java.util.Set&lt;<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&gt;&nbsp;getPostsetEdgesByLabel(java.lang.String&nbsp;label)</pre>
@@ -303,6 +327,82 @@ extends <a href="../../../../uniol/apt/adt/Node.html" title="class in uniol.apt.
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>a set of arcs that begin at this node and have the given
          label</dd>
+</dl>
+</li>
+</ul>
+<a name="getPresetNodes--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPresetNodes</h4>
+<pre>public&nbsp;java.util.Set&lt;<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;&nbsp;getPresetNodes()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../uniol/apt/adt/INode.html#getPresetNodes--">INode</a></code></span></div>
+<div class="block">Retrieves a view of all nodes which have an outgoing edge to this node.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../uniol/apt/adt/INode.html#getPresetNodes--">getPresetNodes</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../uniol/apt/adt/INode.html" title="interface in uniol.apt.adt">INode</a>&lt;<a href="../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>,<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>,<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../uniol/apt/adt/Node.html#getPresetNodes--">getPresetNodes</a></code>&nbsp;in class&nbsp;<code><a href="../../../../uniol/apt/adt/Node.html" title="class in uniol.apt.adt">Node</a>&lt;<a href="../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>,<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>,<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A unmodifiable set of nodes of given type N.</dd>
+</dl>
+</li>
+</ul>
+<a name="getPostsetNodes--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPostsetNodes</h4>
+<pre>public&nbsp;java.util.Set&lt;<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;&nbsp;getPostsetNodes()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../uniol/apt/adt/INode.html#getPostsetNodes--">INode</a></code></span></div>
+<div class="block">Retrieves a view of all nodes which have an incoming edge from this node.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../uniol/apt/adt/INode.html#getPostsetNodes--">getPostsetNodes</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../uniol/apt/adt/INode.html" title="interface in uniol.apt.adt">INode</a>&lt;<a href="../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>,<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>,<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../uniol/apt/adt/Node.html#getPostsetNodes--">getPostsetNodes</a></code>&nbsp;in class&nbsp;<code><a href="../../../../uniol/apt/adt/Node.html" title="class in uniol.apt.adt">Node</a>&lt;<a href="../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>,<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>,<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A unmodifiable set of nodes of given type N.</dd>
+</dl>
+</li>
+</ul>
+<a name="getPresetEdges--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getPresetEdges</h4>
+<pre>public&nbsp;java.util.Set&lt;<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&gt;&nbsp;getPresetEdges()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../uniol/apt/adt/INode.html#getPresetEdges--">INode</a></code></span></div>
+<div class="block">Retrieves a view of all edges targeting this node.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../uniol/apt/adt/INode.html#getPresetEdges--">getPresetEdges</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../uniol/apt/adt/INode.html" title="interface in uniol.apt.adt">INode</a>&lt;<a href="../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>,<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>,<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../uniol/apt/adt/Node.html#getPresetEdges--">getPresetEdges</a></code>&nbsp;in class&nbsp;<code><a href="../../../../uniol/apt/adt/Node.html" title="class in uniol.apt.adt">Node</a>&lt;<a href="../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>,<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>,<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A unmodifiable set of edges of given type E.</dd>
+</dl>
+</li>
+</ul>
+<a name="getPostsetEdges--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getPostsetEdges</h4>
+<pre>public&nbsp;java.util.Set&lt;<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&gt;&nbsp;getPostsetEdges()</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../uniol/apt/adt/INode.html#getPostsetEdges--">INode</a></code></span></div>
+<div class="block">Retrieves a view of all edges beginning in this node.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../uniol/apt/adt/INode.html#getPostsetEdges--">getPostsetEdges</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../uniol/apt/adt/INode.html" title="interface in uniol.apt.adt">INode</a>&lt;<a href="../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>,<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>,<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;</code></dd>
+<dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
+<dd><code><a href="../../../../uniol/apt/adt/Node.html#getPostsetEdges--">getPostsetEdges</a></code>&nbsp;in class&nbsp;<code><a href="../../../../uniol/apt/adt/Node.html" title="class in uniol.apt.adt">Node</a>&lt;<a href="../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>,<a href="../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>,<a href="../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;</code></dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A unmodifiable set of edges of given type E.</dd>
 </dl>
 </li>
 </ul>
