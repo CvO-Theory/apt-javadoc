@@ -160,12 +160,12 @@ implements <a href="../../../uniol/apt/adt/IEdge.html" title="interface in uniol
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/adt/Edge.html#graph">graph</a></span></code>&nbsp;</td>
 </tr>
 <tr class="rowColor">
-<td class="colFirst"><code>protected java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/adt/Edge.html#sourceId">sourceId</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>protected <a href="../../../uniol/apt/adt/Edge.html" title="type parameter in Edge">N</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/adt/Edge.html#source">source</a></span></code>&nbsp;</td>
 </tr>
 <tr class="altColor">
-<td class="colFirst"><code>protected java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/adt/Edge.html#targetId">targetId</a></span></code>&nbsp;</td>
+<td class="colFirst"><code>protected <a href="../../../uniol/apt/adt/Edge.html" title="type parameter in Edge">N</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/adt/Edge.html#target">target</a></span></code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -191,9 +191,9 @@ implements <a href="../../../uniol/apt/adt/IEdge.html" title="interface in uniol
 </tr>
 <tr class="rowColor">
 <td class="colFirst"><code>protected </code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/adt/Edge.html#Edge-G-java.lang.String-java.lang.String-">Edge</a></span>(<a href="../../../uniol/apt/adt/Edge.html" title="type parameter in Edge">G</a>&nbsp;graph,
-    java.lang.String&nbsp;sourceId,
-    java.lang.String&nbsp;targetId)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/adt/Edge.html#Edge-G-N-N-">Edge</a></span>(<a href="../../../uniol/apt/adt/Edge.html" title="type parameter in Edge">G</a>&nbsp;graph,
+    <a href="../../../uniol/apt/adt/Edge.html" title="type parameter in Edge">N</a>&nbsp;source,
+    <a href="../../../uniol/apt/adt/Edge.html" title="type parameter in Edge">N</a>&nbsp;target)</code>
 <div class="block">Constructor for creating an arc with the sourceId and targetId in the given graph.</div>
 </td>
 </tr>
@@ -279,22 +279,22 @@ implements <a href="../../../uniol/apt/adt/IEdge.html" title="interface in uniol
 <pre>protected final&nbsp;<a href="../../../uniol/apt/adt/Edge.html" title="type parameter in Edge">G</a> extends <a href="../../../uniol/apt/adt/IGraph.html" title="interface in uniol.apt.adt">IGraph</a>&lt;<a href="../../../uniol/apt/adt/Edge.html" title="type parameter in Edge">G</a>,<a href="../../../uniol/apt/adt/Edge.html" title="type parameter in Edge">E</a>,<a href="../../../uniol/apt/adt/Edge.html" title="type parameter in Edge">N</a>&gt; graph</pre>
 </li>
 </ul>
-<a name="sourceId">
+<a name="source">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>sourceId</h4>
-<pre>protected final&nbsp;java.lang.String sourceId</pre>
+<h4>source</h4>
+<pre>protected final&nbsp;<a href="../../../uniol/apt/adt/Edge.html" title="type parameter in Edge">N</a> extends <a href="../../../uniol/apt/adt/INode.html" title="interface in uniol.apt.adt">INode</a>&lt;<a href="../../../uniol/apt/adt/Edge.html" title="type parameter in Edge">G</a>,<a href="../../../uniol/apt/adt/Edge.html" title="type parameter in Edge">E</a>,<a href="../../../uniol/apt/adt/Edge.html" title="type parameter in Edge">N</a>&gt; source</pre>
 </li>
 </ul>
-<a name="targetId">
+<a name="target">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
-<h4>targetId</h4>
-<pre>protected final&nbsp;java.lang.String targetId</pre>
+<h4>target</h4>
+<pre>protected final&nbsp;<a href="../../../uniol/apt/adt/Edge.html" title="type parameter in Edge">N</a> extends <a href="../../../uniol/apt/adt/INode.html" title="interface in uniol.apt.adt">INode</a>&lt;<a href="../../../uniol/apt/adt/Edge.html" title="type parameter in Edge">G</a>,<a href="../../../uniol/apt/adt/Edge.html" title="type parameter in Edge">E</a>,<a href="../../../uniol/apt/adt/Edge.html" title="type parameter in Edge">N</a>&gt; target</pre>
 </li>
 </ul>
 </li>
@@ -305,23 +305,23 @@ implements <a href="../../../uniol/apt/adt/IEdge.html" title="interface in uniol
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="Edge-uniol.apt.adt.IGraph-java.lang.String-java.lang.String-">
+<a name="Edge-uniol.apt.adt.IGraph-uniol.apt.adt.INode-uniol.apt.adt.INode-">
 <!--   -->
-</a><a name="Edge-G-java.lang.String-java.lang.String-">
+</a><a name="Edge-G-N-N-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>Edge</h4>
 <pre>protected&nbsp;Edge(<a href="../../../uniol/apt/adt/Edge.html" title="type parameter in Edge">G</a>&nbsp;graph,
-               java.lang.String&nbsp;sourceId,
-               java.lang.String&nbsp;targetId)</pre>
+               <a href="../../../uniol/apt/adt/Edge.html" title="type parameter in Edge">N</a>&nbsp;source,
+               <a href="../../../uniol/apt/adt/Edge.html" title="type parameter in Edge">N</a>&nbsp;target)</pre>
 <div class="block">Constructor for creating an arc with the sourceId and targetId in the given graph.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>graph</code> - The graph this Edge belongs to.</dd>
-<dd><code>sourceId</code> - the source node's id.</dd>
-<dd><code>targetId</code> - the target node's id.</dd>
+<dd><code>source</code> - the source node.</dd>
+<dd><code>target</code> - the target node.</dd>
 </dl>
 </li>
 </ul>
