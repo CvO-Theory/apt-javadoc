@@ -5375,7 +5375,7 @@
 <dd>
 <div class="block">Gets a view of the final markings of this petri net.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/analysis/isomorphism/IsomorphismLogic.html#getFinalState--">getFinalState()</a></span> - Method in class uniol.apt.analysis.isomorphism.<a href="uniol/apt/analysis/isomorphism/IsomorphismLogic.html" title="class in uniol.apt.analysis.isomorphism">IsomorphismLogic</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/isomorphism/IsomorphismLogicComplex.html#getFinalState--">getFinalState()</a></span> - Method in class uniol.apt.analysis.isomorphism.<a href="uniol/apt/analysis/isomorphism/IsomorphismLogicComplex.html" title="class in uniol.apt.analysis.isomorphism">IsomorphismLogicComplex</a></dt>
 <dd>
 <div class="block">Get final state (includes pairs of isomorphic nodes)</div>
 </dd>
@@ -5589,6 +5589,8 @@
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/isomorphism/IsomorphismLogic.html#getIsomorphism--">getIsomorphism()</a></span> - Method in class uniol.apt.analysis.isomorphism.<a href="uniol/apt/analysis/isomorphism/IsomorphismLogic.html" title="class in uniol.apt.analysis.isomorphism">IsomorphismLogic</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/isomorphism/IsomorphismLogicComplex.html#getIsomorphism--">getIsomorphism()</a></span> - Method in class uniol.apt.analysis.isomorphism.<a href="uniol/apt/analysis/isomorphism/IsomorphismLogicComplex.html" title="class in uniol.apt.analysis.isomorphism">IsomorphismLogicComplex</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/separation/SeparationResult.html#getK--">getK()</a></span> - Method in class uniol.apt.analysis.separation.<a href="uniol/apt/analysis/separation/SeparationResult.html" title="class in uniol.apt.analysis.separation">SeparationResult</a></dt>
 <dd>
 <div class="block">getK</div>
@@ -5796,7 +5798,7 @@
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/lts/extension/ExtendTransitionSystem.html#getLTSCode--">getLTSCode()</a></span> - Method in class uniol.apt.analysis.lts.extension.<a href="uniol/apt/analysis/lts/extension/ExtendTransitionSystem.html" title="class in uniol.apt.analysis.lts.extension">ExtendTransitionSystem</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/analysis/isomorphism/IsomorphismLogic.ExtendedState.html#getM--">getM()</a></span> - Method in class uniol.apt.analysis.isomorphism.<a href="uniol/apt/analysis/isomorphism/IsomorphismLogic.ExtendedState.html" title="class in uniol.apt.analysis.isomorphism">IsomorphismLogic.ExtendedState</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/isomorphism/IsomorphismLogicComplex.ExtendedState.html#getM--">getM()</a></span> - Method in class uniol.apt.analysis.isomorphism.<a href="uniol/apt/analysis/isomorphism/IsomorphismLogicComplex.ExtendedState.html" title="class in uniol.apt.analysis.isomorphism">IsomorphismLogicComplex.ExtendedState</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/invariants/InvariantCalculator.html#getMapping-java.util.Set-java.util.Set-">getMapping(Set&lt;T&gt;, Set&lt;List&lt;Integer&gt;&gt;)</a></span> - Static method in class uniol.apt.analysis.invariants.<a href="uniol/apt/analysis/invariants/InvariantCalculator.html" title="class in uniol.apt.analysis.invariants">InvariantCalculator</a></dt>
 <dd>
@@ -5895,7 +5897,7 @@
 <dd>
 <div class="block">Returns a usage string describing how to use the module.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/analysis/isomorphism/IsomorphismLogic.ExtendedState.html#getN--">getN()</a></span> - Method in class uniol.apt.analysis.isomorphism.<a href="uniol/apt/analysis/isomorphism/IsomorphismLogic.ExtendedState.html" title="class in uniol.apt.analysis.isomorphism">IsomorphismLogic.ExtendedState</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/isomorphism/IsomorphismLogicComplex.ExtendedState.html#getN--">getN()</a></span> - Method in class uniol.apt.analysis.isomorphism.<a href="uniol/apt/analysis/isomorphism/IsomorphismLogicComplex.ExtendedState.html" title="class in uniol.apt.analysis.isomorphism">IsomorphismLogicComplex.ExtendedState</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/adt/IGraph.html#getName--">getName()</a></span> - Method in interface uniol.apt.adt.<a href="uniol/apt/adt/IGraph.html" title="interface in uniol.apt.adt">IGraph</a></dt>
 <dd>
@@ -8245,6 +8247,10 @@
 <dd>
 <div class="block">Returns result of algorithm.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/isomorphism/IsomorphismLogicComplex.html#isIsomorphic--">isIsomorphic()</a></span> - Method in class uniol.apt.analysis.isomorphism.<a href="uniol/apt/analysis/isomorphism/IsomorphismLogicComplex.html" title="class in uniol.apt.analysis.isomorphism">IsomorphismLogicComplex</a></dt>
+<dd>
+<div class="block">Returns result of algorithm.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/bounded/BoundedResult.html#isKBounded-int-">isKBounded(int)</a></span> - Method in class uniol.apt.analysis.bounded.<a href="uniol/apt/analysis/bounded/BoundedResult.html" title="class in uniol.apt.analysis.bounded">BoundedResult</a></dt>
 <dd>
 <div class="block">Was the checked Petri net k-bounded?</div>
@@ -8351,13 +8357,21 @@
 </dd>
 <dt><a href="uniol/apt/analysis/isomorphism/IsomorphismLogic.html" title="class in uniol.apt.analysis.isomorphism"><span class="typeNameLink">IsomorphismLogic</span></a> - Class in <a href="uniol/apt/analysis/isomorphism/package-summary.html">uniol.apt.analysis.isomorphism</a></dt>
 <dd>
-<div class="block">Check if two nets are isomorphic by checking if the two reachability graphs are equal.</div>
+<div class="block">Check if two transition systems are isomorphic.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/isomorphism/IsomorphismLogic.html#IsomorphismLogic-uniol.apt.adt.ts.TransitionSystem-uniol.apt.adt.ts.TransitionSystem-boolean-">IsomorphismLogic(TransitionSystem, TransitionSystem, boolean)</a></span> - Constructor for class uniol.apt.analysis.isomorphism.<a href="uniol/apt/analysis/isomorphism/IsomorphismLogic.html" title="class in uniol.apt.analysis.isomorphism">IsomorphismLogic</a></dt>
 <dd>
 <div class="block">Constructor for testing if two labelled transition systems are isomorphic.</div>
 </dd>
-<dt><a href="uniol/apt/analysis/isomorphism/IsomorphismLogic.ExtendedState.html" title="class in uniol.apt.analysis.isomorphism"><span class="typeNameLink">IsomorphismLogic.ExtendedState</span></a> - Class in <a href="uniol/apt/analysis/isomorphism/package-summary.html">uniol.apt.analysis.isomorphism</a></dt>
+<dt><a href="uniol/apt/analysis/isomorphism/IsomorphismLogicComplex.html" title="class in uniol.apt.analysis.isomorphism"><span class="typeNameLink">IsomorphismLogicComplex</span></a> - Class in <a href="uniol/apt/analysis/isomorphism/package-summary.html">uniol.apt.analysis.isomorphism</a></dt>
+<dd>
+<div class="block">Check if two transition systems are isomorphic.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/isomorphism/IsomorphismLogicComplex.html#IsomorphismLogicComplex-uniol.apt.adt.ts.TransitionSystem-uniol.apt.adt.ts.TransitionSystem-boolean-">IsomorphismLogicComplex(TransitionSystem, TransitionSystem, boolean)</a></span> - Constructor for class uniol.apt.analysis.isomorphism.<a href="uniol/apt/analysis/isomorphism/IsomorphismLogicComplex.html" title="class in uniol.apt.analysis.isomorphism">IsomorphismLogicComplex</a></dt>
+<dd>
+<div class="block">Constructor for testing if two labelled transition systems are isomorphic.</div>
+</dd>
+<dt><a href="uniol/apt/analysis/isomorphism/IsomorphismLogicComplex.ExtendedState.html" title="class in uniol.apt.analysis.isomorphism"><span class="typeNameLink">IsomorphismLogicComplex.ExtendedState</span></a> - Class in <a href="uniol/apt/analysis/isomorphism/package-summary.html">uniol.apt.analysis.isomorphism</a></dt>
 <dd>
 <div class="block">Store all pairs of yet found isomorphic nodes and some
  additional information in states.</div>
