@@ -95,6 +95,12 @@
 <dd>
 <div class="block">Create an converter module for the given parsers and renderers.</div>
 </dd>
+<dt><a href="uniol/apt/util/AbstractEquivalenceRelation.html" title="class in uniol.apt.util"><span class="typeNameLink">AbstractEquivalenceRelation</span></a>&lt;<a href="uniol/apt/util/AbstractEquivalenceRelation.html" title="type parameter in AbstractEquivalenceRelation">E</a>&gt; - Class in <a href="uniol/apt/util/package-summary.html">uniol.apt.util</a></dt>
+<dd>
+<div class="block">Base class for equivalence relations.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/util/AbstractEquivalenceRelation.html#AbstractEquivalenceRelation--">AbstractEquivalenceRelation()</a></span> - Constructor for class uniol.apt.util.<a href="uniol/apt/util/AbstractEquivalenceRelation.html" title="class in uniol.apt.util">AbstractEquivalenceRelation</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="uniol/apt/generator/module/AbstractGeneratorModule.html" title="class in uniol.apt.generator.module"><span class="typeNameLink">AbstractGeneratorModule</span></a> - Class in <a href="uniol/apt/generator/module/package-summary.html">uniol.apt.generator.module</a></dt>
 <dd>
 <div class="block">Abstract module for generating Petri nets.</div>
@@ -1006,6 +1012,10 @@
 <dd>
 <div class="block">Checks whether a given plain Petri net is a free choice net.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/WeightedFreeChoice.html#check-uniol.apt.adt.pn.PetriNet-">check(PetriNet)</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/WeightedFreeChoice.html" title="class in uniol.apt.analysis.fc">WeightedFreeChoice</a></dt>
+<dd>
+<div class="block">Checks whether a given Petri net is a weighted free choice net.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fcnet/FCNet.html#check--">check()</a></span> - Method in class uniol.apt.analysis.fcnet.<a href="uniol/apt/analysis/fcnet/FCNet.html" title="class in uniol.apt.analysis.fcnet">FCNet</a></dt>
 <dd>
 <div class="block">Precondition: plain Petri net
@@ -1203,6 +1213,12 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/live/StronglyLiveModule.html#checkTransitionLiveness-uniol.apt.module.ModuleOutput-uniol.apt.adt.pn.PetriNet-uniol.apt.adt.pn.Transition-">checkTransitionLiveness(ModuleOutput, PetriNet, Transition)</a></span> - Method in class uniol.apt.analysis.live.<a href="uniol/apt/analysis/live/StronglyLiveModule.html" title="class in uniol.apt.analysis.live">StronglyLiveModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/live/WeaklyLiveModule.html#checkTransitionLiveness-uniol.apt.module.ModuleOutput-uniol.apt.adt.pn.PetriNet-uniol.apt.adt.pn.Transition-">checkTransitionLiveness(ModuleOutput, PetriNet, Transition)</a></span> - Method in class uniol.apt.analysis.live.<a href="uniol/apt/analysis/live/WeaklyLiveModule.html" title="class in uniol.apt.analysis.live">WeaklyLiveModule</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/util/AbstractEquivalenceRelation.html#checkValidElement-E-">checkValidElement(E)</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/AbstractEquivalenceRelation.html" title="class in uniol.apt.util">AbstractEquivalenceRelation</a></dt>
+<dd>
+<div class="block">Extension point to restrict the valid entries of the equivalence class.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/util/DomainEquivalenceRelation.html#checkValidElement-E-">checkValidElement(E)</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/DomainEquivalenceRelation.html" title="class in uniol.apt.util">DomainEquivalenceRelation</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/Region.html#checkValidRegion--">checkValidRegion()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a></dt>
 <dd>
@@ -1958,6 +1974,14 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/util/DifferentPairsIterable.html#DifferentPairsIterable-java.util.Collection-">DifferentPairsIterable(Collection&lt;E&gt;)</a></span> - Constructor for class uniol.apt.util.<a href="uniol/apt/util/DifferentPairsIterable.html" title="class in uniol.apt.util">DifferentPairsIterable</a></dt>
 <dd>
 <div class="block">Construct a new instance of this iterable for the given base collection.</div>
+</dd>
+<dt><a href="uniol/apt/util/DomainEquivalenceRelation.html" title="class in uniol.apt.util"><span class="typeNameLink">DomainEquivalenceRelation</span></a>&lt;<a href="uniol/apt/util/DomainEquivalenceRelation.html" title="type parameter in DomainEquivalenceRelation">E</a>&gt; - Class in <a href="uniol/apt/util/package-summary.html">uniol.apt.util</a></dt>
+<dd>
+<div class="block">An equivalence relation where the basic set over which it is defined is explicitly given.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/util/DomainEquivalenceRelation.html#DomainEquivalenceRelation-java.util.Collection-">DomainEquivalenceRelation(Collection&lt;E&gt;)</a></span> - Constructor for class uniol.apt.util.<a href="uniol/apt/util/DomainEquivalenceRelation.html" title="class in uniol.apt.util">DomainEquivalenceRelation</a></dt>
+<dd>
+<div class="block">Create a new instance of this class for the given domain.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/check/SmartChanceGenerator.html#doModification-uniol.apt.check.SmartChanceGenerator.ModificationType-">doModification(SmartChanceGenerator.ModificationType)</a></span> - Method in class uniol.apt.check.<a href="uniol/apt/check/SmartChanceGenerator.html" title="class in uniol.apt.check">SmartChanceGenerator</a></dt>
 <dd>
@@ -3118,7 +3142,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/module/impl/ReturnValue.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class uniol.apt.module.impl.<a href="uniol/apt/module/impl/ReturnValue.html" title="class in uniol.apt.module.impl">ReturnValue</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/util/EquivalenceRelation.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/EquivalenceRelation.html" title="class in uniol.apt.util">EquivalenceRelation</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/util/AbstractEquivalenceRelation.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/AbstractEquivalenceRelation.html" title="class in uniol.apt.util">AbstractEquivalenceRelation</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/util/Pair.html#equals-java.lang.Object-">equals(Object)</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a></dt>
 <dd>&nbsp;</dd>
@@ -5026,6 +5050,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/FCModule.html#getCategories--">getCategories()</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/FCModule.html" title="class in uniol.apt.analysis.fc">FCModule</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/WFCModule.html#getCategories--">getCategories()</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/WFCModule.html" title="class in uniol.apt.analysis.fc">WFCModule</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fcnet/FCNetModule.html#getCategories--">getCategories()</a></span> - Method in class uniol.apt.analysis.fcnet.<a href="uniol/apt/analysis/fcnet/FCNetModule.html" title="class in uniol.apt.analysis.fcnet">FCNetModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/FireSequenceModule.html#getCategories--">getCategories()</a></span> - Method in class uniol.apt.analysis.<a href="uniol/apt/analysis/FireSequenceModule.html" title="class in uniol.apt.analysis">FireSequenceModule</a></dt>
@@ -5148,7 +5174,7 @@
 <dd>
 <div class="block">Get the chords of the spanning tree.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/util/EquivalenceRelation.html#getClass-E-">getClass(E)</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/EquivalenceRelation.html" title="class in uniol.apt.util">EquivalenceRelation</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/util/AbstractEquivalenceRelation.html#getClass-E-">getClass(E)</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/AbstractEquivalenceRelation.html" title="class in uniol.apt.util">AbstractEquivalenceRelation</a></dt>
 <dd>
 <div class="block">Get the equivalence class of the given element.</div>
 </dd>
@@ -5710,6 +5736,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/FCModule.html#getLongDescription--">getLongDescription()</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/FCModule.html" title="class in uniol.apt.analysis.fc">FCModule</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/WFCModule.html#getLongDescription--">getLongDescription()</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/WFCModule.html" title="class in uniol.apt.analysis.fc">WFCModule</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fcnet/FCNetModule.html#getLongDescription--">getLongDescription()</a></span> - Method in class uniol.apt.analysis.fcnet.<a href="uniol/apt/analysis/fcnet/FCNetModule.html" title="class in uniol.apt.analysis.fcnet">FCNetModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/FireSequenceModule.html#getLongDescription--">getLongDescription()</a></span> - Method in class uniol.apt.analysis.<a href="uniol/apt/analysis/FireSequenceModule.html" title="class in uniol.apt.analysis">FireSequenceModule</a></dt>
@@ -5966,6 +5994,8 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/LabelSeparationModule.html#getName--">getName()</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/LabelSeparationModule.html" title="class in uniol.apt.analysis.factorization">LabelSeparationModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/FCModule.html#getName--">getName()</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/FCModule.html" title="class in uniol.apt.analysis.fc">FCModule</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/WFCModule.html#getName--">getName()</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/WFCModule.html" title="class in uniol.apt.analysis.fc">WFCModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fcnet/FCNetModule.html#getName--">getName()</a></span> - Method in class uniol.apt.analysis.fcnet.<a href="uniol/apt/analysis/fcnet/FCNetModule.html" title="class in uniol.apt.analysis.fcnet">FCNetModule</a></dt>
 <dd>&nbsp;</dd>
@@ -6978,6 +7008,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/FCModule.html#getShortDescription--">getShortDescription()</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/FCModule.html" title="class in uniol.apt.analysis.fc">FCModule</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/WFCModule.html#getShortDescription--">getShortDescription()</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/WFCModule.html" title="class in uniol.apt.analysis.fc">WFCModule</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fcnet/FCNetModule.html#getShortDescription--">getShortDescription()</a></span> - Method in class uniol.apt.analysis.fcnet.<a href="uniol/apt/analysis/fcnet/FCNetModule.html" title="class in uniol.apt.analysis.fcnet">FCNetModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/FireSequenceModule.html#getShortDescription--">getShortDescription()</a></span> - Method in class uniol.apt.analysis.<a href="uniol/apt/analysis/FireSequenceModule.html" title="class in uniol.apt.analysis">FireSequenceModule</a></dt>
@@ -7259,6 +7291,8 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/CyclesHaveSamePVModule.html#getTitle--">getTitle()</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/CyclesHaveSamePVModule.html" title="class in uniol.apt.analysis.cycles.lts">CyclesHaveSamePVModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/FCModule.html#getTitle--">getTitle()</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/FCModule.html" title="class in uniol.apt.analysis.fc">FCModule</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/WFCModule.html#getTitle--">getTitle()</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/WFCModule.html" title="class in uniol.apt.analysis.fc">WFCModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fcnet/FCNetModule.html#getTitle--">getTitle()</a></span> - Method in class uniol.apt.analysis.fcnet.<a href="uniol/apt/analysis/fcnet/FCNetModule.html" title="class in uniol.apt.analysis.fcnet">FCNetModule</a></dt>
 <dd>&nbsp;</dd>
@@ -7653,7 +7687,7 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/module/impl/ReturnValue.html#hashCode--">hashCode()</a></span> - Method in class uniol.apt.module.impl.<a href="uniol/apt/module/impl/ReturnValue.html" title="class in uniol.apt.module.impl">ReturnValue</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/util/EquivalenceRelation.html#hashCode--">hashCode()</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/EquivalenceRelation.html" title="class in uniol.apt.util">EquivalenceRelation</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/util/AbstractEquivalenceRelation.html#hashCode--">hashCode()</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/AbstractEquivalenceRelation.html" title="class in uniol.apt.util">AbstractEquivalenceRelation</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/util/Pair.html#hashCode--">hashCode()</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a></dt>
 <dd>&nbsp;</dd>
@@ -8183,7 +8217,11 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/adt/automaton/Symbol.html#isEpsilon--">isEpsilon()</a></span> - Method in class uniol.apt.adt.automaton.<a href="uniol/apt/adt/automaton/Symbol.html" title="class in uniol.apt.adt.automaton">Symbol</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/util/EquivalenceRelation.html#isEquivalent-E-E-">isEquivalent(E, E)</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/EquivalenceRelation.html" title="class in uniol.apt.util">EquivalenceRelation</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/PNProperties.html#isEqualConflict--">isEqualConflict()</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/PNProperties.html" title="class in uniol.apt.analysis.synthesize">PNProperties</a></dt>
+<dd>
+<div class="block">Return true if this properties description requires an equal-conflict PN.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/util/AbstractEquivalenceRelation.html#isEquivalent-E-E-">isEquivalent(E, E)</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/AbstractEquivalenceRelation.html" title="class in uniol.apt.util">AbstractEquivalenceRelation</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/util/IEquivalenceRelation.html#isEquivalent-E-E-">isEquivalent(E, E)</a></span> - Method in interface uniol.apt.util.<a href="uniol/apt/util/IEquivalenceRelation.html" title="interface in uniol.apt.util">IEquivalenceRelation</a></dt>
 <dd>
@@ -8548,7 +8586,11 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/generator/tnet/TNetGenerator.html#iterator--">iterator()</a></span> - Method in class uniol.apt.generator.tnet.<a href="uniol/apt/generator/tnet/TNetGenerator.html" title="class in uniol.apt.generator.tnet">TNetGenerator</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/util/AbstractEquivalenceRelation.html#iterator--">iterator()</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/AbstractEquivalenceRelation.html" title="class in uniol.apt.util">AbstractEquivalenceRelation</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/util/DifferentPairsIterable.html#iterator--">iterator()</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/DifferentPairsIterable.html" title="class in uniol.apt.util">DifferentPairsIterable</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/util/DomainEquivalenceRelation.html#iterator--">iterator()</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/DomainEquivalenceRelation.html" title="class in uniol.apt.util">DomainEquivalenceRelation</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/util/equations/InequalitySystem.html#iterator--">iterator()</a></span> - Method in class uniol.apt.util.equations.<a href="uniol/apt/util/equations/InequalitySystem.html" title="class in uniol.apt.util.equations">InequalitySystem</a></dt>
 <dd>&nbsp;</dd>
@@ -8564,7 +8606,7 @@
 </a>
 <h2 class="title">J</h2>
 <dl>
-<dt><span class="memberNameLink"><a href="uniol/apt/util/EquivalenceRelation.html#joinClasses-E-E-">joinClasses(E, E)</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/EquivalenceRelation.html" title="class in uniol.apt.util">EquivalenceRelation</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/util/AbstractEquivalenceRelation.html#joinClasses-E-E-">joinClasses(E, E)</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/AbstractEquivalenceRelation.html" title="class in uniol.apt.util">AbstractEquivalenceRelation</a></dt>
 <dd>
 <div class="block">Join the equivalence classes of two elements.</div>
 </dd>
@@ -8701,6 +8743,8 @@
 <dd>
 <div class="block">Calculates the lcm of two integers.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/util/AbstractEquivalenceRelation.html#leaderToClass">leaderToClass</a></span> - Variable in class uniol.apt.util.<a href="uniol/apt/util/AbstractEquivalenceRelation.html" title="class in uniol.apt.util">AbstractEquivalenceRelation</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="uniol/apt/analysis/synthesize/LimitedUnfolding.html" title="class in uniol.apt.analysis.synthesize"><span class="typeNameLink">LimitedUnfolding</span></a> - Class in <a href="uniol/apt/analysis/synthesize/package-summary.html">uniol.apt.analysis.synthesize</a></dt>
 <dd>
 <div class="block">Calculate a limited unfolding of a transition system, as defined in definition 2.42 in "Petri Net Synthesis" by
@@ -10351,6 +10395,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/FCModule.html#provide-uniol.apt.module.ModuleOutputSpec-">provide(ModuleOutputSpec)</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/FCModule.html" title="class in uniol.apt.analysis.fc">FCModule</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/WFCModule.html#provide-uniol.apt.module.ModuleOutputSpec-">provide(ModuleOutputSpec)</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/WFCModule.html" title="class in uniol.apt.analysis.fc">WFCModule</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fcnet/FCNetModule.html#provide-uniol.apt.module.ModuleOutputSpec-">provide(ModuleOutputSpec)</a></span> - Method in class uniol.apt.analysis.fcnet.<a href="uniol/apt/analysis/fcnet/FCNetModule.html" title="class in uniol.apt.analysis.fcnet">FCNetModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/FireSequenceModule.html#provide-uniol.apt.module.ModuleOutputSpec-">provide(ModuleOutputSpec)</a></span> - Method in class uniol.apt.analysis.<a href="uniol/apt/analysis/FireSequenceModule.html" title="class in uniol.apt.analysis">FireSequenceModule</a></dt>
@@ -10580,10 +10626,18 @@
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/coverability/ReachabilityModule.html#ReachabilityModule--">ReachabilityModule()</a></span> - Constructor for class uniol.apt.analysis.coverability.<a href="uniol/apt/analysis/coverability/ReachabilityModule.html" title="class in uniol.apt.analysis.coverability">ReachabilityModule</a></dt>
 <dd>&nbsp;</dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/util/EquivalenceRelation.html#refine-uniol.apt.util.IEquivalenceRelation-">refine(IEquivalenceRelation&lt;? super E&gt;)</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/EquivalenceRelation.html" title="class in uniol.apt.util">EquivalenceRelation</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/util/AbstractEquivalenceRelation.html#refine-uniol.apt.util.IEquivalenceRelation-">refine(IEquivalenceRelation&lt;? super E&gt;)</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/AbstractEquivalenceRelation.html" title="class in uniol.apt.util">AbstractEquivalenceRelation</a></dt>
 <dd>
 <div class="block">Refine this equivalence relation via another relation.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/util/AbstractEquivalenceRelation.html#refine-uniol.apt.util.AbstractEquivalenceRelation-uniol.apt.util.IEquivalenceRelation-">refine(AbstractEquivalenceRelation&lt;? super E&gt;, IEquivalenceRelation&lt;? super E&gt;)</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/AbstractEquivalenceRelation.html" title="class in uniol.apt.util">AbstractEquivalenceRelation</a></dt>
+<dd>
+<div class="block">Refine this equivalence relation via another relation.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/util/DomainEquivalenceRelation.html#refine-uniol.apt.util.IEquivalenceRelation-">refine(IEquivalenceRelation&lt;? super E&gt;)</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/DomainEquivalenceRelation.html" title="class in uniol.apt.util">DomainEquivalenceRelation</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/util/EquivalenceRelation.html#refine-uniol.apt.util.IEquivalenceRelation-">refine(IEquivalenceRelation&lt;? super E&gt;)</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/EquivalenceRelation.html" title="class in uniol.apt.util">EquivalenceRelation</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="uniol/apt/io/parser/impl/RegexFormatLexer.html" title="class in uniol.apt.io.parser.impl"><span class="typeNameLink">RegexFormatLexer</span></a> - Class in <a href="uniol/apt/io/parser/impl/package-summary.html">uniol.apt.io.parser.impl</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatLexer.html#RegexFormatLexer-org.antlr.v4.runtime.CharStream-">RegexFormatLexer(CharStream)</a></span> - Constructor for class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatLexer.html" title="class in uniol.apt.io.parser.impl">RegexFormatLexer</a></dt>
@@ -10954,6 +11008,8 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/LabelSeparationModule.html#require-uniol.apt.module.ModuleInputSpec-">require(ModuleInputSpec)</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/LabelSeparationModule.html" title="class in uniol.apt.analysis.factorization">LabelSeparationModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/FCModule.html#require-uniol.apt.module.ModuleInputSpec-">require(ModuleInputSpec)</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/FCModule.html" title="class in uniol.apt.analysis.fc">FCModule</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/WFCModule.html#require-uniol.apt.module.ModuleInputSpec-">require(ModuleInputSpec)</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/WFCModule.html" title="class in uniol.apt.analysis.fc">WFCModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fcnet/FCNetModule.html#require-uniol.apt.module.ModuleInputSpec-">require(ModuleInputSpec)</a></span> - Method in class uniol.apt.analysis.fcnet.<a href="uniol/apt/analysis/fcnet/FCNetModule.html" title="class in uniol.apt.analysis.fcnet">FCNetModule</a></dt>
 <dd>&nbsp;</dd>
@@ -11411,6 +11467,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/FCModule.html#run-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">run(ModuleInput, ModuleOutput)</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/FCModule.html" title="class in uniol.apt.analysis.fc">FCModule</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/WFCModule.html#run-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">run(ModuleInput, ModuleOutput)</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/WFCModule.html" title="class in uniol.apt.analysis.fc">WFCModule</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fcnet/FCNetModule.html#run-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">run(ModuleInput, ModuleOutput)</a></span> - Method in class uniol.apt.analysis.fcnet.<a href="uniol/apt/analysis/fcnet/FCNetModule.html" title="class in uniol.apt.analysis.fcnet">FCNetModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/FireSequenceModule.html#run-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">run(ModuleInput, ModuleOutput)</a></span> - Method in class uniol.apt.analysis.<a href="uniol/apt/analysis/FireSequenceModule.html" title="class in uniol.apt.analysis">FireSequenceModule</a></dt>
@@ -11748,6 +11806,10 @@
 <dd>
 <div class="block">Set the interrupter for the currently executing (calling) thread.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/synthesize/PNProperties.html#setEqualConflict-boolean-">setEqualConflict(boolean)</a></span> - Method in class uniol.apt.analysis.synthesize.<a href="uniol/apt/analysis/synthesize/PNProperties.html" title="class in uniol.apt.analysis.synthesize">PNProperties</a></dt>
+<dd>
+<div class="block">Create a new instance which differs from this one in the specified equal-conflictness requirement.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/CycleCounterExample.html#setFirst-uniol.apt.analysis.cycles.lts.CyclePV-">setFirst(CyclePV)</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/CycleCounterExample.html" title="class in uniol.apt.analysis.cycles.lts">CycleCounterExample</a></dt>
 <dd>
 <div class="block">Sets the first counter example.</div>
@@ -12077,6 +12139,8 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/adt/CollectionToUnmodifiableSetAdapter.html#size--">size()</a></span> - Method in class uniol.apt.adt.<a href="uniol/apt/adt/CollectionToUnmodifiableSetAdapter.html" title="class in uniol.apt.adt">CollectionToUnmodifiableSetAdapter</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/adt/SoftMap.html#size--">size()</a></span> - Method in class uniol.apt.adt.<a href="uniol/apt/adt/SoftMap.html" title="class in uniol.apt.adt">SoftMap</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/util/AbstractEquivalenceRelation.html#size--">size()</a></span> - Method in class uniol.apt.util.<a href="uniol/apt/util/AbstractEquivalenceRelation.html" title="class in uniol.apt.util">AbstractEquivalenceRelation</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/util/equations/InequalitySystem.html#size--">size()</a></span> - Method in class uniol.apt.util.equations.<a href="uniol/apt/util/equations/InequalitySystem.html" title="class in uniol.apt.util.equations">InequalitySystem</a></dt>
 <dd>&nbsp;</dd>
@@ -13984,6 +14048,18 @@ the order they are declared.</div>
 <div class="block">Provide weak separation check for a given sequence as a module.</div>
 </dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/separation/WeakSeparationModule.html#WeakSeparationModule--">WeakSeparationModule()</a></span> - Constructor for class uniol.apt.analysis.separation.<a href="uniol/apt/analysis/separation/WeakSeparationModule.html" title="class in uniol.apt.analysis.separation">WeakSeparationModule</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="uniol/apt/analysis/fc/WeightedFreeChoice.html" title="class in uniol.apt.analysis.fc"><span class="typeNameLink">WeightedFreeChoice</span></a> - Class in <a href="uniol/apt/analysis/fc/package-summary.html">uniol.apt.analysis.fc</a></dt>
+<dd>
+<div class="block">Checks whether a given Petri net is a weighted free choice net.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/WeightedFreeChoice.html#WeightedFreeChoice--">WeightedFreeChoice()</a></span> - Constructor for class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/WeightedFreeChoice.html" title="class in uniol.apt.analysis.fc">WeightedFreeChoice</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="uniol/apt/analysis/fc/WFCModule.html" title="class in uniol.apt.analysis.fc"><span class="typeNameLink">WFCModule</span></a> - Class in <a href="uniol/apt/analysis/fc/package-summary.html">uniol.apt.analysis.fc</a></dt>
+<dd>
+<div class="block">Checks whether a given Petri net is a weighted free choice net.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/WFCModule.html#WFCModule--">WFCModule()</a></span> - Constructor for class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/WFCModule.html" title="class in uniol.apt.analysis.fc">WFCModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/LoLAPNFormatLexer.html#WHITESPACE">WHITESPACE</a></span> - Static variable in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/LoLAPNFormatLexer.html" title="class in uniol.apt.io.parser.impl">LoLAPNFormatLexer</a></dt>
 <dd>&nbsp;</dd>
