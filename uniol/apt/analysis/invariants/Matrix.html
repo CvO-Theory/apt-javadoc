@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":9,"i9":10,"i10":10,"i11":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":9,"i7":10,"i8":10,"i9":10};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -166,70 +166,58 @@ implements java.lang.Iterable&lt;java.util.List&lt;java.lang.Integer&gt;&gt;</pr
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/invariants/Matrix.html#appendColumn-java.util.List-">appendColumn</a></span>(java.util.List&lt;java.lang.Integer&gt;&nbsp;column)</code>
-<div class="block">Appends a given column to this matrix.</div>
-</td>
-</tr>
-<tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/invariants/Matrix.html#deleteColumn-int-">deleteColumn</a></span>(int&nbsp;j)</code>
 <div class="block">Deletes the column with the given index from this matrix.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.util.List&lt;java.lang.Integer&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/invariants/Matrix.html#getColumn-int-">getColumn</a></span>(int&nbsp;i)</code>
 <div class="block">Returns a copy of the column with the given index of this matrix.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/invariants/Matrix.html#getColumnCount--">getColumnCount</a></span>()</code>
 <div class="block">Returns the count of cols of this matrix.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.lang.Integer,java.util.List&lt;java.lang.Integer&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/invariants/Matrix.html#getNoneZeroRow--">getNoneZeroRow</a></span>()</code>
 <div class="block">Returns a row which has at least one component different from zero.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.util.List&lt;java.lang.Integer&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/invariants/Matrix.html#getRow-int-">getRow</a></span>(int&nbsp;i)</code>
 <div class="block">Returns the row with the given index in this matrix.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/invariants/Matrix.html#getRowCount--">getRowCount</a></span>()</code>
 <div class="block">Returns the count of rows of this matrix.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
-<td class="colFirst"><code><a href="../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.lang.Integer,java.util.List&lt;java.lang.Integer&gt;&gt;</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/invariants/Matrix.html#getRowWithNegativeElement--">getRowWithNegativeElement</a></span>()</code>
-<div class="block">Returns a row and it's index in this matrix which has at least one negative component.</div>
-</td>
-</tr>
-<tr id="i8" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../uniol/apt/analysis/invariants/Matrix.html" title="class in uniol.apt.analysis.invariants">Matrix</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/invariants/Matrix.html#identity-int-int-">identity</a></span>(int&nbsp;m,
         int&nbsp;n)</code>
 <div class="block">Returns the identity matrix with given col and row count.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/invariants/Matrix.html#isZero--">isZero</a></span>()</code>
 <div class="block">Checks if this matrix only contains of components equal to zero.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>java.util.Iterator&lt;java.util.List&lt;java.lang.Integer&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/invariants/Matrix.html#iterator--">iterator</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/analysis/invariants/Matrix.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -393,22 +381,6 @@ implements java.lang.Iterable&lt;java.util.List&lt;java.lang.Integer&gt;&gt;</pr
 </dl>
 </li>
 </ul>
-<a name="getRowWithNegativeElement--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getRowWithNegativeElement</h4>
-<pre>public&nbsp;<a href="../../../../uniol/apt/util/Pair.html" title="class in uniol.apt.util">Pair</a>&lt;java.lang.Integer,java.util.List&lt;java.lang.Integer&gt;&gt;&nbsp;getRowWithNegativeElement()</pre>
-<div class="block">Returns a row and it's index in this matrix which has at least one negative component. If such a row does not
- exists, than null.</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>the index of row and the row itself, which has at least one negative component or null if not
-         existent.</dd>
-</dl>
-</li>
-</ul>
 <a name="deleteColumn-int-">
 <!--   -->
 </a>
@@ -420,20 +392,6 @@ implements java.lang.Iterable&lt;java.util.List&lt;java.lang.Integer&gt;&gt;</pr
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>j</code> - - the index of the column which should be deleted.</dd>
-</dl>
-</li>
-</ul>
-<a name="appendColumn-java.util.List-">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>appendColumn</h4>
-<pre>public&nbsp;void&nbsp;appendColumn(java.util.List&lt;java.lang.Integer&gt;&nbsp;column)</pre>
-<div class="block">Appends a given column to this matrix. That means adding the given column from the right side to this matrix.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>column</code> - - the column to append.</dd>
 </dl>
 </li>
 </ul>
