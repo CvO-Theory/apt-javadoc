@@ -467,6 +467,21 @@
 <!--   -->
 </a>
 <h3>Uses of <a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a> in <a href="../../../../../uniol/apt/analysis/exception/package-summary.html">uniol.apt.analysis.exception</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../uniol/apt/analysis/exception/package-summary.html">uniol.apt.analysis.exception</a> that return <a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a></code></td>
+<td class="colLast"><span class="typeNameLabel">NonDeterministicException.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/exception/NonDeterministicException.html#getTS--">getTS</a></span>()</code>
+<div class="block">Get the transition system which was not deterministic.</div>
+</td>
+</tr>
+</tbody>
+</table>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
 <caption><span>Constructors in <a href="../../../../../uniol/apt/analysis/exception/package-summary.html">uniol.apt.analysis.exception</a> with parameters of type <a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
@@ -474,7 +489,10 @@
 </tr>
 <tbody>
 <tr class="altColor">
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/exception/NonDeterministicException.html#NonDeterministicException-uniol.apt.adt.ts.TransitionSystem-">NonDeterministicException</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/exception/NonDeterministicException.html#NonDeterministicException-uniol.apt.adt.ts.TransitionSystem-uniol.apt.adt.ts.State-java.lang.String-boolean-">NonDeterministicException</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
+                         <a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;node,
+                         java.lang.String&nbsp;label,
+                         boolean&nbsp;direction)</code>
 <div class="block">Constructor creates a new NonDeterministicException saying that the given TransitionSystem is
  non-deterministic.</div>
 </td>
@@ -531,6 +549,19 @@
 </tbody>
 </table>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../uniol/apt/analysis/factorization/package-summary.html">uniol.apt.analysis.factorization</a> that return types with arguments of type <a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>java.util.Set&lt;<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">SynthesisFactorisation.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/factorization/SynthesisFactorisation.html#factorize-uniol.apt.adt.ts.TransitionSystem-">factorize</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
 <caption><span>Methods in <a href="../../../../../uniol/apt/analysis/factorization/package-summary.html">uniol.apt.analysis.factorization</a> with parameters of type <a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
@@ -562,6 +593,10 @@
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colFirst"><code>java.util.Set&lt;<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&gt;</code></td>
+<td class="colLast"><span class="typeNameLabel">SynthesisFactorisation.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/factorization/SynthesisFactorisation.html#factorize-uniol.apt.adt.ts.TransitionSystem-">factorize</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><span class="typeNameLabel">GeneralDiamond.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/factorization/GeneralDiamond.html#isGdiam-uniol.apt.adt.ts.TransitionSystem-java.util.Set-">isGdiam</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
        java.util.Set&lt;java.lang.String&gt;&nbsp;labelSubset)</code>
@@ -569,7 +604,7 @@
  <code><a href="../../../../../uniol/apt/analysis/factorization/GeneralDiamond.html#checkGdiam-uniol.apt.adt.ts.TransitionSystem-java.util.Set-"><code>GeneralDiamond.checkGdiam(TransitionSystem, Set)</code></a>.isGdiam()</code>.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><span class="typeNameLabel">GeneralDiamond.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/factorization/GeneralDiamond.html#isGdiam-uniol.apt.adt.ts.TransitionSystem-java.lang.String-java.lang.String-">isGdiam</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
        java.lang.String&nbsp;a,
@@ -578,7 +613,7 @@
  property holds.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><span class="typeNameLabel">LabelSeparation.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/factorization/LabelSeparation.html#isSeparated-uniol.apt.adt.ts.TransitionSystem-java.util.Set-">isSeparated</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
            java.util.Set&lt;java.lang.String&gt;&nbsp;tPrime)</code>
@@ -587,7 +622,7 @@
  .</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>static <a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a></code></td>
 <td class="colLast"><span class="typeNameLabel">TransitionSystemFilter.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/factorization/TransitionSystemFilter.html#removeArcsByLabel-uniol.apt.adt.ts.TransitionSystem-java.util.Set-">removeArcsByLabel</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
                  java.util.Set&lt;java.lang.String&gt;&nbsp;labels)</code>
@@ -595,7 +630,7 @@
  label contained within the given label set.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>static <a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a></code></td>
 <td class="colLast"><span class="typeNameLabel">TransitionSystemFilter.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/factorization/TransitionSystemFilter.html#retainArcsByLabel-uniol.apt.adt.ts.TransitionSystem-java.util.Set-">retainArcsByLabel</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
                  java.util.Set&lt;java.lang.String&gt;&nbsp;labels)</code>

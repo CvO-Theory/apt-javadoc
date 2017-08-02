@@ -498,6 +498,21 @@
 <!--   -->
 </a>
 <h3>Uses of <a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a> in <a href="../../../../../uniol/apt/analysis/exception/package-summary.html">uniol.apt.analysis.exception</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../uniol/apt/analysis/exception/package-summary.html">uniol.apt.analysis.exception</a> that return <a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a></code></td>
+<td class="colLast"><span class="typeNameLabel">NonDeterministicException.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/exception/NonDeterministicException.html#getNode--">getNode</a></span>()</code>
+<div class="block">Get the node where the transition system was not deterministic.</div>
+</td>
+</tr>
+</tbody>
+</table>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing constructors, and an explanation">
 <caption><span>Constructors in <a href="../../../../../uniol/apt/analysis/exception/package-summary.html">uniol.apt.analysis.exception</a> with parameters of type <a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
@@ -507,6 +522,15 @@
 <tr class="altColor">
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/exception/NoFiniteExtensionPossibleException.html#NoFiniteExtensionPossibleException-uniol.apt.adt.ts.State-">NoFiniteExtensionPossibleException</a></span>(<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;state)</code>
 <div class="block">Constructor.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/exception/NonDeterministicException.html#NonDeterministicException-uniol.apt.adt.ts.TransitionSystem-uniol.apt.adt.ts.State-java.lang.String-boolean-">NonDeterministicException</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
+                         <a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&nbsp;node,
+                         java.lang.String&nbsp;label,
+                         boolean&nbsp;direction)</code>
+<div class="block">Constructor creates a new NonDeterministicException saying that the given TransitionSystem is
+ non-deterministic.</div>
 </td>
 </tr>
 </tbody>

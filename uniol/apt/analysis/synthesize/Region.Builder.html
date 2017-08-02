@@ -480,17 +480,17 @@ extends java.lang.Object</pre>
 <h4>copyRegionToUtility</h4>
 <pre>public static&nbsp;<a href="../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a>&nbsp;copyRegionToUtility(<a href="../../../../uniol/apt/analysis/synthesize/RegionUtility.html" title="class in uniol.apt.analysis.synthesize">RegionUtility</a>&nbsp;utility,
                                          <a href="../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a>&nbsp;region)</pre>
-<div class="block">Create a copy of a region for a different RegionUtility. The given utility and the utility used by
- the given region must have the same event list!</div>
+<div class="block">Create a copy of a region for a different RegionUtility. Every event used by the given region's
+ utility must be available in the given utility!</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>utility</code> - The utility to use.</dd>
 <dd><code>region</code> - The region to copy to the given utility.</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>A new region with the same weights and initial token count as the given region, but refering
+<dd>A new region with the same weights and initial token count as the given region, but referring
  to the given region utility.</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code>java.lang.IllegalArgumentException</code> - When the event lists are different.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - When the event lists are incompatible.</dd>
 </dl>
 </li>
 </ul>
