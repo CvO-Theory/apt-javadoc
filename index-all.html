@@ -1101,6 +1101,26 @@
 <dd>
 <div class="block">Check if the Petri net is (k-)bounded</div>
 </dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fairness/Fairness.html#checkEvent-uniol.apt.adt.ts.Event-int-">checkEvent(Event, int)</a></span> - Method in class uniol.apt.analysis.fairness.<a href="uniol/apt/analysis/fairness/Fairness.html" title="class in uniol.apt.analysis.fairness">Fairness</a></dt>
+<dd>
+<div class="block">Check if a given event is k-unfair</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fairness/Fairness.html#checkFairness-uniol.apt.adt.ts.TransitionSystem-">checkFairness(TransitionSystem)</a></span> - Static method in class uniol.apt.analysis.fairness.<a href="uniol/apt/analysis/fairness/Fairness.html" title="class in uniol.apt.analysis.fairness">Fairness</a></dt>
+<dd>
+<div class="block">Check if a transition system is fair</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fairness/Fairness.html#checkFairness-uniol.apt.adt.ts.TransitionSystem-int-">checkFairness(TransitionSystem, int)</a></span> - Static method in class uniol.apt.analysis.fairness.<a href="uniol/apt/analysis/fairness/Fairness.html" title="class in uniol.apt.analysis.fairness">Fairness</a></dt>
+<dd>
+<div class="block">Check if a transition system is k-fair</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fairness/Fairness.html#checkFairness-uniol.apt.adt.ts.TransitionSystem-uniol.apt.adt.ts.Event-">checkFairness(TransitionSystem, Event)</a></span> - Static method in class uniol.apt.analysis.fairness.<a href="uniol/apt/analysis/fairness/Fairness.html" title="class in uniol.apt.analysis.fairness">Fairness</a></dt>
+<dd>
+<div class="block">Check if a transition system is fair regarding a specific event</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fairness/Fairness.html#checkFairness-uniol.apt.adt.ts.TransitionSystem-int-uniol.apt.adt.ts.Event-">checkFairness(TransitionSystem, int, Event)</a></span> - Static method in class uniol.apt.analysis.fairness.<a href="uniol/apt/analysis/fairness/Fairness.html" title="class in uniol.apt.analysis.fairness">Fairness</a></dt>
+<dd>
+<div class="block">Check if a transition system is k-fair regarding a specific event</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/GeneralDiamond.html#checkGdiam-uniol.apt.adt.ts.TransitionSystem-java.util.Set-">checkGdiam(TransitionSystem, Set&lt;String&gt;)</a></span> - Static method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/GeneralDiamond.html" title="class in uniol.apt.analysis.factorization">GeneralDiamond</a></dt>
 <dd>
 <div class="block">Checks if the given <code>LTS = (S, →, T, s0)</code> is a
@@ -1782,10 +1802,12 @@
 <dd>
 <div class="block">Representation of a cycle as a list of nodes and the Parikh vector of the edges.</div>
 </dd>
-<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/Cycle.html#Cycle-java.util.List-uniol.apt.adt.ts.ParikhVector-">Cycle(List&lt;State&gt;, ParikhVector)</a></span> - Constructor for class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/Cycle.html" title="class in uniol.apt.analysis.cycles.lts">Cycle</a></dt>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/Cycle.html#Cycle-java.util.List-java.util.List-">Cycle(List&lt;State&gt;, List&lt;Arc&gt;)</a></span> - Constructor for class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/Cycle.html" title="class in uniol.apt.analysis.cycles.lts">Cycle</a></dt>
 <dd>
 <div class="block">Construct a new instance of this class from the given data.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fairness/FairnessResult.html#cycle">cycle</a></span> - Variable in class uniol.apt.analysis.fairness.<a href="uniol/apt/analysis/fairness/FairnessResult.html" title="class in uniol.apt.analysis.fairness">FairnessResult</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="uniol/apt/analysis/cycles/CycleCallback.html" title="interface in uniol.apt.analysis.cycles"><span class="typeNameLink">CycleCallback</span></a>&lt;<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">G</a> extends <a href="uniol/apt/adt/IGraph.html" title="interface in uniol.apt.adt">IGraph</a>&lt;<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">G</a>,<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">E</a>,<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">N</a>&gt;,<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">E</a> extends <a href="uniol/apt/adt/IEdge.html" title="interface in uniol.apt.adt">IEdge</a>&lt;<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">G</a>,<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">E</a>,<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">N</a>&gt;,<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">N</a> extends <a href="uniol/apt/adt/INode.html" title="interface in uniol.apt.adt">INode</a>&lt;<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">G</a>,<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">E</a>,<a href="uniol/apt/analysis/cycles/CycleCallback.html" title="type parameter in CycleCallback">N</a>&gt;&gt; - Interface in <a href="uniol/apt/analysis/cycles/package-summary.html">uniol.apt.analysis.cycles</a></dt>
 <dd>
 <div class="block">Callback which gets used by the <a href="uniol/apt/analysis/cycles/CycleSearch.html" title="class in uniol.apt.analysis.cycles"><code>CycleSearch</code></a> class to notify the
@@ -2050,6 +2072,8 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.html#EMPTY">EMPTY</a></span> - Static variable in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprIdEmptyContext.html#EMPTY--">EMPTY()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/RegexFormatParser.ExprIdEmptyContext.html" title="class in uniol.apt.io.parser.impl">RegexFormatParser.ExprIdEmptyContext</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fairness/FairnessResult.html#enabling">enabling</a></span> - Variable in class uniol.apt.analysis.fairness.<a href="uniol/apt/analysis/fairness/FairnessResult.html" title="class in uniol.apt.analysis.fairness">FairnessResult</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/PetrifyLTSFormatLexer.html#END">END</a></span> - Static variable in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/PetrifyLTSFormatLexer.html" title="class in uniol.apt.io.parser.impl">PetrifyLTSFormatLexer</a></dt>
 <dd>&nbsp;</dd>
@@ -4440,6 +4464,26 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/SynthesisFactorisation.html#factorize-uniol.apt.adt.ts.TransitionSystem-">factorize(TransitionSystem)</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/SynthesisFactorisation.html" title="class in uniol.apt.analysis.factorization">SynthesisFactorisation</a></dt>
 <dd>&nbsp;</dd>
+<dt><a href="uniol/apt/analysis/fairness/Fairness.html" title="class in uniol.apt.analysis.fairness"><span class="typeNameLink">Fairness</span></a> - Class in <a href="uniol/apt/analysis/fairness/package-summary.html">uniol.apt.analysis.fairness</a></dt>
+<dd>
+<div class="block">Check if a transition system is fair;
+ A transition system is fair if for every infinite firing sequence every infintely often k-activated event is fired
+ infinitely often.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fairness/Fairness.html#Fairness-uniol.apt.adt.ts.TransitionSystem-">Fairness(TransitionSystem)</a></span> - Constructor for class uniol.apt.analysis.fairness.<a href="uniol/apt/analysis/fairness/Fairness.html" title="class in uniol.apt.analysis.fairness">Fairness</a></dt>
+<dd>
+<div class="block">Construct an instance to check fairness on a given <a href="uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts"><code>TransitionSystem</code></a></div>
+</dd>
+<dt><a href="uniol/apt/analysis/fairness/FairnessModule.html" title="class in uniol.apt.analysis.fairness"><span class="typeNameLink">FairnessModule</span></a> - Class in <a href="uniol/apt/analysis/fairness/package-summary.html">uniol.apt.analysis.fairness</a></dt>
+<dd>
+<div class="block">Provide the fairness test as a module.</div>
+</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fairness/FairnessModule.html#FairnessModule--">FairnessModule()</a></span> - Constructor for class uniol.apt.analysis.fairness.<a href="uniol/apt/analysis/fairness/FairnessModule.html" title="class in uniol.apt.analysis.fairness">FairnessModule</a></dt>
+<dd>&nbsp;</dd>
+<dt><a href="uniol/apt/analysis/fairness/FairnessResult.html" title="class in uniol.apt.analysis.fairness"><span class="typeNameLink">FairnessResult</span></a> - Class in <a href="uniol/apt/analysis/fairness/package-summary.html">uniol.apt.analysis.fairness</a></dt>
+<dd>
+<div class="block">This class represents results from the <a href="uniol/apt/analysis/fairness/Fairness.html" title="class in uniol.apt.analysis.fairness"><code>Fairness</code></a> check.</div>
+</dd>
 <dt><a href="uniol/apt/module/exception/FalseParameterException.html" title="class in uniol.apt.module.exception"><span class="typeNameLink">FalseParameterException</span></a> - Exception in <a href="uniol/apt/module/exception/package-summary.html">uniol.apt.module.exception</a></dt>
 <dd>
 <div class="block">Get called if the parameter is not -dead</div>
@@ -4937,6 +4981,10 @@
 <dd>
 <div class="block">Gets the arc with the source, target and label from this TransitionSystem.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/cycles/lts/Cycle.html#getArcs--">getArcs()</a></span> - Method in class uniol.apt.analysis.cycles.lts.<a href="uniol/apt/analysis/cycles/lts/Cycle.html" title="class in uniol.apt.analysis.cycles.lts">Cycle</a></dt>
+<dd>
+<div class="block">Get the arcs which build this cycle.</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/presynthesis/pps/Path.html#getArcs--">getArcs()</a></span> - Method in class uniol.apt.analysis.presynthesis.pps.<a href="uniol/apt/analysis/presynthesis/pps/Path.html" title="class in uniol.apt.analysis.presynthesis.pps">Path</a></dt>
 <dd>
 <div class="block">Returns the arcs that make up this path.</div>
@@ -5064,6 +5112,8 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/GeneralDiamondModule.html#getCategories--">getCategories()</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/GeneralDiamondModule.html" title="class in uniol.apt.analysis.factorization">GeneralDiamondModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/LabelSeparationModule.html#getCategories--">getCategories()</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/LabelSeparationModule.html" title="class in uniol.apt.analysis.factorization">LabelSeparationModule</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fairness/FairnessModule.html#getCategories--">getCategories()</a></span> - Method in class uniol.apt.analysis.fairness.<a href="uniol/apt/analysis/fairness/FairnessModule.html" title="class in uniol.apt.analysis.fairness">FairnessModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/FCModule.html#getCategories--">getCategories()</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/FCModule.html" title="class in uniol.apt.analysis.fc">FCModule</a></dt>
 <dd>&nbsp;</dd>
@@ -5755,6 +5805,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/LabelSeparationModule.html#getLongDescription--">getLongDescription()</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/LabelSeparationModule.html" title="class in uniol.apt.analysis.factorization">LabelSeparationModule</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fairness/FairnessModule.html#getLongDescription--">getLongDescription()</a></span> - Method in class uniol.apt.analysis.fairness.<a href="uniol/apt/analysis/fairness/FairnessModule.html" title="class in uniol.apt.analysis.fairness">FairnessModule</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/FCModule.html#getLongDescription--">getLongDescription()</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/FCModule.html" title="class in uniol.apt.analysis.fc">FCModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/WFCModule.html#getLongDescription--">getLongDescription()</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/WFCModule.html" title="class in uniol.apt.analysis.fc">WFCModule</a></dt>
@@ -6015,6 +6067,8 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/GeneralDiamondModule.html#getName--">getName()</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/GeneralDiamondModule.html" title="class in uniol.apt.analysis.factorization">GeneralDiamondModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/LabelSeparationModule.html#getName--">getName()</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/LabelSeparationModule.html" title="class in uniol.apt.analysis.factorization">LabelSeparationModule</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fairness/FairnessModule.html#getName--">getName()</a></span> - Method in class uniol.apt.analysis.fairness.<a href="uniol/apt/analysis/fairness/FairnessModule.html" title="class in uniol.apt.analysis.fairness">FairnessModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/FCModule.html#getName--">getName()</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/FCModule.html" title="class in uniol.apt.analysis.fc">FCModule</a></dt>
 <dd>&nbsp;</dd>
@@ -7030,6 +7084,8 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/GeneralDiamondModule.html#getShortDescription--">getShortDescription()</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/GeneralDiamondModule.html" title="class in uniol.apt.analysis.factorization">GeneralDiamondModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/LabelSeparationModule.html#getShortDescription--">getShortDescription()</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/LabelSeparationModule.html" title="class in uniol.apt.analysis.factorization">LabelSeparationModule</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fairness/FairnessModule.html#getShortDescription--">getShortDescription()</a></span> - Method in class uniol.apt.analysis.fairness.<a href="uniol/apt/analysis/fairness/FairnessModule.html" title="class in uniol.apt.analysis.fairness">FairnessModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/FCModule.html#getShortDescription--">getShortDescription()</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/FCModule.html" title="class in uniol.apt.analysis.fc">FCModule</a></dt>
 <dd>&nbsp;</dd>
@@ -8264,6 +8320,10 @@
 <dd>
 <div class="block">Test if there exists an outgoing arc labelled with the given event.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fairness/FairnessResult.html#isFair--">isFair()</a></span> - Method in class uniol.apt.analysis.fairness.<a href="uniol/apt/analysis/fairness/FairnessResult.html" title="class in uniol.apt.analysis.fairness">FairnessResult</a></dt>
+<dd>
+<div class="block">Was the checked transition system fair?</div>
+</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/check/CheckAttributes.html#isFinished--">isFinished()</a></span> - Method in class uniol.apt.check.<a href="uniol/apt/check/CheckAttributes.html" title="class in uniol.apt.check">CheckAttributes</a></dt>
 <dd>
 <div class="block">search finished?</div>
@@ -8666,6 +8726,8 @@
 <h2 class="title">K</h2>
 <dl>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/bounded/BoundedResult.html#k">k</a></span> - Variable in class uniol.apt.analysis.bounded.<a href="uniol/apt/analysis/bounded/BoundedResult.html" title="class in uniol.apt.analysis.bounded">BoundedResult</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fairness/FairnessResult.html#k">k</a></span> - Variable in class uniol.apt.analysis.fairness.<a href="uniol/apt/analysis/fairness/FairnessResult.html" title="class in uniol.apt.analysis.fairness">FairnessResult</a></dt>
 <dd>&nbsp;</dd>
 <dt><a href="uniol/apt/analysis/bounded/KBoundedModule.html" title="class in uniol.apt.analysis.bounded"><span class="typeNameLink">KBoundedModule</span></a> - Class in <a href="uniol/apt/analysis/bounded/package-summary.html">uniol.apt.analysis.bounded</a></dt>
 <dd>
@@ -10432,6 +10494,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/LabelSeparationModule.html#provide-uniol.apt.module.ModuleOutputSpec-">provide(ModuleOutputSpec)</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/LabelSeparationModule.html" title="class in uniol.apt.analysis.factorization">LabelSeparationModule</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fairness/FairnessModule.html#provide-uniol.apt.module.ModuleOutputSpec-">provide(ModuleOutputSpec)</a></span> - Method in class uniol.apt.analysis.fairness.<a href="uniol/apt/analysis/fairness/FairnessModule.html" title="class in uniol.apt.analysis.fairness">FairnessModule</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/FCModule.html#provide-uniol.apt.module.ModuleOutputSpec-">provide(ModuleOutputSpec)</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/FCModule.html" title="class in uniol.apt.analysis.fc">FCModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/WFCModule.html#provide-uniol.apt.module.ModuleOutputSpec-">provide(ModuleOutputSpec)</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/WFCModule.html" title="class in uniol.apt.analysis.fc">WFCModule</a></dt>
@@ -11048,6 +11112,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/LabelSeparationModule.html#require-uniol.apt.module.ModuleInputSpec-">require(ModuleInputSpec)</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/LabelSeparationModule.html" title="class in uniol.apt.analysis.factorization">LabelSeparationModule</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fairness/FairnessModule.html#require-uniol.apt.module.ModuleInputSpec-">require(ModuleInputSpec)</a></span> - Method in class uniol.apt.analysis.fairness.<a href="uniol/apt/analysis/fairness/FairnessModule.html" title="class in uniol.apt.analysis.fairness">FairnessModule</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/FCModule.html#require-uniol.apt.module.ModuleInputSpec-">require(ModuleInputSpec)</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/FCModule.html" title="class in uniol.apt.analysis.fc">FCModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/WFCModule.html#require-uniol.apt.module.ModuleInputSpec-">require(ModuleInputSpec)</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/WFCModule.html" title="class in uniol.apt.analysis.fc">WFCModule</a></dt>
@@ -11508,6 +11574,8 @@
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/factorization/LabelSeparationModule.html#run-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">run(ModuleInput, ModuleOutput)</a></span> - Method in class uniol.apt.analysis.factorization.<a href="uniol/apt/analysis/factorization/LabelSeparationModule.html" title="class in uniol.apt.analysis.factorization">LabelSeparationModule</a></dt>
 <dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fairness/FairnessModule.html#run-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">run(ModuleInput, ModuleOutput)</a></span> - Method in class uniol.apt.analysis.fairness.<a href="uniol/apt/analysis/fairness/FairnessModule.html" title="class in uniol.apt.analysis.fairness">FairnessModule</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/FCModule.html#run-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">run(ModuleInput, ModuleOutput)</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/FCModule.html" title="class in uniol.apt.analysis.fc">FCModule</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/fc/WFCModule.html#run-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">run(ModuleInput, ModuleOutput)</a></span> - Method in class uniol.apt.analysis.fc.<a href="uniol/apt/analysis/fc/WFCModule.html" title="class in uniol.apt.analysis.fc">WFCModule</a></dt>
@@ -11731,6 +11799,8 @@
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/bcf/BCF.Result.html#sequence">sequence</a></span> - Variable in class uniol.apt.analysis.bcf.<a href="uniol/apt/analysis/bcf/BCF.Result.html" title="class in uniol.apt.analysis.bcf">BCF.Result</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/analysis/bounded/BoundedResult.html#sequence">sequence</a></span> - Variable in class uniol.apt.analysis.bounded.<a href="uniol/apt/analysis/bounded/BoundedResult.html" title="class in uniol.apt.analysis.bounded">BoundedResult</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fairness/FairnessResult.html#sequence">sequence</a></span> - Variable in class uniol.apt.analysis.fairness.<a href="uniol/apt/analysis/fairness/FairnessResult.html" title="class in uniol.apt.analysis.fairness">FairnessResult</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/adt/exception/ArcExistsException.html#serialVersionUID">serialVersionUID</a></span> - Static variable in exception uniol.apt.adt.exception.<a href="uniol/apt/adt/exception/ArcExistsException.html" title="class in uniol.apt.adt.exception">ArcExistsException</a></dt>
 <dd>&nbsp;</dd>
@@ -13540,6 +13610,8 @@
 <dd>
 <div class="block">Create a new ParikhVector where the given event occurs n times less often.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fairness/FairnessResult.html#ts">ts</a></span> - Variable in class uniol.apt.analysis.fairness.<a href="uniol/apt/analysis/fairness/FairnessResult.html" title="class in uniol.apt.analysis.fairness">FairnessResult</a></dt>
+<dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/AptLTSFormatParser.html#ts--">ts()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/AptLTSFormatParser.html" title="class in uniol.apt.io.parser.impl">AptLTSFormatParser</a></dt>
 <dd>&nbsp;</dd>
 <dt><span class="memberNameLink"><a href="uniol/apt/io/parser/impl/PetrifyLTSFormatParser.html#ts--">ts()</a></span> - Method in class uniol.apt.io.parser.impl.<a href="uniol/apt/io/parser/impl/PetrifyLTSFormatParser.html" title="class in uniol.apt.io.parser.impl">PetrifyLTSFormatParser</a></dt>
@@ -13631,6 +13703,10 @@
 <dd>
 <div class="block">Undoes a modification.</div>
 </dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fairness/FairnessResult.html#unfairEvent">unfairEvent</a></span> - Variable in class uniol.apt.analysis.fairness.<a href="uniol/apt/analysis/fairness/FairnessResult.html" title="class in uniol.apt.analysis.fairness">FairnessResult</a></dt>
+<dd>&nbsp;</dd>
+<dt><span class="memberNameLink"><a href="uniol/apt/analysis/fairness/FairnessResult.html#unfairState">unfairState</a></span> - Variable in class uniol.apt.analysis.fairness.<a href="uniol/apt/analysis/fairness/FairnessResult.html" title="class in uniol.apt.analysis.fairness">FairnessResult</a></dt>
+<dd>&nbsp;</dd>
 <dt><a href="uniol/apt/package-summary.html">uniol.apt</a> - package uniol.apt</dt>
 <dd>&nbsp;</dd>
 <dt><a href="uniol/apt/adt/package-summary.html">uniol.apt.adt</a> - package uniol.apt.adt</dt>
@@ -13684,6 +13760,8 @@
 <dt><a href="uniol/apt/analysis/exception/package-summary.html">uniol.apt.analysis.exception</a> - package uniol.apt.analysis.exception</dt>
 <dd>&nbsp;</dd>
 <dt><a href="uniol/apt/analysis/factorization/package-summary.html">uniol.apt.analysis.factorization</a> - package uniol.apt.analysis.factorization</dt>
+<dd>&nbsp;</dd>
+<dt><a href="uniol/apt/analysis/fairness/package-summary.html">uniol.apt.analysis.fairness</a> - package uniol.apt.analysis.fairness</dt>
 <dd>&nbsp;</dd>
 <dt><a href="uniol/apt/analysis/fc/package-summary.html">uniol.apt.analysis.fc</a> - package uniol.apt.analysis.fc</dt>
 <dd>&nbsp;</dd>

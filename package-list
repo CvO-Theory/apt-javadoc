@@ -22,6 +22,7 @@ uniol.apt.analysis.cycles.lts
 uniol.apt.analysis.deterministic
 uniol.apt.analysis.exception
 uniol.apt.analysis.factorization
+uniol.apt.analysis.fairness
 uniol.apt.analysis.fc
 uniol.apt.analysis.fcnet
 uniol.apt.analysis.homogeneous

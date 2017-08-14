@@ -88,6 +88,10 @@
 <div class="block">Representation of labeled transition systems.</div>
 </td>
 </tr>
+<tr class="rowColor">
+<td class="colFirst"><a href="#uniol.apt.analysis.fairness">uniol.apt.analysis.fairness</a></td>
+<td class="colLast">&nbsp;</td>
+</tr>
 </tbody>
 </table>
 </li>
@@ -143,6 +147,55 @@
 <tr class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><span class="typeNameLabel">Event.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/adt/ts/Event.html#compareTo-uniol.apt.adt.ts.Event-">compareTo</a></span>(<a href="../../../../../uniol/apt/adt/ts/Event.html" title="class in uniol.apt.adt.ts">Event</a>&nbsp;other)</code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li class="blockList"><a name="uniol.apt.analysis.fairness">
+<!--   -->
+</a>
+<h3>Uses of <a href="../../../../../uniol/apt/adt/ts/Event.html" title="class in uniol.apt.adt.ts">Event</a> in <a href="../../../../../uniol/apt/analysis/fairness/package-summary.html">uniol.apt.analysis.fairness</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing fields, and an explanation">
+<caption><span>Fields in <a href="../../../../../uniol/apt/analysis/fairness/package-summary.html">uniol.apt.analysis.fairness</a> declared as <a href="../../../../../uniol/apt/adt/ts/Event.html" title="class in uniol.apt.adt.ts">Event</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Field and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../uniol/apt/adt/ts/Event.html" title="class in uniol.apt.adt.ts">Event</a></code></td>
+<td class="colLast"><span class="typeNameLabel">FairnessResult.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/fairness/FairnessResult.html#unfairEvent">unfairEvent</a></span></code>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
+<caption><span>Methods in <a href="../../../../../uniol/apt/analysis/fairness/package-summary.html">uniol.apt.analysis.fairness</a> with parameters of type <a href="../../../../../uniol/apt/adt/ts/Event.html" title="class in uniol.apt.adt.ts">Event</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Method and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code><a href="../../../../../uniol/apt/analysis/fairness/FairnessResult.html" title="class in uniol.apt.analysis.fairness">FairnessResult</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Fairness.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/fairness/Fairness.html#checkEvent-uniol.apt.adt.ts.Event-int-">checkEvent</a></span>(<a href="../../../../../uniol/apt/adt/ts/Event.html" title="class in uniol.apt.adt.ts">Event</a>&nbsp;e,
+          int&nbsp;k)</code>
+<div class="block">Check if a given event is k-unfair</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>static <a href="../../../../../uniol/apt/analysis/fairness/FairnessResult.html" title="class in uniol.apt.analysis.fairness">FairnessResult</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Fairness.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/fairness/Fairness.html#checkFairness-uniol.apt.adt.ts.TransitionSystem-uniol.apt.adt.ts.Event-">checkFairness</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
+             <a href="../../../../../uniol/apt/adt/ts/Event.html" title="class in uniol.apt.adt.ts">Event</a>&nbsp;e)</code>
+<div class="block">Check if a transition system is fair regarding a specific event</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colFirst"><code>static <a href="../../../../../uniol/apt/analysis/fairness/FairnessResult.html" title="class in uniol.apt.analysis.fairness">FairnessResult</a></code></td>
+<td class="colLast"><span class="typeNameLabel">Fairness.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/fairness/Fairness.html#checkFairness-uniol.apt.adt.ts.TransitionSystem-int-uniol.apt.adt.ts.Event-">checkFairness</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
+             int&nbsp;k,
+             <a href="../../../../../uniol/apt/adt/ts/Event.html" title="class in uniol.apt.adt.ts">Event</a>&nbsp;e)</code>
+<div class="block">Check if a transition system is k-fair regarding a specific event</div>
+</td>
 </tr>
 </tbody>
 </table>

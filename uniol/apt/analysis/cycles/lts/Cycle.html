@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -119,7 +119,7 @@ extends <a href="../../../../../uniol/apt/analysis/cycles/lts/CyclePV.html" titl
 <div class="block">Representation of a cycle as a list of nodes and the Parikh vector of the edges.</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
-<dd>Uli Schlachter</dd>
+<dd>Uli Schlachter, vsp</dd>
 </dl>
 </li>
 </ul>
@@ -139,8 +139,8 @@ extends <a href="../../../../../uniol/apt/analysis/cycles/lts/CyclePV.html" titl
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/Cycle.html#Cycle-java.util.List-uniol.apt.adt.ts.ParikhVector-">Cycle</a></span>(java.util.List&lt;<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;&nbsp;nodes,
-     <a href="../../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&nbsp;pv)</code>
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/Cycle.html#Cycle-java.util.List-java.util.List-">Cycle</a></span>(java.util.List&lt;<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;&nbsp;nodes,
+     java.util.List&lt;<a href="../../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&gt;&nbsp;arcs)</code>
 <div class="block">Construct a new instance of this class from the given data.</div>
 </td>
 </tr>
@@ -164,22 +164,28 @@ extends <a href="../../../../../uniol/apt/analysis/cycles/lts/CyclePV.html" titl
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/Cycle.html#equals-java.lang.Object-">equals</a></span>(java.lang.Object&nbsp;o)</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>java.util.List&lt;<a href="../../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/Cycle.html#getArcs--">getArcs</a></span>()</code>
+<div class="block">Get the arcs which build this cycle.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>java.util.List&lt;java.lang.String&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/Cycle.html#getNodeIDs--">getNodeIDs</a></span>()</code>
 <div class="block">Get the identifier of nodes on this cycle.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.util.List&lt;<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/Cycle.html#getNodes--">getNodes</a></span>()</code>
 <div class="block">Get the nodes that this cycle contains.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/Cycle.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/cycles/lts/Cycle.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -212,19 +218,19 @@ extends <a href="../../../../../uniol/apt/analysis/cycles/lts/CyclePV.html" titl
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="Cycle-java.util.List-uniol.apt.adt.ts.ParikhVector-">
+<a name="Cycle-java.util.List-java.util.List-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>Cycle</h4>
 <pre>public&nbsp;Cycle(java.util.List&lt;<a href="../../../../../uniol/apt/adt/ts/State.html" title="class in uniol.apt.adt.ts">State</a>&gt;&nbsp;nodes,
-             <a href="../../../../../uniol/apt/adt/ts/ParikhVector.html" title="class in uniol.apt.adt.ts">ParikhVector</a>&nbsp;pv)</pre>
+             java.util.List&lt;<a href="../../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&gt;&nbsp;arcs)</pre>
 <div class="block">Construct a new instance of this class from the given data.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>nodes</code> - The nodes that are on the cycle.</dd>
-<dd><code>pv</code> - The Parikh vector of the cycle.</dd>
+<dd><code>arcs</code> - The arcs of the cycle.</dd>
 </dl>
 </li>
 </ul>
@@ -236,6 +242,20 @@ extends <a href="../../../../../uniol/apt/analysis/cycles/lts/CyclePV.html" titl
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getArcs--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getArcs</h4>
+<pre>public&nbsp;java.util.List&lt;<a href="../../../../../uniol/apt/adt/ts/Arc.html" title="class in uniol.apt.adt.ts">Arc</a>&gt;&nbsp;getArcs()</pre>
+<div class="block">Get the arcs which build this cycle.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The arcs which build this cycle.</dd>
+</dl>
+</li>
+</ul>
 <a name="getNodes--">
 <!--   -->
 </a>
