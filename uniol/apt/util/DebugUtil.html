@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9};
+var methods = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -215,11 +215,47 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/util/DebugUtil.html#debug-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-">debug</a></span>(java.lang.Object&nbsp;obj1,
+     java.lang.Object&nbsp;obj2,
+     java.lang.Object&nbsp;obj3,
+     java.lang.Object&nbsp;obj4,
+     java.lang.Object&nbsp;obj5,
+     java.lang.Object&nbsp;obj6)</code>
+<div class="block">Generate a debug message.</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/util/DebugUtil.html#debug-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-">debug</a></span>(java.lang.Object&nbsp;obj1,
+     java.lang.Object&nbsp;obj2,
+     java.lang.Object&nbsp;obj3,
+     java.lang.Object&nbsp;obj4,
+     java.lang.Object&nbsp;obj5,
+     java.lang.Object&nbsp;obj6,
+     java.lang.Object&nbsp;obj7)</code>
+<div class="block">Generate a debug message.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>static void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/util/DebugUtil.html#debug-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-">debug</a></span>(java.lang.Object&nbsp;obj1,
+     java.lang.Object&nbsp;obj2,
+     java.lang.Object&nbsp;obj3,
+     java.lang.Object&nbsp;obj4,
+     java.lang.Object&nbsp;obj5,
+     java.lang.Object&nbsp;obj6,
+     java.lang.Object&nbsp;obj7,
+     java.lang.Object&nbsp;obj8)</code>
+<div class="block">Generate a debug message.</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/util/DebugUtil.html#debug-java.lang.String-">debug</a></span>(java.lang.String&nbsp;message)</code>
 <div class="block">Generate a debug message if debugging output is enabled.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/util/DebugUtil.html#debugFormat-java.lang.String-java.lang.Object...-">debugFormat</a></span>(java.lang.String&nbsp;format,
            java.lang.Object...&nbsp;args)</code>
@@ -425,6 +461,102 @@ extends java.lang.Object</pre>
 <dd><code>obj3</code> - The third object to print</dd>
 <dd><code>obj4</code> - The fourth object to print</dd>
 <dd><code>obj5</code> - The fifth object to print</dd>
+</dl>
+</li>
+</ul>
+<a name="debug-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>debug</h4>
+<pre>public static&nbsp;void&nbsp;debug(java.lang.Object&nbsp;obj1,
+                         java.lang.Object&nbsp;obj2,
+                         java.lang.Object&nbsp;obj3,
+                         java.lang.Object&nbsp;obj4,
+                         java.lang.Object&nbsp;obj5,
+                         java.lang.Object&nbsp;obj6)</pre>
+<div class="block">Generate a debug message. This is equivalent to:
+ <pre>
+ <code>
+ debug(Objects.toString(obj1) + Objects.toString(obj2) + Objects.toString(obj3)
+     + Objects.toString(obj4) + Objects.toString(obj5) + Objects.toString(obj6));
+ </code>
+ </pre></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>obj1</code> - The first object to print</dd>
+<dd><code>obj2</code> - The second object to print</dd>
+<dd><code>obj3</code> - The third object to print</dd>
+<dd><code>obj4</code> - The fourth object to print</dd>
+<dd><code>obj5</code> - The fifth object to print</dd>
+<dd><code>obj6</code> - The sixth object to print</dd>
+</dl>
+</li>
+</ul>
+<a name="debug-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>debug</h4>
+<pre>public static&nbsp;void&nbsp;debug(java.lang.Object&nbsp;obj1,
+                         java.lang.Object&nbsp;obj2,
+                         java.lang.Object&nbsp;obj3,
+                         java.lang.Object&nbsp;obj4,
+                         java.lang.Object&nbsp;obj5,
+                         java.lang.Object&nbsp;obj6,
+                         java.lang.Object&nbsp;obj7)</pre>
+<div class="block">Generate a debug message. This is equivalent to:
+ <pre>
+ <code>
+ debug(Objects.toString(obj1) + Objects.toString(obj2) + Objects.toString(obj3)
+     + Objects.toString(obj4) + Objects.toString(obj5) + Objects.toString(obj6) + Objects.toString(obj7));
+ </code>
+ </pre></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>obj1</code> - The first object to print</dd>
+<dd><code>obj2</code> - The second object to print</dd>
+<dd><code>obj3</code> - The third object to print</dd>
+<dd><code>obj4</code> - The fourth object to print</dd>
+<dd><code>obj5</code> - The fifth object to print</dd>
+<dd><code>obj6</code> - The sixth object to print</dd>
+<dd><code>obj7</code> - The seventh object to print</dd>
+</dl>
+</li>
+</ul>
+<a name="debug-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-java.lang.Object-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>debug</h4>
+<pre>public static&nbsp;void&nbsp;debug(java.lang.Object&nbsp;obj1,
+                         java.lang.Object&nbsp;obj2,
+                         java.lang.Object&nbsp;obj3,
+                         java.lang.Object&nbsp;obj4,
+                         java.lang.Object&nbsp;obj5,
+                         java.lang.Object&nbsp;obj6,
+                         java.lang.Object&nbsp;obj7,
+                         java.lang.Object&nbsp;obj8)</pre>
+<div class="block">Generate a debug message. This is equivalent to:
+ <pre>
+ <code>
+ debug(Objects.toString(obj1) + Objects.toString(obj2) + Objects.toString(obj3) + Objects.toString(obj4)
+     + Objects.toString(obj5) + Objects.toString(obj6) + Objects.toString(obj7) + Objects.toString(obj8));
+ </code>
+ </pre></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>obj1</code> - The first object to print</dd>
+<dd><code>obj2</code> - The second object to print</dd>
+<dd><code>obj3</code> - The third object to print</dd>
+<dd><code>obj4</code> - The fourth object to print</dd>
+<dd><code>obj5</code> - The fifth object to print</dd>
+<dd><code>obj6</code> - The sixth object to print</dd>
+<dd><code>obj7</code> - The seventh object to print</dd>
+<dd><code>obj8</code> - The eight object to print</dd>
 </dl>
 </li>
 </ul>
