@@ -18,12 +18,6 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
-var altColor = "altColor";
-var rowColor = "rowColor";
-var tableTab = "tableTab";
-var activeTableTab = "activeTableTab";
 </script>
 <noscript>
 <div>JavaScript is disabled on your browser.</div>
@@ -77,13 +71,13 @@ var activeTableTab = "activeTableTab";
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#method.summary">Method</a></li>
+<li>Method</li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">Method</a></li>
+<li>Method</li>
 </ul>
 </div>
 <a name="skip.navbar.top">
@@ -111,7 +105,8 @@ var activeTableTab = "activeTableTab";
 <br>
 <pre>public interface <span class="typeNameLabel">InterruptibleModule</span>
 extends <a href="../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a></pre>
-<div class="block">Interface for modules that are interruptible.</div>
+<div class="block">Marker interface for modules that are interruptible. Interruptible modules must regularly call
+ <a href="../../../uniol/apt/util/interrupt/InterrupterRegistry.html#throwIfInterruptRequestedForCurrentThread--"><code>InterrupterRegistry.throwIfInterruptRequestedForCurrentThread()</code></a>.</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
 <dd>Jonas Prellberg</dd>
@@ -128,84 +123,12 @@ extends <a href="../../../uniol/apt/module/Module.html" title="interface in unio
 <!--   -->
 </a>
 <h3>Method Summary</h3>
-<table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
-<tr>
-<th class="colFirst" scope="col">Modifier and Type</th>
-<th class="colLast" scope="col">Method and Description</th>
-</tr>
-<tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../uniol/apt/module/InterruptibleModule.html#run-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-uniol.apt.util.interrupt.Interrupter-">run</a></span>(<a href="../../../uniol/apt/module/ModuleInput.html" title="interface in uniol.apt.module">ModuleInput</a>&nbsp;input,
-   <a href="../../../uniol/apt/module/ModuleOutput.html" title="interface in uniol.apt.module">ModuleOutput</a>&nbsp;output,
-   <a href="../../../uniol/apt/util/interrupt/Interrupter.html" title="interface in uniol.apt.util.interrupt">Interrupter</a>&nbsp;interrupter)</code>
-<div class="block">Perform some computation in an interruptible manner on the values
- stored in the <a href="../../../uniol/apt/module/ModuleInput.html" title="interface in uniol.apt.module"><code>ModuleInput</code></a> object and store the results in the
- <a href="../../../uniol/apt/module/ModuleOutput.html" title="interface in uniol.apt.module"><code>ModuleOutput</code></a> object.</div>
-</td>
-</tr>
-</table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.uniol.apt.module.Module">
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;uniol.apt.module.<a href="../../../uniol/apt/module/Module.html" title="interface in uniol.apt.module">Module</a></h3>
 <code><a href="../../../uniol/apt/module/Module.html#getCategories--">getCategories</a>, <a href="../../../uniol/apt/module/Module.html#getLongDescription--">getLongDescription</a>, <a href="../../../uniol/apt/module/Module.html#getName--">getName</a>, <a href="../../../uniol/apt/module/Module.html#getShortDescription--">getShortDescription</a>, <a href="../../../uniol/apt/module/Module.html#getTitle--">getTitle</a>, <a href="../../../uniol/apt/module/Module.html#provide-uniol.apt.module.ModuleOutputSpec-">provide</a>, <a href="../../../uniol/apt/module/Module.html#require-uniol.apt.module.ModuleInputSpec-">require</a>, <a href="../../../uniol/apt/module/Module.html#run-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-">run</a></code></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="details">
-<ul class="blockList">
-<li class="blockList">
-<!-- ============ METHOD DETAIL ========== -->
-<ul class="blockList">
-<li class="blockList"><a name="method.detail">
-<!--   -->
-</a>
-<h3>Method Detail</h3>
-<a name="run-uniol.apt.module.ModuleInput-uniol.apt.module.ModuleOutput-uniol.apt.util.interrupt.Interrupter-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>run</h4>
-<pre>void&nbsp;run(<a href="../../../uniol/apt/module/ModuleInput.html" title="interface in uniol.apt.module">ModuleInput</a>&nbsp;input,
-         <a href="../../../uniol/apt/module/ModuleOutput.html" title="interface in uniol.apt.module">ModuleOutput</a>&nbsp;output,
-         <a href="../../../uniol/apt/util/interrupt/Interrupter.html" title="interface in uniol.apt.util.interrupt">Interrupter</a>&nbsp;interrupter)
-  throws <a href="../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a>,
-         <a href="../../../uniol/apt/util/interrupt/UncheckedInterruptedException.html" title="class in uniol.apt.util.interrupt">UncheckedInterruptedException</a></pre>
-<div class="block">Perform some computation in an interruptible manner on the values
- stored in the <a href="../../../uniol/apt/module/ModuleInput.html" title="interface in uniol.apt.module"><code>ModuleInput</code></a> object and store the results in the
- <a href="../../../uniol/apt/module/ModuleOutput.html" title="interface in uniol.apt.module"><code>ModuleOutput</code></a> object.
-
- To retrieve values from <a href="../../../uniol/apt/module/ModuleInput.html" title="interface in uniol.apt.module"><code>ModuleInput</code></a> object the
- <a href="../../../uniol/apt/module/ModuleInput.html#getParameter-java.lang.String-java.lang.Class-"><code>ModuleInput.getParameter(String, Class)</code></a> method can be used.
-
- To store values in the <a href="../../../uniol/apt/module/ModuleOutput.html" title="interface in uniol.apt.module"><code>ModuleOutput</code></a> object the
- <a href="../../../uniol/apt/module/ModuleOutput.html#setReturnValue-java.lang.String-java.lang.Class-T-"><code>ModuleOutput.setReturnValue(String, Class, Object)</code></a> method can
- be used.
-
- The possible values in both the <a href="../../../uniol/apt/module/ModuleInput.html" title="interface in uniol.apt.module"><code>ModuleInput</code></a> and
- <a href="../../../uniol/apt/module/ModuleOutput.html" title="interface in uniol.apt.module"><code>ModuleOutput</code></a> object are determined entirely by the
- specifications in the <a href="../../../uniol/apt/module/Module.html#require-uniol.apt.module.ModuleInputSpec-"><code>Module.require(ModuleInputSpec)</code></a> and
- <a href="../../../uniol/apt/module/Module.html#provide-uniol.apt.module.ModuleOutputSpec-"><code>Module.provide(ModuleOutputSpec)</code></a> method respectively.</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>input</code> - storage of the inputs</dd>
-<dd><code>output</code> - storage of the outputs</dd>
-<dd><code>interrupter</code> - callback that will be periodically checked and decides
-                if the module should prematurely abort with an
-                InterruptedException</dd>
-<dt><span class="throwsLabel">Throws:</span></dt>
-<dd><code><a href="../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></code> - On various kinds of errors that prevent the module
-                 from working.</dd>
-<dd><code><a href="../../../uniol/apt/util/interrupt/UncheckedInterruptedException.html" title="class in uniol.apt.util.interrupt">UncheckedInterruptedException</a></code> - thrown when the module is interrupted before
-                 completion</dd>
-</dl>
-</li>
 </ul>
 </li>
 </ul>
@@ -263,13 +186,13 @@ extends <a href="../../../uniol/apt/module/Module.html" title="interface in unio
 <li>Nested&nbsp;|&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#method.summary">Method</a></li>
+<li>Method</li>
 </ul>
 <ul class="subNavList">
 <li>Detail:&nbsp;</li>
 <li>Field&nbsp;|&nbsp;</li>
 <li>Constr&nbsp;|&nbsp;</li>
-<li><a href="#method.detail">Method</a></li>
+<li>Method</li>
 </ul>
 </div>
 <a name="skip.navbar.bottom">
