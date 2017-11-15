@@ -139,10 +139,11 @@ implements <a href="../../../../../uniol/apt/analysis/synthesize/separation/Synt
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
-<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/separation/SeparationSynthesizer.html#SeparationSynthesizer-uniol.apt.adt.ts.TransitionSystem-uniol.apt.analysis.synthesize.separation.Separation-boolean-boolean-">SeparationSynthesizer</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/analysis/synthesize/separation/SeparationSynthesizer.html#SeparationSynthesizer-uniol.apt.adt.ts.TransitionSystem-uniol.apt.analysis.synthesize.separation.Separation-boolean-boolean-java.util.Collection-">SeparationSynthesizer</a></span>(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
                      <a href="../../../../../uniol/apt/analysis/synthesize/separation/Separation.html" title="interface in uniol.apt.analysis.synthesize.separation">Separation</a>&nbsp;separation,
                      boolean&nbsp;onlyEventSeparation,
-                     boolean&nbsp;quickFail)</code>
+                     boolean&nbsp;quickFail,
+                     java.util.Collection&lt;<a href="../../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a>&gt;&nbsp;knownRegions)</code>
 <div class="block">Synthesize the given transition system via the given separation implementation.</div>
 </td>
 </tr>
@@ -201,7 +202,7 @@ implements <a href="../../../../../uniol/apt/analysis/synthesize/separation/Synt
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="SeparationSynthesizer-uniol.apt.adt.ts.TransitionSystem-uniol.apt.analysis.synthesize.separation.Separation-boolean-boolean-">
+<a name="SeparationSynthesizer-uniol.apt.adt.ts.TransitionSystem-uniol.apt.analysis.synthesize.separation.Separation-boolean-boolean-java.util.Collection-">
 <!--   -->
 </a>
 <ul class="blockListLast">
@@ -210,7 +211,8 @@ implements <a href="../../../../../uniol/apt/analysis/synthesize/separation/Synt
 <pre>public&nbsp;SeparationSynthesizer(<a href="../../../../../uniol/apt/adt/ts/TransitionSystem.html" title="class in uniol.apt.adt.ts">TransitionSystem</a>&nbsp;ts,
                              <a href="../../../../../uniol/apt/analysis/synthesize/separation/Separation.html" title="interface in uniol.apt.analysis.synthesize.separation">Separation</a>&nbsp;separation,
                              boolean&nbsp;onlyEventSeparation,
-                             boolean&nbsp;quickFail)</pre>
+                             boolean&nbsp;quickFail,
+                             java.util.Collection&lt;<a href="../../../../../uniol/apt/analysis/synthesize/Region.html" title="class in uniol.apt.analysis.synthesize">Region</a>&gt;&nbsp;knownRegions)</pre>
 <div class="block">Synthesize the given transition system via the given separation implementation.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
