@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -188,26 +188,34 @@ extends org.antlr.v4.runtime.ParserRuleContext</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/AptPNFormatParser.OptionContext.html#enterRule-org.antlr.v4.runtime.tree.ParseTreeListener-">enterRule</a></span>(org.antlr.v4.runtime.tree.ParseTreeListener&nbsp;listener)</code>&nbsp;</td>
+<td class="colFirst"><code>org.antlr.v4.runtime.tree.TerminalNode</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/AptPNFormatParser.OptionContext.html#DOUBLE--">DOUBLE</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/AptPNFormatParser.OptionContext.html#exitRule-org.antlr.v4.runtime.tree.ParseTreeListener-">exitRule</a></span>(org.antlr.v4.runtime.tree.ParseTreeListener&nbsp;listener)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/AptPNFormatParser.OptionContext.html#enterRule-org.antlr.v4.runtime.tree.ParseTreeListener-">enterRule</a></span>(org.antlr.v4.runtime.tree.ParseTreeListener&nbsp;listener)</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/AptPNFormatParser.OptionContext.html#exitRule-org.antlr.v4.runtime.tree.ParseTreeListener-">exitRule</a></span>(org.antlr.v4.runtime.tree.ParseTreeListener&nbsp;listener)</code>&nbsp;</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/AptPNFormatParser.OptionContext.html#getRuleIndex--">getRuleIndex</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>org.antlr.v4.runtime.tree.TerminalNode</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/AptPNFormatParser.OptionContext.html#ID--">ID</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
-<td class="colFirst"><code>org.antlr.v4.runtime.tree.TerminalNode</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/AptPNFormatParser.OptionContext.html#INT--">INT</a></span>()</code>&nbsp;</td>
-</tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>org.antlr.v4.runtime.tree.TerminalNode</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/AptPNFormatParser.OptionContext.html#NAT--">NAT</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>org.antlr.v4.runtime.tree.TerminalNode</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/AptPNFormatParser.OptionContext.html#NEGNAT--">NEGNAT</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>org.antlr.v4.runtime.tree.TerminalNode</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/io/parser/impl/AptPNFormatParser.OptionContext.html#STR--">STR</a></span>()</code>&nbsp;</td>
 </tr>
@@ -283,13 +291,31 @@ extends org.antlr.v4.runtime.ParserRuleContext</pre>
 <pre>public&nbsp;org.antlr.v4.runtime.tree.TerminalNode&nbsp;STR()</pre>
 </li>
 </ul>
-<a name="INT--">
+<a name="NAT--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
-<h4>INT</h4>
-<pre>public&nbsp;org.antlr.v4.runtime.tree.TerminalNode&nbsp;INT()</pre>
+<h4>NAT</h4>
+<pre>public&nbsp;org.antlr.v4.runtime.tree.TerminalNode&nbsp;NAT()</pre>
+</li>
+</ul>
+<a name="NEGNAT--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>NEGNAT</h4>
+<pre>public&nbsp;org.antlr.v4.runtime.tree.TerminalNode&nbsp;NEGNAT()</pre>
+</li>
+</ul>
+<a name="DOUBLE--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>DOUBLE</h4>
+<pre>public&nbsp;org.antlr.v4.runtime.tree.TerminalNode&nbsp;DOUBLE()</pre>
 </li>
 </ul>
 <a name="getRuleIndex--">
