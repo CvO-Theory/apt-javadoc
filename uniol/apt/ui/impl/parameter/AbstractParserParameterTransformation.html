@@ -100,7 +100,12 @@ var activeTableTab = "activeTableTab";
 <li>java.lang.Object</li>
 <li>
 <ul class="inheritance">
+<li><a href="../../../../../uniol/apt/ui/StreamParameterTransformation.html" title="class in uniol.apt.ui">uniol.apt.ui.StreamParameterTransformation</a>&lt;G&gt;</li>
+<li>
+<ul class="inheritance">
 <li>uniol.apt.ui.impl.parameter.AbstractParserParameterTransformation&lt;G&gt;</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -122,8 +127,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public abstract class <span class="typeNameLabel">AbstractParserParameterTransformation&lt;G&gt;</span>
-extends java.lang.Object
-implements <a href="../../../../../uniol/apt/ui/ParameterTransformation.html" title="interface in uniol.apt.ui">ParameterTransformation</a>&lt;G&gt;</pre>
+extends <a href="../../../../../uniol/apt/ui/StreamParameterTransformation.html" title="class in uniol.apt.ui">StreamParameterTransformation</a>&lt;G&gt;</pre>
 <div class="block">Abstract transformation that uses a parser to interpret a given string.</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
@@ -167,11 +171,18 @@ implements <a href="../../../../../uniol/apt/ui/ParameterTransformation.html" ti
 </tr>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code><a href="../../../../../uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html" title="type parameter in AbstractParserParameterTransformation">G</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html#transform-java.lang.String-">transform</a></span>(java.lang.String&nbsp;input)</code>
-<div class="block">Transforms the given string-typed parameter into some target type T.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html#transform-java.io.InputStream-">transform</a></span>(java.io.InputStream&nbsp;input)</code>
+<div class="block">Transforms the data from the given stream into some target type T.</div>
 </td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.uniol.apt.ui.StreamParameterTransformation">
+<!--   -->
+</a>
+<h3>Methods inherited from class&nbsp;uniol.apt.ui.<a href="../../../../../uniol/apt/ui/StreamParameterTransformation.html" title="class in uniol.apt.ui">StreamParameterTransformation</a></h3>
+<code><a href="../../../../../uniol/apt/ui/StreamParameterTransformation.html#transform-java.lang.String-">transform</a></code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
 <!--   -->
@@ -211,25 +222,29 @@ implements <a href="../../../../../uniol/apt/ui/ParameterTransformation.html" ti
 <!--   -->
 </a>
 <h3>Method Detail</h3>
-<a name="transform-java.lang.String-">
+<a name="transform-java.io.InputStream-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>transform</h4>
-<pre>public&nbsp;<a href="../../../../../uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html" title="type parameter in AbstractParserParameterTransformation">G</a>&nbsp;transform(java.lang.String&nbsp;input)
-            throws <a href="../../../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></pre>
-<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../../uniol/apt/ui/ParameterTransformation.html#transform-java.lang.String-">ParameterTransformation</a></code></span></div>
-<div class="block">Transforms the given string-typed parameter into some target type T.</div>
+<pre>public&nbsp;<a href="../../../../../uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html" title="type parameter in AbstractParserParameterTransformation">G</a>&nbsp;transform(java.io.InputStream&nbsp;input)
+            throws <a href="../../../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a>,
+                   java.io.IOException</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../../../uniol/apt/ui/StreamParameterTransformation.html#transform-java.io.InputStream-">StreamParameterTransformation</a></code></span></div>
+<div class="block">Transforms the data from the given stream into some target type T.
+ This method should be equivalent to calling reading the stream into a string assuming UTF-8 encoding and
+ calling <a href="../../../../../uniol/apt/ui/ParameterTransformation.html#transform-java.lang.String-"><code>ParameterTransformation.transform(String)</code></a> on the result.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
-<dd><code><a href="../../../../../uniol/apt/ui/ParameterTransformation.html#transform-java.lang.String-">transform</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../../uniol/apt/ui/ParameterTransformation.html" title="interface in uniol.apt.ui">ParameterTransformation</a>&lt;<a href="../../../../../uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html" title="type parameter in AbstractParserParameterTransformation">G</a>&gt;</code></dd>
+<dd><code><a href="../../../../../uniol/apt/ui/StreamParameterTransformation.html#transform-java.io.InputStream-">transform</a></code>&nbsp;in class&nbsp;<code><a href="../../../../../uniol/apt/ui/StreamParameterTransformation.html" title="class in uniol.apt.ui">StreamParameterTransformation</a>&lt;<a href="../../../../../uniol/apt/ui/impl/parameter/AbstractParserParameterTransformation.html" title="type parameter in AbstractParserParameterTransformation">G</a>&gt;</code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>input</code> - parameter</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>parameter transformed into type T</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></code> - thrown when the transformation fails</dd>
+<dd><code>java.io.IOException</code> - thrown when reading from the stream fails</dd>
 </dl>
 </li>
 </ul>
