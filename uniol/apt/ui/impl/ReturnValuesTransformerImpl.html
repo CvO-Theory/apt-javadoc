@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -182,6 +182,16 @@ implements <a href="../../../../uniol/apt/ui/ReturnValuesTransformer.html" title
  writer.</div>
 </td>
 </tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>&lt;T&gt;&nbsp;void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/ReturnValuesTransformerImpl.html#transform-java.io.Writer-java.lang.Object-java.lang.Class-java.lang.String-">transform</a></span>(java.io.Writer&nbsp;output,
+         java.lang.Object&nbsp;arg,
+         java.lang.Class&lt;T&gt;&nbsp;klass,
+         java.lang.String&nbsp;extraOptions)</code>
+<div class="block">Transforms the given argument to a string and appends it to the given
+ writer.</div>
+</td>
+</tr>
 </table>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.java.lang.Object">
@@ -266,7 +276,7 @@ implements <a href="../../../../uniol/apt/ui/ReturnValuesTransformer.html" title
 <a name="transform-java.io.Writer-java.lang.Object-java.lang.Class-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>transform</h4>
 <pre>public&nbsp;&lt;T&gt;&nbsp;void&nbsp;transform(java.io.Writer&nbsp;output,
@@ -286,6 +296,37 @@ implements <a href="../../../../uniol/apt/ui/ReturnValuesTransformer.html" title
 <dd><code>output</code> - writer</dd>
 <dd><code>arg</code> - argument of class <code>klass</code></dd>
 <dd><code>klass</code> - type of given argument</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code><a href="../../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></code> - thrown when the transformation fails</dd>
+<dd><code>java.io.IOException</code> - thrown when the append to the writer fails</dd>
+</dl>
+</li>
+</ul>
+<a name="transform-java.io.Writer-java.lang.Object-java.lang.Class-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>transform</h4>
+<pre>public&nbsp;&lt;T&gt;&nbsp;void&nbsp;transform(java.io.Writer&nbsp;output,
+                          java.lang.Object&nbsp;arg,
+                          java.lang.Class&lt;T&gt;&nbsp;klass,
+                          java.lang.String&nbsp;extraOptions)
+                   throws <a href="../../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a>,
+                          java.io.IOException</pre>
+<div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../uniol/apt/ui/ReturnValuesTransformer.html#transform-java.io.Writer-java.lang.Object-java.lang.Class-java.lang.String-">ReturnValuesTransformer</a></code></span></div>
+<div class="block">Transforms the given argument to a string and appends it to the given
+ writer.</div>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../../uniol/apt/ui/ReturnValuesTransformer.html#transform-java.io.Writer-java.lang.Object-java.lang.Class-java.lang.String-">transform</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../uniol/apt/ui/ReturnValuesTransformer.html" title="interface in uniol.apt.ui">ReturnValuesTransformer</a></code></dd>
+<dt><span class="paramLabel">Type Parameters:</span></dt>
+<dd><code>T</code> - source type that will be transformed to a string</dd>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>output</code> - writer</dd>
+<dd><code>arg</code> - argument of class <code>klass</code></dd>
+<dd><code>klass</code> - type of given argument</dd>
+<dd><code>extraOptions</code> - extra options given to the transformation</dd>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code><a href="../../../../uniol/apt/module/exception/ModuleException.html" title="class in uniol.apt.module.exception">ModuleException</a></code> - thrown when the transformation fails</dd>
 <dd><code>java.io.IOException</code> - thrown when the append to the writer fails</dd>

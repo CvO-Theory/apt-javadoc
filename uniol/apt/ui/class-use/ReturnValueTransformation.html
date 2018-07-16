@@ -103,6 +103,21 @@
 <!--   -->
 </a>
 <h3>Uses of <a href="../../../../uniol/apt/ui/ReturnValueTransformation.html" title="interface in uniol.apt.ui">ReturnValueTransformation</a> in <a href="../../../../uniol/apt/ui/package-summary.html">uniol.apt.ui</a></h3>
+<table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing subinterfaces, and an explanation">
+<caption><span>Subinterfaces of <a href="../../../../uniol/apt/ui/ReturnValueTransformation.html" title="interface in uniol.apt.ui">ReturnValueTransformation</a> in <a href="../../../../uniol/apt/ui/package-summary.html">uniol.apt.ui</a></span><span class="tabEnd">&nbsp;</span></caption>
+<tr>
+<th class="colFirst" scope="col">Modifier and Type</th>
+<th class="colLast" scope="col">Interface and Description</th>
+</tr>
+<tbody>
+<tr class="altColor">
+<td class="colFirst"><code>interface&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/ReturnValueTransformationWithOptions.html" title="interface in uniol.apt.ui">ReturnValueTransformationWithOptions</a>&lt;T&gt;</span></code>
+<div class="block">A return value transformation that supports extra options</div>
+</td>
+</tr>
+</tbody>
+</table>
 <table class="useSummary" border="0" cellpadding="3" cellspacing="0" summary="Use table, listing methods, and an explanation">
 <caption><span>Methods in <a href="../../../../uniol/apt/ui/package-summary.html">uniol.apt.ui</a> that return <a href="../../../../uniol/apt/ui/ReturnValueTransformation.html" title="interface in uniol.apt.ui">ReturnValueTransformation</a></span><span class="tabEnd">&nbsp;</span></caption>
 <tr>
@@ -173,71 +188,77 @@
 <tbody>
 <tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/returns/AbstractRenderersReturnValueTransformation.html" title="class in uniol.apt.ui.impl.returns">AbstractRenderersReturnValueTransformation</a>&lt;T&gt;</span></code>
+<div class="block">Transform an object into a String by using a renderer.</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/returns/BooleanReturnValueTransformation.html" title="class in uniol.apt.ui.impl.returns">BooleanReturnValueTransformation</a></span></code>
 <div class="block">Transform true into "Yes" and false into "No".</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/returns/ComponentsReturnValueTransformation.html" title="class in uniol.apt.ui.impl.returns">ComponentsReturnValueTransformation</a></span></code>
 <div class="block">Transform all components of a graph into a string listing the IDs.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/returns/INodeCollectionReturnValueTransformation.html" title="class in uniol.apt.ui.impl.returns">INodeCollectionReturnValueTransformation</a>&lt;T extends java.util.Collection&lt;? extends <a href="../../../../uniol/apt/adt/INode.html" title="interface in uniol.apt.adt">INode</a>&lt;?,?,?&gt;&gt;&gt;</span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/returns/INodeReturnValueTransformation.html" title="class in uniol.apt.ui.impl.returns">INodeReturnValueTransformation</a>&lt;T extends <a href="../../../../uniol/apt/adt/INode.html" title="interface in uniol.apt.adt">INode</a>&lt;?,?,?&gt;&gt;</span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/returns/IsomorphismReturnValueTransformation.html" title="class in uniol.apt.ui.impl.returns">IsomorphismReturnValueTransformation</a></span></code>&nbsp;</td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/returns/MarkingReturnValueTransformation.html" title="class in uniol.apt.ui.impl.returns">MarkingReturnValueTransformation</a></span></code>
 <div class="block">Converts a Marking-Object into a more readable format.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/returns/NetReturnValueTransformation.html" title="class in uniol.apt.ui.impl.returns">NetReturnValueTransformation</a></span></code>
 <div class="block">Transforms a PetriNet into a String-description that uses the syntax of the
  .apt file format.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/returns/NonBisimilarPathReturnValueTransformation.html" title="class in uniol.apt.ui.impl.returns">NonBisimilarPathReturnValueTransformation</a></span></code>
 <div class="block">Transform a non bisimilar path (arraylist of pair of two nodes) into a
  string.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/returns/SNetResultReturnValueTransformation.html" title="class in uniol.apt.ui.impl.returns">SNetResultReturnValueTransformation</a></span></code>
 <div class="block">Transform s net result into a string.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/returns/StringArrayArrayReturnValueTransformation.html" title="class in uniol.apt.ui.impl.returns">StringArrayArrayReturnValueTransformation</a></span></code>&nbsp;</td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/returns/TNetResultReturnValueTransformation.html" title="class in uniol.apt.ui.impl.returns">TNetResultReturnValueTransformation</a></span></code>
 <div class="block">Transform t net result into a string.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/returns/TrapsSiphonsListReturnValueTransformation.html" title="class in uniol.apt.ui.impl.returns">TrapsSiphonsListReturnValueTransformation</a></span></code>
 <div class="block">Transform a list of traps/siphons into a string.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code>class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/ui/impl/returns/TSReturnValueTransformation.html" title="class in uniol.apt.ui.impl.returns">TSReturnValueTransformation</a></span></code>
 <div class="block">Transforms a TransitionSystem into a String-description that uses the syntax
