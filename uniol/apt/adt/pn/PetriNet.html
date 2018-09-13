@@ -18,7 +18,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":42,"i32":10,"i33":10,"i34":10,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10,"i18":10,"i19":10,"i20":10,"i21":10,"i22":10,"i23":10,"i24":10,"i25":10,"i26":10,"i27":10,"i28":10,"i29":10,"i30":10,"i31":10,"i32":10,"i33":10,"i34":42,"i35":10,"i36":10,"i37":10,"i38":10,"i39":10,"i40":10,"i41":10,"i42":10,"i43":10,"i44":10,"i45":10,"i46":10,"i47":10,"i48":10,"i49":10,"i50":10,"i51":10,"i52":10,"i53":10,"i54":10,"i55":10,"i56":10,"i57":10,"i58":10,"i59":10,"i60":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -186,55 +186,76 @@ implements <a href="../../../../uniol/apt/adt/IGraph.html" title="interface in u
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#addFlow-uniol.apt.adt.EdgeKey-uniol.apt.adt.pn.Flow-">addFlow</a></span>(<a href="../../../../uniol/apt/adt/EdgeKey.html" title="class in uniol.apt.adt">EdgeKey</a>&nbsp;key,
+       <a href="../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a>&nbsp;f)</code>
+<div class="block">Add a given flow directly without any checks.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../uniol/apt/adt/pn/Place.html" title="class in uniol.apt.adt.pn">Place</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#addPlace-java.lang.String-uniol.apt.adt.pn.Place-">addPlace</a></span>(java.lang.String&nbsp;id,
+        <a href="../../../../uniol/apt/adt/pn/Place.html" title="class in uniol.apt.adt.pn">Place</a>&nbsp;p)</code>
+<div class="block">Add a given place directly without any checks.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>protected <a href="../../../../uniol/apt/adt/pn/Transition.html" title="class in uniol.apt.adt.pn">Transition</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#addTransition-java.lang.String-uniol.apt.adt.pn.Transition-">addTransition</a></span>(java.lang.String&nbsp;id,
+             <a href="../../../../uniol/apt/adt/pn/Transition.html" title="class in uniol.apt.adt.pn">Transition</a>&nbsp;t)</code>
+<div class="block">Add a given transition directly without any checks.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#containsNode-uniol.apt.adt.pn.Node-">containsNode</a></span>(<a href="../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&nbsp;n)</code>
 <div class="block">Checks if this petri net contains a node.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#containsNode-java.lang.String-">containsNode</a></span>(java.lang.String&nbsp;id)</code>
 <div class="block">Checks if this petri net contains a node with the given id.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#containsPlace-uniol.apt.adt.pn.Place-">containsPlace</a></span>(<a href="../../../../uniol/apt/adt/pn/Place.html" title="class in uniol.apt.adt.pn">Place</a>&nbsp;p)</code>
 <div class="block">Checks if this petri net contains a place.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#containsPlace-java.lang.String-">containsPlace</a></span>(java.lang.String&nbsp;id)</code>
 <div class="block">Checks if this petri net contains a place with the given id.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#containsTransition-java.lang.String-">containsTransition</a></span>(java.lang.String&nbsp;id)</code>
 <div class="block">Checks if this petri net contains a transition with the given id.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#containsTransition-uniol.apt.adt.pn.Transition-">containsTransition</a></span>(<a href="../../../../uniol/apt/adt/pn/Transition.html" title="class in uniol.apt.adt.pn">Transition</a>&nbsp;t)</code>
 <div class="block">Checks if this petri net contains a transition.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#createFlow-uniol.apt.adt.pn.Flow-">createFlow</a></span>(<a href="../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a>&nbsp;flow)</code>
 <div class="block">Creates a new flow in this petri net by copying the values from an existing arc.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#createFlow-uniol.apt.adt.pn.Node-uniol.apt.adt.pn.Node-">createFlow</a></span>(<a href="../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&nbsp;source,
           <a href="../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&nbsp;target)</code>
 <div class="block">Creates a new flow in this petri net with the given source, target and weight 1.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#createFlow-uniol.apt.adt.pn.Node-uniol.apt.adt.pn.Node-int-">createFlow</a></span>(<a href="../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&nbsp;source,
           <a href="../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&nbsp;target,
@@ -242,14 +263,14 @@ implements <a href="../../../../uniol/apt/adt/IGraph.html" title="interface in u
 <div class="block">Creates a new flow in this petri net with the given source, target and weight.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#createFlow-java.lang.String-java.lang.String-">createFlow</a></span>(java.lang.String&nbsp;sourceId,
           java.lang.String&nbsp;targetId)</code>
 <div class="block">Creates a new flow in this petri net with the given sourceId, targetId and weight 1.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#createFlow-java.lang.String-java.lang.String-int-">createFlow</a></span>(java.lang.String&nbsp;sourceId,
           java.lang.String&nbsp;targetId,
@@ -257,124 +278,124 @@ implements <a href="../../../../uniol/apt/adt/IGraph.html" title="interface in u
 <div class="block">Creates a new flow in this petri net with the given sourceId, targetId and weight.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Place.html" title="class in uniol.apt.adt.pn">Place</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#createPlace--">createPlace</a></span>()</code>
 <div class="block">Creates a new place with an autogenerated id to the petri net.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Place.html" title="class in uniol.apt.adt.pn">Place</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#createPlace-uniol.apt.adt.pn.Place-">createPlace</a></span>(<a href="../../../../uniol/apt/adt/pn/Place.html" title="class in uniol.apt.adt.pn">Place</a>&nbsp;p)</code>
 <div class="block">Creates a new place to the petri net by copying the values from a existing place.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Place.html" title="class in uniol.apt.adt.pn">Place</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#createPlace-java.lang.String-">createPlace</a></span>(java.lang.String&nbsp;id)</code>
 <div class="block">Creates a new place to the petri net with the given id.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Place.html" title="class in uniol.apt.adt.pn">Place</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#createPlaces-int-">createPlaces</a></span>(int&nbsp;count)</code>
 <div class="block">Creates #count new places in this petri net with auto generated ids.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Place.html" title="class in uniol.apt.adt.pn">Place</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#createPlaces-uniol.apt.adt.pn.Place...-">createPlaces</a></span>(<a href="../../../../uniol/apt/adt/pn/Place.html" title="class in uniol.apt.adt.pn">Place</a>...&nbsp;placeList)</code>
 <div class="block">Creates a few new places in this petri net by copying the values from the other places.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Place.html" title="class in uniol.apt.adt.pn">Place</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#createPlaces-java.lang.String...-">createPlaces</a></span>(java.lang.String...&nbsp;idList)</code>
 <div class="block">Creates a few new places in this petri net with the given ids.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Transition.html" title="class in uniol.apt.adt.pn">Transition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#createTransition--">createTransition</a></span>()</code>
 <div class="block">Creates a new transition with an autogenerated id and the same as label to the petri net.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Transition.html" title="class in uniol.apt.adt.pn">Transition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#createTransition-java.lang.String-">createTransition</a></span>(java.lang.String&nbsp;id)</code>
 <div class="block">Creates a new transition to the petri net with the given id.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Transition.html" title="class in uniol.apt.adt.pn">Transition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#createTransition-java.lang.String-java.lang.String-">createTransition</a></span>(java.lang.String&nbsp;id,
                 java.lang.String&nbsp;label)</code>
 <div class="block">Creates a new transition to the petri net with the given id and label.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Transition.html" title="class in uniol.apt.adt.pn">Transition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#createTransition-uniol.apt.adt.pn.Transition-">createTransition</a></span>(<a href="../../../../uniol/apt/adt/pn/Transition.html" title="class in uniol.apt.adt.pn">Transition</a>&nbsp;t)</code>
 <div class="block">Creates a new transition to the petri net by copying the values from a existing place.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Transition.html" title="class in uniol.apt.adt.pn">Transition</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#createTransitions-int-">createTransitions</a></span>(int&nbsp;count)</code>
 <div class="block">Creates #count new transitions in this petri net with auto generated ids and the same as label.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Transition.html" title="class in uniol.apt.adt.pn">Transition</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#createTransitions-java.lang.String...-">createTransitions</a></span>(java.lang.String...&nbsp;idList)</code>
 <div class="block">Creates a few new transitions in this petri net with the given ids.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Transition.html" title="class in uniol.apt.adt.pn">Transition</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#createTransitions-uniol.apt.adt.pn.Transition...-">createTransitions</a></span>(<a href="../../../../uniol/apt/adt/pn/Transition.html" title="class in uniol.apt.adt.pn">Transition</a>...&nbsp;transitionList)</code>
 <div class="block">Creates a few new transitions in this petri net by copying the values from the other transitions.</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#getEdges--">getEdges</a></span>()</code>
 <div class="block">Retrieves a view of the current edge set of the graph.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/pn/Marking.html" title="class in uniol.apt.adt.pn">Marking</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#getFinalMarkings--">getFinalMarkings</a></span>()</code>
 <div class="block">Gets a view of the final markings of this petri net.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#getFlow-uniol.apt.adt.pn.Node-uniol.apt.adt.pn.Node-">getFlow</a></span>(<a href="../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&nbsp;source,
        <a href="../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&nbsp;target)</code>
 <div class="block">Returns a flow with the given source and target.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#getFlow-java.lang.String-java.lang.String-">getFlow</a></span>(java.lang.String&nbsp;sourceId,
        java.lang.String&nbsp;targetId)</code>
 <div class="block">Returns a flow with the given source and target id.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>int[][]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#getIncidenceMatrix--">getIncidenceMatrix</a></span>()</code>
 <div class="block">Calculates and returns the incidencematrix of this petri net.</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Marking.html" title="class in uniol.apt.adt.pn">Marking</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#getInitialMarking--">getInitialMarking</a></span>()</code>
 <div class="block">Returns a copy of the initial marking of this petri net.</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Marking.html" title="class in uniol.apt.adt.pn">Marking</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#getInitialMarkingCopy--">getInitialMarkingCopy</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -382,159 +403,159 @@ implements <a href="../../../../uniol/apt/adt/IGraph.html" title="interface in u
 </div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#getName--">getName</a></span>()</code>
 <div class="block">Retrieves the name of this graph or "" if not set.</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#getNode-java.lang.String-">getNode</a></span>(java.lang.String&nbsp;id)</code>
 <div class="block">Retrieves the node with the given id.</div>
 </td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#getNodes--">getNodes</a></span>()</code>
 <div class="block">Retrieves a view of the current node set of the graph.</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Place.html" title="class in uniol.apt.adt.pn">Place</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#getPlace-java.lang.String-">getPlace</a></span>(java.lang.String&nbsp;id)</code>
 <div class="block">Returns the place with the given id.</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/pn/Place.html" title="class in uniol.apt.adt.pn">Place</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#getPlaces--">getPlaces</a></span>()</code>
 <div class="block">Gets a view of the places of this petri net.</div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#getPostsetEdges-uniol.apt.adt.pn.Node-">getPostsetEdges</a></span>(<a href="../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&nbsp;node)</code>
 <div class="block">Retrieves a view of all edges beginning in the given node.</div>
 </td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#getPostsetEdges-java.lang.String-">getPostsetEdges</a></span>(java.lang.String&nbsp;id)</code>
 <div class="block">Retrieves a view of all edges beginning in the node with the given id.</div>
 </td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#getPostsetNodes-uniol.apt.adt.pn.Node-">getPostsetNodes</a></span>(<a href="../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&nbsp;node)</code>
 <div class="block">Retrieves a view of all nodes which have an incoming edge from the given node.</div>
 </td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#getPostsetNodes-java.lang.String-">getPostsetNodes</a></span>(java.lang.String&nbsp;id)</code>
 <div class="block">Retrieves a view of all nodes which have an incoming edge from the node with the given id.</div>
 </td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#getPresetEdges-uniol.apt.adt.pn.Node-">getPresetEdges</a></span>(<a href="../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&nbsp;node)</code>
 <div class="block">Retrieves a view of all edges targeting the given node.</div>
 </td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#getPresetEdges-java.lang.String-">getPresetEdges</a></span>(java.lang.String&nbsp;id)</code>
 <div class="block">Retrieves a view of all edges targeting the node with the given id.</div>
 </td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#getPresetNodes-uniol.apt.adt.pn.Node-">getPresetNodes</a></span>(<a href="../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&nbsp;node)</code>
 <div class="block">Retrieves a view of all nodes which have an outgoing edge to the given node</div>
 </td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#getPresetNodes-java.lang.String-">getPresetNodes</a></span>(java.lang.String&nbsp;id)</code>
 <div class="block">Retrieves a view of all nodes which have an outgoing edge to the node identified by the id.</div>
 </td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code><a href="../../../../uniol/apt/adt/pn/Transition.html" title="class in uniol.apt.adt.pn">Transition</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#getTransition-java.lang.String-">getTransition</a></span>(java.lang.String&nbsp;id)</code>
 <div class="block">Returns the transition with the given id.</div>
 </td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../uniol/apt/adt/pn/Transition.html" title="class in uniol.apt.adt.pn">Transition</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#getTransitions--">getTransitions</a></span>()</code>
 <div class="block">Gets a view of the transitions of this petri net.</div>
 </td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#removeFlow-uniol.apt.adt.pn.Flow-">removeFlow</a></span>(<a href="../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a>&nbsp;flow)</code>
 <div class="block">* Removes a flow from this petri net.</div>
 </td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#removeFlow-uniol.apt.adt.pn.Node-uniol.apt.adt.pn.Node-">removeFlow</a></span>(<a href="../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&nbsp;source,
           <a href="../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&nbsp;target)</code>
 <div class="block">Removes a flow with the given source and target from this petri net.</div>
 </td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#removeFlow-java.lang.String-java.lang.String-">removeFlow</a></span>(java.lang.String&nbsp;sourceId,
           java.lang.String&nbsp;targetId)</code>
 <div class="block">Removes a flow with the given source and target id from this petri net.</div>
 </td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#removeNode-uniol.apt.adt.pn.Node-">removeNode</a></span>(<a href="../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&nbsp;node)</code>
 <div class="block">Removes a node from this petri net.</div>
 </td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#removeNode-java.lang.String-">removeNode</a></span>(java.lang.String&nbsp;id)</code>
 <div class="block">Removes a node with the given id from this petri net.</div>
 </td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#removePlace-uniol.apt.adt.pn.Place-">removePlace</a></span>(<a href="../../../../uniol/apt/adt/pn/Place.html" title="class in uniol.apt.adt.pn">Place</a>&nbsp;place)</code>
 <div class="block">Removes a place from this petri net.</div>
 </td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#removePlace-java.lang.String-">removePlace</a></span>(java.lang.String&nbsp;id)</code>
 <div class="block">Removes a place from this petri net.</div>
 </td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#removeTransition-java.lang.String-">removeTransition</a></span>(java.lang.String&nbsp;id)</code>
 <div class="block">Removes a transition from this petri net.</div>
 </td>
 </tr>
-<tr id="i55" class="rowColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#removeTransition-uniol.apt.adt.pn.Transition-">removeTransition</a></span>(<a href="../../../../uniol/apt/adt/pn/Transition.html" title="class in uniol.apt.adt.pn">Transition</a>&nbsp;trans)</code>
 <div class="block">Removes a transition from this petri net.</div>
 </td>
 </tr>
-<tr id="i56" class="altColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#setInitialMarking-uniol.apt.adt.pn.Marking-">setInitialMarking</a></span>(<a href="../../../../uniol/apt/adt/pn/Marking.html" title="class in uniol.apt.adt.pn">Marking</a>&nbsp;m)</code>
 <div class="block">Sets the initial marking for this petri net.</div>
 </td>
 </tr>
-<tr id="i57" class="rowColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../uniol/apt/adt/pn/PetriNet.html#setName-java.lang.String-">setName</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
@@ -658,6 +679,24 @@ implements <a href="../../../../uniol/apt/adt/IGraph.html" title="interface in u
 </dl>
 </li>
 </ul>
+<a name="addFlow-uniol.apt.adt.EdgeKey-uniol.apt.adt.pn.Flow-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addFlow</h4>
+<pre>protected&nbsp;<a href="../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a>&nbsp;addFlow(<a href="../../../../uniol/apt/adt/EdgeKey.html" title="class in uniol.apt.adt">EdgeKey</a>&nbsp;key,
+                       <a href="../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a>&nbsp;f)</pre>
+<div class="block">Add a given flow directly without any checks.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>key</code> - the EdgeKey of the flow</dd>
+<dd><code>f</code> - the flow to add</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the flow</dd>
+</dl>
+</li>
+</ul>
 <a name="createFlow-java.lang.String-java.lang.String-int-">
 <!--   -->
 </a>
@@ -754,6 +793,24 @@ implements <a href="../../../../uniol/apt/adt/IGraph.html" title="interface in u
 <dd><code><a href="../../../../uniol/apt/adt/exception/FlowExistsException.html" title="class in uniol.apt.adt.exception">FlowExistsException</a></code> - thrown if a flow with the same source and target already exists in this
                                   petri net.</dd>
 <dd><code><a href="../../../../uniol/apt/adt/exception/IllegalFlowException.html" title="class in uniol.apt.adt.exception">IllegalFlowException</a></code> - thrown if argument don't correspond to a place and a transition.</dd>
+</dl>
+</li>
+</ul>
+<a name="addPlace-java.lang.String-uniol.apt.adt.pn.Place-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addPlace</h4>
+<pre>protected&nbsp;<a href="../../../../uniol/apt/adt/pn/Place.html" title="class in uniol.apt.adt.pn">Place</a>&nbsp;addPlace(java.lang.String&nbsp;id,
+                         <a href="../../../../uniol/apt/adt/pn/Place.html" title="class in uniol.apt.adt.pn">Place</a>&nbsp;p)</pre>
+<div class="block">Add a given place directly without any checks.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the id of the place</dd>
+<dd><code>p</code> - the place to add</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the place</dd>
 </dl>
 </li>
 </ul>
@@ -881,6 +938,24 @@ implements <a href="../../../../uniol/apt/adt/IGraph.html" title="interface in u
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.IllegalArgumentException</code> - thrown if passing a null argument.</dd>
 <dd><code><a href="../../../../uniol/apt/adt/exception/NodeExistsException.html" title="class in uniol.apt.adt.exception">NodeExistsException</a></code> - thrown if an other node with the same id already exists in the petri net.</dd>
+</dl>
+</li>
+</ul>
+<a name="addTransition-java.lang.String-uniol.apt.adt.pn.Transition-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>addTransition</h4>
+<pre>protected&nbsp;<a href="../../../../uniol/apt/adt/pn/Transition.html" title="class in uniol.apt.adt.pn">Transition</a>&nbsp;addTransition(java.lang.String&nbsp;id,
+                                   <a href="../../../../uniol/apt/adt/pn/Transition.html" title="class in uniol.apt.adt.pn">Transition</a>&nbsp;t)</pre>
+<div class="block">Add a given transition directly without any checks.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>id</code> - the id of the transition</dd>
+<dd><code>t</code> - the transition to add</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the transition</dd>
 </dl>
 </li>
 </ul>

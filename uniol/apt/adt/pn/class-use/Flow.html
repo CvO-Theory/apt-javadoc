@@ -113,19 +113,26 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a></code></td>
+<td class="colLast"><span class="typeNameLabel">PetriNet.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/adt/pn/PetriNet.html#addFlow-uniol.apt.adt.EdgeKey-uniol.apt.adt.pn.Flow-">addFlow</a></span>(<a href="../../../../../uniol/apt/adt/EdgeKey.html" title="class in uniol.apt.adt">EdgeKey</a>&nbsp;key,
+       <a href="../../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a>&nbsp;f)</code>
+<div class="block">Add a given flow directly without any checks.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a></code></td>
 <td class="colLast"><span class="typeNameLabel">PetriNet.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/adt/pn/PetriNet.html#createFlow-uniol.apt.adt.pn.Flow-">createFlow</a></span>(<a href="../../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a>&nbsp;flow)</code>
 <div class="block">Creates a new flow in this petri net by copying the values from an existing arc.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a></code></td>
 <td class="colLast"><span class="typeNameLabel">PetriNet.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/adt/pn/PetriNet.html#createFlow-uniol.apt.adt.pn.Node-uniol.apt.adt.pn.Node-">createFlow</a></span>(<a href="../../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&nbsp;source,
           <a href="../../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&nbsp;target)</code>
 <div class="block">Creates a new flow in this petri net with the given source, target and weight 1.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a></code></td>
 <td class="colLast"><span class="typeNameLabel">PetriNet.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/adt/pn/PetriNet.html#createFlow-uniol.apt.adt.pn.Node-uniol.apt.adt.pn.Node-int-">createFlow</a></span>(<a href="../../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&nbsp;source,
           <a href="../../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&nbsp;target,
@@ -133,14 +140,14 @@
 <div class="block">Creates a new flow in this petri net with the given source, target and weight.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a></code></td>
 <td class="colLast"><span class="typeNameLabel">PetriNet.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/adt/pn/PetriNet.html#createFlow-java.lang.String-java.lang.String-">createFlow</a></span>(java.lang.String&nbsp;sourceId,
           java.lang.String&nbsp;targetId)</code>
 <div class="block">Creates a new flow in this petri net with the given sourceId, targetId and weight 1.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a></code></td>
 <td class="colLast"><span class="typeNameLabel">PetriNet.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/adt/pn/PetriNet.html#createFlow-java.lang.String-java.lang.String-int-">createFlow</a></span>(java.lang.String&nbsp;sourceId,
           java.lang.String&nbsp;targetId,
@@ -148,14 +155,14 @@
 <div class="block">Creates a new flow in this petri net with the given sourceId, targetId and weight.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code><a href="../../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a></code></td>
 <td class="colLast"><span class="typeNameLabel">PetriNet.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/adt/pn/PetriNet.html#getFlow-uniol.apt.adt.pn.Node-uniol.apt.adt.pn.Node-">getFlow</a></span>(<a href="../../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&nbsp;source,
        <a href="../../../../../uniol/apt/adt/pn/Node.html" title="class in uniol.apt.adt.pn">Node</a>&nbsp;target)</code>
 <div class="block">Returns a flow with the given source and target.</div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a></code></td>
 <td class="colLast"><span class="typeNameLabel">PetriNet.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/adt/pn/PetriNet.html#getFlow-java.lang.String-java.lang.String-">getFlow</a></span>(java.lang.String&nbsp;sourceId,
        java.lang.String&nbsp;targetId)</code>
@@ -209,12 +216,19 @@
 </tr>
 <tbody>
 <tr class="altColor">
+<td class="colFirst"><code>protected <a href="../../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a></code></td>
+<td class="colLast"><span class="typeNameLabel">PetriNet.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/adt/pn/PetriNet.html#addFlow-uniol.apt.adt.EdgeKey-uniol.apt.adt.pn.Flow-">addFlow</a></span>(<a href="../../../../../uniol/apt/adt/EdgeKey.html" title="class in uniol.apt.adt">EdgeKey</a>&nbsp;key,
+       <a href="../../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a>&nbsp;f)</code>
+<div class="block">Add a given flow directly without any checks.</div>
+</td>
+</tr>
+<tr class="rowColor">
 <td class="colFirst"><code><a href="../../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a></code></td>
 <td class="colLast"><span class="typeNameLabel">PetriNet.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/adt/pn/PetriNet.html#createFlow-uniol.apt.adt.pn.Flow-">createFlow</a></span>(<a href="../../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a>&nbsp;flow)</code>
 <div class="block">Creates a new flow in this petri net by copying the values from an existing arc.</div>
 </td>
 </tr>
-<tr class="rowColor">
+<tr class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><span class="typeNameLabel">PetriNet.</span><code><span class="memberNameLink"><a href="../../../../../uniol/apt/adt/pn/PetriNet.html#removeFlow-uniol.apt.adt.pn.Flow-">removeFlow</a></span>(<a href="../../../../../uniol/apt/adt/pn/Flow.html" title="class in uniol.apt.adt.pn">Flow</a>&nbsp;flow)</code>
 <div class="block">* Removes a flow from this petri net.</div>
